@@ -82,6 +82,7 @@ const Footer = () => {
                 { name: 'Custom 20+ Page Sites', path: '/our-works' },
                 { name: 'E-Commerce Websites', path: '/our-works' },
                 { name: 'Sales Landing & Automation', path: '/our-works' },
+                { name: 'Digital Marketing in Tambaram', path: '/tambaram' },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
