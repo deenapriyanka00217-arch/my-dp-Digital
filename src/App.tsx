@@ -13,6 +13,7 @@ import ContentBrandingPage from './pages/ContentBranding';
 import YouTubeManagementPage from './pages/YouTubeManagement';
 import WordPressPage from './pages/WordPressPage';
 import FacebookAdsPage from './pages/FacebookAdsPage';
+import TambaramPage from './pages/TambaramPage';
 import ContactPage from './pages/ContactPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
 import { StickyWhatsApp } from './components/StickyWhatsApp';
@@ -53,6 +54,8 @@ const AppContent = () => {
             <Route path="/services/youtube-editing-management" element={<YouTubeManagementPage />} />
             <Route path="/youtube-management" element={<YouTubeManagementPage />} />
             <Route path="/youtube" element={<YouTubeManagementPage />} />
+            <Route path="/tambaram" element={<TambaramPage />} />
+            <Route path="/digital-marketing-agency-tambaram" element={<TambaramPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/our-works" element={<OurWorksPage />} />
             <Route path="/portfolio" element={<OurWorksPage />} />
