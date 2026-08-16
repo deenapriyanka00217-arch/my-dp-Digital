@@ -16,6 +16,7 @@ import FacebookAdsPage from './pages/FacebookAdsPage';
 import TambaramPage from './pages/TambaramPage';
 import ContactPage from './pages/ContactPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
+import NotFound from './pages/NotFound';
 import { StickyWhatsApp } from './components/StickyWhatsApp';
 import { CmsProvider } from './context/CmsContext';
 import { AnimatePresence } from 'framer-motion';
@@ -63,7 +64,7 @@ const AppContent = () => {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/admin" element={<AdminDashboardPage />} />
             <Route path="/dashboard" element={<AdminDashboardPage />} />
-            <Route path="*" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
       </main>
