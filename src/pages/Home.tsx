@@ -8,6 +8,26 @@ import FAQ from '../components/FAQ';
 import ContactForm from '../components/ContactForm';
 import { Trophy, BarChart3, ShieldCheck, Zap, Sparkles } from 'lucide-react';
 import { useCms } from '../context/CmsContext';
+import PageSEO from '../components/PageSEO';
+
+const HOME_JSON_LD = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'My DP Digital',
+    url: 'https://www.mydpdigital.in',
+    telephone: '+91-81483-20217',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Chennai',
+      addressRegion: 'Tamil Nadu',
+      addressCountry: 'IN',
+    },
+    areaServed: 'Chennai, Tamil Nadu, India',
+    description:
+      'My DP Digital is a digital marketing agency near you in Chennai, offering SEO, Google Ads, website design, and branding for local businesses.',
+  },
+];
 
 const Home = () => {
   const { content } = useCms();
@@ -19,6 +39,12 @@ const Home = () => {
       exit={{ opacity: 0 }}
       className="bg-[#07050C] text-white w-full overflow-hidden"
     >
+      <PageSEO
+        title="Digital Marketing Agency Near Me in Chennai | My DP Digital"
+        description="My DP Digital is a digital marketing agency near you in Chennai — SEO, Google Ads, website design, and branding for local businesses. Get a free quote."
+        canonicalPath="/"
+        jsonLd={HOME_JSON_LD}
+      />
       <Hero />
 
       {/* Realistic Agency Metrics Strip */}
