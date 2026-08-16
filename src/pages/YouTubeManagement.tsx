@@ -35,6 +35,7 @@ import {
 import { Link } from 'react-router-dom';
 import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
+import PageSEO from '../components/PageSEO';
 
 const WHATSAPP_PHONE = '918148320217';
 
@@ -159,6 +160,12 @@ export const YouTubeManagementPage: React.FC = () => {
   };
 
   return (
+    <>
+    <PageSEO
+      title="YouTube Channel Management & Video Editing | Chennai"
+      description="Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help."
+      canonicalPath="/youtube-management"
+    />
     <div className="pt-28 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full font-sans">
       {/* Inject Structured Data Schema for Search Engine SEO */}
       <script
@@ -492,6 +499,7 @@ export const YouTubeManagementPage: React.FC = () => {
         <FAQ />
       </div>
     </div>
+    </>
   );
 };
 

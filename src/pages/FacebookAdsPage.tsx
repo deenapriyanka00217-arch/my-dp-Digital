@@ -26,8 +26,30 @@ import { Link } from 'react-router-dom';
 import { WhatsAppIcon } from '../components/StickyWhatsApp';
 import { BannerServicesForm } from '../components/BannerServicesForm';
 import FAQ from '../components/FAQ';
+import PageSEO from '../components/PageSEO';
 
 const WHATSAPP_PHONE = '918148320217';
+
+const FACEBOOKADS_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Facebook & Google Ads Management',
+  provider: {
+    '@type': 'LocalBusiness',
+    name: 'My DP Digital',
+    url: 'https://www.mydpdigital.in',
+    telephone: '+91-81483-20217',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Chennai',
+      addressRegion: 'Tamil Nadu',
+      addressCountry: 'IN',
+    },
+  },
+  areaServed: 'Chennai, Tamil Nadu, India',
+  description:
+    'Facebook Ads and Google Ads management agency in Chennai delivering high-ROAS product sales campaigns, PPC management, and social media ads for e-commerce and D2C brands.',
+};
 
 // 3D Neon Animated Facebook / Meta Logo Emblem with Glowing Laser Halo
 export const Facebook3DNeonLoop: React.FC<{ size?: number; className?: string }> = ({ size = 80, className = '' }) => (
@@ -308,6 +330,13 @@ export const FacebookAdsPage: React.FC = () => {
   ];
 
   return (
+    <>
+    <PageSEO
+      title="Facebook & Google Ads Agency in Chennai | PPC Management"
+      description="Facebook Ads and Google Ads management agency in Chennai — high-ROAS product sales campaigns, PPC management, and social media ads for e-commerce brands."
+      canonicalPath="/services/facebook-ads"
+      jsonLd={FACEBOOKADS_JSON_LD}
+    />
     <div className="pt-24 sm:pt-28 pb-20 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full font-sans">
       {/* Dynamic Ambient Neon Glows */}
       <div className="absolute top-10 right-[-5%] w-[45vw] h-[45vw] bg-[#1877F2]/15 rounded-full blur-[140px] pointer-events-none" />
@@ -659,6 +688,7 @@ export const FacebookAdsPage: React.FC = () => {
         </section>
       </div>
     </div>
+    </>
   );
 };
 
