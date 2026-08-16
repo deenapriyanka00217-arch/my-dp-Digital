@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.mydpdigital.in/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.mydpdigital.in/services</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.mydpdigital.in/services/seo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mydpdigital.in/services/paid-social-ads</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mydpdigital.in/services/facebook-ads</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mydpdigital.in/services/web-design-development</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mydpdigital.in/wordpress-development</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mydpdigital.in/services/content-marketing-branding</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.mydpdigital.in/services/youtube-editing-management</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.mydpdigital.in/youtube-management</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.mydpdigital.in/tambaram</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.mydpdigital.in/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.mydpdigital.in/our-works</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.mydpdigital.in/blog</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.mydpdigital.in/contact</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.mydpdigital.in/</loc><lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.mydpdigital.in/services</loc><lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.mydpdigital.in/services/seo</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mydpdigital.in/services/paid-social-ads</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mydpdigital.in/services/facebook-ads</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mydpdigital.in/services/web-design-development</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mydpdigital.in/wordpress-development</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mydpdigital.in/services/content-marketing-branding</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.mydpdigital.in/youtube-management</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.mydpdigital.in/tambaram</loc><lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.mydpdigital.in/about</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.mydpdigital.in/our-works</loc><lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.mydpdigital.in/blog</loc><lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.mydpdigital.in/contact</loc><lastmod>2026-08-16</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
 </urlset>
