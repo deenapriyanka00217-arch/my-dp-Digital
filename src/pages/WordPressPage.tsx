@@ -20,8 +20,34 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { WhatsAppIcon } from '../components/StickyWhatsApp';
+import PageSEO from '../components/PageSEO';
 
 const WHATSAPP_PHONE = '918148320217';
+
+const WORDPRESS_JSON_LD = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'WordPress Website Maintenance',
+    provider: {
+      '@type': 'Organization',
+      name: 'My DP Digital',
+      url: 'https://www.mydpdigital.in',
+      telephone: '+91-81483-20217',
+    },
+    areaServed: 'India',
+    description:
+      'WordPress website development and maintenance services in India, covering updates, security, backups, speed optimization, and ongoing support plans.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mydpdigital.in/' },
+      { '@type': 'ListItem', position: 2, name: 'WordPress Development', item: 'https://www.mydpdigital.in/wordpress-development' },
+    ],
+  },
+];
 
 // 3D WordPress Rotating Showcase Badge
 export const WordPress3DLoop: React.FC<{ size?: number; className?: string }> = ({ size = 80, className = '' }) => (
@@ -128,6 +154,13 @@ export const WordPressPage: React.FC = () => {
   ];
 
   return (
+    <>
+    <PageSEO
+      title="WordPress Maintenance Services in India | My DP Digital"
+      description="WordPress website maintenance services in India — updates, security, backups, and support plans built for speed, SEO, and reliability."
+      canonicalPath="/wordpress-development"
+      jsonLd={WORDPRESS_JSON_LD}
+    />
     <div className="w-full min-h-screen bg-[#07050C] text-white pt-24 pb-20">
       {/* Hero Banner with 3D WordPress Loop */}
       <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto">
@@ -322,6 +355,7 @@ export const WordPressPage: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

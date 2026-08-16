@@ -32,6 +32,31 @@ import {
 } from 'lucide-react';
 import { subscribeNewsletter } from '../lib/services';
 import { useCms } from '../context/CmsContext';
+import PageSEO from '../components/PageSEO';
+
+const BLOG_JSON_LD = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'My DP Digital Blog',
+    url: 'https://www.mydpdigital.in/blog',
+    description:
+      'Digital marketing insights, SEO tips, and website design trends from My DP Digital — practical advice on Google Ads, agencies, and growing your business online.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'My DP Digital',
+      url: 'https://www.mydpdigital.in',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mydpdigital.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.mydpdigital.in/blog' },
+    ],
+  },
+];
 
 interface BlogPost {
   id: string;
@@ -200,6 +225,13 @@ export const BlogPage: React.FC = () => {
   }, {} as Record<string, number>);
 
   return (
+    <>
+    <PageSEO
+      title="Digital Marketing Blog & Insights | My DP Digital"
+      description="Digital marketing insights, SEO tips, and web design trends — practical advice on Google Ads, agencies, and growing your business online."
+      canonicalPath="/blog"
+      jsonLd={BLOG_JSON_LD}
+    />
     <div className="pt-28 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full font-sans">
       {/* Background ambient lighting */}
       <div className="absolute top-10 left-[-10%] w-[45vw] h-[45vw] bg-[#FF2E9A]/10 rounded-full blur-[140px] pointer-events-none" />
@@ -1304,6 +1336,7 @@ export const BlogPage: React.FC = () => {
         )}
       </AnimatePresence>
     </div>
+    </>
   );
 };
 
