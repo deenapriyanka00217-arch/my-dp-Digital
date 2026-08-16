@@ -345,7 +345,7 @@ export const FacebookAdsPage: React.FC = () => {
 
       {/* SEO Schema / Keyword Semantic Shell */}
       <div className="hidden" aria-hidden="true">
-        <h1>Facebook Product Ads Agency - Meta Paid Ads & E-Commerce Sales Scaling</h1>
+        <div>Facebook Product Ads Agency - Meta Paid Ads & E-Commerce Sales Scaling</div>
         <p>
           Specialist Meta & Facebook Ads agency delivering high ROAS product sales campaigns, dynamic product catalog ads, Conversions API setup, click-to-WhatsApp sales funnels, and performance scaling for Shopify, WooCommerce, and D2C brands.
         </p>

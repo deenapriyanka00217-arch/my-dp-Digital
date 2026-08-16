@@ -292,13 +292,15 @@ export const BlogPage: React.FC = () => {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-[10px] font-bold uppercase tracking-wider text-white">
                 <Rss size={12} className="text-[#FF2E9A]" /> The DP Digital Publication Desk
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-                {singlePostView ? (
+              {singlePostView ? (
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
                   <span>WordPress <span className="text-[#FF7AC6]">Article View</span></span>
-                ) : (
+                </div>
+              ) : (
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
                   <span>Engineering <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#25D366]">Journal & Playbooks</span></span>
-                )}
-              </h1>
+                </h1>
+              )}
               <p className="text-xs sm:text-sm text-white/70 max-w-2xl font-medium">
                 {singlePostView
                   ? 'Full WordPress layout with article analysis, table of contents, author bio, and interactive comments.'

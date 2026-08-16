@@ -1,9 +1,38 @@
 import { motion } from 'framer-motion';
 import { Sparkles, Users, Target, Rocket, ShieldCheck, ArrowRight, Zap, CheckCircle2 } from 'lucide-react';
 import { Card3DTilt } from '../components/Card3DTilt';
+import PageSEO from '../components/PageSEO';
+
+const ABOUT_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'About My DP Digital',
+  url: 'https://www.mydpdigital.in/about',
+  description:
+    'My DP Digital is a Chennai-based digital marketing and web engineering agency helping brands turn data into measurable growth through SEO, ads, and website design.',
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'My DP Digital',
+    url: 'https://www.mydpdigital.in',
+    telephone: '+91-81483-20217',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Chennai',
+      addressRegion: 'Tamil Nadu',
+      addressCountry: 'IN',
+    },
+  },
+};
 
 const AboutPage = () => {
   return (
+    <>
+    <PageSEO
+      title="About My DP Digital | Chennai Digital Marketing Agency"
+      description="My DP Digital is a Chennai-based digital marketing and web engineering agency — learn how we turn data into measurable growth for brands worldwide."
+      canonicalPath="/about"
+      jsonLd={ABOUT_JSON_LD}
+    />
     <div className="pt-32 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full">
       {/* Ambient Orbs */}
       <div className="absolute top-[10%] right-[-5%] w-[45vw] h-[45vw] bg-[#FF2E9A]/15 rounded-full blur-[140px] pointer-events-none" />
@@ -115,6 +144,7 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -23,6 +23,21 @@ import {
 import { OUR_WORKS_DATA, ProjectWork } from '../data/worksData';
 import { Link } from 'react-router-dom';
 import { WhatsAppIcon } from '../components/StickyWhatsApp';
+import PageSEO from '../components/PageSEO';
+
+const OURWORKS_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Our Works & Live Client Websites',
+  url: 'https://www.mydpdigital.in/our-works',
+  description:
+    'Verified client portfolio of live websites, e-commerce stores, and digital marketing deployments built by My DP Digital in Chennai.',
+  publisher: {
+    '@type': 'Organization',
+    name: 'My DP Digital',
+    url: 'https://www.mydpdigital.in',
+  },
+};
 
 // 3D WordPress Rotating Showcase Badge
 const WordPress3DShowcaseBadge: React.FC = () => (
@@ -110,6 +125,13 @@ export const OurWorksPage: React.FC = () => {
   };
 
   return (
+    <>
+    <PageSEO
+      title="Our Works & Live Client Websites | My DP Digital"
+      description="Explore our verified client portfolio — live websites, e-commerce stores, and digital marketing deployments built by My DP Digital in Chennai."
+      canonicalPath="/our-works"
+      jsonLd={OURWORKS_JSON_LD}
+    />
     <div className="pt-32 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full">
       {/* Background ambient orbs */}
       <div className="absolute top-10 right-[-10%] w-[45vw] h-[45vw] bg-[#FF2E9A]/15 rounded-full blur-[140px] pointer-events-none animate-pulse" />
@@ -507,6 +529,7 @@ export const OurWorksPage: React.FC = () => {
         )}
       </AnimatePresence>
     </div>
+    </>
   );
 };
 

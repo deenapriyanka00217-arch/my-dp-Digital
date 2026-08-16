@@ -2,11 +2,39 @@ import { motion } from 'framer-motion';
 import { Mail, MapPin, Sparkles, Clock, ShieldCheck } from 'lucide-react';
 import { WhatsAppIcon } from '../components/StickyWhatsApp';
 import { BannerServicesForm } from '../components/BannerServicesForm';
+import PageSEO from '../components/PageSEO';
 
 const WHATSAPP_PHONE = '918148320217';
 
+const CONTACT_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact My DP Digital',
+  url: 'https://www.mydpdigital.in/contact',
+  mainEntity: {
+    '@type': 'LocalBusiness',
+    name: 'My DP Digital',
+    telephone: '+91-81483-20217',
+    email: 'growth@mydpdigital.in',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Anna Salai',
+      addressLocality: 'Chennai',
+      addressRegion: 'Tamil Nadu',
+      addressCountry: 'IN',
+    },
+  },
+};
+
 const ContactPage = () => {
   return (
+    <>
+    <PageSEO
+      title="Contact My DP Digital | Chennai Digital Marketing Agency"
+      description="Get in touch with My DP Digital in Chennai — request a free consultation and instant quote for SEO, ads, and website design projects."
+      canonicalPath="/contact"
+      jsonLd={CONTACT_JSON_LD}
+    />
     <div className="pt-24 sm:pt-28 pb-16 sm:pb-20 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full">
       {/* Subtle ambient glows */}
       <div className="absolute top-[10%] right-[-5%] w-[35vw] h-[35vw] bg-[#FF2E9A]/10 rounded-full blur-[120px] pointer-events-none" />
@@ -99,6 +127,7 @@ const ContactPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
