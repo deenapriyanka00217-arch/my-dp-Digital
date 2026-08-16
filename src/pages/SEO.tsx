@@ -3,9 +3,43 @@ import { Search, TrendingUp, BarChart3, Globe, Check, ArrowRight, Sparkles, Zap 
 import { Link } from 'react-router-dom';
 import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
+import PageSEO from '../components/PageSEO';
+
+const SEO_JSON_LD = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Local SEO Services',
+    provider: {
+      '@type': 'Organization',
+      name: 'My DP Digital',
+      url: 'https://www.mydpdigital.in',
+      telephone: '+91-81483-20217',
+    },
+    areaServed: 'Chennai, Tamil Nadu, India',
+    description:
+      'Local SEO services in Chennai to help businesses rank higher on Google Maps and local search, including Google Business Profile optimization and local citations.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mydpdigital.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.mydpdigital.in/services' },
+      { '@type': 'ListItem', position: 3, name: 'SEO', item: 'https://www.mydpdigital.in/services/seo' },
+    ],
+  },
+];
 
 const SEOPage = () => {
   return (
+    <>
+    <PageSEO
+      title="Local SEO Services in Chennai | My DP Digital"
+      description="Local SEO services in Chennai to rank higher on Google Maps and search results — Google Business Profile optimization, local citations, and more."
+      canonicalPath="/services/seo"
+      jsonLd={SEO_JSON_LD}
+    />
     <div className="pt-32 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full">
       {/* Ambient Orbs */}
       <div className="absolute top-20 right-[-10%] w-[45vw] h-[45vw] bg-[#FF2E9A]/15 rounded-full blur-[140px] pointer-events-none" />
@@ -103,6 +137,7 @@ const SEOPage = () => {
         <FAQ />
       </div>
     </div>
+    </>
   );
 };
 
