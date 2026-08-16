@@ -3,9 +3,43 @@ import { Layout, Globe, Code, Zap, Check, ArrowRight, Sparkles, Smartphone, Laye
 import { Link } from 'react-router-dom';
 import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
+import PageSEO from '../components/PageSEO';
+
+const WEBDESIGN_JSON_LD = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Website Design & Development',
+    provider: {
+      '@type': 'Organization',
+      name: 'My DP Digital',
+      url: 'https://www.mydpdigital.in',
+      telephone: '+91-81483-20217',
+    },
+    areaServed: 'Chennai, Tamil Nadu, India',
+    description:
+      'Custom, fast, SEO-ready website design for clinics, doctors, and growing businesses in Chennai, built with modern frameworks to convert visitors into customers.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mydpdigital.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.mydpdigital.in/services' },
+      { '@type': 'ListItem', position: 3, name: 'Web Design & Development', item: 'https://www.mydpdigital.in/services/web-design-development' },
+    ],
+  },
+];
 
 const WebDesignPage = () => {
   return (
+    <>
+    <PageSEO
+      title="Clinic & Business Website Design Company | Chennai"
+      description="Custom, fast, SEO-ready websites for clinics, doctors, and growing businesses in Chennai — built to convert visitors into patients and customers."
+      canonicalPath="/services/web-design-development"
+      jsonLd={WEBDESIGN_JSON_LD}
+    />
     <div className="pt-32 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full">
       <div className="absolute top-20 right-[-10%] w-[45vw] h-[45vw] bg-[#FF2E9A]/15 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-20 left-[-10%] w-[35vw] h-[35vw] bg-[#B026FF]/15 rounded-full blur-[120px] pointer-events-none" />
@@ -102,6 +136,7 @@ const WebDesignPage = () => {
         <FAQ />
       </div>
     </div>
+    </>
   );
 };
 

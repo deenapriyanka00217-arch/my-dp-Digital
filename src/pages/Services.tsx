@@ -20,6 +20,7 @@ import {
 import { Link } from 'react-router-dom';
 import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
+import PageSEO from '../components/PageSEO';
 
 const ALL_SERVICES = [
   {
@@ -243,8 +244,40 @@ const ALL_SERVICES = [
   }
 ];
 
+const SERVICES_JSON_LD = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Digital Marketing Packages',
+    provider: {
+      '@type': 'Organization',
+      name: 'My DP Digital',
+      url: 'https://www.mydpdigital.in',
+      telephone: '+91-81483-20217',
+    },
+    areaServed: 'Chennai, Tamil Nadu, India',
+    description:
+      'Digital marketing, website design, SEO, and Google Ads packages for small and mid-sized businesses in Chennai, with pricing built for real budgets.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mydpdigital.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.mydpdigital.in/services' },
+    ],
+  },
+];
+
 const ServicesPage = () => {
   return (
+    <>
+    <PageSEO
+      title="Digital Marketing Packages for Small Business | Chennai"
+      description="Affordable digital marketing packages for small businesses in Chennai — SEO, Google Ads, and website design pricing. Explore services and get a free quote today."
+      canonicalPath="/services"
+      jsonLd={SERVICES_JSON_LD}
+    />
     <div className="pt-32 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full">
       {/* Ambient Blurred Colored Glows */}
       <div className="absolute top-[5%] left-[-10%] w-[45vw] h-[45vw] bg-[#FF2E9A]/15 rounded-full blur-[140px] pointer-events-none" />
@@ -468,6 +501,7 @@ const ServicesPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
