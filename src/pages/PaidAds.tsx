@@ -3,9 +3,43 @@ import { Target, Zap, TrendingUp, BarChart3, Globe, Check, ArrowRight, Sparkles,
 import { Link } from 'react-router-dom';
 import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
+import PageSEO from '../components/PageSEO';
+
+const PAIDADS_JSON_LD = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Social Media & Paid Ads Marketing',
+    provider: {
+      '@type': 'Organization',
+      name: 'My DP Digital',
+      url: 'https://www.mydpdigital.in',
+      telephone: '+91-81483-20217',
+    },
+    areaServed: 'Chennai, Tamil Nadu, India',
+    description:
+      'Social media marketing and paid ads management for businesses in Chennai, covering Google Ads, Meta Ads, and full-funnel paid acquisition.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mydpdigital.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.mydpdigital.in/services' },
+      { '@type': 'ListItem', position: 3, name: 'Paid & Social Ads', item: 'https://www.mydpdigital.in/services/paid-social-ads' },
+    ],
+  },
+];
 
 const PaidAdsPage = () => {
   return (
+    <>
+    <PageSEO
+      title="Social Media Marketing Agency in Chennai | My DP Digital"
+      description="Social media marketing agency in Chennai driving real engagement and ROI — Google & Facebook Ads managed by data-driven paid media specialists."
+      canonicalPath="/services/paid-social-ads"
+      jsonLd={PAIDADS_JSON_LD}
+    />
     <div className="pt-32 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full">
       <div className="absolute top-20 right-[-10%] w-[45vw] h-[45vw] bg-[#FF2E9A]/15 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-20 left-[-10%] w-[35vw] h-[35vw] bg-[#B026FF]/15 rounded-full blur-[120px] pointer-events-none" />
@@ -119,6 +153,7 @@ const PaidAdsPage = () => {
         <FAQ />
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,9 +3,43 @@ import { Sparkles, ArrowRight, Check, BookOpen, PenTool, Layout, Palette, Messag
 import { Link } from 'react-router-dom';
 import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
+import PageSEO from '../components/PageSEO';
+
+const CONTENTBRANDING_JSON_LD = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Graphic Design & Content Writing',
+    provider: {
+      '@type': 'Organization',
+      name: 'My DP Digital',
+      url: 'https://www.mydpdigital.in',
+      telephone: '+91-81483-20217',
+    },
+    areaServed: 'Chennai, Tamil Nadu, India',
+    description:
+      'Graphic design and content writing services in Chennai, covering brand identity, SEO copywriting, and visual design for growing businesses.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mydpdigital.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.mydpdigital.in/services' },
+      { '@type': 'ListItem', position: 3, name: 'Content & Branding', item: 'https://www.mydpdigital.in/services/content-marketing-branding' },
+    ],
+  },
+];
 
 const ContentBrandingPage = () => {
   return (
+    <>
+    <PageSEO
+      title="Graphic Design & Content Writing Services in Chennai"
+      description="Graphic design and content writing services in Chennai — branding, SEO copywriting, and visual design that builds authority and drives traffic."
+      canonicalPath="/services/content-marketing-branding"
+      jsonLd={CONTENTBRANDING_JSON_LD}
+    />
     <div className="pt-32 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full">
       <div className="absolute top-20 right-[-10%] w-[45vw] h-[45vw] bg-[#FF2E9A]/15 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-20 left-[-10%] w-[35vw] h-[35vw] bg-[#B026FF]/15 rounded-full blur-[120px] pointer-events-none" />
@@ -102,6 +136,7 @@ const ContentBrandingPage = () => {
         <FAQ />
       </div>
     </div>
+    </>
   );
 };
 
