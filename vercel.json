@@ -1,6 +1,26 @@
 {
+  "redirects": [
+    { "source": "/facebook-ads", "destination": "/services/facebook-ads", "permanent": true },
+    { "source": "/meta-ads", "destination": "/services/facebook-ads", "permanent": true },
+    { "source": "/services/wordpress-development", "destination": "/wordpress-development", "permanent": true },
+    { "source": "/wordpress", "destination": "/wordpress-development", "permanent": true },
+    { "source": "/services/youtube-editing-management", "destination": "/youtube-management", "permanent": true },
+    { "source": "/youtube", "destination": "/youtube-management", "permanent": true },
+    { "source": "/digital-marketing-agency-tambaram", "destination": "/tambaram", "permanent": true },
+    { "source": "/portfolio", "destination": "/our-works", "permanent": true }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
   "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    },
     {
       "source": "/assets/(.*)",
       "headers": [
