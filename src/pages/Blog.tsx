@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Calendar,
@@ -31,8 +32,8 @@ import {
   Eye
 } from 'lucide-react';
 import { subscribeNewsletter } from '../lib/services';
-import { useCms } from '../context/CmsContext';
 import PageSEO from '../components/PageSEO';
+import { BLOG_POSTS as STATIC_BLOG_POSTS } from '../data/blogPosts';
 
 const BLOG_JSON_LD = [
   {
@@ -111,31 +112,26 @@ const ARCHIVE_MONTHS = [
 ];
 
 export const BlogPage: React.FC = () => {
-  const { content } = useCms();
+  // Real, static post content — committed to the repo so every visitor and
+  // every search engine sees the exact same thing (see src/data/blogPosts.ts).
+  const BLOG_POSTS: BlogPost[] = STATIC_BLOG_POSTS;
 
-  const BLOG_POSTS: BlogPost[] = content.blogPosts.map((p, idx) => ({
-    id: p.id,
-    title: p.title,
-    slug: p.id,
-    excerpt: p.excerpt,
-    content: [p.content],
-    date: p.date,
-    author: {
-      name: 'Priyanka D.',
-      role: 'Principal Growth Architect',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80',
-    },
-    category: p.category || 'Web Design & Funnels',
-    readingTime: p.readTime,
-    commentsCount: 12 + idx,
-    tags: ['WordPress', 'MetaAds', 'Growth', 'SEO'],
-    isSticky: idx === 0,
-    featuredImgColor: idx % 2 === 0 ? 'from-[#FF2E9A] to-[#B026FF]' : 'from-[#06B6D4] to-[#25D366]',
-    imageUrl: p.imageUrl,
-  }));
-  
-  // Single Post Page View State (WordPress style)
-  const [singlePostView, setSinglePostView] = useState<BlogPost | null>(null);
+  // Single Post Page View, driven by the URL (/blog/:slug) rather than
+  // component state — this is what makes each article its own real,
+  // shareable, crawlable page instead of a client-side-only popup.
+  const { slug } = useParams<{ slug?: string }>();
+  const navigate = useNavigate();
+  const singlePostView: BlogPost | null = slug
+    ? BLOG_POSTS.find((p) => p.slug === slug) || null
+    : null;
+  const openPost = (post: BlogPost) => {
+    navigate(`/blog/${post.slug}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  const closePost = () => {
+    navigate('/blog');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   const [activePostReader, setActivePostReader] = useState<BlogPost | null>(null);
   const [copiedUrl, setCopiedUrl] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string>('All Categories');
@@ -226,12 +222,54 @@ export const BlogPage: React.FC = () => {
 
   return (
     <>
-    <PageSEO
-      title="Digital Marketing Blog & Insights | My DP Digital"
-      description="Digital marketing insights, SEO tips, and web design trends — practical advice on Google Ads, agencies, and growing your business online."
-      canonicalPath="/blog"
-      jsonLd={BLOG_JSON_LD}
-    />
+    {singlePostView ? (
+      <PageSEO
+        title={`${singlePostView.title} | My DP Digital Blog`}
+        description={singlePostView.excerpt}
+        canonicalPath={`/blog/${singlePostView.slug}`}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: singlePostView.title,
+            description: singlePostView.excerpt,
+            image: singlePostView.imageUrl
+              ? `https://www.mydpdigital.in${singlePostView.imageUrl}`
+              : undefined,
+            author: { '@type': 'Person', name: singlePostView.author.name },
+            publisher: {
+              '@type': 'Organization',
+              name: 'My DP Digital',
+              url: 'https://www.mydpdigital.in',
+            },
+            datePublished: singlePostView.date,
+            dateModified: singlePostView.date,
+            mainEntityOfPage: `https://www.mydpdigital.in/blog/${singlePostView.slug}`,
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.mydpdigital.in/' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.mydpdigital.in/blog' },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: singlePostView.title,
+                item: `https://www.mydpdigital.in/blog/${singlePostView.slug}`,
+              },
+            ],
+          },
+        ]}
+      />
+    ) : (
+      <PageSEO
+        title="Digital Marketing Blog & Insights | My DP Digital"
+        description="Digital marketing insights, SEO tips, and web design trends — practical advice on Google Ads, agencies, and growing your business online."
+        canonicalPath="/blog"
+        jsonLd={BLOG_JSON_LD}
+      />
+    )}
     <div className="pt-28 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full font-sans">
       {/* Background ambient lighting */}
       <div className="absolute top-10 left-[-10%] w-[45vw] h-[45vw] bg-[#FF2E9A]/10 rounded-full blur-[140px] pointer-events-none" />
@@ -245,7 +283,7 @@ export const BlogPage: React.FC = () => {
           <div className="flex flex-wrap items-center gap-2 text-xs text-white/50 mb-4 font-mono">
             <button
               onClick={() => {
-                setSinglePostView(null);
+                closePost();
                 setSelectedCategory('All Categories');
                 setSelectedTag(null);
               }}
@@ -255,7 +293,7 @@ export const BlogPage: React.FC = () => {
             </button>
             <ChevronRight size={12} />
             <button
-              onClick={() => setSinglePostView(null)}
+              onClick={() => closePost()}
               className="hover:text-white transition-colors cursor-pointer text-[#FF7AC6]"
             >
               Journal & Publications
@@ -312,7 +350,7 @@ export const BlogPage: React.FC = () => {
             <div className="flex items-center gap-3 bg-white/[0.04] border border-white/10 p-3 rounded-2xl backdrop-blur-xl shrink-0">
               {singlePostView ? (
                 <button
-                  onClick={() => setSinglePostView(null)}
+                  onClick={() => closePost()}
                   className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#FF2E9A] to-[#B026FF] text-white text-xs font-bold flex items-center gap-2 shadow-md cursor-pointer hover:scale-105 transition-transform"
                 >
                   <ArrowLeft size={14} />
@@ -357,7 +395,7 @@ export const BlogPage: React.FC = () => {
                 {/* Back to Blog Stream Link */}
                 <div className="flex items-center justify-between pb-2 border-b border-white/10">
                   <button
-                    onClick={() => setSinglePostView(null)}
+                    onClick={() => closePost()}
                     className="inline-flex items-center gap-2 text-xs font-bold text-[#FF7AC6] hover:text-white transition-colors cursor-pointer group"
                   >
                     <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
@@ -393,7 +431,7 @@ export const BlogPage: React.FC = () => {
                       <button
                         onClick={() => {
                           setSelectedCategory(singlePostView.category);
-                          setSinglePostView(null);
+                          closePost();
                         }}
                         className="px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-[#FF7AC6] text-[11px] font-bold uppercase tracking-wider transition-colors cursor-pointer"
                       >
@@ -525,7 +563,7 @@ export const BlogPage: React.FC = () => {
                         key={t}
                         onClick={() => {
                           setSelectedTag(t);
-                          setSinglePostView(null);
+                          closePost();
                         }}
                         className="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-[#25D366] hover:text-black text-white text-xs font-semibold transition-all cursor-pointer"
                       >
@@ -572,7 +610,7 @@ export const BlogPage: React.FC = () => {
                       onClick={() => {
                         const currIdx = BLOG_POSTS.findIndex((p) => p.id === singlePostView.id);
                         const prevPost = BLOG_POSTS[(currIdx - 1 + BLOG_POSTS.length) % BLOG_POSTS.length];
-                        setSinglePostView(prevPost);
+                        openPost(prevPost);
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
                       className="p-4 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-left transition-colors cursor-pointer group"
@@ -590,7 +628,7 @@ export const BlogPage: React.FC = () => {
                       onClick={() => {
                         const currIdx = BLOG_POSTS.findIndex((p) => p.id === singlePostView.id);
                         const nextPost = BLOG_POSTS[(currIdx + 1) % BLOG_POSTS.length];
-                        setSinglePostView(nextPost);
+                        openPost(nextPost);
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
                       className="p-4 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-right transition-colors cursor-pointer group"
@@ -718,7 +756,7 @@ export const BlogPage: React.FC = () => {
                       <div
                         key={rel.id}
                         onClick={() => {
-                          setSinglePostView(rel);
+                          openPost(rel);
                           window.scrollTo({ top: 0, behavior: 'smooth' });
                         }}
                         className="p-5 rounded-2xl bg-white/[0.035] hover:bg-white/[0.07] border border-white/10 transition-all cursor-pointer group flex flex-col justify-between"
@@ -831,7 +869,7 @@ export const BlogPage: React.FC = () => {
 
                                 <span>•</span>
                                 <button
-                                  onClick={() => setSinglePostView(post)}
+                                  onClick={() => openPost(post)}
                                   className="flex items-center gap-1.5 hover:text-[#25D366] transition-colors cursor-pointer"
                                 >
                                   <MessageSquare size={13} className="text-[#25D366]" /> {totalComments} Comments
@@ -840,7 +878,7 @@ export const BlogPage: React.FC = () => {
 
                               {/* Post Title */}
                               <h2
-                                onClick={() => setSinglePostView(post)}
+                                onClick={() => openPost(post)}
                                 className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-snug cursor-pointer group-hover:text-[#FF7AC6] transition-colors"
                               >
                                 {post.title}
@@ -851,7 +889,7 @@ export const BlogPage: React.FC = () => {
                             {post.imageUrl ? (
                               <div 
                                 className="w-full h-48 sm:h-64 rounded-2xl overflow-hidden shadow-inner border border-white/10 cursor-pointer group"
-                                onClick={() => setSinglePostView(post)}
+                                onClick={() => openPost(post)}
                               >
                                 <img 
                                   src={post.imageUrl} 
@@ -863,7 +901,7 @@ export const BlogPage: React.FC = () => {
                             ) : (
                               <div
                                 className={`w-full h-24 sm:h-28 rounded-2xl bg-gradient-to-r ${post.featuredImgColor} p-5 flex items-center justify-between text-white relative overflow-hidden shadow-inner cursor-pointer`}
-                                onClick={() => setSinglePostView(post)}
+                                onClick={() => openPost(post)}
                               >
                                 <div className="relative z-10 max-w-md">
                                   <div className="text-[10px] font-bold uppercase tracking-wider text-white/80">
@@ -926,7 +964,7 @@ export const BlogPage: React.FC = () => {
                                 </button>
                                 <button
                                   onClick={() => {
-                                    setSinglePostView(post);
+                                    openPost(post);
                                     window.scrollTo({ top: 0, behavior: 'smooth' });
                                   }}
                                   className="bg-gradient-to-r from-[#FF2E9A] to-[#B026FF] hover:from-[#FF7AC6] hover:to-[#FF2E9A] text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-1.5 shadow-lg shadow-[#FF2E9A]/20 transition-all cursor-pointer"
@@ -1071,7 +1109,7 @@ export const BlogPage: React.FC = () => {
                         onClick={() => {
                           setSelectedCategory(cat);
                           setSelectedTag(null);
-                          setSinglePostView(null);
+                          closePost();
                         }}
                         className={`w-full py-2 px-3 rounded-xl text-xs text-left flex items-center justify-between transition-all cursor-pointer ${
                           isCurrent
@@ -1102,7 +1140,7 @@ export const BlogPage: React.FC = () => {
                   <div
                     key={post.id}
                     onClick={() => {
-                      setSinglePostView(post);
+                      openPost(post);
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
                     className="flex gap-3 items-start p-2 rounded-xl hover:bg-white/[0.05] transition-colors cursor-pointer group"
@@ -1136,7 +1174,7 @@ export const BlogPage: React.FC = () => {
                       key={tag}
                       onClick={() => {
                         setSelectedTag(isSelected ? null : tag);
-                        setSinglePostView(null);
+                        closePost();
                       }}
                       className={`text-[11px] px-3 py-1.5 rounded-lg font-semibold transition-all cursor-pointer ${
                         isSelected
@@ -1163,7 +1201,7 @@ export const BlogPage: React.FC = () => {
                   <li
                     key={arch.month}
                     onClick={() => {
-                      setSinglePostView(null);
+                      closePost();
                     }}
                     className="flex items-center justify-between py-1.5 px-2 hover:bg-white/[0.05] rounded-lg transition-colors cursor-pointer"
                   >
@@ -1313,7 +1351,7 @@ export const BlogPage: React.FC = () => {
                     onClick={() => {
                       const post = activePostReader;
                       setActivePostReader(null);
-                      setSinglePostView(post);
+                      openPost(post);
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
                     className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#FF2E9A] to-[#B026FF] text-white text-xs font-bold flex items-center justify-center gap-2 cursor-pointer"
