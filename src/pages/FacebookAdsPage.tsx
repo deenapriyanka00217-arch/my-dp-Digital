@@ -667,6 +667,23 @@ export const FacebookAdsPage: React.FC = () => {
         </section>
 
         {/* ========================================================================= */}
+        {/* QUICK ANSWER: GOOGLE ADS AGENCY IN CHENNAI */}
+        {/* ========================================================================= */}
+        <section className="w-full max-w-3xl mx-auto">
+          <div className="p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+              Looking for a Google Ads agency near you in Chennai?
+            </h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              Alongside Meta/Facebook Ads, My DP Digital also manages Google Ads (Search, Shopping, and
+              Performance Max) for businesses in Chennai — built around the same PPC management and ROAS-focused
+              approach as our Facebook campaigns. Message us on WhatsApp with your monthly budget and we'll map
+              out a Google Ads plan alongside your Facebook strategy.
+            </p>
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
         {/* FAQ SECTION */}
         {/* ========================================================================= */}
         <FAQ />
