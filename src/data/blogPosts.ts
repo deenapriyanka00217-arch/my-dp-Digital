@@ -37,6 +37,48 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'clinic-website-design-chennai-what-every-doctor-needs',
+    slug: 'clinic-website-design-chennai-what-every-doctor-needs',
+    title: 'Clinic Website Design in Chennai: What Every Doctor or Diagnostic Center Needs',
+    excerpt:
+      "Most clinic websites in Chennai are built like brochures, not tools patients actually use. Here's what a doctor, dental clinic, or diagnostic center actually needs on their website — and what to skip.",
+    date: 'August 18, 2026',
+    author: {
+      name: 'Priyanka D.',
+      role: 'Founder, My DP Digital',
+      avatar:
+        'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80',
+    },
+    category: 'Web Design',
+    readingTime: '6 min read',
+    commentsCount: 0,
+    tags: ['Healthcare', 'WebDesign', 'Chennai', 'LocalBusiness'],
+    isSticky: true,
+    featuredImgColor: 'from-[#25D366] to-[#06B6D4]',
+    imageUrl: '/blog-images/clinic-website-design-chennai-2026.png',
+    content: [
+      "Search for almost any clinic in Chennai and you'll find the same pattern: a homepage with a stock photo of a stethoscope, a long list of services with no real detail, and a phone number buried at the bottom. Meanwhile the patient looking at that page is usually in a hurry — they want to know if you treat their specific problem, whether you're open right now, and how fast they can get an appointment. A clinic website's job isn't to look impressive. It's to answer those three questions in under ten seconds.",
+      '### Start With How Patients Actually Search',
+      'Very few people search "best clinic in Chennai." Most searches are specific: a condition ("skin allergy treatment Tambaram"), a service ("root canal cost near me"), or a need ("pediatrician open now"). If your website\'s content only talks about the clinic in general terms, you\'re invisible for the searches that actually bring in patients. Each major service or specialty deserves its own page with real detail — what it treats, how the visit works, and what to expect — not just a one-line mention on a shared "Services" page.',
+      '### Make Booking Actually Easy',
+      'A "Contact Us" page with just a phone number is friction. Most people would rather send a WhatsApp message or fill a two-field form than make a call, especially outside clinic hours. A booking button that opens WhatsApp with a pre-filled message, or a simple appointment request form that doesn\'t ask for ten fields, removes a lot of the drop-off between "interested" and "booked."',
+      '### Show Location, Hours, and How to Reach You — Clearly',
+      "This sounds basic, but it's one of the most common gaps. An embedded Google Map, current opening hours (including whether you're open on Sundays or during lunch), parking notes if relevant, and a direct link to Google directions all belong on the homepage or a one-click-away page — not buried in a footer.",
+      '### Build Trust With Real Information, Not Just Claims',
+      '"Best doctors in Chennai" as a headline convinces no one. What actually builds trust: the doctor\'s real qualifications and registration details, how long the clinic has been operating, what equipment or lab partnerships you have, and clear information about hygiene and safety practices. Patients researching a clinic are often anxious; specific, verifiable information does more than generic praise.',
+      '### Connect Your Google Business Profile Properly',
+      "A huge share of local healthcare searches happen directly on Google Maps and Google's local pack, not on your website at all. If your Google Business Profile has the wrong hours, an old phone number, or no photos, you're losing patients before they even reach your site. Your website and your Google Business Profile should always show the same hours, phone number, and address.",
+      '### Respect Patient Privacy in How the Site Is Built',
+      "Any contact or booking form should have a clear, simple privacy note — what happens to the information a patient submits, and that it isn't shared with third parties. This matters more for healthcare than almost any other type of business, and it's a small addition that meaningfully increases trust.",
+      '### Keep It Fast and Mobile-First',
+      "Most patients are searching from their phone, often while dealing with pain or discomfort, not sitting comfortably browsing. A slow-loading site or one that requires pinch-zooming to read text will lose them before they see anything else. Page speed and mobile layout aren't optional extras for a clinic website — they're the baseline.",
+      '- Does every major service or specialty have its own detailed page, not just a shared list?\n- Can a patient book or message you in under 30 seconds, without a phone call?\n- Is your location, current hours, and directions visible without hunting?\n- Do you show real qualifications and registration details, not just generic claims?\n- Do your website and Google Business Profile show matching hours and contact info?\n- Is there a clear, simple privacy note on any form that collects patient information?\n- Does the site load quickly and work cleanly on a phone?',
+      '### What My DP Digital Does Differently',
+      "We build clinic and healthcare websites for Chennai-based doctors, dental practices, and diagnostic centers with the patient's actual search behavior in mind — individual service pages, WhatsApp-first booking, and Google Business Profile setup done properly, not as an afterthought. As with every website we build, you own the domain, hosting, and code from day one.",
+      "If you run a clinic or diagnostic center and want a second opinion on your current website, you can reach us at +91 81483 20217 or deenapriyanka00217@gmail.com.",
+    ],
+  },
+  {
     id: 'best-digital-marketing-agency-tambaram-how-to-choose',
     slug: 'best-digital-marketing-agency-tambaram-how-to-choose',
     title: 'Best Digital Marketing Agency in Tambaram: How to Choose (2026 Checklist)',
@@ -53,7 +95,6 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: '7 min read',
     commentsCount: 0,
     tags: ['SEO', 'Tambaram', 'DigitalMarketing', 'LocalBusiness'],
-    isSticky: true,
     featuredImgColor: 'from-[#FF2E9A] to-[#B026FF]',
     imageUrl: '/blog-images/tambaram-agency-checklist-2026.png',
     content: [
