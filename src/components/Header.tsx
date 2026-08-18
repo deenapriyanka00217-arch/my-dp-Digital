@@ -60,6 +60,7 @@ export const Header = () => {
     { name: 'WordPress', path: '/wordpress-development', icon: Globe },
     { name: 'YouTube', path: '/youtube-management', icon: Youtube },
     { name: 'Our Works', path: '/our-works', icon: FolderGit2 },
+    { name: 'Blog', path: '/blog', icon: BookOpen },
     { name: 'About', path: '/about', icon: Users },
     { name: 'Contact', path: '/contact', icon: Mail },
   ];
