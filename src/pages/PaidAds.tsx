@@ -150,6 +150,19 @@ const PaidAdsPage = () => {
           </div>
         </div>
 
+        {/* ================= QUICK ANSWER: GOOGLE ADS AGENCY IN CHENNAI ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Searching for a Google Ads agency near you in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            My DP Digital runs Google PPC — Search, Shopping, and YouTube campaigns — for businesses across
+            Chennai, alongside Meta/Facebook Ads, as part of one full-funnel paid acquisition plan. Message us on
+            WhatsApp with your monthly budget and we'll map out a Google Ads plan built around smart-bidding and
+            weekly performance reallocation.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>
