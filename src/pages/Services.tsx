@@ -87,7 +87,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹55,000',
     color: '#FF2E9A', // Neon Pink
     icon: Layers,
-    description: 'Massive, content-rich corporate infrastructures with specialized silos, programmatic sub-pages, dynamic filters, and extensive technical SEO architecture.',
+    description: 'Massive, content-rich corporate infrastructures for growing companies across India, with specialized silos, programmatic sub-pages, dynamic filters, and extensive technical SEO architecture.',
     deliverables: [
       '20+ Custom Coded Layouts',
       'Deep Programmatic Keyword Silos',
@@ -141,7 +141,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹45,000',
     color: '#A855F7', // Amethyst Purple
     icon: GraduationCap,
-    description: 'Complete student learning environments featuring locked curriculum modules, video DRM protection, quiz engines, student dashboards, and automated certificates.',
+    description: 'Complete student learning environments for coaching institutes and academies across India — featuring locked curriculum modules, video DRM protection, quiz engines, student dashboards, and automated certificates.',
     deliverables: [
       'Student Dashboard & Progress Tracker',
       'Secure DRM-Protected Video Player',
@@ -227,13 +227,13 @@ const ALL_SERVICES = [
   {
     id: 'content-branding',
     title: 'Content Marketing & Brand Authority',
-    category: 'Brand Identity & Strategy',
+    category: 'Chennai Digital Branding Agency',
     tag: 'Authority Engine',
     timeline: 'Ongoing Sprints',
     priceGuide: 'From ₹15,000/mo',
     color: '#FF7AC6', // Flamingo Pink
     icon: BookOpen,
-    description: 'Authoritative technical copywriting, visual brand identity guidelines, thought-leadership blogs, and social content systems that convert readers to advocates.',
+    description: 'A Chennai-based digital branding agency handling authoritative technical copywriting, visual brand identity guidelines, thought-leadership blogs, and social content systems that convert readers to advocates.',
     deliverables: [
       'Brand Visual Design Systems',
       'SEO-Optimized Long-Form Articles',
@@ -241,6 +241,24 @@ const ALL_SERVICES = [
       'Buyer Persona Voice & Messaging Matrix'
     ],
     examples: 'Over 100+ High-Ranking Longform Strategy Playbooks'
+  },
+  {
+    id: 'ai-chatbots-voice',
+    title: 'AI Chatbots & Voice Agents',
+    category: 'Automated Lead Response & Support',
+    tag: 'AI-Powered',
+    timeline: '7 - 12 Days',
+    priceGuide: 'From ₹20,000',
+    color: '#06B6D4', // Cyan
+    icon: MessageCircle,
+    description: 'WhatsApp and website AI chatbots, plus voice agents, trained on your services, pricing, and FAQs — answering common questions instantly, qualifying leads around the clock, and handing off to your team only when a real conversation is needed.',
+    deliverables: [
+      'WhatsApp AI Chatbot Setup & Training',
+      'Website Chat Widget / Voice Agent',
+      '24/7 Automated Lead Qualification',
+      'Human Handoff for Complex Queries'
+    ],
+    examples: 'Trained on your real services, pricing, and FAQs'
   }
 ];
 
