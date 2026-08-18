@@ -80,6 +80,18 @@ const faqs = [
     question: 'Do you serve businesses near Tambaram, Chennai as well as within it?',
     answer: 'Yes. As a digital marketing agency near Tambaram, Chennai, we also serve Chromepet, Selaiyur, Pallavaram, and the wider South Chennai belt.',
   },
+  {
+    question: 'How much does digital marketing cost for a small business in Tambaram?',
+    answer: `Costs depend on which services you need — SEO, ads, or a website — and your monthly budget. We build flexible packages sized for local Tambaram businesses rather than one fixed retainer for everyone. Call ${DISPLAY_PHONE} and we'll give you a straightforward quote based on your actual goals.`,
+  },
+  {
+    question: 'How soon can a Tambaram business start seeing results?',
+    answer: 'It depends on the service. Google Ads can bring in leads within days of launch. SEO and organic Google Business Profile growth for Tambaram searches typically take a few months to build momentum, since that is how search engines work — we will be upfront with you about realistic timelines for your specific business.',
+  },
+  {
+    question: 'Do I need to visit an office, or can everything be handled remotely for a Tambaram business?',
+    answer: `Everything can be handled over phone, WhatsApp, and email — you do not need to visit an office. We share drafts, reports, and updates directly with you at ${DISPLAY_PHONE} so you always know what's happening with your account.`,
+  },
 ];
 
 const TambaramPage: React.FC = () => {
@@ -227,6 +239,21 @@ const TambaramPage: React.FC = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+
+      {/* Digital Marketing Services Near Tambaram — Neighboring Areas */}
+      <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
+        <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-8 sm:p-10 lg:p-12">
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-4">
+            Digital Marketing Services Near Tambaram
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-3xl">
+            Based in Tambaram, we also work with businesses across the wider South Chennai belt — including
+            Chromepet, Selaiyur, and Pallavaram — who want a digital marketing team they can reach directly by
+            phone rather than a call centre. Whichever of these areas your business is in, the same direct
+            SEO, Google Ads, website design, and branding support applies.
+          </p>
         </div>
       </div>
 

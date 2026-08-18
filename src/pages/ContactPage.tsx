@@ -53,6 +53,9 @@ const ContactPage = () => {
           <p className="text-xs sm:text-sm text-white/70 font-normal">
             Choose your required service, share your details, and get an instant quotation and project roadmap.
           </p>
+          <p className="text-[11px] sm:text-xs text-white/50 font-normal">
+            Serving Tambaram, Chennai &amp; nearby areas.
+          </p>
         </div>
 
         {/* 2-Column Responsive Layout for Laptop and Desktop */}

@@ -5,6 +5,19 @@ import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
 import PageSEO from '../components/PageSEO';
 
+const webDesignExamples = [
+  {
+    title: 'Sparkling Purity',
+    url: 'https://sparklingpurity.in/',
+    caption: 'A single-page lead-generation site for a water purification business — built for fast quote requests and mobile-first browsing.',
+  },
+  {
+    title: 'Chennai Visa Services',
+    url: 'https://chennaivisaservices.in/',
+    caption: 'A multi-page business website for a visa consultancy, structured around clear service pages and easy inquiry forms.',
+  },
+];
+
 const WEBDESIGN_JSON_LD = [
   {
     '@context': 'https://schema.org',
@@ -131,6 +144,35 @@ const WebDesignPage = () => {
               </div>
             </Card3DTilt>
           </div>
+        </div>
+
+        {/* Recent Web Design Examples */}
+        <div className="mb-32">
+          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight mb-8">
+            Recent Website Design Examples
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {webDesignExamples.map((example, idx) => (
+              <a
+                key={idx}
+                href={example.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-6 rounded-3xl bg-white/[0.035] backdrop-blur-xl border border-white/10 hover:border-white/25 transition-all block space-y-2"
+              >
+                <div className="text-base font-black text-white">{example.title}</div>
+                <div className="text-[11px] text-[#06B6D4] font-mono break-all">{example.url}</div>
+                <p className="text-xs text-white/60 leading-relaxed font-normal">{example.caption}</p>
+              </a>
+            ))}
+          </div>
+          <Link
+            to="/our-works"
+            className="inline-flex items-center gap-2 mt-6 text-xs font-bold text-[#FF7AC6] hover:underline"
+          >
+            <span>See all live client work</span>
+            <ArrowRight size={14} />
+          </Link>
         </div>
 
         <FAQ />

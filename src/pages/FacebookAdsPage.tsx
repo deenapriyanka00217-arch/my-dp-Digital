@@ -365,6 +365,12 @@ export const FacebookAdsPage: React.FC = () => {
                 <span>Meta & Facebook Product Sales Ads Agency</span>
               </div>
 
+              {/* Short intro paragraph for on-page SEO */}
+              <p className="text-xs sm:text-sm text-white/60 leading-relaxed font-normal max-w-xl">
+                My DP Digital is a Facebook Ads agency in Chennai helping e-commerce, D2C, and retail businesses
+                turn paid social traffic into real product sales, with campaigns managed directly by our team.
+              </p>
+
               {/* Main Display Headline with 3D Neon Facebook Logo */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                 <Facebook3DNeonLoop size={52} className="shrink-0" />

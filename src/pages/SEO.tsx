@@ -134,6 +134,17 @@ const SEOPage = () => {
           </div>
         </div>
 
+        {/* Quick SEO Timeline FAQ */}
+        <div className="mb-16 max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">How long does SEO take to rank?</h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Most Chennai businesses start seeing meaningful ranking movement within 60–90 days of technical fixes
+            and content work beginning, with stronger, more stable gains building over 4–6 months. Highly
+            competitive keywords can take longer, while local, lower-competition terms often move faster —
+            we'll give you a realistic timeline for your specific keywords before you commit to anything.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>

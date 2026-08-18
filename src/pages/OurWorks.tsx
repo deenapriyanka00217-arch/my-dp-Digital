@@ -400,6 +400,13 @@ export const OurWorksPage: React.FC = () => {
           </div>
         )}
 
+        {/* Upcoming Case Study Placeholder */}
+        <div className="mt-14 p-6 sm:p-8 rounded-3xl border border-dashed border-white/15 bg-white/[0.02] text-center">
+          <p className="text-xs sm:text-sm text-white/50">
+            Case study coming soon — we're putting together a detailed write-up of a recent project.
+          </p>
+        </div>
+
         {/* Bottom Banner for High-Speed Website Inquiries */}
         <div className="mt-20 p-8 sm:p-14 rounded-[40px] bg-gradient-to-tr from-[#160B24] via-[#0E0919] to-[#07050C] text-white relative overflow-hidden border border-white/15 shadow-2xl backdrop-blur-2xl">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#FF2E9A]/20 rounded-full blur-[100px] pointer-events-none" />

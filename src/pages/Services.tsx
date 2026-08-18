@@ -310,6 +310,17 @@ const ServicesPage = () => {
           </p>
         </div>
 
+        {/* Affordable Packages Subheading */}
+        <div className="mb-10 max-w-3xl">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            Affordable Digital Marketing Packages in Chennai
+          </h2>
+          <p className="text-xs sm:text-sm text-white/60 mt-2 leading-relaxed">
+            Every service below is available as a flexible, transparently-priced package sized for small and
+            growing Chennai businesses — no bloated enterprise retainers required to get started.
+          </p>
+        </div>
+
         {/* Services Grid with Distinct Color Identities and Glass Blur */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-32">
           {ALL_SERVICES.map((service) => {
