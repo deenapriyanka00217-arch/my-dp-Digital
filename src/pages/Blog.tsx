@@ -362,13 +362,9 @@ export const BlogPage: React.FC = () => {
                     <div className="text-lg font-black text-white">{BLOG_POSTS.length}</div>
                     <div className="text-[10px] text-white/50 font-bold uppercase">Articles</div>
                   </div>
-                  <div className="text-center px-3 border-r border-white/10">
+                  <div className="text-center px-3">
                     <div className="text-lg font-black text-[#25D366]">Weekly</div>
                     <div className="text-[10px] text-white/50 font-bold uppercase">Frequency</div>
-                  </div>
-                  <div className="text-center px-3">
-                    <div className="text-lg font-black text-[#FF7AC6]">5.8k</div>
-                    <div className="text-[10px] text-white/50 font-bold uppercase">Readers</div>
                   </div>
                 </>
               )}
