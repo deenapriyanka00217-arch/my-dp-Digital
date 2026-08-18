@@ -494,6 +494,21 @@ export const YouTubeManagementPage: React.FC = () => {
         </div>
       </section>
 
+      {/* ================= QUICK ANSWER: YOUTUBE CHANNEL MANAGEMENT COMPANY ================= */}
+      <section className="w-full px-4 sm:px-8 lg:px-12 max-w-[1440px] mx-auto relative z-10 mb-16">
+        <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for a YouTube channel management company in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            My DP Digital works as a full-service YouTube channel management company — handling editing,
+            thumbnails, upload scheduling, and on-page YouTube SEO end-to-end, so creators and brands don't
+            have to juggle freelancers for each piece. Packages start from ₹14,999/month depending on upload
+            frequency and editing complexity; message us on WhatsApp for a free channel audit and quote.
+          </p>
+        </div>
+      </section>
+
       {/* ================= FAQ SECTION ================= */}
       <div className="w-full px-4 sm:px-8 lg:px-12 max-w-[1440px] mx-auto relative z-10">
         <FAQ />
