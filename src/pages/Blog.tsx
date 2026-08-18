@@ -590,7 +590,7 @@ export const BlogPage: React.FC = () => {
                         </span>
                       </div>
                       <p className="text-xs text-white/70 leading-relaxed font-normal">
-                        Senior technical growth strategist at My DP Digital. Specializing in high-performance WebGL frameworks, headless WordPress backends, and WhatsApp sales automation.
+                        Founder of My DP Digital, a Chennai-based digital marketing and web design agency working with local businesses on SEO, Google Ads, websites, and branding.
                       </p>
                       <a
                         href={`https://wa.me/918148320217?text=${encodeURIComponent(`Hi ${singlePostView.author.name}, I loved your article on "${singlePostView.title}". Can we schedule a quick call?`)}`}
@@ -604,44 +604,46 @@ export const BlogPage: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* WordPress Post Navigation (Previous / Next) */}
-                  <div className="grid sm:grid-cols-2 gap-4 pt-4 border-t border-white/10">
-                    <button
-                      onClick={() => {
-                        const currIdx = BLOG_POSTS.findIndex((p) => p.id === singlePostView.id);
-                        const prevPost = BLOG_POSTS[(currIdx - 1 + BLOG_POSTS.length) % BLOG_POSTS.length];
-                        openPost(prevPost);
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                      }}
-                      className="p-4 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-left transition-colors cursor-pointer group"
-                    >
-                      <div className="text-[10px] font-bold uppercase tracking-wider text-white/40 flex items-center gap-1 group-hover:text-[#FF7AC6]">
-                        <ArrowLeft size={12} />
-                        <span>Previous Article</span>
-                      </div>
-                      <div className="text-xs font-bold text-white mt-1 truncate">
-                        {BLOG_POSTS[(BLOG_POSTS.findIndex((p) => p.id === singlePostView.id) - 1 + BLOG_POSTS.length) % BLOG_POSTS.length].title}
-                      </div>
-                    </button>
+                  {/* WordPress Post Navigation (Previous / Next) — only shown once there's more than one post */}
+                  {BLOG_POSTS.length > 1 && (
+                    <div className="grid sm:grid-cols-2 gap-4 pt-4 border-t border-white/10">
+                      <button
+                        onClick={() => {
+                          const currIdx = BLOG_POSTS.findIndex((p) => p.id === singlePostView.id);
+                          const prevPost = BLOG_POSTS[(currIdx - 1 + BLOG_POSTS.length) % BLOG_POSTS.length];
+                          openPost(prevPost);
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }}
+                        className="p-4 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-left transition-colors cursor-pointer group"
+                      >
+                        <div className="text-[10px] font-bold uppercase tracking-wider text-white/40 flex items-center gap-1 group-hover:text-[#FF7AC6]">
+                          <ArrowLeft size={12} />
+                          <span>Previous Article</span>
+                        </div>
+                        <div className="text-xs font-bold text-white mt-1 truncate">
+                          {BLOG_POSTS[(BLOG_POSTS.findIndex((p) => p.id === singlePostView.id) - 1 + BLOG_POSTS.length) % BLOG_POSTS.length].title}
+                        </div>
+                      </button>
 
-                    <button
-                      onClick={() => {
-                        const currIdx = BLOG_POSTS.findIndex((p) => p.id === singlePostView.id);
-                        const nextPost = BLOG_POSTS[(currIdx + 1) % BLOG_POSTS.length];
-                        openPost(nextPost);
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                      }}
-                      className="p-4 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-right transition-colors cursor-pointer group"
-                    >
-                      <div className="text-[10px] font-bold uppercase tracking-wider text-white/40 flex items-center justify-end gap-1 group-hover:text-[#25D366]">
-                        <span>Next Article</span>
-                        <ArrowRight size={12} />
-                      </div>
-                      <div className="text-xs font-bold text-white mt-1 truncate">
-                        {BLOG_POSTS[(BLOG_POSTS.findIndex((p) => p.id === singlePostView.id) + 1) % BLOG_POSTS.length].title}
-                      </div>
-                    </button>
-                  </div>
+                      <button
+                        onClick={() => {
+                          const currIdx = BLOG_POSTS.findIndex((p) => p.id === singlePostView.id);
+                          const nextPost = BLOG_POSTS[(currIdx + 1) % BLOG_POSTS.length];
+                          openPost(nextPost);
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }}
+                        className="p-4 rounded-2xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-right transition-colors cursor-pointer group"
+                      >
+                        <div className="text-[10px] font-bold uppercase tracking-wider text-white/40 flex items-center justify-end gap-1 group-hover:text-[#25D366]">
+                          <span>Next Article</span>
+                          <ArrowRight size={12} />
+                        </div>
+                        <div className="text-xs font-bold text-white mt-1 truncate">
+                          {BLOG_POSTS[(BLOG_POSTS.findIndex((p) => p.id === singlePostView.id) + 1) % BLOG_POSTS.length].title}
+                        </div>
+                      </button>
+                    </div>
+                  )}
 
                   {/* WordPress Comments Section */}
                   <div id="comments" className="space-y-6 pt-6 border-t border-white/10">
@@ -670,21 +672,11 @@ export const BlogPage: React.FC = () => {
                         </div>
                       ))}
 
-                      {/* Default sample comments */}
-                      <div className="p-4 sm:p-5 rounded-2xl bg-white/[0.04] border border-white/10 space-y-2">
-                        <div className="flex items-center justify-between text-xs">
-                          <div className="flex items-center gap-2">
-                            <div className="w-7 h-7 rounded-full bg-[#06B6D4] text-white flex items-center justify-center font-black text-xs">
-                              V
-                            </div>
-                            <span className="font-bold text-white">Venkatesh S.</span>
-                          </div>
-                          <span className="text-white/40 text-[10px]">August 14, 2026</span>
-                        </div>
-                        <p className="text-xs sm:text-sm text-white/80 pl-9 font-normal">
-                          Excellent breakdown of the webhook routing and speed optimization! We implemented similar architecture for our Chennai portal and saw instant results.
+                      {(submittedComments[singlePostView.id] || []).length === 0 && (
+                        <p className="text-xs text-white/40 italic py-2">
+                          No comments yet — be the first to share your thoughts.
                         </p>
-                      </div>
+                      )}
                     </div>
 
                     {/* Classic WordPress "Leave a Reply" Form */}
