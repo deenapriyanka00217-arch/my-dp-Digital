@@ -443,13 +443,15 @@ const ServicesPage = () => {
                         <ArrowRight size={14} />
                       </Link>
                     ) : (
-                      <Link
-                        to="/contact"
-                        className="px-4 py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/15 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-all"
+                      <a
+                        href={`https://wa.me/918148320217?text=${encodeURIComponent(`Hi DP Digital, I would like to get a plan and pricing for ${service.title}.`)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/15 text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-all cursor-pointer"
                       >
                         <span>Get Plan</span>
                         <ArrowRight size={14} />
-                      </Link>
+                      </a>
                     )}
                   </div>
                 </article>
