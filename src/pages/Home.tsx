@@ -169,8 +169,9 @@ const Home = () => {
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
               My DP Digital is based on Anna Salai, Chennai, and works with businesses across the city and the
               wider Tambaram / South Chennai belt — in person where useful, and over WhatsApp and calls for
-              everything else. Message us on WhatsApp with your business and what you need help with, and we'll
-              get back to you directly.
+              everything else. Whether you're searching for a digital marketing agency near you or around me,
+              message us on WhatsApp with your business and what you need help with, and we'll get back to you
+              directly.
             </p>
           </div>
         </div>
