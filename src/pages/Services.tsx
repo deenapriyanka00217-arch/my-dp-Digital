@@ -493,6 +493,42 @@ const ServicesPage = () => {
           </div>
         </div>
 
+        {/* ================= QUICK ANSWER: SMALL BUSINESS PACKAGES ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for digital marketing packages for small business in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We put together SEO, Google Ads, and website design packages sized for small and mid-sized Chennai
+            businesses rather than one-size-fits-all enterprise pricing. Message us on WhatsApp with your budget
+            and what you're trying to grow, and we'll put together pricing packages that actually fit.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: AFFORDABLE MULTI-PAGE WEBSITES ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for affordable website design in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Not every business needs an enterprise build — we also do multi-page business websites at a lower cost
+            for Chennai businesses that need a clean, working site fast rather than a six-figure custom platform.
+            Message us on WhatsApp with your budget and page count and we'll tell you honestly what's realistic.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: DIGITAL MARKETING FOR COACHING CENTERS ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Running a coaching center or institute?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We handle digital marketing for coaching centers and coaching institutes — enrollment-focused websites,
+            local SEO so nearby students find you, and Google/Meta ads targeted at parents and students actively
+            searching for classes. Message us on WhatsApp with your subjects and location and we'll map out a plan.
+          </p>
+        </div>
+
         <FAQ />
 
         {/* Final CTA Banner */}

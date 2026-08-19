@@ -163,6 +163,19 @@ const PaidAdsPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: SOCIAL MEDIA AGENCY CHENNAI ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for a social media agency in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We run paid social media campaigns on Instagram and Facebook for businesses across Chennai — creative
+            production, audience targeting, and retargeting, managed alongside your Google Ads so paid social and
+            search work as one funnel instead of two disconnected budgets. Message us on WhatsApp to talk through
+            what a social media plan would look like for your business.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>

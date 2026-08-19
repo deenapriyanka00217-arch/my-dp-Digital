@@ -158,6 +158,19 @@ const SEOPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: LOCAL SEO SERVICES IN CHENNAI ================= */}
+        <div className="mb-16 max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Comparing local SEO services or local SEO companies in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We work as a local SEO company for businesses across Chennai — not a generic package, but a plan built
+            around your specific industry, competitors, and area. Message us on WhatsApp with your business and
+            we'll audit your current local presence and tell you honestly where you stand before recommending
+            anything.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>

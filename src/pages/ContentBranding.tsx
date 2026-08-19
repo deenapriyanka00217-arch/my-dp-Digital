@@ -133,6 +133,32 @@ const ContentBrandingPage = () => {
           </div>
         </div>
 
+        {/* ================= QUICK ANSWER: CONTENT WRITING SERVICES IN CHENNAI ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for content writing services in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Alongside brand identity and design, My DP Digital offers digital content writing services for
+            businesses across Chennai — SEO-led blog content, website copy, and social content built around
+            keyword research and persona mapping rather than generic filler. Message us on WhatsApp with your
+            industry and content needs and we'll scope out a content plan for you.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: GRAPHIC DESIGN SERVICES IN CHENNAI ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for a graphic design studio or designer in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We handle graphic design as part of our brand identity work — logos, social creatives, print, and
+            marketing collateral for businesses across Chennai, kept consistent with your overall brand system
+            rather than done as one-off freelance pieces. Message us on WhatsApp with what you need designed and
+            we'll get back to you with examples and pricing.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>

@@ -189,6 +189,19 @@ const WebDesignPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: CLINIC & HEALTHCARE WEBSITE DESIGN ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Need website design for a clinic or medical practice?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We design clinic and medical websites for doctors and dental practices in Chennai and across India —
+            appointment booking, service pages, and mobile-first layouts patients can actually navigate on their
+            phones. Message us on WhatsApp with your clinic type and we'll show you examples and a plan for your
+            practice.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>
