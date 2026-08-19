@@ -159,6 +159,23 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ================= QUICK ANSWER: DIGITAL MARKETING AGENCY NEAR ME ================= */}
+      <section className="py-16 bg-[#07050C] w-full">
+        <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 max-w-[1800px] mx-auto">
+          <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+              Looking for a digital marketing agency near you?
+            </h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              My DP Digital is based on Anna Salai, Chennai, and works with businesses across the city and the
+              wider Tambaram / South Chennai belt — in person where useful, and over WhatsApp and calls for
+              everything else. Message us on WhatsApp with your business and what you need help with, and we'll
+              get back to you directly.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <Testimonials />
 

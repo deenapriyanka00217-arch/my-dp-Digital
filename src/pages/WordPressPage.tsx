@@ -359,6 +359,22 @@ export const WordPressPage: React.FC = () => {
         </div>
       </div>
 
+      {/* ================= QUICK ANSWER: WORDPRESS WEBSITE MAINTENANCE SERVICES IN INDIA ================= */}
+      <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
+        <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Need ongoing WordPress website maintenance services in India?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Beyond new builds, we offer WordPress website maintenance for businesses across India — plugin and
+            core updates, malware scanning and security hardening, automated backups, and speed optimization, so
+            your site stays fast and secure without you having to manage it yourself. Website maintenance cost per
+            month depends on your site's size and how much ongoing support you need, so message us on WhatsApp
+            with a link to your site and we'll give you a straightforward monthly quote.
+          </p>
+        </div>
+      </div>
+
       {/* Bottom CTA Banner */}
       <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
         <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#0073AA]/30 via-[#0D091B] to-[#25D366]/20 border border-[#0073AA]/40 text-center space-y-4">
