@@ -145,6 +145,19 @@ const SEOPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: SEO FOR LOCAL SEARCH ================= */}
+        <div className="mb-16 max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for SEO that gets you found in local search?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            My DP Digital handles local SEO for businesses across Chennai — Google Business Profile optimization,
+            local citations, and on-page fixes aimed at getting you visible on Google Maps and in local search
+            results when nearby customers are searching. Message us on WhatsApp with your business type and area,
+            and we'll walk you through what a local search plan would look like for you.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>

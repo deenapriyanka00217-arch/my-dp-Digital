@@ -352,8 +352,9 @@ export const WordPressPage: React.FC = () => {
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
             My DP Digital builds custom WordPress business portals and WooCommerce stores for businesses across
             Chennai and the wider Tambaram / South Chennai belt — with real UPI/Razorpay checkout, sub-1.2s load
-            times, and direct WhatsApp support instead of ticket queues. Message us on WhatsApp for a free scope
-            and timeline for your WordPress or WooCommerce project.
+            times, and direct WhatsApp support instead of ticket queues. Whether you need a WordPress developer in
+            Chennai for a new build or ongoing support, message us on WhatsApp for a free scope and timeline for
+            your WordPress or WooCommerce project.
           </p>
         </div>
       </div>

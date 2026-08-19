@@ -175,6 +175,20 @@ const WebDesignPage = () => {
           </Link>
         </div>
 
+        {/* ================= QUICK ANSWER: ECOMMERCE WEBSITE DEVELOPMENT IN CHENNAI ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for an e-commerce website developer near you in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Alongside marketing and business websites, we build custom e-commerce storefronts for Chennai
+            businesses — including WooCommerce-based stores with UPI/Razorpay checkout, product catalogs, and
+            order tracking. E-commerce website development cost depends on the number of products, payment
+            integrations, and features you need, so message us on WhatsApp with your requirements and we'll give
+            you a clear, honest quote and timeline before you commit to anything.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>
