@@ -328,11 +328,25 @@ const ServicesPage = () => {
           </p>
         </div>
 
+        {/* Digital Marketing Services Subheading */}
+        <div className="mb-6 max-w-3xl">
+          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+            Complete Digital Marketing Services in Chennai
+          </h2>
+          <p className="text-xs sm:text-sm text-white/60 mt-2 leading-relaxed">
+            From SEO and Google Ads to website development and branding,{' '}
+            <Link to="/" className="text-[#FF7AC6] font-semibold hover:underline">
+              DP Digital
+            </Link>{' '}
+            covers every digital marketing service a growing Chennai business needs under one team.
+          </p>
+        </div>
+
         {/* Affordable Packages Subheading */}
         <div className="mb-10 max-w-3xl">
-          <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+          <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight">
             Affordable Digital Marketing Packages in Chennai
-          </h2>
+          </h3>
           <p className="text-xs sm:text-sm text-white/60 mt-2 leading-relaxed">
             Every service below is available as a flexible, transparently-priced package sized for small and
             growing Chennai businesses — no bloated enterprise retainers required to get started.

@@ -176,6 +176,20 @@ const PaidAdsPage = () => {
           </p>
         </div>
 
+        {/* ================= WHAT'S INCLUDED: SOCIAL MEDIA MARKETING ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            What's included in our social media marketing service?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Our social media marketing covers organic content planning alongside paid promotion — monthly content
+            calendars, reel and static creative production, audience research, and paid boosting on Instagram and
+            Facebook so your organic posts and ad spend reinforce each other instead of running as separate
+            efforts. We report on reach, engagement, and lead volume every month so you can see what's actually
+            working, not just vanity follower counts.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>

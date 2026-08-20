@@ -209,6 +209,7 @@ export const WordPressPage: React.FC = () => {
 
               {/* Near Tambaram note + NAP block */}
               <div className="pt-3 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[11px] sm:text-xs text-white/60">
+                <span>Searching for a web developer near me? We're a Chennai-based WordPress team, not outsourced.</span>
                 <span>Also serving businesses near Tambaram &amp; South Chennai</span>
                 <span className="flex items-center gap-1.5">
                   <Globe size={12} className="text-[#00A0D2]" />

@@ -61,6 +61,10 @@ const tambaramServices = [
 
 const faqs = [
   {
+    question: 'Who offers digital marketing in Tambaram?',
+    answer: `My DP Digital offers digital marketing in Tambaram, Chennai — SEO, Google Ads, website design, and branding — for local shop owners, clinics, and service businesses. Call or WhatsApp ${DISPLAY_PHONE} to talk to the team directly.`,
+  },
+  {
     question: 'Is there a digital marketing service in Tambaram, Chennai with a phone number I can call directly?',
     answer: `Yes. My DP Digital is a digital marketing agency in Tambaram, Chennai, and you can call or WhatsApp our team directly at ${DISPLAY_PHONE} for a free consultation — no forms or waiting required.`,
   },
@@ -139,7 +143,7 @@ const TambaramPage: React.FC = () => {
     <div className="w-full min-h-screen bg-[#07050C] text-white pt-24 pb-20">
       <PageSEO
         title="Digital Marketing Agency in Tambaram, Chennai | My DP Digital"
-        description={`Looking for a digital marketing agency in Tambaram, Chennai? My DP Digital offers SEO, Google Ads, website design and branding. Call ${DISPLAY_PHONE}.`}
+        description={`Looking for a digital marketing agency in Tambaram, Chennai, or advertising services in Tambaram Chennai? My DP Digital offers SEO, Google Ads, website design and branding. Call ${DISPLAY_PHONE}.`}
         canonicalPath="/tambaram"
         jsonLd={jsonLd}
       />
@@ -257,12 +261,30 @@ const TambaramPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Why Us */}
+      {/* Digital Marketing Company in Tambaram */}
       <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
         <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-8 sm:p-10 lg:p-12">
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-4">
+            Digital Marketing Company in Tambaram
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-3xl">
+            My DP Digital is a digital marketing company in Tambaram that also runs advertising services in
+            Tambaram, Chennai — Google Ads, Meta Ads, and organic SEO — for local shop owners, clinics, and
+            service businesses. If you're searching "digital marketing agency near me" from Tambaram or the
+            surrounding South Chennai suburbs, this is the team you'll actually reach on the phone.
+          </p>
+        </div>
+      </div>
+
+      {/* Why Us */}
+      <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
+        <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-8 sm:p-10 lg:p-12">
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">
             Why Tambaram Businesses Choose My DP Digital
           </h2>
+          <h3 className="text-sm sm:text-base font-bold text-[#FF7AC6] mb-4">
+            A Digital Marketing Agency in Tambaram, Built for Direct Access
+          </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-3xl mb-6">
             As a digital marketing agency near Tambaram, Chennai, we work with shop owners, clinics, coaching
             centers, and service businesses who need real results without big-agency overhead. We are also an

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Sparkles, Users, Target, Rocket, ShieldCheck, ArrowRight, Zap, CheckCircle2 } from 'lucide-react';
 import { Card3DTilt } from '../components/Card3DTilt';
 import PageSEO from '../components/PageSEO';
@@ -58,7 +59,11 @@ const AboutPage = () => {
             <h2 className="text-3xl font-black text-white tracking-tight">The DP Origin</h2>
             <div className="space-y-4 text-white/70 text-base leading-relaxed font-normal">
               <p>
-                Founded in the heart of India's tech corridor, My DP Digital began with a radical hypothesis: that marketing is no longer creative guesswork—it's an engineering problem.
+                Founded in the heart of India's tech corridor,{' '}
+                <Link to="/" className="text-[#FF7AC6] font-semibold hover:underline">
+                  DP Digital
+                </Link>{' '}
+                began with a radical hypothesis: that marketing is no longer creative guesswork—it's an engineering problem.
               </p>
               <p>
                 By combining technical SEO forensics with high-velocity conversion psychology, we've helped hundreds of founders bridge the gap between "getting traffic" and "capturing recurring revenue."

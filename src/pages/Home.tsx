@@ -40,8 +40,8 @@ const Home = () => {
       className="bg-[#07050C] text-white w-full overflow-hidden"
     >
       <PageSEO
-        title="Digital Marketing Agency Near Me in Chennai | My DP Digital"
-        description="My DP Digital is a digital marketing agency near you in Chennai — SEO, Google Ads, website design, and branding for local businesses. Get a free quote."
+        title="My DP Digital – DP Digital Marketing Agency in Chennai"
+        description="My DP Digital (DP Digital Marketing) is a digital marketing agency near you in Chennai — SEO, Google Ads, website design, and branding for local businesses. Get a free quote."
         canonicalPath="/"
         jsonLd={HOME_JSON_LD}
       />
@@ -172,6 +172,19 @@ const Home = () => {
               everything else. Whether you're searching for a digital marketing agency near you or around me,
               message us on WhatsApp with your business and what you need help with, and we'll get back to you
               directly.
+            </p>
+          </div>
+
+          {/* ================= QUICK ANSWER: DP DIGITAL / DP DIGITAL MARKETING ================= */}
+          <div className="max-w-3xl mx-auto mt-6 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+              Searching for DP Digital or DP Digital Marketing?
+            </h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              My DP Digital (also searched as "DP Digital" or "DP Digital Marketing") is the digital marketing
+              agency behind this site — run directly by our Chennai-based team, not a call centre. If you found us
+              searching for DP Digital, you're in the right place. Message us on WhatsApp with your business and
+              what you need, and we'll get back to you directly.
             </p>
           </div>
         </div>

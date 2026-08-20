@@ -16,6 +16,16 @@ const webDesignExamples = [
     url: 'https://chennaivisaservices.in/',
     caption: 'A multi-page business website for a visa consultancy, structured around clear service pages and easy inquiry forms.',
   },
+  {
+    title: 'Sparkle Cleanings',
+    url: 'https://sparklecleanings.in/',
+    caption: 'A corporate business website for a cleaning services company, built around service pages and a straightforward inquiry flow.',
+  },
+  {
+    title: 'RSN Properties',
+    url: 'https://rsnproperties.in/',
+    caption: 'A multi-page property and real estate business website with listing pages and direct contact routing.',
+  },
 ];
 
 const WEBDESIGN_JSON_LD = [
@@ -48,8 +58,8 @@ const WebDesignPage = () => {
   return (
     <>
     <PageSEO
-      title="Clinic & Business Website Design Company | Chennai"
-      description="Custom, fast, SEO-ready websites for clinics, doctors, and growing businesses in Chennai — built to convert visitors into patients and customers."
+      title="Web Development & Website Design Company | Chennai"
+      description="Custom web development and SEO-ready website design for clinics, doctors, and growing businesses in Chennai — built to convert visitors into patients and customers."
       canonicalPath="/services/web-design-development"
       jsonLd={WEBDESIGN_JSON_LD}
     />
@@ -60,13 +70,13 @@ const WebDesignPage = () => {
       <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 max-w-[1800px] mx-auto relative z-10">
         <div className="max-w-3xl mb-20 space-y-5">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/15 backdrop-blur-xl text-white text-[10px] font-bold uppercase tracking-widest">
-            <Sparkles size={14} className="text-[#FF2E9A]" /> Conversion-First UI
+            <Sparkles size={14} className="text-[#FF2E9A]" /> Web Development & Conversion-First UI
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-tight tracking-tight">
-            Websites Built to <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">Convert, Not Just Look Good.</span>
+            Web Development Built to <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">Convert, Not Just Look Good.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
-            Custom, blazing-fast, SEO-ready websites built with modern frameworks and interactive elements. We build digital assets that drive bottom-line results.
+            Custom web development and website design — blazing-fast, SEO-ready, built with modern frameworks and interactive elements. We build digital assets that drive bottom-line results.
           </p>
         </div>
 
