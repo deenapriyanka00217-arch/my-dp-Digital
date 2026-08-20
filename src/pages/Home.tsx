@@ -187,6 +187,18 @@ const Home = () => {
               what you need, and we'll get back to you directly.
             </p>
           </div>
+
+          {/* ================= QUICK ANSWER: HIRE A DIGITAL MARKETING AGENCY ================= */}
+          <div className="max-w-3xl mx-auto mt-6 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+              Ready to hire a digital marketing agency in Chennai?
+            </h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              Hiring us means working directly with the team doing the work — no account manager relaying
+              messages to someone else. Message us on WhatsApp with your business and budget and we'll tell you
+              honestly whether we're a good fit before you commit to anything.
+            </p>
+          </div>
         </div>
       </section>
 

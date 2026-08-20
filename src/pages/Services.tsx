@@ -543,6 +543,19 @@ const ServicesPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: INDUSTRY VERTICALS ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Which industries do you work with?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Beyond coaching centers and clinics, we handle digital marketing for real estate agents, restaurants,
+            gyms and fitness centers, salons and spas, and startups across Chennai — each with a plan built around
+            how that industry's customers actually search and book, not a generic template. Message us on
+            WhatsApp with your industry and we'll tell you honestly what would move the needle for your business.
+          </p>
+        </div>
+
         <FAQ />
 
         {/* Final CTA Banner */}

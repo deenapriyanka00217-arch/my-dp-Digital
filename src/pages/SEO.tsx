@@ -171,6 +171,32 @@ const SEOPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: SEO AGENCY NEAR ME ================= */}
+        <div className="mb-16 max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Searching for an SEO agency near you in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We work as an SEO agency for businesses across Chennai and the wider Tambaram / South Chennai belt,
+            meeting in person where useful and running everything else over WhatsApp and calls. Message us on
+            WhatsApp with your business and area and we'll audit where you currently stand before recommending
+            anything.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: HIRE AN SEO EXPERT ================= */}
+        <div className="mb-16 max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking to hire an SEO expert in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Instead of a single freelancer, you get our full team's technical audits, content, and link work as
+            one engagement — with direct access to whoever is actually working on your site. Message us on
+            WhatsApp with your website and current rankings and we'll give you an honest read on what hiring us
+            would look like.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>

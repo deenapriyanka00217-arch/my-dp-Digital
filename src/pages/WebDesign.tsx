@@ -212,6 +212,32 @@ const WebDesignPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: WEBSITE DESIGN FOR REAL ESTATE AGENTS ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Need website design for a real estate agent or property business?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We build websites for real estate agents and property businesses in Chennai — listing pages,
+            location-based search, and direct WhatsApp inquiry routing so buyers can reach you the moment they
+            find a property they like. Message us on WhatsApp with how many listings you manage and we'll show
+            you examples and a plan.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: WEBSITE DESIGN COMPANY NEAR ME ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Searching for a website design company near you?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            My DP Digital is based in Chennai and builds websites for businesses across the city and the wider
+            Tambaram / South Chennai belt, working directly over WhatsApp and calls so you always talk to the
+            person actually building your site — not a call centre. Message us on WhatsApp with what you need
+            and we'll walk you through examples and next steps.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>
