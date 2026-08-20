@@ -126,7 +126,7 @@ export const initialSiteContent: SiteContent = {
   address: 'Tech Hub, Bangalore & Chennai, India',
   serviceManagementFee: 15000,
 
-  homeHeroHeading: 'Websites, Automation & Ads That Drive Real Growth',
+  homeHeroHeading: 'My DP Digital: Websites, Automation & Ads That Drive Real Growth',
   homeHeroSubheading: 'We are specialists in WordPress Development, Custom Web Apps, Business Automation, and high-ROI Facebook & Meta Product Ads, Google Ads, YouTube Growth & Technical SEO.',
   homeHeroBadge: 'Verified 5.4x Average ROAS • 4.8Cr+ Client Revenue',
   homePrimaryCta: 'Discuss Project on WhatsApp',
