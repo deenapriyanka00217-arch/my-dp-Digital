@@ -139,10 +139,10 @@ const ContentBrandingPage = () => {
             Looking for content writing services in Chennai?
           </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-            Alongside brand identity and design, My DP Digital offers digital content writing services for
-            businesses across Chennai — SEO-led blog content, website copy, and social content built around
-            keyword research and persona mapping rather than generic filler. Message us on WhatsApp with your
-            industry and content needs and we'll scope out a content plan for you.
+            Alongside brand identity and design, My DP Digital works as one of the content writing companies in
+            Chennai offering SEO-led blog content, website copy, and social content — built around keyword
+            research and persona mapping rather than generic filler. Message us on WhatsApp with your industry
+            and content needs and we'll scope out a content plan for you.
           </p>
         </div>
 

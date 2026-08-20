@@ -78,11 +78,23 @@ const faqs = [
   },
   {
     question: 'Are there affordable digital marketing services in Tambaram?',
-    answer: 'Yes — we offer flexible monthly packages for small and mid-sized Tambaram businesses covering SEO, ads, website design, and branding, priced for local budgets rather than big-agency retainers.',
+    answer: 'Yes — we offer flexible monthly packages for small and mid-sized Tambaram businesses covering SEO, ads, affordable website design, and branding, priced for local budgets rather than big-agency retainers.',
   },
   {
     question: 'Do you serve businesses near Tambaram, Chennai as well as within it?',
     answer: 'Yes. As a digital marketing agency near Tambaram, Chennai, we also serve Chromepet, Selaiyur, Pallavaram, and the wider South Chennai belt.',
+  },
+  {
+    question: 'Is there an SEO company or advertising agency in Tambaram?',
+    answer: `Yes. My DP Digital works as both an SEO company and advertising agency in Tambaram — ranking your business on Google search and Maps while also running Google and Meta ad campaigns, so organic and paid growth work together instead of separately. Call or WhatsApp ${DISPLAY_PHONE} for a free review.`,
+  },
+  {
+    question: 'Do you cover Tambaram West and Tambaram East?',
+    answer: 'Yes — we work with businesses across both Tambaram West and Tambaram East, along with the surrounding Chromepet, Selaiyur, and Pallavaram areas, as one digital marketing agency serving the whole belt.',
+  },
+  {
+    question: 'How do I choose the right digital marketing agency in Tambaram?',
+    answer: `Look for an agency that works directly with the people doing the work (not an account manager relaying messages), shows you real examples from Tambaram-area businesses, and is upfront about realistic timelines rather than guaranteeing overnight results. Call or WhatsApp ${DISPLAY_PHONE} and we'll answer any questions honestly before you decide.`,
   },
   {
     question: 'How much does digital marketing cost for a small business in Tambaram?',

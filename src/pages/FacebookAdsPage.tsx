@@ -684,6 +684,39 @@ export const FacebookAdsPage: React.FC = () => {
         </section>
 
         {/* ========================================================================= */}
+        {/* QUICK ANSWER: BEST GOOGLE ADS AGENCY IN CHENNAI */}
+        {/* ========================================================================= */}
+        <section className="w-full max-w-3xl mx-auto">
+          <div className="p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+              Comparing agencies to find the best Google Ads agency in Chennai?
+            </h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              Rather than claim to be "the best," we'll show you our actual campaign structures, bidding
+              approach, and reporting before you commit — so you can judge for yourself alongside other agencies
+              you're considering. Message us on WhatsApp with your monthly budget and current results and we'll
+              give you an honest read.
+            </p>
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
+        {/* QUICK ANSWER: FACEBOOK ADS AGENCY IN CHENNAI */}
+        {/* ========================================================================= */}
+        <section className="w-full max-w-3xl mx-auto">
+          <div className="p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+              Looking for a Facebook Ads agency in Chennai?
+            </h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              As a Facebook Ads agency for businesses across Chennai, we handle creative production, audience
+              targeting, and retargeting on Facebook and Instagram, managed alongside your Google Ads so every
+              rupee works as one funnel. Message us on WhatsApp with your monthly budget and we'll map out a plan.
+            </p>
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
         {/* FAQ SECTION */}
         {/* ========================================================================= */}
         <FAQ />

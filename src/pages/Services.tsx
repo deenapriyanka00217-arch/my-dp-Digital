@@ -349,7 +349,8 @@ const ServicesPage = () => {
           </h3>
           <p className="text-xs sm:text-sm text-white/60 mt-2 leading-relaxed">
             Every service below is available as a flexible, transparently-priced package sized for small and
-            growing Chennai businesses — no bloated enterprise retainers required to get started.
+            growing Chennai businesses — no bloated enterprise retainers required to get started. If you're after
+            low cost digital marketing in Chennai rather than a big-agency retainer, this is built for you.
           </p>
         </div>
 
@@ -513,9 +514,10 @@ const ServicesPage = () => {
             Looking for digital marketing packages for small business in Chennai?
           </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-            We put together SEO, Google Ads, and website design packages sized for small and mid-sized Chennai
-            businesses rather than one-size-fits-all enterprise pricing. Message us on WhatsApp with your budget
-            and what you're trying to grow, and we'll put together pricing packages that actually fit.
+            We put together digital marketing packages in Chennai — SEO, Google Ads, and website design — sized
+            for small and mid-sized businesses rather than one-size-fits-all enterprise pricing. Message us on
+            WhatsApp with your budget and what you're trying to grow, and we'll put together pricing packages
+            that actually fit.
           </p>
         </div>
 
@@ -537,9 +539,74 @@ const ServicesPage = () => {
             Running a coaching center or institute?
           </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-            We handle digital marketing for coaching centers and coaching institutes — enrollment-focused websites,
-            local SEO so nearby students find you, and Google/Meta ads targeted at parents and students actively
-            searching for classes. Message us on WhatsApp with your subjects and location and we'll map out a plan.
+            We handle digital marketing for coaching centers and coaching institutes — including coaching centers
+            in Tambaram — with enrollment-focused websites, local SEO so nearby students find you, and Google/Meta
+            ads targeted at parents and students actively searching for classes. Message us on WhatsApp with your
+            subjects and location and we'll map out a plan.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: SEO SERVICES COMPANY ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for an SEO services company in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            As an SEO services company for businesses across Chennai, we pair technical fixes and content work
+            with AI-assisted keyword research and reporting — so you get faster insight without losing the human
+            judgment that keeps rankings honest. Message us on WhatsApp with your website and we'll audit where
+            you currently stand.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: WEB DEVELOPMENT COMPANY ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for a corporate or custom web development company?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We work as both a corporate web design company for standard multi-page business sites and a custom
+            web development company for India-wide clients who need bespoke functionality beyond a template.
+            Message us on WhatsApp with your requirements and we'll tell you honestly which approach fits your
+            budget and timeline.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: E-COMMERCE WEBSITE DEVELOPMENT ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Need Shopify or custom e-commerce website development?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Alongside WooCommerce builds, we handle Shopify ecommerce website development in Chennai and
+            ecommerce website development for businesses in Tambaram — product catalogs, payment gateways, and
+            order tracking set up properly the first time. Message us on WhatsApp with your product count and
+            we'll scope out the right platform for you.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: LMS DEVELOPMENT COMPANY ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for an LMS development company in India?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            As an LMS development company for coaching institutes and academies across India, we build student
+            dashboards, DRM-protected video, quizzes, and automated certificates on one platform. Message us on
+            WhatsApp with your course structure and student volume and we'll map out what you'd need.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: AI CHATBOT AGENCY ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for an AI chatbot agency in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            As an AI chatbot agency in Chennai, we set up WhatsApp AI chatbots for Chennai businesses and AI voice
+            agents that answer common questions and qualify leads around the clock, handing off to your team only
+            when a real conversation is needed. Message us on WhatsApp with your business and we'll show you how
+            it would work for you.
           </p>
         </div>
 

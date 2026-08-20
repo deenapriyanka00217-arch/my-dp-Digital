@@ -176,6 +176,31 @@ const PaidAdsPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: SOCIAL MEDIA MARKETING COMPANY IN CHENNAI ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Comparing social media marketing companies in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            As a social media marketing company for businesses across Chennai, we run organic content and paid
+            promotion as one plan rather than two separate services — so your posts and ad spend reinforce each
+            other. Message us on WhatsApp with your industry and we'll show you examples of our work.
+          </p>
+        </div>
+
+        {/* ================= QUICK ANSWER: GOOGLE ADS EXPERT / PPC AGENCY CHENNAI ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Need a Google Ads expert or PPC ads agency in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Our Google Ads expert works hands-on with your account as part of a full PPC ads agency service for
+            Chennai businesses — Search, Shopping, and YouTube campaigns built around smart-bidding and weekly
+            performance reallocation, not a set-and-forget setup. Message us on WhatsApp with your monthly budget
+            and current results and we'll give you an honest audit.
+          </p>
+        </div>
+
         {/* ================= WHAT'S INCLUDED: SOCIAL MEDIA MARKETING ================= */}
         <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
           <h3 className="text-lg sm:text-xl font-black text-white mb-2">

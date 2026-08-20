@@ -360,6 +360,21 @@ export const WordPressPage: React.FC = () => {
         </div>
       </div>
 
+      {/* ================= QUICK ANSWER: WORDPRESS DEVELOPMENT COMPANY TAMBARAM ================= */}
+      <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
+        <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Looking for a WordPress development company in Tambaram?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            As a WordPress development company serving Tambaram and the wider South Chennai belt, we build and
+            support WordPress and WooCommerce sites for local businesses directly — no agency middleman relaying
+            requests. Message us on WhatsApp with your business and area and we'll give you a free scope and
+            timeline.
+          </p>
+        </div>
+      </div>
+
       {/* ================= QUICK ANSWER: WORDPRESS WEBSITE MAINTENANCE SERVICES IN INDIA ================= */}
       <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
         <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">

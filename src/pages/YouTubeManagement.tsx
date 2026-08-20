@@ -509,6 +509,21 @@ export const YouTubeManagementPage: React.FC = () => {
         </div>
       </section>
 
+      {/* ================= QUICK ANSWER: YOUTUBE MANAGEMENT FOR COACHING CENTERS ================= */}
+      <section className="w-full px-4 sm:px-8 lg:px-12 max-w-[1440px] mx-auto relative z-10 mb-16">
+        <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Need YouTube channel management for a coaching center in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            We handle YouTube channel management for coaching centers and institutes in Chennai — lecture editing,
+            thumbnails, upload scheduling, and on-page SEO so parents and students searching for classes actually
+            find your channel. Message us on WhatsApp with your subjects and upload frequency and we'll map out a
+            plan.
+          </p>
+        </div>
+      </section>
+
       {/* ================= FAQ SECTION ================= */}
       <div className="w-full px-4 sm:px-8 lg:px-12 max-w-[1440px] mx-auto relative z-10">
         <FAQ />
