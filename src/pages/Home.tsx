@@ -7,6 +7,7 @@ import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import ContactForm from '../components/ContactForm';
 import { Trophy, BarChart3, ShieldCheck, Zap, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useCms } from '../context/CmsContext';
 import PageSEO from '../components/PageSEO';
 
@@ -172,6 +173,22 @@ const Home = () => {
               everything else. Whether you're searching for a digital marketing agency near you or around me,
               message us on WhatsApp with your business and what you need help with, and we'll get back to you
               directly.
+            </p>
+          </div>
+
+          {/* ================= QUICK ANSWER: DIGITAL MARKETING AGENCY IN TAMBARAM ================= */}
+          <div className="max-w-3xl mx-auto mt-6 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+              Digital Marketing Agency in Tambaram
+            </h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              Based close to Tambaram on Anna Salai, Chennai, My DP Digital also runs a dedicated digital
+              marketing agency in Tambaram covering SEO, Google Ads, website design, and branding for local
+              shop owners, clinics, and service businesses — see our{' '}
+              <Link to="/tambaram" className="text-[#FF7AC6] font-semibold hover:underline">
+                Tambaram services and FAQs
+              </Link>{' '}
+              or message us on WhatsApp directly.
             </p>
           </div>
 

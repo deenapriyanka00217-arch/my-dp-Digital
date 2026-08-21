@@ -59,7 +59,7 @@ const WebDesignPage = () => {
     <>
     <PageSEO
       title="Web Development & Website Design Company | Chennai"
-      description="Custom web development and SEO-ready website design for clinics, doctors, and growing businesses in Chennai — built to convert visitors into patients and customers."
+      description="Web development and website design from My DP Digital, a digital marketing agency in Chennai — SEO-ready sites built to convert visitors into customers, not just look good."
       canonicalPath="/services/web-design-development"
       jsonLd={WEBDESIGN_JSON_LD}
     />

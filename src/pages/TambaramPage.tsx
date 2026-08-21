@@ -85,6 +85,10 @@ const faqs = [
     answer: 'Yes. As a digital marketing agency near Tambaram, Chennai, we also serve Chromepet, Selaiyur, Pallavaram, and the wider South Chennai belt.',
   },
   {
+    question: 'I searched "digital marketing near me" from Tambaram — is that you?',
+    answer: `Yes, most likely. My DP Digital shows up for digital marketing near me searches across Tambaram and the surrounding South Chennai suburbs, and unlike a call centre, you'll reach the actual team working on your account. Call or WhatsApp ${DISPLAY_PHONE} to confirm we cover your area.`,
+  },
+  {
     question: 'Is there an SEO company or advertising agency in Tambaram?',
     answer: `Yes. My DP Digital works as both an SEO company and advertising agency in Tambaram — ranking your business on Google search and Maps while also running Google and Meta ad campaigns, so organic and paid growth work together instead of separately. Call or WhatsApp ${DISPLAY_PHONE} for a free review.`,
   },
