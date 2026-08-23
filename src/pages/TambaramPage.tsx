@@ -14,6 +14,7 @@ import {
   Plus,
   Minus,
   HelpCircle,
+  Video,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { WhatsAppIcon } from '../components/StickyWhatsApp';
@@ -57,6 +58,11 @@ const tambaramServices = [
     desc: 'Flexible monthly packages built for small and mid-sized Tambaram businesses, so you get real SEO, ads, and design support without agency-sized budgets.',
     icon: Wallet,
   },
+  {
+    title: 'Video Marketing Agency in Tambaram',
+    desc: 'YouTube channel management, video editing, and thumbnail design for Tambaram businesses looking to grow on video — handled by the same team managing real, active client channels.',
+    icon: Video,
+  },
 ];
 
 const faqs = [
@@ -87,6 +93,10 @@ const faqs = [
   {
     question: 'I searched "digital marketing near me" from Tambaram — is that you?',
     answer: `Yes, most likely. My DP Digital shows up for digital marketing near me searches across Tambaram and the surrounding South Chennai suburbs, and unlike a call centre, you'll reach the actual team working on your account. Call or WhatsApp ${DISPLAY_PHONE} to confirm we cover your area.`,
+  },
+  {
+    question: 'Is there a video marketing agency in Tambaram?',
+    answer: `Yes. My DP Digital also runs YouTube channel management, video editing, and thumbnail design for Tambaram businesses — the same team already manages real, active YouTube channels. Call or WhatsApp ${DISPLAY_PHONE} to see examples of our work.`,
   },
   {
     question: 'Is there an SEO company or advertising agency in Tambaram?',
@@ -272,7 +282,11 @@ const TambaramPage: React.FC = () => {
             Based in Tambaram, we also work with businesses across the wider South Chennai belt — including
             Chromepet, Selaiyur, and Pallavaram — who want a digital marketing team they can reach directly by
             phone rather than a call centre. Whichever of these areas your business is in, the same direct
-            SEO, Google Ads, website design, and branding support applies.
+            SEO, Google Ads, website design, and branding support applies. We also run{' '}
+            <Link to="/youtube-management" className="text-[#FF7AC6] font-semibold hover:underline">
+              video marketing and YouTube channel management
+            </Link>{' '}
+            for Tambaram businesses looking to grow beyond search and ads.
           </p>
         </div>
       </div>
