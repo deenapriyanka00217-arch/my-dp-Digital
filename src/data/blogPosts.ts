@@ -1249,4 +1249,38 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you're not sure whether email marketing makes sense for your business, reach us at +91 81483 20217 or deenapriyanka00217@gmail.com for a straight opinion.",
     ],
   },
+  {
+    id: "video-marketing-youtube-channel-management-tambaram",
+    slug: "video-marketing-youtube-channel-management-tambaram",
+    title: "Video Marketing and YouTube Channel Management in Tambaram: Where to Start",
+    excerpt:
+      "More Tambaram businesses are asking about video, not just SEO and ads. Here's a straight look at what YouTube channel management actually involves, and how to tell if your business is ready for it.",
+    date: "August 23, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar:
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80",
+    },
+    category: "Content & Video",
+    readingTime: "5 min read",
+    commentsCount: 0,
+    tags: ["YouTube", "video marketing", "Tambaram", "Chennai", "channel management"],
+    featuredImgColor: "from-[#FF2E9A] to-[#FFB700]",
+    content: [
+      "Most digital marketing conversations in Tambaram still start with SEO or Google Ads — search still drives the majority of local buying decisions. But a growing number of local business owners are now asking a second question: should we be doing something on YouTube too? It's worth answering honestly, rather than treating video as something every business automatically needs.",
+      "### Why This Is Coming Up More Often Now",
+      "Search and video aren't competing channels — they support each other. A business that ranks well locally and also has a real YouTube presence gives a prospective customer two separate reasons to trust them, not one. That's part of why video is increasingly coming up alongside SEO and ads conversations, rather than as a separate, optional add-on.",
+      "### What YouTube Channel Management Actually Involves",
+      "It's the same breakdown as managing a channel for any business, whether in Tambaram or elsewhere: editing raw footage into a finished video, designing thumbnails that actually get clicked, writing titles and descriptions that help the video surface in search and suggested videos, keeping a consistent upload schedule, and reviewing what's actually getting watched. A channel that posts regularly but skips thumbnails, titles, or strategy usually plateaus regardless of production quality.",
+      "### Is Your Tambaram Business Actually Ready for Video?",
+      "Video makes the most sense for businesses that already have something worth showing — a physical process, a service being delivered, real customer interactions, a product in use. It makes less sense as a first move for a business that hasn't yet nailed the basics: a working website, a claimed and active Google Business Profile, and some baseline local search visibility. Video compounds an already-functioning presence; it rarely fixes the absence of one.",
+      "### Editing-Only vs Full Management, for a Tambaram Business Specifically",
+      "The same choice applies locally as anywhere: if you already know what to film and just need it turned into a finished video, editing-only service is the lighter option. If you're unsure what content would actually resonate with a Tambaram audience specifically — local landmarks, local language cues, local customer concerns — full management (including strategy) is the more useful starting point, since it addresses the harder problem of what to make, not just how well it's cut.",
+      "- Do you already have a functioning website and an active Google Business Profile, or would video be covering for gaps there?\n- Do you have something genuinely worth showing on camera — a process, a service, a real result?\n- Do you know what a Tambaram-specific audience actually wants to see, or would you be guessing?\n- Is thumbnail and title work included in what you're comparing, or just raw editing?\n- Are you looking for a few strong videos, or ongoing channel management with a real posting cadence?",
+      "### What My DP Digital Does Differently",
+      "We already manage real, active YouTube channels for clients, and we run the same YouTube channel management, video editing, and thumbnail design service for Tambaram businesses specifically — alongside the SEO and ads work we're already known for locally, not as a separate, disconnected offering.",
+      "If you want a straight opinion on whether video is worth prioritising for your Tambaram business right now, reach us at +91 81483 20217 or deenapriyanka00217@gmail.com.",
+    ],
+  },
 ];
