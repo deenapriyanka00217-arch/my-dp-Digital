@@ -479,11 +479,11 @@ export const BlogPage: React.FC = () => {
 
                   {/* Visual Blueprint Hero Banner OR Featured Image */}
                   {singlePostView.imageUrl ? (
-                    <div className="w-full h-64 sm:h-96 rounded-2xl overflow-hidden shadow-2xl relative border border-white/10">
-                      <img 
-                        src={singlePostView.imageUrl} 
+                    <div className="w-full h-64 sm:h-96 rounded-2xl overflow-hidden shadow-2xl relative border border-white/10 bg-[#0A0710]">
+                      <img
+                        src={singlePostView.imageUrl}
                         alt={singlePostView.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                         referrerPolicy="no-referrer"
                       />
                     </div>
@@ -875,14 +875,14 @@ export const BlogPage: React.FC = () => {
 
                             {/* Visual Decorative Feature Header OR Featured Image */}
                             {post.imageUrl ? (
-                              <div 
-                                className="w-full h-48 sm:h-64 rounded-2xl overflow-hidden shadow-inner border border-white/10 cursor-pointer group"
+                              <div
+                                className="w-full h-48 sm:h-64 rounded-2xl overflow-hidden shadow-inner border border-white/10 cursor-pointer group bg-[#0A0710]"
                                 onClick={() => openPost(post)}
                               >
-                                <img 
-                                  src={post.imageUrl} 
+                                <img
+                                  src={post.imageUrl}
                                   alt={post.title}
-                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                  className="w-full h-full object-contain sm:object-cover group-hover:scale-105 transition-transform duration-500"
                                   referrerPolicy="no-referrer"
                                 />
                               </div>
