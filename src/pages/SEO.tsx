@@ -197,6 +197,19 @@ const SEOPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: SEO COST IN CHENNAI ================= */}
+        <div className="mb-16 max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            What does SEO cost in Chennai?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            SEO cost in Chennai varies a lot depending on your industry, competition, and how much on-page and
+            content work your site currently needs — so we don't quote a fixed number until we've actually looked
+            at your site. Message us on WhatsApp with your website and we'll give you a clear, honest cost
+            estimate for your specific goals, not a generic package price.
+          </p>
+        </div>
+
         <FAQ />
       </div>
     </div>
