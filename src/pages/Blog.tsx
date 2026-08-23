@@ -378,7 +378,7 @@ export const BlogPage: React.FC = () => {
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
           
           {/* ================= LEFT / MAIN CONTENT (8 Cols) ================= */}
-          <main className="lg:col-span-8 space-y-8">
+          <main className="lg:col-span-8 space-y-8 min-w-0">
 
             {/* ================= IF SINGLE POST VIEW IS ACTIVE (WordPress Single Page) ================= */}
             {singlePostView ? (
@@ -1014,7 +1014,7 @@ export const BlogPage: React.FC = () => {
 
 
           {/* ================= RIGHT COLUMN: WordPress Blogger Sidebar Widgets (4 Cols) ================= */}
-          <aside className="lg:col-span-4 space-y-8">
+          <aside className="lg:col-span-4 space-y-8 min-w-0">
             
             {/* Widget 1: Search WordPress */}
             <div className="bg-white/[0.035] backdrop-blur-2xl rounded-3xl border border-white/10 p-6 space-y-3 shadow-xl">
