@@ -216,6 +216,20 @@ const Home = () => {
               honestly whether we're a good fit before you commit to anything.
             </p>
           </div>
+
+          {/* ================= QUICK ANSWER: BEST DIGITAL MARKETING AGENCY IN AYNAVARAM ================= */}
+          <div className="max-w-3xl mx-auto mt-6 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+              Looking for a digital marketing agency in Aynavaram?
+            </h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              We're based on Anna Salai and already work with businesses across the Tambaram / South Chennai
+              belt, and Aynavaram falls well within reach for the same setup — everything handled over WhatsApp
+              and calls, with in-person meetings where useful. If you're comparing digital marketing agencies
+              near Aynavaram, message us on WhatsApp with your business and what you need, and we'll tell you
+              honestly whether we're the right fit before you commit to anything.
+            </p>
+          </div>
         </div>
       </section>
 

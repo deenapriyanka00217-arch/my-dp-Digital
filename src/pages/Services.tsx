@@ -623,6 +623,20 @@ const ServicesPage = () => {
           </p>
         </div>
 
+        {/* ================= QUICK ANSWER: GOOGLE ADS FOR SMALL BUSINESS ================= */}
+        <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            Are Google Ads worth it for a small business?
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            Google Ads for small business works best when it's set up with real conversion tracking and a budget
+            matched to what you can actually follow up on — not just switched on and left to run. We set up and
+            manage Google Ads for small businesses in Chennai with clear reporting on what each lead actually
+            costs, so you're not guessing whether the spend is working. Message us on WhatsApp with your monthly
+            budget and we'll tell you honestly whether Google Ads is the right first move for your business.
+          </p>
+        </div>
+
         <FAQ />
 
         {/* Final CTA Banner */}

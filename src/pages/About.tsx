@@ -125,6 +125,21 @@ const AboutPage = () => {
           </div>
         </div>
 
+        {/* ================= QUICK ANSWER: DIGITAL MARKETING AGENCY DESCRIPTION ================= */}
+        <div className="max-w-3xl mx-auto mb-32 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
+          <h3 className="text-lg sm:text-xl font-black text-white mb-2">
+            My DP Digital, in short
+          </h3>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+            My DP Digital is a Chennai-based digital marketing agency offering SEO, Google Ads and Meta Ads
+            management, website design and development, WordPress maintenance, branding and graphic design, and
+            AI chatbots and voice agents for small and growing businesses. We're run directly by the team doing
+            the work, not routed through account managers, and we build every website so the client owns the
+            domain, hosting, and code from day one. Message us on WhatsApp with your business and we'll tell you
+            honestly which of these services would actually help.
+          </p>
+        </div>
+
         {/* Process */}
         <div className="p-12 rounded-[48px] bg-white/[0.03] backdrop-blur-2xl border border-white/10 relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#B026FF]/15 blur-[100px] rounded-full" />
