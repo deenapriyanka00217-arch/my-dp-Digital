@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
-import { Growth3DVisualizer } from '../components/Growth3DVisualizer';
 import { Card3DTilt } from '../components/Card3DTilt';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
@@ -72,9 +71,6 @@ const Home = () => {
 
       {/* Services Showcase */}
       <Services />
-
-      {/* Interactive 3D Growth ROI Calculator */}
-      <Growth3DVisualizer />
 
       {/* Agency Architecture & Revenue Velocity Section */}
       <section className="py-24 bg-[#07050C] relative overflow-hidden w-full border-t border-white/10">
