@@ -49,7 +49,7 @@ const AboutPage = () => {
             We're My DP Digital — <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">Growth, Engineered.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
-            A full-service digital marketing and web engineering powerhouse built on one core obsession: turning raw data into measurable market dominance for brands worldwide.
+            My DP Digital helps businesses strengthen their online presence through website development, search optimization, paid advertising, and practical digital support.
           </p>
         </div>
 
@@ -66,17 +66,17 @@ const AboutPage = () => {
                 began with a radical hypothesis: that marketing is no longer creative guesswork—it's an engineering problem.
               </p>
               <p>
-                By combining technical SEO forensics with high-velocity conversion psychology, we've helped hundreds of founders bridge the gap between "getting traffic" and "capturing recurring revenue."
+                We bring website structure, useful content, and customer acquisition activity together so businesses can make their services easier to find and understand.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6 pt-4">
               <div className="p-6 rounded-3xl bg-white/[0.035] backdrop-blur-xl border border-white/10 space-y-1">
-                <div className="text-4xl font-black text-[#FF2E9A]">500+</div>
-                <div className="text-[10px] uppercase font-bold tracking-widest text-white/50">Funnels Scaled</div>
+                <div className="text-4xl font-black text-[#FF2E9A]">Web</div>
+                <div className="text-[10px] uppercase font-bold tracking-widest text-white/50">Website Development</div>
               </div>
               <div className="p-6 rounded-3xl bg-white/[0.035] backdrop-blur-xl border border-white/10 space-y-1">
-                <div className="text-4xl font-black text-[#06B6D4]">Global</div>
-                <div className="text-[10px] uppercase font-bold tracking-widest text-white/50">Delivery Footprint</div>
+                <div className="text-4xl font-black text-[#06B6D4]">SEO</div>
+                <div className="text-[10px] uppercase font-bold tracking-widest text-white/50">Search Visibility</div>
               </div>
             </div>
           </div>
