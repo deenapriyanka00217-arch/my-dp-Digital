@@ -36,7 +36,7 @@ const SEOPage = () => {
     <>
     <PageSEO
       title="SEO Services in Chennai | Local & Technical SEO"
-      description="Improve search visibility with SEO services in Chennai: technical SEO, on-page improvements, content strategy, and Google Business Profile optimization for local businesses."
+      description="SEO services in Chennai covering technical fixes, on-page improvements, content planning and local search visibility."
       canonicalPath="/services/seo"
       jsonLd={SEO_JSON_LD}
     />
