@@ -53,9 +53,9 @@ export default function AdminDashboardPage() {
           <div>
             <div className="flex items-center gap-2">
               <h1 className="text-base sm:text-lg font-black bg-gradient-to-r from-white via-[#00F2FE] to-[#FF2E9A] bg-clip-text text-transparent">DP Digital Admin Dashboard</h1>
-              <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#FF2E9A]/20 text-[#FF2E9A] border border-[#FF2E9A]/30 font-bold shadow-sm">100% Editable CMS</span>
+              <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-[#FF2E9A]/20 text-[#FF2E9A] border border-[#FF2E9A]/30 font-bold shadow-sm">Browser-Local Editor</span>
             </div>
-            <p className="text-[11px] text-white/60">Full Backend Content Management • Edit Homepage, Banners, Metrics, Revenue Velocity, Blogs & All Pages</p>
+            <p className="text-[11px] text-white/60">Changes are stored in this browser only; they are not synced to the public website.</p>
           </div>
         </div>
 
