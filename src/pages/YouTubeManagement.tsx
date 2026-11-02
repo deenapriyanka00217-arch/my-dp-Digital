@@ -52,8 +52,6 @@ const CLIENT_CHANNELS = [
     avatarChar: 'KK',
     stats: {
       contentFormat: 'Long-Form & Viral Shorts',
-      retentionBoost: '+145%',
-      ctrAvg: '11.8%',
       deliverables: ['Custom Thumbnail Art', 'Dynamic Video Editing', 'Title & Metadata SEO', 'Shorts Automation']
     },
     description:
@@ -70,8 +68,6 @@ const CLIENT_CHANNELS = [
     avatarChar: 'VT',
     stats: {
       contentFormat: 'Masterclasses & Aviation Guides',
-      retentionBoost: '+180%',
-      ctrAvg: '12.4%',
       deliverables: ['Educational Video Pacing', 'High-Authority Thumbnails', 'Chapter & Tag Silos', 'Student Lead Funnel']
     },
     description:
@@ -88,8 +84,6 @@ const CLIENT_CHANNELS = [
     avatarChar: 'BB',
     stats: {
       contentFormat: 'Cinematic Vlogs & Travel Stories',
-      retentionBoost: '+210%',
-      ctrAvg: '13.2%',
       deliverables: ['Fast-Paced Sound Design', 'Click-Magnet Visuals', 'Viral Reels/Shorts', 'Weekly Upload Cadence']
     },
     description:
@@ -317,16 +311,16 @@ export const YouTubeManagementPage: React.FC = () => {
                 <Award size={13} /> Client Channel Examples
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-                Our Real <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#25D366]">YouTube Client Channels</span>
+                Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#25D366]">YouTube Channel Examples</span>
               </h2>
               <p className="text-sm text-white/70 max-w-2xl">
-                Explore real YouTube channels we actively edit, design thumbnails for, and optimize for audience growth, retention, and conversion.
+                Explore selected public channels associated with our video and channel-support work. Each example links to the channel so you can review its content.
               </p>
             </div>
 
             <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-2xl border border-white/15 shrink-0">
               <Youtube size={18} className="text-[#FF0000]" />
-              <span className="text-xs font-bold text-white">3 Active Client Showcases</span>
+              <span className="text-xs font-bold text-white">3 Channel Examples</span>
             </div>
           </div>
 
