@@ -23,11 +23,6 @@ const TambaramPage = lazy(() => import('./pages/TambaramPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const AdminDashboardPage = lazy(() => import('./pages/AdminDashboardPage'));
 const NotFound = lazy(() => import('./pages/NotFound'));
-import { StickyWhatsApp } from './components/StickyWhatsApp';
-import { CmsProvider } from './context/CmsContext';
-import { AnimatePresence } from 'framer-motion';
-import { useEffect } from 'react';
-
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
