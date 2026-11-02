@@ -26,7 +26,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -219,32 +219,72 @@ function writeSitemap(routes) {
   console.log(`[prerender-seo] wrote sitemap with ${uniqueUrls.length} canonical URLs.`);
 }
 
-function main() {
+async function main() {
   const indexPath = path.join(DIST, 'index.html');
-  if (!fs.existsSync(indexPath)) {
-    console.error('[prerender-seo] dist/index.html not found — skipping (did the build actually run?)');
-    process.exit(1);
-  }
-  const baseHtml = fs.readFileSync(indexPath, 'utf8');
+  const serverEntryPath = path.join(DIST, 'server', 'entry-server.js');
 
+  if (!fs.existsSync(indexPath)) {
+    throw new Error('[prerender-seo] dist/index.html not found — did the client build run?');
+  }
+  if (!fs.existsSync(serverEntryPath)) {
+    throw new Error('[prerender-seo] server entry not found — did the SSR build run?');
+  }
+
+  const baseHtml = fs.readFileSync(indexPath, 'utf8');
+  const rootMarker = '<div id="root"></div>';
+  if (!baseHtml.includes(rootMarker)) {
+    throw new Error('[prerender-seo] Could not find the empty #root element in dist/index.html.');
+  }
+
+  const { render } = await import(pathToFileURL(serverEntryPath).href);
   const allRoutes = [...STATIC_ROUTES, ...getBlogRoutes()];
   const uniqueRoutes = [...new Map(allRoutes.map((meta) => [meta.route, meta])).values()];
   let written = 0;
 
+  const withBody = (html, markup) => {
+    if (!html.includes(rootMarker)) {
+      throw new Error('[prerender-seo] Route HTML does not contain the expected root marker.');
+    }
+    return html.replace(rootMarker, `<div id="root" data-prerendered="true">${markup}</div>`);
+  };
+
   for (const meta of uniqueRoutes) {
-    const html = buildHead(baseHtml, meta);
+    const markup = await render(meta.route);
+    if (!markup || markup.trim().length < 100) {
+      throw new Error(`[prerender-seo] Rendering returned too little page content for ${meta.route}.`);
+    }
+
+    const html = withBody(buildHead(baseHtml, meta), markup);
     if (meta.route === '/') {
-      fs.writeFileSync(indexPath, html);
+      fs.writeFileSync(indexPath, html, 'utf8');
     } else {
       const outDir = path.join(DIST, meta.route.replace(/^\//, ''));
       fs.mkdirSync(outDir, { recursive: true });
-      fs.writeFileSync(path.join(outDir, 'index.html'), html);
+      fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
     }
     written += 1;
   }
 
-  console.log(`[prerender-seo] wrote per-route <head> metadata for ${written} routes.`);
+  // Vercel serves this file with an HTTP 404 status for unknown routes.
+  const notFoundMarkup = await render('/__mydpdigital_not_found__');
+  let notFoundHtml = withBody(
+    buildHead(baseHtml, {
+      route: '/404',
+      title: 'Page Not Found | My DP Digital',
+      description: "The page you're looking for doesn't exist. Explore My DP Digital's services in Chennai instead."
+    }),
+    notFoundMarkup
+  );
+  notFoundHtml = notFoundHtml
+    .replace(/\s*<link rel="canonical" href="[^"]*"\s*\/>/, '')
+    .replace('</head>', '    <meta name="robots" content="noindex, follow" />\n  </head>');
+  fs.writeFileSync(path.join(DIST, '404.html'), notFoundHtml, 'utf8');
+
+  console.log(`[prerender-seo] rendered full page HTML for ${written} routes and generated a real 404 page.`);
   writeSitemap(uniqueRoutes);
 }
 
-main();
+main().catch((error) => {
+  console.error('[prerender-seo] Failed to generate server-rendered pages:', error);
+  process.exit(1);
+});
