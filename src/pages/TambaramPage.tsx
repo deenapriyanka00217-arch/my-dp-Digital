@@ -136,7 +136,7 @@ const TambaramPage: React.FC = () => {
   return (
     <div className="w-full min-h-screen bg-[#07050C] text-white pt-24 pb-20">
       <PageSEO
-        title="Digital Marketing Agency Serving Tambaram, Chennai | My DP Digital"
+        title="Digital Marketing Agency in Tambaram | My DP Digital"
         description={`My DP Digital serves businesses in Tambaram, Chennai with SEO, Google Ads, Meta Ads, website design, and branding. Call ${DISPLAY_PHONE} to discuss your project.`}
         canonicalPath="/tambaram"
         jsonLd={jsonLd}
