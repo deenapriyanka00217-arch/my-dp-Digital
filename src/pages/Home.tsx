@@ -13,17 +13,11 @@ import PageSEO from '../components/PageSEO';
 const HOME_JSON_LD = [
   {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'Organization',
     name: 'My DP Digital',
     url: 'https://www.mydpdigital.in',
     telephone: '+91-81483-20217',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Chennai',
-      addressRegion: 'Tamil Nadu',
-      addressCountry: 'IN',
-    },
-    areaServed: 'Chennai, Tamil Nadu, India',
+    areaServed: ['West Tambaram', 'Tambaram', 'Chromepet', 'Selaiyur', 'Pallavaram', 'Chennai'],
     description:
       'My DP Digital helps businesses in Chennai grow with SEO, paid advertising, website development, and content services.',
   },
