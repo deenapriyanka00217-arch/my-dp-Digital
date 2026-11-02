@@ -144,8 +144,7 @@ function getBlogRoutes() {
     const re = new RegExp(`\\b${name}:\\s*\\n?\\s*(['"])((?:(?!\\1)[^\\\\]|\\\\.)*)\\1`);
     const m = text.match(re);
     if (!m) return null;
-    const escaped = { '\\\\': '\\', "'": "'", '"': '"', n: '\n', r: '\r', t: '\t' };
-    return m[2].replace(/\\\\([\\\\'"nrt])/g, (_, code) => escaped[code] ?? code);
+    return m[2].replace(/\\(["'])/g, '$1');
   };
 
   const routes = [];
