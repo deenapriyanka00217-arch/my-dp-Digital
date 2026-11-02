@@ -90,7 +90,7 @@ const STATIC_ROUTES = [
     route: '/tambaram',
     title: 'Digital Marketing Agency in Tambaram, Chennai | My DP Digital',
     description:
-      'Looking for a digital marketing agency in Tambaram, Chennai? My DP Digital offers SEO, Google Ads, website design and branding. Call +91 81483 20217.',
+      'Looking for a digital marketing agency in Tambaram, Chennai, or advertising services in Tambaram Chennai? My DP Digital offers SEO, Google Ads, website design and branding. Call +91 81483 20217.',
   },
   {
     route: '/about',
