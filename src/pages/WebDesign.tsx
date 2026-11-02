@@ -41,7 +41,7 @@ const WEBDESIGN_JSON_LD = [
     },
     areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'Custom, fast, SEO-ready website design for clinics, doctors, and growing businesses in Chennai, built with modern frameworks to convert visitors into customers.',
+      'Custom, fast, SEO-ready website design and development for small businesses, professional services, and e-commerce brands in Chennai, built to convert visitors into qualified enquiries.',
   },
   {
     '@context': 'https://schema.org',
