@@ -140,17 +140,14 @@ export const YouTubeManagementPage: React.FC = () => {
     '@type': 'Service',
     serviceType: 'YouTube Channel Management & Video Editing',
     provider: {
-      '@type': 'LocalBusiness',
-      name: 'My DP Digital Growth Agency',
+      '@type': 'Organization',
+      name: 'My DP Digital',
+      url: 'https://www.mydpdigital.in',
       telephone: '+918148320217',
-      address: {
-        '@type': 'PostalAddress',
-        addressRegion: 'Tamil Nadu',
-        addressCountry: 'India'
-      }
     },
+    areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'Professional YouTube Video Editing, High CTR Thumbnail Design, Channel Management, and On-Page YouTube SEO optimization for creators, academies, and brands.',
+      'Professional YouTube video editing, thumbnail design, channel management, and YouTube SEO for creators, academies, and brands in Chennai.',
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'INR',
@@ -162,17 +159,12 @@ export const YouTubeManagementPage: React.FC = () => {
   return (
     <>
     <PageSEO
-      title="YouTube Channel Management & Video Editing | Chennai"
+      title="YouTube Channel Management & Video Editing in Chennai | My DP Digital"
       description="Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help."
       canonicalPath="/youtube-management"
+      jsonLd={schemaData}
     />
     <div className="pt-28 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full font-sans">
-      {/* Inject Structured Data Schema for Search Engine SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
-
       {/* Ambient background lighting */}
       <div className="absolute top-10 left-[-10%] w-[50vw] h-[50vw] bg-[#FF2E9A]/15 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute top-[40%] right-[-10%] w-[45vw] h-[45vw] bg-[#FF0000]/10 rounded-full blur-[140px] pointer-events-none" />
