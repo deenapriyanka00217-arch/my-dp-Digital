@@ -40,9 +40,9 @@ const SITE_URL = 'https://www.mydpdigital.in';
 const STATIC_ROUTES = [
   {
     route: '/',
-    title: 'Digital Marketing Agency Near Me in Chennai | My DP Digital',
+    title: 'Digital Marketing Agency in Chennai | My DP Digital',
     description:
-      "My DP Digital is a digital marketing agency near you in Chennai — SEO, Google Ads, website design, and branding for local businesses. Get a free quote.",
+      'My DP Digital helps Chennai businesses grow with SEO, Google Ads, website design, and practical digital marketing. Request a consultation.',
   },
   {
     route: '/services',
@@ -70,9 +70,9 @@ const STATIC_ROUTES = [
   },
   {
     route: '/services/web-design-development',
-    title: 'Clinic & Business Website Design Company | Chennai',
+    title: 'Web Development & Website Design Company | Chennai',
     description:
-      'Custom, fast, SEO-ready websites for clinics, doctors, and growing businesses in Chennai — built to convert visitors into patients and customers.',
+      'Web development and website design from My DP Digital, a digital marketing agency in Chennai — SEO-ready sites built to convert visitors into customers, not just look good.',
   },
   {
     route: '/wordpress-development',
@@ -204,6 +204,20 @@ function buildHead(baseHtml, { route, title, description }) {
   return html;
 }
 
+function writeSitemap(routes) {
+  const uniqueUrls = [...new Set(routes.map(({ route }) => route))];
+  const urlEntries = uniqueUrls
+    .map((route) => {
+      const url = `${SITE_URL}${route}`;
+      return `  <url>\n    <loc>${url}</loc>\n  </url>`;
+    })
+    .join('\n');
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>\n`;
+  fs.writeFileSync(path.join(DIST, 'sitemap.xml'), xml, 'utf8');
+  console.log(`[prerender-seo] wrote sitemap with ${uniqueUrls.length} canonical URLs.`);
+}
+
 function main() {
   const indexPath = path.join(DIST, 'index.html');
   if (!fs.existsSync(indexPath)) {
@@ -213,9 +227,10 @@ function main() {
   const baseHtml = fs.readFileSync(indexPath, 'utf8');
 
   const allRoutes = [...STATIC_ROUTES, ...getBlogRoutes()];
+  const uniqueRoutes = [...new Map(allRoutes.map((meta) => [meta.route, meta])).values()];
   let written = 0;
 
-  for (const meta of allRoutes) {
+  for (const meta of uniqueRoutes) {
     const html = buildHead(baseHtml, meta);
     if (meta.route === '/') {
       fs.writeFileSync(indexPath, html);
@@ -228,6 +243,7 @@ function main() {
   }
 
   console.log(`[prerender-seo] wrote per-route <head> metadata for ${written} routes.`);
+  writeSitemap(uniqueRoutes);
 }
 
 main();
