@@ -82,7 +82,7 @@ const STATIC_ROUTES = [
   },
   {
     route: '/youtube-management',
-    title: 'YouTube Channel Management & Video Editing | Chennai',
+    title: 'YouTube Channel Management & Video Editing in Chennai | My DP Digital',
     description:
       'Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help.',
   },
