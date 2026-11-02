@@ -249,21 +249,21 @@ export const FacebookAdsPage: React.FC = () => {
   const adFeatures = [
     {
       title: 'High-Converting Product Sales Ads',
-      desc: 'We engineer dynamic product ads, direct offer video creatives, single item spotlight carousels, and high-CTR UGC reels engineered to trigger instant buying decisions.',
+      desc: 'We create product ads, offer-led videos, single-item spotlights, carousels, and user-generated-content style creatives for product campaigns.',
       icon: ShoppingCart,
       tag: 'E-Com Specialist',
       metric: 'Product Campaigns',
     },
     {
       title: 'Conversions API & Pixel Tracking',
-      desc: '100% server-side Meta Conversions API (CAPI) integration ensuring zero signal loss from iOS 14+ updates, ad blockers, and cookie restrictions for accurate attribution.',
+      desc: 'Set up Meta Pixel and Conversions API (CAPI) where appropriate, with event configuration and deduplication to improve campaign measurement.',
       icon: Cpu,
       tag: 'Server CAPI Setup',
       metric: 'Event Measurement',
     },
     {
       title: 'Advantage+ & CBO Budget Scaling',
-      desc: 'Algorithmic campaign budget optimization (CBO), broad targeting audience testing, lookalike audiences (LAL), and Advantage+ shopping campaigns to scale without ad fatigue.',
+      desc: 'Use campaign budget optimization, audience testing, lookalike audiences where appropriate, and Advantage+ options based on the account and campaign objective.',
       icon: TrendingUp,
       tag: 'Algorithmic Scale',
       metric: 'Audience Testing',
@@ -610,16 +610,16 @@ export const FacebookAdsPage: React.FC = () => {
               Our 5-Phase Meta Scaling Funnel
             </h2>
             <p className="text-xs text-white/70">
-              How we scale brand ad budgets from ₹15,000/month to ₹5,00,000+/month with stable ROAS.
+              A structured process for reviewing campaign setup, testing creative, expanding audiences, and improving performance over time.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
               { phase: '01', title: 'Pixel & CAPI Audit', desc: 'Flawless server tracking, catalog sync, and custom event definitions setup.' },
-              { phase: '02', title: 'Creative Testing', desc: 'Launching 5-10 ad hook variations to identify low-cost conversion winners.' },
+              { phase: '02', title: 'Creative Testing', desc: 'Test multiple ad hooks and creative variations to compare audience response and conversion quality.' },
               { phase: '03', title: 'Audience Scaling', desc: 'Broad targeting, lookalikes, and interest clustering to expand reach.' },
-              { phase: '04', title: 'CBO Budget Push', desc: 'Reallocating 80% of budget into verified top-performing asset silos.' },
+              { phase: '04', title: 'CBO Budget Push', desc: 'Shift budget toward campaigns and creatives that show stronger results in the agreed measurement window.' },
               { phase: '05', title: 'DPA Retargeting', desc: 'Automated dynamic cart recovery and post-purchase upsell campaigns.' },
             ].map((step, idx) => (
               <div key={idx} className="p-5 rounded-2xl bg-white/[0.03] border border-white/10 space-y-2 relative">
