@@ -147,7 +147,7 @@ export const YouTubeManagementPage: React.FC = () => {
   return (
     <>
     <PageSEO
-      title="YouTube Channel Management & Video Editing in Chennai | My DP Digital"
+      title="YouTube Channel Management in Chennai | My DP Digital"
       description="Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help."
       canonicalPath="/youtube-management"
       jsonLd={schemaData}
