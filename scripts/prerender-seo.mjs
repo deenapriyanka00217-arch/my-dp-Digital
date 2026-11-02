@@ -266,6 +266,12 @@ async function main() {
     if (h1Count !== 1) {
       throw new Error(`[prerender-seo] Expected exactly one primary H1 heading on ${meta.route}; found ${h1Count}.`);
     }
+    const needsStructuredData =
+      ['/', '/services', '/services/seo', '/tambaram', '/about', '/contact', '/blog'].includes(meta.route) ||
+      meta.route.startsWith('/blog/');
+    if (needsStructuredData && !markup.includes('application/ld+json')) {
+      throw new Error(`[prerender-seo] Expected JSON-LD structured data on ${meta.route}.`);
+    }
 
     const html = withBody(buildHead(baseHtml, meta), markup);
     if (meta.route === '/') {
