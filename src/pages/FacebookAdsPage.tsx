@@ -221,6 +221,7 @@ I want to scale our Facebook & Meta product ads. Please share a custom strategy.
             <span className="font-bold text-white font-mono">{estimatedOrders.toLocaleString('en-IN')} units</span>
           </div>
         </div>
+        <p className="text-[10px] text-white/50 leading-relaxed">Illustrative estimates only, not a forecast or guarantee. Actual campaign results depend on the product, margin, offer, audience, creative, landing page, tracking, and auction conditions.</p>
 
         {/* Action Button */}
         <div className="pt-1">
@@ -494,7 +495,7 @@ export const FacebookAdsPage: React.FC = () => {
 
 
         {/* ========================================================================= */}
-        {/* VERIFIED SALES MILESTONES STRIP */}
+        {/* CAMPAIGN STRATEGY WORKFLOW */}
         {/* ========================================================================= */}
         <section className="py-6 px-6 sm:px-8 rounded-3xl bg-white/[0.02] border border-white/10 backdrop-blur-xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -616,7 +617,7 @@ export const FacebookAdsPage: React.FC = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
-              { phase: '01', title: 'Pixel & CAPI Audit', desc: 'Flawless server tracking, catalog sync, and custom event definitions setup.' },
+              { phase: '01', title: 'Pixel & CAPI Audit', desc: 'Configure server-side event tracking, catalog connections, and custom conversion events where appropriate.' },
               { phase: '02', title: 'Creative Testing', desc: 'Test multiple ad hooks and creative variations to compare audience response and conversion quality.' },
               { phase: '03', title: 'Audience Scaling', desc: 'Broad targeting, lookalikes, and interest clustering to expand reach.' },
               { phase: '04', title: 'CBO Budget Push', desc: 'Shift budget toward campaigns and creatives that show stronger results in the agreed measurement window.' },
