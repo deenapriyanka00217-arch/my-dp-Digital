@@ -1,6 +1,27 @@
 import { useEffect } from 'react';
 
 const SITE_URL = 'https://www.mydpdigital.in';
+const BRAND_LOGO_URL = `${SITE_URL}/apple-touch-icon.png`;
+
+const enrichOrganizationLogo = (value: unknown): unknown => {
+  if (Array.isArray(value)) return value.map(enrichOrganizationLogo);
+  if (!value || typeof value !== 'object') return value;
+
+  const source = value as Record<string, unknown>;
+  const result: Record<string, unknown> = {};
+  for (const [key, child] of Object.entries(source)) {
+    result[key] = key === 'logo' ? child : enrichOrganizationLogo(child);
+  }
+
+  const type = result['@type'];
+  const isOrganization =
+    type === 'Organization' || (Array.isArray(type) && type.includes('Organization'));
+  if (isOrganization && !result.logo) {
+    result.logo = { '@type': 'ImageObject', url: BRAND_LOGO_URL };
+  }
+
+  return result;
+};
 
 interface PageSEOProps {
   title: string;
@@ -55,10 +76,11 @@ const PageSEO: React.FC<PageSEOProps> = ({ title, description, canonicalPath, js
   // Keep structured data in the rendered document so crawlers that inspect
   // the initial HTML can read it without waiting for JavaScript effects.
   const entries = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const structuredEntries = entries.map((entry) => enrichOrganizationLogo(entry));
 
   return (
     <>
-      {entries.map((entry, index) => (
+      {structuredEntries.map((entry, index) => (
         <script
           key={index}
           type="application/ld+json"
