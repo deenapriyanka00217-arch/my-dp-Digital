@@ -291,8 +291,8 @@ const ServicesPage = () => {
   return (
     <>
     <PageSEO
-      title="Digital Marketing Packages for Small Business | Chennai"
-      description="Affordable digital marketing packages for small businesses in Chennai — SEO, Google Ads, and website design pricing. Explore services and get a free quote today."
+      title="Digital Marketing Services in Chennai | My DP Digital"
+      description="Explore SEO, Google Ads, social media advertising, website development, and content services from My DP Digital. Practical digital marketing support for Chennai businesses."
       canonicalPath="/services"
       jsonLd={SERVICES_JSON_LD}
     />
@@ -318,9 +318,9 @@ const ServicesPage = () => {
             <Sparkles size={14} className="text-[#FF2E9A]" /> Complete Digital Solutions
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-tight tracking-tight">
-            Specialized Services <br />
+            Digital Marketing Services <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">
-              Engineered for High-Velocity Growth.
+              in Chennai for Growing Businesses.
             </span>
           </h1>
           <p className="text-base sm:text-xl text-white/80 leading-relaxed font-normal max-w-3xl">
