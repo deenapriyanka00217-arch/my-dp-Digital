@@ -33,7 +33,7 @@ const WHATSAPP_PHONE = '918148320217';
 const FACEBOOKADS_JSON_LD = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  serviceType: 'Facebook & Google Ads Management',
+  serviceType: 'Facebook & Instagram Ads Management',
   provider: {
     '@type': 'LocalBusiness',
     name: 'My DP Digital',
@@ -48,7 +48,7 @@ const FACEBOOKADS_JSON_LD = {
   },
   areaServed: 'Chennai, Tamil Nadu, India',
   description:
-    'Facebook Ads and Google Ads management agency in Chennai delivering high-ROAS product sales campaigns, PPC management, and social media ads for e-commerce and D2C brands.',
+    'Facebook and Instagram advertising management for Chennai retailers, D2C brands, and product businesses, including campaign setup, creative testing, retargeting, and conversion tracking.',
 };
 
 // 3D Neon Animated Facebook / Meta Logo Emblem with Glowing Laser Halo
