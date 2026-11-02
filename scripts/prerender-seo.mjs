@@ -247,6 +247,9 @@ async function main() {
     if (!markup || markup.trim().length < 100) {
       throw new Error(`[prerender-seo] Rendering returned too little page content for ${meta.route}.`);
     }
+    if (!/<h1(?:\\s|>)/i.test(markup)) {
+      throw new Error(`[prerender-seo] Public route is missing its primary H1 heading: ${meta.route}.`);
+    }
 
     const html = withBody(buildHead(baseHtml, meta), markup);
     if (meta.route === '/') {
