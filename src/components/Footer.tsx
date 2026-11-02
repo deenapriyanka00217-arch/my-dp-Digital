@@ -118,14 +118,9 @@ const Footer = () => {
                   Serving Chennai and businesses across Tamil Nadu <br />
                   Project enquiries by WhatsApp
                 </p>
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=My%20DP%20Digital%20-%20Web%20Developer&query_place_id=ChIJEWo-SVz1UjoRmUuSRl5M1wg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-xs text-white/60 leading-relaxed hover:text-[#7DD3FC] transition-colors"
-                >
-                  45, Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar, West Tambaram, Chennai, Tamil Nadu 600045, India
-                </a>
+                <p className="text-xs text-white/60 leading-relaxed">
+                  Service area: West Tambaram, Tambaram, Chromepet, Selaiyur, Pallavaram and nearby South Chennai areas
+                </p>
               </div>
             </div>
           </div>
