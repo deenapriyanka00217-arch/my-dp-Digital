@@ -334,7 +334,7 @@ export const FacebookAdsPage: React.FC = () => {
     <>
     <PageSEO
       title="Facebook Ads Agency in Chennai | Meta Ads Management"
-      description="Facebook and Instagram ad management for Chennai retailers, D2C brands, and product businesses — from campaign setup and creative testing to retargeting and conversion tracking."
+      description="Facebook and Instagram ad management for Chennai retailers and service businesses, from campaign setup and creative testing to retargeting."
       canonicalPath="/services/facebook-ads"
       jsonLd={FACEBOOKADS_JSON_LD}
     />
