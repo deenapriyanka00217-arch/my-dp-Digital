@@ -35,16 +35,10 @@ const FACEBOOKADS_JSON_LD = {
   '@type': 'Service',
   serviceType: 'Facebook & Instagram Ads Management',
   provider: {
-    '@type': 'LocalBusiness',
+    '@type': 'Organization',
     name: 'My DP Digital',
     url: 'https://www.mydpdigital.in',
     telephone: '+91-81483-20217',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Chennai',
-      addressRegion: 'Tamil Nadu',
-      addressCountry: 'IN',
-    },
   },
   areaServed: 'Chennai, Tamil Nadu, India',
   description:
