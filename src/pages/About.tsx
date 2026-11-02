@@ -13,17 +13,10 @@ const ABOUT_JSON_LD = {
     'My DP Digital is a Chennai-based digital marketing and web engineering agency helping brands turn data into measurable growth through SEO, ads, and website design.',
   mainEntity: {
     '@type': 'Organization',
-    name: 'My DP Digital - Web Developer',
+    name: 'My DP Digital',
     url: 'https://www.mydpdigital.in',
     telephone: '+91-81483-20217',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '45, Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar',
-      addressLocality: 'West Tambaram, Chennai',
-      addressRegion: 'Tamil Nadu',
-      postalCode: '600045',
-      addressCountry: 'IN',
-    },
+    areaServed: ['West Tambaram', 'Tambaram', 'Chromepet', 'Selaiyur', 'Pallavaram', 'Chennai'],
   },
 };
 
