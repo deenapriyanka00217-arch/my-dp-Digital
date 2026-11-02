@@ -46,39 +46,39 @@ const STATIC_ROUTES = [
   },
   {
     route: '/services',
-    title: 'Digital Marketing Packages for Small Business | Chennai',
+    title: 'Digital Marketing Services in Chennai | My DP Digital',
     description:
-      'Affordable digital marketing packages for small businesses in Chennai — SEO, Google Ads, and website design pricing. Explore services and get a free quote today.',
+      'Explore SEO, Google Ads, social media advertising, website development, and content services from My DP Digital. Practical digital marketing support for Chennai businesses.'
   },
   {
     route: '/services/seo',
-    title: 'Local SEO Services in Chennai | My DP Digital',
+    title: 'SEO Services in Chennai | Local & Technical SEO',
     description:
-      'Local SEO services in Chennai to rank higher on Google Maps and search results — Google Business Profile optimization, local citations, and more.',
+      'Improve search visibility with SEO services in Chennai: technical SEO, on-page improvements, content strategy, and Google Business Profile optimization for local businesses.'
   },
   {
     route: '/services/paid-social-ads',
-    title: 'Social Media Marketing Agency in Chennai | My DP Digital',
+    title: 'Google Ads & Social Media Ads in Chennai | My DP Digital',
     description:
-      'Social media marketing agency in Chennai driving real engagement and ROI — Google & Facebook Ads managed by data-driven paid media specialists.',
+      'Managed Google Ads, Facebook, and Instagram campaigns for Chennai businesses. We plan targeting, creative, tracking, and ongoing optimization around your lead or sales goals.'
   },
   {
     route: '/services/facebook-ads',
-    title: 'Facebook & Google Ads Agency in Chennai | PPC Management',
+    title: 'Facebook Ads Agency in Chennai | Meta Ads Management',
     description:
-      'Facebook Ads and Google Ads management agency in Chennai — high-ROAS product sales campaigns, PPC management, and social media ads for e-commerce brands.',
+      'Facebook and Instagram ad management for Chennai retailers, D2C brands, and product businesses — from campaign setup and creative testing to retargeting and conversion tracking.'
   },
   {
     route: '/services/web-design-development',
-    title: 'Web Development & Website Design Company | Chennai',
+    title: 'Website Design & Development in Chennai | My DP Digital',
     description:
-      'Web development and website design from My DP Digital, a digital marketing agency in Chennai — SEO-ready sites built to convert visitors into customers, not just look good.',
+      'SEO-ready business, clinic, and e-commerce websites designed and developed by My DP Digital in Chennai. Get a mobile-friendly website built around your services and enquiries.'
   },
   {
     route: '/wordpress-development',
-    title: 'WordPress Maintenance Services in India | My DP Digital',
+    title: 'WordPress Development in Chennai | My DP Digital',
     description:
-      'WordPress website maintenance services in India — updates, security, backups, and support plans built for speed, SEO, and reliability.',
+      'Custom WordPress websites, WooCommerce stores, and high-converting landing pages for Chennai businesses, with ongoing maintenance and support available.'
   },
   {
     route: '/services/content-marketing-branding',
