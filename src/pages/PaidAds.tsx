@@ -36,7 +36,7 @@ const PaidAdsPage = () => {
     <>
     <PageSEO
       title="Google Ads & Social Media Ads in Chennai | My DP Digital"
-      description="Managed Google Ads, Facebook, and Instagram campaigns for Chennai businesses. We plan targeting, creative, tracking, and ongoing optimization around your lead or sales goals."
+      description="Google Ads and Facebook and Instagram campaigns for Chennai businesses, with audience planning, creative, tracking and ongoing optimization."
       canonicalPath="/services/paid-social-ads"
       jsonLd={PAIDADS_JSON_LD}
     />
