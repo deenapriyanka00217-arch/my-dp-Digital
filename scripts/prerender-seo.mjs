@@ -262,7 +262,10 @@ async function main() {
     if (!markup || markup.trim().length < 100) {
       throw new Error(`[prerender-seo] Rendering returned too little page content for ${meta.route}.`);
     }
-    if (!/<h1\b/i.test(markup)) {
+    const h1Count = (markup.match(/<h1\\b/gi) || []).length;
+    if (h1Count !== 1) {
+      throw new Error(`[prerender-seo] Expected exactly one primary H1 heading on ${meta.route}; found ${h1Count}.`);
+    }
       throw new Error(`[prerender-seo] Public route is missing its primary H1 heading: ${meta.route}.`);
     }
 
