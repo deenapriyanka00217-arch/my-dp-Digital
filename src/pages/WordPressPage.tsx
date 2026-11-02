@@ -35,7 +35,7 @@ const WORDPRESS_JSON_LD = [
       url: 'https://www.mydpdigital.in',
       telephone: '+91-81483-20217',
     },
-    areaServed: 'India',
+    areaServed: 'Chennai, Tamil Nadu, India',
     description:
       'WordPress website development in Chennai, including custom business websites, WooCommerce stores, landing pages, and ongoing maintenance and support.',
   },
