@@ -272,6 +272,9 @@ async function main() {
     if (needsStructuredData && !markup.includes('application/ld+json')) {
       throw new Error(`[prerender-seo] Expected JSON-LD structured data on ${meta.route}.`);
     }
+    if (/(?:PostalAddress|streetAddress|Seguvara|600045)/i.test(markup)) {
+      throw new Error(`[prerender-seo] A public page contains private fixed-location address data: ${meta.route}.`);
+    }
 
     const html = withBody(buildHead(baseHtml, meta), markup);
     if (meta.route === '/') {
