@@ -39,7 +39,7 @@ import PageSEO from '../components/PageSEO';
 
 const WHATSAPP_PHONE = '918148320217';
 
-// Verified Real Client Channels
+// Client channel showcase examples
 const CLIENT_CHANNELS = [
   {
     id: 'kaasedhaan',
@@ -103,7 +103,7 @@ const ON_PAGE_SEO_CHECKLIST = [
     points: [
       'Keyword placement within first 40 characters of the video title',
       'High-curiosity emotional trigger words (e.g. "Step-by-Step", "Proven", "2026 Strategy")',
-      'A/B tested Title variants with TubeBuddy & VidIQ scoring 95+'
+      'Compare title options using clear keyword relevance and audience intent'
     ]
   },
   {
@@ -128,7 +128,7 @@ const ON_PAGE_SEO_CHECKLIST = [
     points: [
       '0:00 - 0:30 Second Hook with Zero Fluff & visual teasers',
       'Pattern interrupts every 4-7 seconds (B-Roll, zooms, whooshes, popups)',
-      'Subtitles & animated kinetic typography for 80%+ silent viewer retention'
+      'Subtitles and animated kinetic typography to support viewers watching without sound'
     ]
   }
 ];
@@ -200,7 +200,7 @@ export const YouTubeManagementPage: React.FC = () => {
             <p className="text-base sm:text-lg text-white/80 leading-relaxed font-medium max-w-2xl">
               Turn raw footage into viral, binge-worthy YouTube assets. We handle end-to-end 
               <strong className="text-white"> post-production video editing</strong>, 
-              <strong className="text-[#FF7AC6]"> 12%+ CTR thumbnail design</strong>, 
+              <strong className="text-[#FF7AC6]"> custom thumbnail design</strong>, 
               <strong className="text-[#25D366]"> on-page YouTube SEO</strong>, and 
               <strong className="text-white"> channel upload management</strong> so you can focus purely on creating.
             </p>
@@ -229,16 +229,16 @@ export const YouTubeManagementPage: React.FC = () => {
             {/* Trust Metric Badges */}
             <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-6 border-t border-white/10 max-w-xl">
               <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10">
-                <div className="text-xl sm:text-2xl font-black text-[#FF2E9A]">12.4%</div>
-                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Avg. Video CTR</div>
+                <div className="text-xl sm:text-2xl font-black text-[#FF2E9A]">Titles</div>
+                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Title & Topic Research</div>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10">
-                <div className="text-xl sm:text-2xl font-black text-[#25D366]">+185%</div>
-                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Watch Retention</div>
+                <div className="text-xl sm:text-2xl font-black text-[#25D366]">Editing</div>
+                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Video Post-Production</div>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10">
-                <div className="text-xl sm:text-2xl font-black text-[#06B6D4]">48-72h</div>
-                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Turnaround Time</div>
+                <div className="text-xl sm:text-2xl font-black text-[#06B6D4]">SEO</div>
+                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Channel Optimization</div>
               </div>
             </div>
           </div>
@@ -314,7 +314,7 @@ export const YouTubeManagementPage: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-3">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#25D366]/15 border border-[#25D366]/30 text-[#25D366] text-[10px] font-black uppercase tracking-wider">
-                <Award size={13} /> Verified Portfolio
+                <Award size={13} /> Client Channel Examples
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
                 Our Real <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#25D366]">YouTube Client Channels</span>
