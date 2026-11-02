@@ -10,16 +10,10 @@
 // that don't fully execute JavaScript (or that time out before it runs)
 // see identical, generic metadata for every single page.
 //
-// This script does NOT change routing, does NOT touch vercel.json, and does
-// NOT add any new runtime dependency (no headless browser). It just clones
-// the already-built dist/index.html (which has the correct, current,
-// content-hashed <script>/<link> asset tags for this exact build) into a
-// small static file per route, with the <head> swapped for that route's
-// real metadata. Vercel serves a matching static file ahead of the SPA
-// catch-all rewrite, so requests to e.g. /about get this pre-filled HTML
-// instead of the generic one — and once the JS bundle loads, PageSEO's
-// useEffect sets the identical values again (harmless no-op), so normal
-// client-side navigation between pages is completely unaffected.
+// The post-build step renders each known route with React's server renderer,
+// then inserts that markup into the built HTML shell. It also emits a real
+// 404 document and private noindex admin route documents. Client hydration
+// then takes over, so normal navigation remains interactive.
 //
 // Safe to re-run on every build: it only ever reads dist/index.html and
 // writes new files under dist/, never modifies source files.
@@ -276,8 +270,8 @@ async function main() {
         description: 'Private administration area.'
       }),
       markup
-    ).replace('</head>', '    <meta name="robots" content="noindex, nofollow" />\\n  </head>');
-    const outDir = path.join(DIST, route.replace(/^\\//, ''));
+    ).replace('</head>', '    <meta name="robots" content="noindex, nofollow" />\n  </head>');
+    const outDir = path.join(DIST, route.slice(1));
     fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
   }
