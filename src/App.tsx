@@ -36,7 +36,7 @@ const ScrollToTop = () => {
   return null;
 };
 
-const AppContent = () => {
+export const AppContent = () => {
   const { pathname } = useLocation();
   const isAdminRoute = pathname === '/admin' || pathname === '/dashboard';
 
@@ -89,13 +89,21 @@ const AppContent = () => {
   );
 };
 
-export default function App() {
+export function AppShell() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <CmsProvider>
         <AppContent />
       </CmsProvider>
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <AppShell />
     </Router>
   );
 }
