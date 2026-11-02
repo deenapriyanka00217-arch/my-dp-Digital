@@ -28,10 +28,10 @@ import PageSEO from '../components/PageSEO';
 const OURWORKS_JSON_LD = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Our Works & Live Client Websites',
+  name: 'Website & Creative Projects',
   url: 'https://www.mydpdigital.in/our-works',
   description:
-    'Verified client portfolio of live websites, e-commerce stores, and digital marketing deployments built by My DP Digital in Chennai.',
+    'Browse selected website and creative projects from My DP Digital, including business websites, e-commerce layouts and digital content work.',
   publisher: {
     '@type': 'Organization',
     name: 'My DP Digital',
@@ -127,8 +127,8 @@ export const OurWorksPage: React.FC = () => {
   return (
     <>
     <PageSEO
-      title="Our Works & Live Client Websites | My DP Digital"
-      description="Explore our verified client portfolio — live websites, e-commerce stores, and digital marketing deployments built by My DP Digital in Chennai."
+      title="Website & Creative Projects | My DP Digital"
+      description="Browse selected website and creative projects from My DP Digital, including business websites, e-commerce layouts and digital content work."
       canonicalPath="/our-works"
       jsonLd={OURWORKS_JSON_LD}
     />

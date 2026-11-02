@@ -10,28 +10,25 @@
 // that don't fully execute JavaScript (or that time out before it runs)
 // see identical, generic metadata for every single page.
 //
-// This script does NOT change routing, does NOT touch vercel.json, and does
-// NOT add any new runtime dependency (no headless browser). It just clones
-// the already-built dist/index.html (which has the correct, current,
-// content-hashed <script>/<link> asset tags for this exact build) into a
-// small static file per route, with the <head> swapped for that route's
-// real metadata. Vercel serves a matching static file ahead of the SPA
-// catch-all rewrite, so requests to e.g. /about get this pre-filled HTML
-// instead of the generic one — and once the JS bundle loads, PageSEO's
-// useEffect sets the identical values again (harmless no-op), so normal
-// client-side navigation between pages is completely unaffected.
+// The post-build step renders each known route with React's server renderer,
+// then inserts that markup into the built HTML shell. It also emits a real
+// 404 document and private noindex admin route documents. Client hydration
+// then takes over, so normal navigation remains interactive.
 //
 // Safe to re-run on every build: it only ever reads dist/index.html and
 // writes new files under dist/, never modifies source files.
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
 const SITE_URL = 'https://www.mydpdigital.in';
+const BLOG_SEO_META = JSON.parse(
+  fs.readFileSync(path.join(ROOT, 'src', 'data', 'blogSeoMeta.json'), 'utf8')
+);
 
 // --- Static route metadata -------------------------------------------------
 // Keep these in sync with each page's <PageSEO title=... description=...>
@@ -40,45 +37,45 @@ const SITE_URL = 'https://www.mydpdigital.in';
 const STATIC_ROUTES = [
   {
     route: '/',
-    title: 'Digital Marketing Agency Near Me in Chennai | My DP Digital',
+    title: 'Digital Marketing Agency in Chennai | My DP Digital',
     description:
-      "My DP Digital is a digital marketing agency near you in Chennai — SEO, Google Ads, website design, and branding for local businesses. Get a free quote.",
+      'My DP Digital helps Chennai businesses grow with SEO, Google Ads, website design, and practical digital marketing. Request a consultation.',
   },
   {
     route: '/services',
-    title: 'Digital Marketing Packages for Small Business | Chennai',
+    title: 'Digital Marketing Services in Chennai | My DP Digital',
     description:
-      'Affordable digital marketing packages for small businesses in Chennai — SEO, Google Ads, and website design pricing. Explore services and get a free quote today.',
+      'Explore SEO, Google Ads, social media advertising, website development and content services for Chennai businesses.'
   },
   {
     route: '/services/seo',
-    title: 'Local SEO Services in Chennai | My DP Digital',
+    title: 'SEO Services in Chennai | Local & Technical SEO',
     description:
-      'Local SEO services in Chennai to rank higher on Google Maps and search results — Google Business Profile optimization, local citations, and more.',
+      'SEO services in Chennai covering technical fixes, on-page improvements, content planning and local search visibility.'
   },
   {
     route: '/services/paid-social-ads',
-    title: 'Social Media Marketing Agency in Chennai | My DP Digital',
+    title: 'Google Ads & Social Media Ads in Chennai | My DP Digital',
     description:
-      'Social media marketing agency in Chennai driving real engagement and ROI — Google & Facebook Ads managed by data-driven paid media specialists.',
+      'Google Ads and Facebook and Instagram campaigns for Chennai businesses, with audience planning, creative, tracking and ongoing optimization.'
   },
   {
     route: '/services/facebook-ads',
-    title: 'Facebook & Google Ads Agency in Chennai | PPC Management',
+    title: 'Facebook Ads Agency in Chennai | Meta Ads Management',
     description:
-      'Facebook Ads and Google Ads management agency in Chennai — high-ROAS product sales campaigns, PPC management, and social media ads for e-commerce brands.',
+      'Facebook and Instagram ad management for Chennai retailers and service businesses, from campaign setup and creative testing to retargeting.'
   },
   {
     route: '/services/web-design-development',
-    title: 'Clinic & Business Website Design Company | Chennai',
+    title: 'Website Design & Development in Chennai | My DP Digital',
     description:
-      'Custom, fast, SEO-ready websites for clinics, doctors, and growing businesses in Chennai — built to convert visitors into patients and customers.',
+      'SEO-ready business, clinic and e-commerce websites in Chennai, designed for mobile use, clear service information and customer enquiries.'
   },
   {
     route: '/wordpress-development',
-    title: 'WordPress Maintenance Services in India | My DP Digital',
+    title: 'WordPress Development in Chennai | My DP Digital',
     description:
-      'WordPress website maintenance services in India — updates, security, backups, and support plans built for speed, SEO, and reliability.',
+      'Custom WordPress websites, WooCommerce stores, and high-converting landing pages for Chennai businesses, with ongoing maintenance and support available.'
   },
   {
     route: '/services/content-marketing-branding',
@@ -88,27 +85,27 @@ const STATIC_ROUTES = [
   },
   {
     route: '/youtube-management',
-    title: 'YouTube Channel Management & Video Editing | Chennai',
+    title: 'YouTube Channel Management in Chennai | My DP Digital',
     description:
       'Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help.',
   },
   {
     route: '/tambaram',
-    title: 'Digital Marketing Agency in Tambaram, Chennai | My DP Digital',
+    title: 'Digital Marketing Agency in Tambaram | My DP Digital',
     description:
-      'Looking for a digital marketing agency in Tambaram, Chennai? My DP Digital offers SEO, Google Ads, website design and branding. Call +91 81483 20217.',
+      'My DP Digital serves businesses in Tambaram, Chennai with SEO, Google Ads, Meta Ads, website design, and branding. Call +91 81483 20217 to discuss your project.',
   },
   {
     route: '/about',
     title: 'About My DP Digital | Chennai Digital Marketing Agency',
     description:
-      'My DP Digital is a Chennai-based digital marketing and web engineering agency — learn how we turn data into measurable growth for brands worldwide.',
+      'Learn about My DP Digital, serving Chennai businesses with website design, WordPress development, SEO, advertising and creative services.',
   },
   {
     route: '/our-works',
-    title: 'Our Works & Live Client Websites | My DP Digital',
+    title: 'Website & Creative Projects | My DP Digital',
     description:
-      'Explore our verified client portfolio — live websites, e-commerce stores, and digital marketing deployments built by My DP Digital in Chennai.',
+      'Browse selected website and creative projects from My DP Digital, including business websites, e-commerce layouts and digital content work.',
   },
   {
     route: '/blog',
@@ -143,7 +140,8 @@ function getBlogRoutes() {
     // mistaken for the closing quote.
     const re = new RegExp(`\\b${name}:\\s*\\n?\\s*(['"])((?:(?!\\1)[^\\\\]|\\\\.)*)\\1`);
     const m = text.match(re);
-    return m ? m[2] : null;
+    if (!m) return null;
+    return m[2].replace(/\\(["'])/g, '$1');
   };
 
   const routes = [];
@@ -157,7 +155,12 @@ function getBlogRoutes() {
     const description = field(block, 'excerpt');
     if (!slug || !title || !description) continue;
 
-    routes.push({ route: `/blog/${slug}`, title: `${title} | My DP Digital Blog`, description });
+    const seoMeta = BLOG_SEO_META[slug];
+    routes.push({
+      route: `/blog/${slug}`,
+      title: seoMeta?.title ?? `${title} | My DP Digital Blog`,
+      description: seoMeta?.description ?? description,
+    });
   }
   return routes;
 }
@@ -204,30 +207,123 @@ function buildHead(baseHtml, { route, title, description }) {
   return html;
 }
 
-function main() {
-  const indexPath = path.join(DIST, 'index.html');
-  if (!fs.existsSync(indexPath)) {
-    console.error('[prerender-seo] dist/index.html not found — skipping (did the build actually run?)');
-    process.exit(1);
-  }
-  const baseHtml = fs.readFileSync(indexPath, 'utf8');
+function writeSitemap(routes) {
+  const uniqueUrls = [...new Set(routes.map(({ route }) => route))];
+  const urlEntries = uniqueUrls
+    .map((route) => {
+      const url = `${SITE_URL}${route}`;
+      return `  <url>\n    <loc>${url}</loc>\n  </url>`;
+    })
+    .join('\n');
 
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>\n`;
+  fs.writeFileSync(path.join(DIST, 'sitemap.xml'), xml, 'utf8');
+  console.log(`[prerender-seo] wrote sitemap with ${uniqueUrls.length} canonical URLs.`);
+}
+
+async function main() {
+  const indexPath = path.join(DIST, 'index.html');
+  const serverEntryPath = path.join(DIST, 'server', 'entry-server.js');
+
+  if (!fs.existsSync(indexPath)) {
+    throw new Error('[prerender-seo] dist/index.html not found — did the client build run?');
+  }
+  if (!fs.existsSync(serverEntryPath)) {
+    throw new Error('[prerender-seo] server entry not found — did the SSR build run?');
+  }
+
+  const baseHtml = fs.readFileSync(indexPath, 'utf8');
+  const rootMarker = '<div id="root"></div>';
+  if (!baseHtml.includes(rootMarker)) {
+    throw new Error('[prerender-seo] Could not find the empty #root element in dist/index.html.');
+  }
+
+  const { render } = await import(pathToFileURL(serverEntryPath).href);
   const allRoutes = [...STATIC_ROUTES, ...getBlogRoutes()];
+  const uniqueRoutes = [...new Map(allRoutes.map((meta) => [meta.route, meta])).values()];
+  const invalidMetadata = uniqueRoutes.filter(({ title, description }) => title.length > 60 || description.length > 160);
+  if (invalidMetadata.length > 0) {
+    const details = invalidMetadata.map(({ route, title, description }) =>
+      `${route}: title=${title.length} chars, description=${description.length} chars`
+    ).join('; ');
+    throw new Error(`[prerender-seo] Search metadata exceeds the configured length checks: ${details}`);
+  }
   let written = 0;
 
-  for (const meta of allRoutes) {
-    const html = buildHead(baseHtml, meta);
+  const withBody = (html, markup) => {
+    if (!html.includes(rootMarker)) {
+      throw new Error('[prerender-seo] Route HTML does not contain the expected root marker.');
+    }
+    return html.replace(rootMarker, `<div id="root" data-prerendered="true">${markup}</div>`);
+  };
+
+  for (const meta of uniqueRoutes) {
+    const markup = await render(meta.route);
+    if (!markup || markup.trim().length < 100) {
+      throw new Error(`[prerender-seo] Rendering returned too little page content for ${meta.route}.`);
+    }
+    const h1Count = (markup.match(/<h1\b/gi) || []).length;
+    if (h1Count !== 1) {
+      throw new Error(`[prerender-seo] Expected exactly one primary H1 heading on ${meta.route}; found ${h1Count}.`);
+    }
+    const needsStructuredData =
+      ['/', '/services', '/services/seo', '/tambaram', '/about', '/contact', '/blog'].includes(meta.route) ||
+      meta.route.startsWith('/blog/');
+    if (needsStructuredData && !markup.includes('application/ld+json')) {
+      throw new Error(`[prerender-seo] Expected JSON-LD structured data on ${meta.route}.`);
+    }
+    if (/(?:PostalAddress|streetAddress|Seguvara|600045)/i.test(markup)) {
+      throw new Error(`[prerender-seo] A public page contains private fixed-location address data: ${meta.route}.`);
+    }
+
+    const html = withBody(buildHead(baseHtml, meta), markup);
     if (meta.route === '/') {
-      fs.writeFileSync(indexPath, html);
+      fs.writeFileSync(indexPath, html, 'utf8');
     } else {
       const outDir = path.join(DIST, meta.route.replace(/^\//, ''));
       fs.mkdirSync(outDir, { recursive: true });
-      fs.writeFileSync(path.join(outDir, 'index.html'), html);
+      fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
     }
     written += 1;
   }
 
-  console.log(`[prerender-seo] wrote per-route <head> metadata for ${written} routes.`);
+  // Preserve the admin paths as route-correct private documents. They remain
+  // excluded from the public sitemap and are marked noindex.
+  for (const route of ['/admin', '/dashboard']) {
+    const markup = await render(route);
+    const html = withBody(
+      buildHead(baseHtml, {
+        route,
+        title: 'Private Dashboard | My DP Digital',
+        description: 'Private administration area.'
+      }),
+      markup
+    ).replace('</head>', '    <meta name="robots" content="noindex, nofollow" />\n  </head>');
+    const outDir = path.join(DIST, route.slice(1));
+    fs.mkdirSync(outDir, { recursive: true });
+    fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
+  }
+
+  // Vercel serves this file with an HTTP 404 status for unknown routes.
+  const notFoundMarkup = await render('/__mydpdigital_not_found__');
+  let notFoundHtml = withBody(
+    buildHead(baseHtml, {
+      route: '/404',
+      title: 'Page Not Found | My DP Digital',
+      description: "The page you're looking for doesn't exist. Explore My DP Digital's services in Chennai instead."
+    }),
+    notFoundMarkup
+  );
+  notFoundHtml = notFoundHtml
+    .replace(/\s*<link rel="canonical" href="[^"]*"\s*\/>/, '')
+    .replace('</head>', '    <meta name="robots" content="noindex, follow" />\n  </head>');
+  fs.writeFileSync(path.join(DIST, '404.html'), notFoundHtml, 'utf8');
+
+  console.log(`[prerender-seo] rendered full page HTML for ${written} routes and generated a real 404 page.`);
+  writeSitemap(uniqueRoutes);
 }
 
-main();
+main().catch((error) => {
+  console.error('[prerender-seo] Failed to generate server-rendered pages:', error);
+  process.exit(1);
+});

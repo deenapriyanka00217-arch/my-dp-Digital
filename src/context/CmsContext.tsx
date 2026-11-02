@@ -15,36 +15,49 @@ interface CmsContextType {
 const CmsContext = createContext<CmsContextType | undefined>(undefined);
 
 export const CmsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [content, setContent] = useState<SiteContent>(() => {
-    const saved = localStorage.getItem('dp_digital_cms_content');
-    if (saved) {
-      try { 
-        const parsed = JSON.parse(saved);
-        return { ...initialSiteContent, ...parsed };
-      } catch (e) { 
-        return initialSiteContent; 
-      }
-    }
-    return initialSiteContent;
-  });
-
-  const [leads, setLeads] = useState<LeadSubmission[]>(() => {
-    const saved = localStorage.getItem('dp_digital_cms_leads');
-    if (saved) {
-      try { return JSON.parse(saved); } catch (e) { return initialLeads; }
-    }
-    return initialLeads;
-  });
-
+  // Start from the same defaults on the server and during the first browser
+  // render. Load browser-only saved content after hydration to avoid a mismatch.
+  const [content, setContent] = useState<SiteContent>(initialSiteContent);
+  const [leads, setLeads] = useState<LeadSubmission[]>(initialLeads);
+  const [storageLoaded, setStorageLoaded] = useState(false);
   const [isAdminMode, setIsAdminMode] = useState<boolean>(false);
 
   useEffect(() => {
-    localStorage.setItem('dp_digital_cms_content', JSON.stringify(content));
-  }, [content]);
+    try {
+      const savedContent = window.localStorage.getItem('dp_digital_cms_content');
+      if (savedContent) {
+        const parsed = JSON.parse(savedContent);
+        setContent({ ...initialSiteContent, ...parsed });
+      }
+
+      const savedLeads = window.localStorage.getItem('dp_digital_cms_leads');
+      if (savedLeads) {
+        setLeads(JSON.parse(savedLeads));
+      }
+    } catch (error) {
+      console.warn('Unable to restore saved CMS data from this browser.', error);
+    } finally {
+      setStorageLoaded(true);
+    }
+  }, []);
 
   useEffect(() => {
-    localStorage.setItem('dp_digital_cms_leads', JSON.stringify(leads));
-  }, [leads]);
+    if (!storageLoaded) return;
+    try {
+      window.localStorage.setItem('dp_digital_cms_content', JSON.stringify(content));
+    } catch (error) {
+      console.warn('Unable to save CMS content in this browser.', error);
+    }
+  }, [content, storageLoaded]);
+
+  useEffect(() => {
+    if (!storageLoaded) return;
+    try {
+      window.localStorage.setItem('dp_digital_cms_leads', JSON.stringify(leads));
+    } catch (error) {
+      console.warn('Unable to save CMS leads in this browser.', error);
+    }
+  }, [leads, storageLoaded]);
 
   const updateContent = (newContent: Partial<SiteContent>) => {
     setContent(prev => ({ ...prev, ...newContent }));
@@ -77,7 +90,6 @@ export const CmsProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     </CmsContext.Provider>
   );
 };
-
 export const useCms = () => {
   const context = useContext(CmsContext);
   if (!context) throw new Error('useCms must be used within a CmsProvider');

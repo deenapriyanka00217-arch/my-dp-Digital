@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter, MessageCircle } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -28,22 +28,6 @@ const Footer = () => {
               We design and engineer high-performance Single Page Websites, Business Portals, 20+ Page Custom Websites, E-Commerce Stores, and Automated Sales Funnels.
             </p>
 
-            <div className="flex gap-3">
-              {[
-                { icon: Linkedin, href: '#' },
-                { icon: Twitter, href: '#' },
-                { icon: Instagram, href: '#' },
-                { icon: Facebook, href: '#' },
-              ].map((item, i) => (
-                <a
-                  key={i}
-                  href={item.href}
-                  className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/10 flex items-center justify-center text-white/60 hover:bg-[#FF2E9A] hover:text-white hover:border-[#FF2E9A] hover:scale-110 transition-all duration-300"
-                >
-                  <item.icon size={18} />
-                </a>
-              ))}
-            </div>
           </div>
 
           <div className="lg:col-span-2">
@@ -110,7 +94,7 @@ const Footer = () => {
                     <div className="text-xs font-black text-white">Live WhatsApp Desk</div>
                     <div className="text-[10px] text-[#25D366] font-bold flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse" />
-                      <span>Online & Active 24/7</span>
+                      <span>Send us a WhatsApp message</span>
                     </div>
                   </div>
                 </div>
@@ -131,8 +115,11 @@ const Footer = () => {
                   growth@mydpdigital.in
                 </div>
                 <p className="text-white/50 text-xs leading-relaxed font-normal">
-                  Tamil Nadu & Pan-India Fast Turnaround <br />
-                  Instant quotes delivered on WhatsApp
+                  Serving Chennai and businesses across Tamil Nadu <br />
+                  Project enquiries by WhatsApp
+                </p>
+                <p className="text-xs text-white/60 leading-relaxed">
+                  Service area: West Tambaram, Tambaram, Chromepet, Selaiyur, Pallavaram and nearby South Chennai areas
                 </p>
               </div>
             </div>
@@ -142,8 +129,6 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/40 font-bold uppercase tracking-widest">
           <div>© 2026 MY DP DIGITAL. ALL RIGHTS RESERVED.</div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             <Link to="/our-works" className="hover:text-[#FF7AC6] transition-colors">Our Portfolio</Link>
           </div>
         </div>

@@ -28,16 +28,16 @@ const WORDPRESS_JSON_LD = [
   {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    serviceType: 'WordPress Website Maintenance',
+    serviceType: 'WordPress Website Development',
     provider: {
       '@type': 'Organization',
       name: 'My DP Digital',
       url: 'https://www.mydpdigital.in',
       telephone: '+91-81483-20217',
     },
-    areaServed: 'India',
+    areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'WordPress website development and maintenance services in India, covering updates, security, backups, speed optimization, and ongoing support plans.',
+      'WordPress website development in Chennai, including custom business websites, WooCommerce stores, landing pages, and ongoing maintenance and support.',
   },
   {
     '@context': 'https://schema.org',
@@ -156,8 +156,8 @@ export const WordPressPage: React.FC = () => {
   return (
     <>
     <PageSEO
-      title="WordPress Maintenance Services in India | My DP Digital"
-      description="WordPress website maintenance services in India — updates, security, backups, and support plans built for speed, SEO, and reliability."
+      title="WordPress Development in Chennai | My DP Digital"
+      description="Custom WordPress websites, WooCommerce stores, and high-converting landing pages for Chennai businesses, with ongoing maintenance and support available."
       canonicalPath="/wordpress-development"
       jsonLd={WORDPRESS_JSON_LD}
     />

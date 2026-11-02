@@ -54,8 +54,8 @@ const ContactForm = () => {
                   <MapPin size={18} />
                 </div>
                 <div>
-                  <div className="text-white/40 text-[9px] uppercase font-bold tracking-wider">Office Location</div>
-                  <div className="text-sm font-bold text-white">Anna Salai, Chennai, India</div>
+                  <div className="text-white/40 text-[9px] uppercase font-bold tracking-wider">Service Area</div>
+                  <div className="text-sm font-bold leading-relaxed text-white">West Tambaram, Tambaram, Chromepet, Selaiyur, Pallavaram and nearby South Chennai areas</div>
                 </div>
               </div>
             </div>

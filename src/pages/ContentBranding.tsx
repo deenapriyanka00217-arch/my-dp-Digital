@@ -50,7 +50,7 @@ const ContentBrandingPage = () => {
             <Sparkles size={14} className="text-[#FF2E9A]" /> Authority Engines
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-tight tracking-tight">
-            Content That Builds <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">Authority (and Traffic).</span>
+            Content Marketing, Graphic Design <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">& Branding Services.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
             We fuse data-driven SEO content strategy with world-class brand identity. From technical blogging to high-impact design systems, we build the voice that dominates niches.

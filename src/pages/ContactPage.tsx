@@ -12,17 +12,11 @@ const CONTACT_JSON_LD = {
   name: 'Contact My DP Digital',
   url: 'https://www.mydpdigital.in/contact',
   mainEntity: {
-    '@type': 'LocalBusiness',
+    '@type': 'Organization',
     name: 'My DP Digital',
     telephone: '+91-81483-20217',
     email: 'growth@mydpdigital.in',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Anna Salai',
-      addressLocality: 'Chennai',
-      addressRegion: 'Tamil Nadu',
-      addressCountry: 'IN',
-    },
+    areaServed: ['West Tambaram', 'Tambaram', 'Chromepet', 'Selaiyur', 'Pallavaram', 'Chennai'],
   },
 };
 
@@ -104,8 +98,8 @@ const ContactPage = () => {
                   <MapPin size={18} />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-white/50 text-[10px] uppercase font-bold tracking-wider">Office Location</div>
-                  <div className="text-xs font-semibold text-white">Anna Salai, Chennai, TN</div>
+                  <div className="text-white/50 text-[10px] uppercase font-bold tracking-wider">Service Area</div>
+                  <div className="text-xs font-semibold leading-relaxed text-white">West Tambaram, Tambaram, Chromepet, Selaiyur, Pallavaram and nearby South Chennai areas</div>
                 </div>
               </div>
             </div>

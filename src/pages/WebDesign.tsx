@@ -41,7 +41,7 @@ const WEBDESIGN_JSON_LD = [
     },
     areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'Custom, fast, SEO-ready website design for clinics, doctors, and growing businesses in Chennai, built with modern frameworks to convert visitors into customers.',
+      'Custom, fast, SEO-ready website design and development for small businesses, professional services, and e-commerce brands in Chennai, built to convert visitors into qualified enquiries.',
   },
   {
     '@context': 'https://schema.org',
@@ -58,8 +58,8 @@ const WebDesignPage = () => {
   return (
     <>
     <PageSEO
-      title="Web Development & Website Design Company | Chennai"
-      description="Web development and website design from My DP Digital, a digital marketing agency in Chennai — SEO-ready sites built to convert visitors into customers, not just look good."
+      title="Website Design & Development in Chennai | My DP Digital"
+      description="SEO-ready business, clinic and e-commerce websites in Chennai, designed for mobile use, clear service information and customer enquiries."
       canonicalPath="/services/web-design-development"
       jsonLd={WEBDESIGN_JSON_LD}
     />
@@ -73,7 +73,7 @@ const WebDesignPage = () => {
             <Sparkles size={14} className="text-[#FF2E9A]" /> Web Development & Conversion-First UI
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-tight tracking-tight">
-            Web Development Built to <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">Convert, Not Just Look Good.</span>
+            Website Design & Development in Chennai <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">for Growing Businesses.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
             Custom web development and website design — blazing-fast, SEO-ready, built with modern frameworks and interactive elements. We build digital assets that drive bottom-line results.

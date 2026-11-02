@@ -13,19 +13,13 @@ import PageSEO from '../components/PageSEO';
 const HOME_JSON_LD = [
   {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'Organization',
     name: 'My DP Digital',
     url: 'https://www.mydpdigital.in',
     telephone: '+91-81483-20217',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Chennai',
-      addressRegion: 'Tamil Nadu',
-      addressCountry: 'IN',
-    },
-    areaServed: 'Chennai, Tamil Nadu, India',
+    areaServed: ['West Tambaram', 'Tambaram', 'Chromepet', 'Selaiyur', 'Pallavaram', 'Chennai'],
     description:
-      'My DP Digital is a digital marketing agency near you in Chennai, offering SEO, Google Ads, website design, and branding for local businesses.',
+      'My DP Digital helps businesses in Chennai grow with SEO, paid advertising, website development, and content services.',
   },
 ];
 
@@ -40,8 +34,8 @@ const Home = () => {
       className="bg-[#07050C] text-white w-full overflow-hidden"
     >
       <PageSEO
-        title="My DP Digital – DP Digital Marketing Agency in Chennai"
-        description="My DP Digital (DP Digital Marketing) is a digital marketing agency near you in Chennai — SEO, Google Ads, website design, and branding for local businesses. Get a free quote."
+        title="Digital Marketing Agency in Chennai | My DP Digital"
+        description="My DP Digital helps Chennai businesses grow with SEO, Google Ads, website design, and practical digital marketing. Request a consultation."
         canonicalPath="/"
         jsonLd={HOME_JSON_LD}
       />
@@ -156,76 +150,42 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ================= QUICK ANSWER: DIGITAL MARKETING AGENCY NEAR ME ================= */}
-      <section className="py-16 bg-[#07050C] w-full">
+      {/* Local services overview */}
+      <section className="py-16 bg-[#07050C] w-full border-t border-white/10">
         <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-20 max-w-[1800px] mx-auto">
-          <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
-            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
-              Looking for a digital marketing agency near you?
-            </h3>
-            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-              My DP Digital is based on Anna Salai, Chennai, and works with businesses across the city and the
-              wider Tambaram / South Chennai belt — in person where useful, and over WhatsApp and calls for
-              everything else. Whether you're searching for a digital marketing agency near you or around me,
-              message us on WhatsApp with your business and what you need help with, and we'll get back to you
-              directly.
+          <div className="max-w-4xl mx-auto text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-black text-white mb-4">
+              Digital marketing and website services for Chennai businesses
+            </h2>
+            <p className="text-sm sm:text-base text-white/70 leading-relaxed">
+              My DP Digital helps small businesses, clinics, training institutes, and service providers build a stronger online presence. Explore our core services below, or contact us to discuss the right approach for your business.
             </p>
           </div>
 
-          {/* ================= QUICK ANSWER: DIGITAL MARKETING AGENCY IN TAMBARAM ================= */}
-          <div className="max-w-3xl mx-auto mt-6 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
-            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
-              Digital Marketing Agency in Tambaram
-            </h3>
-            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-              Based close to Tambaram on Anna Salai, Chennai, My DP Digital also runs a dedicated digital
-              marketing agency in Tambaram covering SEO, Google Ads, website design, and branding for local
-              shop owners, clinics, and service businesses — see our{' '}
-              <Link to="/tambaram" className="text-[#FF7AC6] font-semibold hover:underline">
-                Tambaram services and FAQs
-              </Link>{' '}
-              or message us on WhatsApp directly.
-            </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+            {[
+              { title: 'SEO Services', description: 'Improve your visibility in relevant Google searches and local results.', href: '/services/seo' },
+              { title: 'Website Design & Development', description: 'Build a fast, clear website that explains your services and encourages enquiries.', href: '/services/web-design-development' },
+              { title: 'Paid Advertising', description: 'Reach prospective customers through planned Google and social ad campaigns.', href: '/services/paid-social-ads' },
+              { title: 'Content & Branding', description: 'Create consistent content and visual assets for a recognisable business presence.', href: '/services/content-marketing-branding' },
+            ].map((service) => (
+              <Link
+                key={service.href}
+                to={service.href}
+                className="rounded-2xl border border-white/10 bg-white/[0.035] p-6 hover:border-[#FF2E9A]/50 transition-colors group"
+              >
+                <h3 className="text-base font-bold text-white group-hover:text-[#FF7AC6] transition-colors mb-3">{service.title}</h3>
+                <p className="text-sm text-white/60 leading-relaxed">{service.description}</p>
+                <span className="inline-block mt-5 text-sm font-semibold text-[#FF7AC6]">Explore service →</span>
+              </Link>
+            ))}
           </div>
 
-          {/* ================= QUICK ANSWER: DP DIGITAL / DP DIGITAL MARKETING ================= */}
-          <div className="max-w-3xl mx-auto mt-6 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
-            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
-              Searching for DP Digital or DP Digital Marketing?
-            </h3>
-            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-              My DP Digital (also searched as "DP Digital" or "DP Digital Marketing") is the digital marketing
-              agency behind this site — run directly by our Chennai-based team, not a call centre. If you found us
-              searching for DP Digital, you're in the right place. Message us on WhatsApp with your business and
-              what you need, and we'll get back to you directly.
-            </p>
-          </div>
-
-          {/* ================= QUICK ANSWER: HIRE A DIGITAL MARKETING AGENCY ================= */}
-          <div className="max-w-3xl mx-auto mt-6 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
-            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
-              Ready to hire a digital marketing agency in Chennai?
-            </h3>
-            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-              Hiring us means working directly with the team doing the work — no account manager relaying
-              messages to someone else. Message us on WhatsApp with your business and budget and we'll tell you
-              honestly whether we're a good fit before you commit to anything.
-            </p>
-          </div>
-
-          {/* ================= QUICK ANSWER: BEST DIGITAL MARKETING AGENCY IN AYNAVARAM ================= */}
-          <div className="max-w-3xl mx-auto mt-6 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
-            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
-              Looking for a digital marketing agency in Aynavaram?
-            </h3>
-            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-              We're based on Anna Salai and already work with businesses across the Tambaram / South Chennai
-              belt, and Aynavaram falls well within reach for the same setup — everything handled over WhatsApp
-              and calls, with in-person meetings where useful. If you're comparing digital marketing agencies
-              near Aynavaram, message us on WhatsApp with your business and what you need, and we'll tell you
-              honestly whether we're the right fit before you commit to anything.
-            </p>
-          </div>
+          <p className="max-w-4xl mx-auto text-center text-sm text-white/55 mt-8">
+            Based in Chennai and working with businesses across the city, including Tambaram and nearby areas.
+            <Link to="/tambaram" className="text-[#FF7AC6] font-semibold hover:underline ml-1">View Tambaram services</Link>
+            {' '}or <Link to="/contact" className="text-[#FF7AC6] font-semibold hover:underline">contact our team</Link> to discuss your requirements.
+          </p>
         </div>
       </section>
 

@@ -35,8 +35,8 @@ const SEOPage = () => {
   return (
     <>
     <PageSEO
-      title="Local SEO Services in Chennai | My DP Digital"
-      description="Local SEO services in Chennai to rank higher on Google Maps and search results — Google Business Profile optimization, local citations, and more."
+      title="SEO Services in Chennai | Local & Technical SEO"
+      description="SEO services in Chennai covering technical fixes, on-page improvements, content planning and local search visibility."
       canonicalPath="/services/seo"
       jsonLd={SEO_JSON_LD}
     />
@@ -51,7 +51,7 @@ const SEOPage = () => {
             <Sparkles size={14} className="text-[#FF2E9A]" /> Organic Dominance
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-tight tracking-tight">
-            SEO That <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">Compounds Your Growth.</span>
+            SEO Services in Chennai <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">That Help Customers Find You.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
             Data-driven technical SEO, topical semantic authority, and global search optimization engineered to turn search traffic into a permanent competitive advantage.

@@ -30,27 +30,27 @@ const getWhatsAppUrl = (topic: string) =>
 const tambaramServices = [
   {
     title: 'SEO Services in Tambaram, Chennai',
-    desc: 'Local and organic SEO that gets your Tambaram business found first — on-page fixes, Google Business Profile optimization, and content built around real local search demand.',
+    desc: 'Local and organic SEO support for Tambaram businesses — on-page improvements, eligible Google Business Profile guidance, and content planned around relevant local search intent.',
     icon: Search,
   },
   {
-    title: 'Google Ads Agency in Tambaram',
-    desc: 'Performance-driven Google Ads and Meta advertising campaigns for Tambaram businesses, with transparent budgets and weekly reporting — no long lock-in contracts.',
+    title: 'Google Ads Management for Tambaram Businesses',
+    desc: 'Google Ads and Meta advertising campaign management for Tambaram businesses, with clear budget planning and reporting agreed before campaigns begin.',
     icon: Megaphone,
   },
   {
-    title: 'Website Design Company in Tambaram',
-    desc: 'Fast, mobile-first business websites and landing pages designed and hosted for Tambaram and South Chennai businesses, live in days, not months.',
+    title: 'Website Design for Tambaram Businesses',
+    desc: 'Mobile-friendly business websites and landing pages for Tambaram and South Chennai businesses, with delivery timelines based on the agreed scope.',
     icon: Globe,
   },
   {
-    title: 'Branding Agency in Tambaram',
+    title: 'Branding Support for Tambaram Businesses',
     desc: 'Logo design, brand identity, and visual systems that help Tambaram businesses look established and trustworthy from the very first impression.',
     icon: Palette,
   },
   {
     title: 'Graphic Design Services in Tambaram, Chennai',
-    desc: 'A dedicated graphic designer in Tambaram, Chennai for social creatives, print, packaging, and marketing collateral — reachable directly by phone.',
+    desc: 'Graphic design support for Tambaram businesses, including social media creatives, print, packaging, and marketing collateral, with direct phone access.',
     icon: ImageIcon,
   },
   {
@@ -59,68 +59,36 @@ const tambaramServices = [
     icon: Wallet,
   },
   {
-    title: 'Video Marketing Agency in Tambaram',
-    desc: 'YouTube channel management, video editing, and thumbnail design for Tambaram businesses looking to grow on video — handled by the same team managing real, active client channels.',
+    title: 'Video Marketing & YouTube Support for Tambaram Businesses',
+    desc: 'YouTube channel management, video editing, and thumbnail design for Tambaram businesses looking to build a consistent video presence.',
     icon: Video,
   },
 ];
 
 const faqs = [
   {
-    question: 'Who offers digital marketing in Tambaram?',
-    answer: `My DP Digital offers digital marketing in Tambaram, Chennai — SEO, Google Ads, website design, and branding — for local shop owners, clinics, and service businesses. Call or WhatsApp ${DISPLAY_PHONE} to talk to the team directly.`,
+    question: 'What digital marketing services do you offer to Tambaram businesses?',
+    answer: `We provide SEO, Google Ads, Meta (Facebook and Instagram) advertising, website design, branding, graphic design, video editing, and YouTube channel support. Call or WhatsApp ${DISPLAY_PHONE} to discuss what fits your business.`,
   },
   {
-    question: 'Is there a digital marketing service in Tambaram, Chennai with a phone number I can call directly?',
-    answer: `Yes. My DP Digital is a digital marketing agency in Tambaram, Chennai, and you can call or WhatsApp our team directly at ${DISPLAY_PHONE} for a free consultation — no forms or waiting required.`,
+    question: 'Which areas around Tambaram do you serve?',
+    answer: 'We work with businesses in Tambaram East and West, as well as nearby areas including Chromepet, Selaiyur, and Pallavaram. Contact us to confirm coverage for your location.',
   },
   {
-    question: 'Do you have a graphic designer in Tambaram, Chennai with a phone number?',
-    answer: `Yes. Our in-house design team serves Tambaram and the surrounding Chennai suburbs for logo, branding, and print design work. Reach us directly at ${DISPLAY_PHONE}.`,
+    question: 'Can a project be managed remotely?',
+    answer: `Yes. Communication, planning, content reviews, and reporting can be handled by phone, WhatsApp, and email. You do not need to visit an office to discuss or manage a project. Reach us at ${DISPLAY_PHONE}.`,
   },
   {
-    question: 'What Tambaram, Chennai advertising services do you offer with a phone number to call?',
-    answer: `We run Google Ads and Meta (Facebook/Instagram) advertising campaigns for businesses in and around Tambaram. Call ${DISPLAY_PHONE} for a free ad account review.`,
+    question: 'How much do digital marketing services cost?',
+    answer: `Pricing depends on the services, project scope, competition, and level of ongoing support required. We discuss your goals and requirements before preparing a quote. Call ${DISPLAY_PHONE} to start the conversation.`,
   },
   {
-    question: 'Are there affordable digital marketing services in Tambaram?',
-    answer: 'Yes — we offer flexible monthly packages for small and mid-sized Tambaram businesses covering SEO, ads, affordable website design, and branding, priced for local budgets rather than big-agency retainers.',
+    question: 'How long does it take to see results?',
+    answer: 'Paid campaigns can begin reaching audiences after launch and approval, but enquiries and sales are not guaranteed. SEO and local organic visibility generally take longer to develop. Timelines depend on your website, competition, budget, and offer.',
   },
   {
-    question: 'Do you serve businesses near Tambaram, Chennai as well as within it?',
-    answer: 'Yes. As a digital marketing agency near Tambaram, Chennai, we also serve Chromepet, Selaiyur, Pallavaram, and the wider South Chennai belt.',
-  },
-  {
-    question: 'I searched "digital marketing near me" from Tambaram — is that you?',
-    answer: `Yes, most likely. My DP Digital shows up for digital marketing near me searches across Tambaram and the surrounding South Chennai suburbs, and unlike a call centre, you'll reach the actual team working on your account. Call or WhatsApp ${DISPLAY_PHONE} to confirm we cover your area.`,
-  },
-  {
-    question: 'Is there a video marketing agency in Tambaram?',
-    answer: `Yes. My DP Digital also runs YouTube channel management, video editing, and thumbnail design for Tambaram businesses — the same team already manages real, active YouTube channels. Call or WhatsApp ${DISPLAY_PHONE} to see examples of our work.`,
-  },
-  {
-    question: 'Is there an SEO company or advertising agency in Tambaram?',
-    answer: `Yes. My DP Digital works as both an SEO company and advertising agency in Tambaram — ranking your business on Google search and Maps while also running Google and Meta ad campaigns, so organic and paid growth work together instead of separately. Call or WhatsApp ${DISPLAY_PHONE} for a free review.`,
-  },
-  {
-    question: 'Do you cover Tambaram West and Tambaram East?',
-    answer: 'Yes — we work with businesses across both Tambaram West and Tambaram East, along with the surrounding Chromepet, Selaiyur, and Pallavaram areas, as one digital marketing agency serving the whole belt.',
-  },
-  {
-    question: 'How do I choose the right digital marketing agency in Tambaram?',
-    answer: `Look for an agency that works directly with the people doing the work (not an account manager relaying messages), shows you real examples from Tambaram-area businesses, and is upfront about realistic timelines rather than guaranteeing overnight results. Call or WhatsApp ${DISPLAY_PHONE} and we'll answer any questions honestly before you decide.`,
-  },
-  {
-    question: 'How much does digital marketing cost for a small business in Tambaram?',
-    answer: `Costs depend on which services you need — SEO, ads, or a website — and your monthly budget. We build flexible packages sized for local Tambaram businesses rather than one fixed retainer for everyone. Call ${DISPLAY_PHONE} and we'll give you a straightforward quote based on your actual goals.`,
-  },
-  {
-    question: 'How soon can a Tambaram business start seeing results?',
-    answer: 'It depends on the service. Google Ads can bring in leads within days of launch. SEO and organic Google Business Profile growth for Tambaram searches typically take a few months to build momentum, since that is how search engines work — we will be upfront with you about realistic timelines for your specific business.',
-  },
-  {
-    question: 'Do I need to visit an office, or can everything be handled remotely for a Tambaram business?',
-    answer: `Everything can be handled over phone, WhatsApp, and email — you do not need to visit an office. We share drafts, reports, and updates directly with you at ${DISPLAY_PHONE} so you always know what's happening with your account.`,
+    question: 'What should I prepare before requesting a consultation?',
+    answer: 'It helps to have your website or social media links, a short description of your services, the areas you want to reach, and your main marketing goal. An indicative monthly budget is also useful when discussing paid advertising.',
   },
 ];
 
@@ -131,23 +99,23 @@ const TambaramPage: React.FC = () => {
     () => [
       {
         '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
-        name: 'My DP Digital',
+        '@type': 'Service',
+        serviceType: 'Digital Marketing Services',
+        name: 'Digital Marketing Services in Tambaram',
         url: 'https://www.mydpdigital.in/tambaram',
-        telephone: '+91-81483-20217',
-        email: 'growth@mydpdigital.in',
+        provider: {
+          '@type': 'Organization',
+          name: 'My DP Digital',
+          url: 'https://www.mydpdigital.in',
+          telephone: '+91-81483-20217',
+          email: 'growth@mydpdigital.in',
+        },
         areaServed: [
           { '@type': 'Place', name: 'Tambaram, Chennai' },
           { '@type': 'Place', name: 'Chromepet, Chennai' },
           { '@type': 'Place', name: 'Selaiyur, Chennai' },
           { '@type': 'Place', name: 'Pallavaram, Chennai' },
         ],
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Tambaram',
-          addressRegion: 'Tamil Nadu',
-          addressCountry: 'IN',
-        },
       },
       {
         '@context': 'https://schema.org',
@@ -168,8 +136,8 @@ const TambaramPage: React.FC = () => {
   return (
     <div className="w-full min-h-screen bg-[#07050C] text-white pt-24 pb-20">
       <PageSEO
-        title="Digital Marketing Agency in Tambaram, Chennai | My DP Digital"
-        description={`Looking for a digital marketing agency in Tambaram, Chennai, or advertising services in Tambaram Chennai? My DP Digital offers SEO, Google Ads, website design and branding. Call ${DISPLAY_PHONE}.`}
+        title="Digital Marketing Agency in Tambaram | My DP Digital"
+        description={`My DP Digital serves businesses in Tambaram, Chennai with SEO, Google Ads, Meta Ads, website design, and branding. Call ${DISPLAY_PHONE} to discuss your project.`}
         canonicalPath="/tambaram"
         jsonLd={jsonLd}
       />
@@ -187,11 +155,11 @@ const TambaramPage: React.FC = () => {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
-              Digital Marketing Agency in Tambaram, Chennai
+              Digital Marketing Agency Serving Tambaram, Chennai
             </h1>
 
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              My DP Digital is a digital marketing company in Tambaram helping local businesses grow with SEO,
+              My DP Digital serves local businesses in Tambaram with SEO,
               Google Ads, website design, and branding — with a real phone number you can call, not just a
               contact form.
             </p>
@@ -279,7 +247,7 @@ const TambaramPage: React.FC = () => {
             Digital Marketing Services Near Tambaram
           </h2>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-3xl">
-            Based in Tambaram, we also work with businesses across the wider South Chennai belt — including
+            We serve businesses in Tambaram and across the wider South Chennai belt — including
             Chromepet, Selaiyur, and Pallavaram — who want a digital marketing team they can reach directly by
             phone rather than a call centre. Whichever of these areas your business is in, the same direct
             SEO, Google Ads, website design, and branding support applies. We also run{' '}
@@ -291,42 +259,24 @@ const TambaramPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Digital Marketing Company in Tambaram */}
-      <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
-        <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-8 sm:p-10 lg:p-12">
-          <h2 className="text-2xl sm:text-3xl font-black text-white mb-4">
-            Digital Marketing Company in Tambaram
-          </h2>
-          <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-3xl">
-            My DP Digital is a digital marketing company in Tambaram that also runs advertising services in
-            Tambaram, Chennai — Google Ads, Meta Ads, and organic SEO — for local shop owners, clinics, and
-            service businesses. If you're searching "digital marketing agency near me" from Tambaram or the
-            surrounding South Chennai suburbs, this is the team you'll actually reach on the phone.
-          </p>
-        </div>
-      </div>
-
       {/* Why Us */}
       <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
         <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-8 sm:p-10 lg:p-12">
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">
-            Why Tambaram Businesses Choose My DP Digital
+            Digital Marketing Support for Tambaram Businesses
           </h2>
           <h3 className="text-sm sm:text-base font-bold text-[#FF7AC6] mb-4">
-            A Digital Marketing Agency in Tambaram, Built for Direct Access
+            Digital Marketing Support for Tambaram Businesses
           </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-3xl mb-6">
-            As a digital marketing agency near Tambaram, Chennai, we work with shop owners, clinics, coaching
-            centers, and service businesses who need real results without big-agency overhead. We are also an
-            advertising service in Tambaram, Chennai you can reach by phone — no ticketing systems, no account
-            managers you never meet.
+            We work with shop owners, clinics, coaching centers, and service businesses in Tambaram and nearby areas. You can contact the team directly by phone or WhatsApp to discuss your requirements.
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               'Direct phone &amp; WhatsApp access to the team working on your account',
-              'Local Google Business Profile setup so you show up in the Tambaram map pack',
+              'Google Business Profile guidance for eligible businesses, with no promise of a specific Maps position',
               'Transparent monthly reporting on rankings, traffic, and ad spend',
-              'Flexible, affordable packages sized for local Tambaram businesses',
+              'Service options that can be scoped around your business goals',
             ].map((point, idx) => (
               <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-white/80">
                 <CheckCircle2 size={16} className="text-[#10B981] mt-0.5 flex-shrink-0" />

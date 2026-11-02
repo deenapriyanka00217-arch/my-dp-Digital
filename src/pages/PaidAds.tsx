@@ -35,8 +35,8 @@ const PaidAdsPage = () => {
   return (
     <>
     <PageSEO
-      title="Social Media Marketing Agency in Chennai | My DP Digital"
-      description="Social media marketing agency in Chennai driving real engagement and ROI — Google & Facebook Ads managed by data-driven paid media specialists."
+      title="Google Ads & Social Media Ads in Chennai | My DP Digital"
+      description="Google Ads and Facebook and Instagram campaigns for Chennai businesses, with audience planning, creative, tracking and ongoing optimization."
       canonicalPath="/services/paid-social-ads"
       jsonLd={PAIDADS_JSON_LD}
     />
@@ -50,7 +50,7 @@ const PaidAdsPage = () => {
             <Sparkles size={14} className="text-[#FF2E9A]" /> High-Yield PPC & Meta
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white leading-tight tracking-tight">
-            Ads and Social <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">Engineered for ROI.</span>
+            Google Ads & Social Media <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">Advertising in Chennai.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
             We turn ad spend into measurable revenue. From Google Shopping dominance to high-converting Meta creative, we manage every layer of your paid acquisition funnel.

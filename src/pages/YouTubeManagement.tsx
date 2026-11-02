@@ -39,7 +39,7 @@ import PageSEO from '../components/PageSEO';
 
 const WHATSAPP_PHONE = '918148320217';
 
-// Verified Real Client Channels
+// Public channel examples
 const CLIENT_CHANNELS = [
   {
     id: 'kaasedhaan',
@@ -52,12 +52,10 @@ const CLIENT_CHANNELS = [
     avatarChar: 'KK',
     stats: {
       contentFormat: 'Long-Form & Viral Shorts',
-      retentionBoost: '+145%',
-      ctrAvg: '11.8%',
       deliverables: ['Custom Thumbnail Art', 'Dynamic Video Editing', 'Title & Metadata SEO', 'Shorts Automation']
     },
     description:
-      'Complete post-production editing, custom stylized thumbnails, and metadata optimization tailored for maximum regional Tamil audience retention and viral shareability.'
+      'Video editing, thumbnail design, and metadata support for Tamil-language entertainment and cultural content.'
   },
   {
     id: 'veritastech',
@@ -70,12 +68,10 @@ const CLIENT_CHANNELS = [
     avatarChar: 'VT',
     stats: {
       contentFormat: 'Masterclasses & Aviation Guides',
-      retentionBoost: '+180%',
-      ctrAvg: '12.4%',
       deliverables: ['Educational Video Pacing', 'High-Authority Thumbnails', 'Chapter & Tag Silos', 'Student Lead Funnel']
     },
     description:
-      'Structured technical video editing, chapter timestamping, high-contrast educational thumbnails, and search ranking for competitive pilot training & aviation keywords.'
+      'Educational video editing, chapter planning, thumbnail design, and metadata support for aviation and pilot-training topics.'
   },
   {
     id: 'bachelorboys',
@@ -88,12 +84,10 @@ const CLIENT_CHANNELS = [
     avatarChar: 'BB',
     stats: {
       contentFormat: 'Cinematic Vlogs & Travel Stories',
-      retentionBoost: '+210%',
-      ctrAvg: '13.2%',
       deliverables: ['Fast-Paced Sound Design', 'Click-Magnet Visuals', 'Viral Reels/Shorts', 'Weekly Upload Cadence']
     },
     description:
-      'Cinematic color grading, pattern interrupt sound effects, viral short-form micro clips, and click-through optimized thumbnails built to dominate YouTube recommendations.'
+      'Cinematic editing, sound design, short-form clips, and thumbnail concepts for lifestyle, travel, and entertainment videos.'
   }
 ];
 
@@ -103,7 +97,7 @@ const ON_PAGE_SEO_CHECKLIST = [
     points: [
       'Keyword placement within first 40 characters of the video title',
       'High-curiosity emotional trigger words (e.g. "Step-by-Step", "Proven", "2026 Strategy")',
-      'A/B tested Title variants with TubeBuddy & VidIQ scoring 95+'
+      'Compare title options using clear keyword relevance and audience intent'
     ]
   },
   {
@@ -128,7 +122,7 @@ const ON_PAGE_SEO_CHECKLIST = [
     points: [
       '0:00 - 0:30 Second Hook with Zero Fluff & visual teasers',
       'Pattern interrupts every 4-7 seconds (B-Roll, zooms, whooshes, popups)',
-      'Subtitles & animated kinetic typography for 80%+ silent viewer retention'
+      'Subtitles and animated kinetic typography to support viewers watching without sound'
     ]
   }
 ];
@@ -140,39 +134,25 @@ export const YouTubeManagementPage: React.FC = () => {
     '@type': 'Service',
     serviceType: 'YouTube Channel Management & Video Editing',
     provider: {
-      '@type': 'LocalBusiness',
-      name: 'My DP Digital Growth Agency',
+      '@type': 'Organization',
+      name: 'My DP Digital',
+      url: 'https://www.mydpdigital.in',
       telephone: '+918148320217',
-      address: {
-        '@type': 'PostalAddress',
-        addressRegion: 'Tamil Nadu',
-        addressCountry: 'India'
-      }
     },
+    areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'Professional YouTube Video Editing, High CTR Thumbnail Design, Channel Management, and On-Page YouTube SEO optimization for creators, academies, and brands.',
-    offers: {
-      '@type': 'AggregateOffer',
-      priceCurrency: 'INR',
-      lowPrice: '14999',
-      highPrice: '48999'
-    }
+      'Professional YouTube video editing, thumbnail design, channel management, and YouTube SEO for creators, academies, and brands in Chennai.',
   };
 
   return (
     <>
     <PageSEO
-      title="YouTube Channel Management & Video Editing | Chennai"
+      title="YouTube Channel Management in Chennai | My DP Digital"
       description="Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help."
       canonicalPath="/youtube-management"
+      jsonLd={schemaData}
     />
     <div className="pt-28 pb-24 bg-[#07050C] text-white min-h-screen relative overflow-hidden w-full font-sans">
-      {/* Inject Structured Data Schema for Search Engine SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
-
       {/* Ambient background lighting */}
       <div className="absolute top-10 left-[-10%] w-[50vw] h-[50vw] bg-[#FF2E9A]/15 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute top-[40%] right-[-10%] w-[45vw] h-[45vw] bg-[#FF0000]/10 rounded-full blur-[140px] pointer-events-none" />
@@ -208,7 +188,7 @@ export const YouTubeManagementPage: React.FC = () => {
             <p className="text-base sm:text-lg text-white/80 leading-relaxed font-medium max-w-2xl">
               Turn raw footage into viral, binge-worthy YouTube assets. We handle end-to-end 
               <strong className="text-white"> post-production video editing</strong>, 
-              <strong className="text-[#FF7AC6]"> 12%+ CTR thumbnail design</strong>, 
+              <strong className="text-[#FF7AC6]"> custom thumbnail design</strong>, 
               <strong className="text-[#25D366]"> on-page YouTube SEO</strong>, and 
               <strong className="text-white"> channel upload management</strong> so you can focus purely on creating.
             </p>
@@ -229,7 +209,7 @@ export const YouTubeManagementPage: React.FC = () => {
                 href="#client-showcase"
                 className="px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/15 text-white font-bold text-xs uppercase tracking-wider flex items-center gap-2 backdrop-blur-xl transition-all cursor-pointer"
               >
-                <span>View Real Client Channels</span>
+                <span>View Channel Examples</span>
                 <ArrowRight size={15} />
               </a>
             </div>
@@ -237,16 +217,16 @@ export const YouTubeManagementPage: React.FC = () => {
             {/* Trust Metric Badges */}
             <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-6 border-t border-white/10 max-w-xl">
               <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10">
-                <div className="text-xl sm:text-2xl font-black text-[#FF2E9A]">12.4%</div>
-                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Avg. Video CTR</div>
+                <div className="text-xl sm:text-2xl font-black text-[#FF2E9A]">Titles</div>
+                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Title & Topic Research</div>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10">
-                <div className="text-xl sm:text-2xl font-black text-[#25D366]">+185%</div>
-                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Watch Retention</div>
+                <div className="text-xl sm:text-2xl font-black text-[#25D366]">Editing</div>
+                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Video Post-Production</div>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10">
-                <div className="text-xl sm:text-2xl font-black text-[#06B6D4]">48-72h</div>
-                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Turnaround Time</div>
+                <div className="text-xl sm:text-2xl font-black text-[#06B6D4]">SEO</div>
+                <div className="text-[10px] text-white/60 font-bold uppercase tracking-wider">Channel Optimization</div>
               </div>
             </div>
           </div>
@@ -277,7 +257,7 @@ export const YouTubeManagementPage: React.FC = () => {
                   {[
                     { step: '01', title: 'Pacing & Retention Editing', desc: 'Premiere & DaVinci cutdowns, multi-cam sync, hook retention.', icon: Scissors, color: '#FF2E9A' },
                     { step: '02', title: 'High-CTR Psychological Thumbnails', desc: 'Custom Photoshop design, color contrast, A/B variant testing.', icon: Palette, color: '#06B6D4' },
-                    { step: '03', title: 'On-Page YouTube SEO & Meta', desc: 'VidIQ 95/100+, chapters, searchable tags & ranking title formulas.', icon: Search, color: '#25D366' },
+                    { step: '03', title: 'On-Page YouTube SEO & Meta', desc: 'Topic research, chapter planning, searchable descriptions, and relevant metadata.', icon: Search, color: '#25D366' },
                     { step: '04', title: 'Viral Shorts Repurposing', desc: 'Auto-captions, vertical 9:16 re-framing, sound effects.', icon: Zap, color: '#FF8A00' }
                   ].map((wf, idx) => (
                     <div key={idx} className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-between gap-3">
@@ -315,30 +295,30 @@ export const YouTubeManagementPage: React.FC = () => {
         </div>
       </div>
 
-      {/* ================= REAL CLIENT CHANNELS SHOWCASE SECTION ================= */}
+      {/* ================= PUBLIC CHANNEL EXAMPLES SECTION ================= */}
       <section id="client-showcase" className="w-full px-4 sm:px-8 lg:px-12 max-w-[1440px] mx-auto relative z-10 mb-24">
         <div className="p-8 sm:p-12 rounded-[40px] bg-white/[0.025] backdrop-blur-2xl border border-white/15 space-y-12">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-3">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#25D366]/15 border border-[#25D366]/30 text-[#25D366] text-[10px] font-black uppercase tracking-wider">
-                <Award size={13} /> Verified Portfolio
+                <Award size={13} /> Public Channel Examples
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-                Our Real <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#25D366]">YouTube Client Channels</span>
+                Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#25D366]">YouTube Channel Examples</span>
               </h2>
               <p className="text-sm text-white/70 max-w-2xl">
-                Explore real YouTube channels we actively edit, design thumbnails for, and optimize for audience growth, retention, and conversion.
+                These public channels illustrate different content niches and formats. Each example links to the channel so you can explore it directly.
               </p>
             </div>
 
             <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-2xl border border-white/15 shrink-0">
               <Youtube size={18} className="text-[#FF0000]" />
-              <span className="text-xs font-bold text-white">3 Active Client Showcases</span>
+              <span className="text-xs font-bold text-white">3 Channel Examples</span>
             </div>
           </div>
 
-          {/* 3 Client Cards Grid */}
+          {/* Public channel examples grid */}
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {CLIENT_CHANNELS.map((ch, idx) => (
               <motion.div
@@ -429,14 +409,14 @@ export const YouTubeManagementPage: React.FC = () => {
           <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#FF2E9A]/20 via-[#B026FF]/20 to-[#0A0710] border border-[#FF2E9A]/30 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="space-y-1 text-center sm:text-left">
               <div className="text-base sm:text-lg font-black text-white">
-                Want your YouTube channel edited and managed like these creators?
+                Want support with editing and managing your YouTube channel?
               </div>
               <p className="text-xs text-white/70">
-                Get a tailored editing sample & on-page YouTube SEO audit on WhatsApp within 2 hours.
+                Message us on WhatsApp to discuss an editing sample or channel review.
               </p>
             </div>
             <a
-              href={`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent('Hi DP Digital, I saw your client channels (Kaasedhaan Kadavullappa, Veritas Tech, Bachelor Boys Vlogz) and I want to manage and edit my YouTube channel with you.')}`}
+              href={`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent('Hi DP Digital, I saw the public channel examples on your website and would like to discuss YouTube editing and channel management.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-black text-xs flex items-center gap-2 shadow-lg shadow-[#25D366]/25 shrink-0 active:scale-98 transition-all cursor-pointer"
@@ -452,13 +432,13 @@ export const YouTubeManagementPage: React.FC = () => {
       <section className="w-full px-4 sm:px-8 lg:px-12 max-w-[1440px] mx-auto relative z-10 mb-24">
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-white/15 text-[10px] font-bold uppercase tracking-wider text-white">
-            <Search size={13} className="text-[#FF7AC6]" /> High-Ranking Search Strategy
+            <Search size={13} className="text-[#FF7AC6]" /> YouTube Search Optimization
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Our On-Page <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">YouTube SEO Blueprint</span>
           </h2>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
-            How we rank your videos on both YouTube Search and Google Video Carousel using advanced semantic topic modeling and retention science.
+            We plan titles, descriptions, chapters, and content structure to help videos become more understandable and discoverable in YouTube and Google Search.
           </p>
         </div>
 
@@ -487,7 +467,7 @@ export const YouTubeManagementPage: React.FC = () => {
               </div>
 
               <div className="pt-4 border-t border-white/10 text-[10px] font-mono text-white/40">
-                Audited with TubeBuddy & VidIQ Pro
+                Research and optimization workflow
               </div>
             </div>
           ))}
