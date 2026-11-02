@@ -2,6 +2,9 @@ import React from 'react';
 import { Phone, Mail, MapPin, Sparkles } from 'lucide-react';
 import { BannerServicesForm } from './BannerServicesForm';
 
+const BUSINESS_ADDRESS = '45 Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar, West Tambaram, Chennai, Tamil Nadu 600045';
+const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_ADDRESS)}`;
+
 const ContactForm = () => {
   return (
     <section id="contact" className="py-16 sm:py-20 bg-[#07050C] text-white relative overflow-hidden w-full border-t border-white/10">
@@ -54,8 +57,9 @@ const ContactForm = () => {
                   <MapPin size={18} />
                 </div>
                 <div>
-                  <div className="text-white/40 text-[9px] uppercase font-bold tracking-wider">Office Location</div>
-                  <div className="text-sm font-bold text-white">Anna Salai, Chennai, India</div>
+                  <div className="text-white/40 text-[9px] uppercase font-bold tracking-wider">Business Address</div>
+                  <div className="text-sm font-bold leading-relaxed text-white">{BUSINESS_ADDRESS}</div>
+                  <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#7DD3FC] hover:underline">View on Google Maps</a>
                 </div>
               </div>
             </div>
