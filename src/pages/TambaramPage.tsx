@@ -131,23 +131,23 @@ const TambaramPage: React.FC = () => {
     () => [
       {
         '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
-        name: 'My DP Digital',
+        '@type': 'Service',
+        serviceType: 'Digital Marketing Services',
+        name: 'Digital Marketing Services in Tambaram',
         url: 'https://www.mydpdigital.in/tambaram',
-        telephone: '+91-81483-20217',
-        email: 'growth@mydpdigital.in',
+        provider: {
+          '@type': 'Organization',
+          name: 'My DP Digital',
+          url: 'https://www.mydpdigital.in',
+          telephone: '+91-81483-20217',
+          email: 'growth@mydpdigital.in',
+        },
         areaServed: [
           { '@type': 'Place', name: 'Tambaram, Chennai' },
           { '@type': 'Place', name: 'Chromepet, Chennai' },
           { '@type': 'Place', name: 'Selaiyur, Chennai' },
           { '@type': 'Place', name: 'Pallavaram, Chennai' },
         ],
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Tambaram',
-          addressRegion: 'Tamil Nadu',
-          addressCountry: 'IN',
-        },
       },
       {
         '@context': 'https://schema.org',
@@ -191,7 +191,7 @@ const TambaramPage: React.FC = () => {
             </h1>
 
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              My DP Digital is a digital marketing company in Tambaram helping local businesses grow with SEO,
+              My DP Digital serves local businesses in Tambaram with SEO,
               Google Ads, website design, and branding — with a real phone number you can call, not just a
               contact form.
             </p>
