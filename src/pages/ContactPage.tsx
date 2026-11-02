@@ -5,6 +5,8 @@ import { BannerServicesForm } from '../components/BannerServicesForm';
 import PageSEO from '../components/PageSEO';
 
 const WHATSAPP_PHONE = '918148320217';
+const BUSINESS_ADDRESS = '45 Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar, West Tambaram, Chennai, Tamil Nadu 600045';
+const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_ADDRESS)}`;
 
 const CONTACT_JSON_LD = {
   '@context': 'https://schema.org',
@@ -13,14 +15,15 @@ const CONTACT_JSON_LD = {
   url: 'https://www.mydpdigital.in/contact',
   mainEntity: {
     '@type': 'LocalBusiness',
-    name: 'My DP Digital',
+    name: 'My DP Digital - Web Developer',
     telephone: '+91-81483-20217',
     email: 'growth@mydpdigital.in',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Anna Salai',
-      addressLocality: 'Chennai',
+      streetAddress: '45 Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar',
+      addressLocality: 'West Tambaram, Chennai',
       addressRegion: 'Tamil Nadu',
+      postalCode: '600045',
       addressCountry: 'IN',
     },
   },
@@ -104,8 +107,9 @@ const ContactPage = () => {
                   <MapPin size={18} />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-white/50 text-[10px] uppercase font-bold tracking-wider">Office Location</div>
-                  <div className="text-xs font-semibold text-white">Anna Salai, Chennai, TN</div>
+                  <div className="text-white/50 text-[10px] uppercase font-bold tracking-wider">Business Address</div>
+                  <div className="text-xs font-semibold leading-relaxed text-white">{BUSINESS_ADDRESS}</div>
+                  <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="text-[11px] font-semibold text-[#7DD3FC] hover:underline">View on Google Maps</a>
                 </div>
               </div>
             </div>
