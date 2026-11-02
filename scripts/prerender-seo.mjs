@@ -26,6 +26,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
 const SITE_URL = 'https://www.mydpdigital.in';
+const BLOG_SEO_META = JSON.parse(
+  fs.readFileSync(path.join(ROOT, 'src', 'data', 'blogSeoMeta.json'), 'utf8')
+);
 
 // --- Static route metadata -------------------------------------------------
 // Keep these in sync with each page's <PageSEO title=... description=...>
@@ -152,7 +155,12 @@ function getBlogRoutes() {
     const description = field(block, 'excerpt');
     if (!slug || !title || !description) continue;
 
-    routes.push({ route: `/blog/${slug}`, title: `${title} | My DP Digital Blog`, description });
+    const seoMeta = BLOG_SEO_META[slug];
+    routes.push({
+      route: `/blog/${slug}`,
+      title: seoMeta?.title ?? `${title} | My DP Digital Blog`,
+      description: seoMeta?.description ?? description,
+    });
   }
   return routes;
 }
