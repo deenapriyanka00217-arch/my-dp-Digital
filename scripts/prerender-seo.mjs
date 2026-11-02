@@ -265,6 +265,23 @@ async function main() {
     written += 1;
   }
 
+  // Preserve the admin paths as route-correct private documents. They remain
+  // excluded from the public sitemap and are marked noindex.
+  for (const route of ['/admin', '/dashboard']) {
+    const markup = await render(route);
+    const html = withBody(
+      buildHead(baseHtml, {
+        route,
+        title: 'Private Dashboard | My DP Digital',
+        description: 'Private administration area.'
+      }),
+      markup
+    ).replace('</head>', '    <meta name="robots" content="noindex, nofollow" />\\n  </head>');
+    const outDir = path.join(DIST, route.replace(/^\\//, ''));
+    fs.mkdirSync(outDir, { recursive: true });
+    fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
+  }
+
   // Vercel serves this file with an HTTP 404 status for unknown routes.
   const notFoundMarkup = await render('/__mydpdigital_not_found__');
   let notFoundHtml = withBody(
