@@ -28,7 +28,7 @@ const WORDPRESS_JSON_LD = [
   {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    serviceType: 'WordPress Website Maintenance',
+    serviceType: 'WordPress Website Development',
     provider: {
       '@type': 'Organization',
       name: 'My DP Digital',
@@ -37,7 +37,7 @@ const WORDPRESS_JSON_LD = [
     },
     areaServed: 'India',
     description:
-      'WordPress website development and maintenance services in India, covering updates, security, backups, speed optimization, and ongoing support plans.',
+      'WordPress website development in Chennai, including custom business websites, WooCommerce stores, landing pages, and ongoing maintenance and support.',
   },
   {
     '@context': 'https://schema.org',
