@@ -2,8 +2,8 @@ import React from 'react';
 import { Phone, Mail, MapPin, Sparkles } from 'lucide-react';
 import { BannerServicesForm } from './BannerServicesForm';
 
-const BUSINESS_ADDRESS = '45 Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar, West Tambaram, Chennai, Tamil Nadu 600045';
-const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS_ADDRESS)}`;
+const BUSINESS_ADDRESS = '45, Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar, West Tambaram, Chennai, Tamil Nadu 600045, India';
+const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=My%20DP%20Digital%20-%20Web%20Developer&query_place_id=ChIJEWo-SVz1UjoRmUuSRl5M1wg';
 
 const ContactForm = () => {
   return (
