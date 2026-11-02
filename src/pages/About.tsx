@@ -13,7 +13,7 @@ const ABOUT_JSON_LD = {
     'My DP Digital is a Chennai-based digital marketing and web engineering agency helping brands turn data into measurable growth through SEO, ads, and website design.',
   mainEntity: {
     '@type': 'Organization',
-    name: 'My DP Digital',
+    name: 'My DP Digital - Web Developer',
     url: 'https://www.mydpdigital.in',
     telephone: '+91-81483-20217',
     address: {
