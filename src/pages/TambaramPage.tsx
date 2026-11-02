@@ -32,36 +32,43 @@ const tambaramServices = [
     title: 'SEO Services in Tambaram, Chennai',
     desc: 'Local and organic SEO support for Tambaram businesses — on-page improvements, eligible Google Business Profile guidance, and content planned around relevant local search intent.',
     icon: Search,
+    href: '/services/seo',
   },
   {
     title: 'Google Ads Management for Tambaram Businesses',
     desc: 'Google Ads and Meta advertising campaign management for Tambaram businesses, with clear budget planning and reporting agreed before campaigns begin.',
     icon: Megaphone,
+    href: '/services/paid-social-ads',
   },
   {
     title: 'Website Design for Tambaram Businesses',
     desc: 'Mobile-friendly business websites and landing pages for Tambaram and South Chennai businesses, with delivery timelines based on the agreed scope.',
     icon: Globe,
+    href: '/services/web-design-development',
   },
   {
     title: 'Branding Support for Tambaram Businesses',
     desc: 'Logo design, brand identity, and visual systems that help Tambaram businesses look established and trustworthy from the very first impression.',
     icon: Palette,
+    href: '/services/content-marketing-branding',
   },
   {
     title: 'Graphic Design Services in Tambaram, Chennai',
     desc: 'Graphic design support for Tambaram businesses, including social media creatives, print, packaging, and marketing collateral, with direct phone access.',
     icon: ImageIcon,
+    href: '/services/content-marketing-branding',
   },
   {
     title: 'Affordable Digital Marketing Services in Tambaram',
     desc: 'Flexible monthly packages built for small and mid-sized Tambaram businesses, so you get real SEO, ads, and design support without agency-sized budgets.',
     icon: Wallet,
+    href: '/services',
   },
   {
     title: 'Video Marketing & YouTube Support for Tambaram Businesses',
     desc: 'YouTube channel management, video editing, and thumbnail design for Tambaram businesses looking to build a consistent video presence.',
     icon: Video,
+    href: '/youtube-management',
   },
 ];
 
@@ -137,7 +144,7 @@ const TambaramPage: React.FC = () => {
     <div className="w-full min-h-screen bg-[#07050C] text-white pt-24 pb-20">
       <PageSEO
         title="Digital Marketing Agency in Tambaram | My DP Digital"
-        description={`My DP Digital serves businesses in Tambaram, Chennai with SEO, Google Ads, Meta Ads, website design, and branding. Call ${DISPLAY_PHONE} to discuss your project.`}
+        description="SEO, Google Ads, Meta Ads and website design for small businesses in Tambaram, Chennai. Contact My DP Digital to discuss your goals and project scope."
         canonicalPath="/tambaram"
         jsonLd={jsonLd}
       />
@@ -155,13 +162,13 @@ const TambaramPage: React.FC = () => {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
-              Digital Marketing Agency Serving Tambaram, Chennai
+              Digital Marketing Agency in Tambaram, Chennai
             </h1>
 
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              My DP Digital serves local businesses in Tambaram with SEO,
-              Google Ads, website design, and branding — with a real phone number you can call, not just a
-              contact form.
+              My DP Digital helps small businesses, clinics, coaching centres, and service providers in
+              Tambaram with SEO, Google Ads, Meta Ads, website design, and branding. Speak directly with us
+              by phone or WhatsApp to discuss your goals, service area, and project scope.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -223,21 +230,68 @@ const TambaramPage: React.FC = () => {
                   </h3>
                   <p className="text-xs text-white/70 leading-relaxed font-normal">{item.desc}</p>
                 </div>
-                <div className="pt-4 mt-4 border-t border-white/5 flex items-center justify-between">
+                <div className="pt-4 mt-4 border-t border-white/5 flex flex-wrap items-center justify-between gap-3">
+                  <Link
+                    to={item.href}
+                    className="inline-flex items-center gap-1.5 text-[11px] text-[#FF7AC6] font-semibold hover:underline"
+                  >
+                    Explore service
+                    <ArrowRight size={13} />
+                  </Link>
                   <a
                     href={getWhatsAppUrl(item.title)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[11px] text-[#FF7AC6] font-semibold hover:underline"
+                    className="text-[11px] text-white/70 font-semibold hover:text-white hover:underline"
                   >
-                    Ask about this
+                    Ask on WhatsApp
                   </a>
-                  <CheckCircle2 size={14} className="text-[#10B981]" />
                 </div>
               </div>
             );
           })}
         </div>
+      </div>
+
+      {/* Local marketing approach */}
+      <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
+        <div className="text-center max-w-3xl mx-auto mb-8">
+          <h2 className="text-2xl sm:text-3xl font-black text-white">
+            Local Digital Marketing That Connects Search to Enquiries
+          </h2>
+          <p className="text-xs sm:text-sm text-white/70 leading-relaxed mt-3">
+            For a Tambaram business, visibility is only useful when people can understand what you offer,
+            confirm that you serve their area, and contact you easily. We plan the website, search and
+            advertising work around that customer journey rather than treating each activity in isolation.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-5">
+          <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/10">
+            <h3 className="font-bold text-base text-white mb-2">Be discoverable locally</h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              Build useful service and location information, improve on-page SEO, and review Google Business
+              Profile options for businesses that meet Google's eligibility rules.
+            </p>
+          </div>
+          <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/10">
+            <h3 className="font-bold text-base text-white mb-2">Make it easy to enquire</h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              Give mobile visitors clear service details, transparent next steps, and simple call or WhatsApp
+              contact options so they know how to start a conversation.
+            </p>
+          </div>
+          <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/10">
+            <h3 className="font-bold text-base text-white mb-2">Measure and improve</h3>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
+              Agree on useful measures before work begins, such as relevant search visibility, website
+              enquiries, calls, or campaign performance where tracking is available.
+            </p>
+          </div>
+        </div>
+        <p className="text-center text-[11px] text-white/50 mt-5">
+          Search rankings, enquiry volume, and advertising results depend on competition, budget, website
+          quality, and the offer. No fixed position or number of leads is promised.
+        </p>
       </div>
 
       {/* Digital Marketing Services Near Tambaram — Neighboring Areas */}
@@ -265,9 +319,6 @@ const TambaramPage: React.FC = () => {
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">
             Digital Marketing Support for Tambaram Businesses
           </h2>
-          <h3 className="text-sm sm:text-base font-bold text-[#FF7AC6] mb-4">
-            Digital Marketing Support for Tambaram Businesses
-          </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-3xl mb-6">
             We work with shop owners, clinics, coaching centers, and service businesses in Tambaram and nearby areas. You can contact the team directly by phone or WhatsApp to discuss your requirements.
           </p>
