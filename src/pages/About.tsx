@@ -18,8 +18,10 @@ const ABOUT_JSON_LD = {
     telephone: '+91-81483-20217',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Chennai',
+      streetAddress: '45 Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar',
+      addressLocality: 'West Tambaram, Chennai',
       addressRegion: 'Tamil Nadu',
+      postalCode: '600045',
       addressCountry: 'IN',
     },
   },
