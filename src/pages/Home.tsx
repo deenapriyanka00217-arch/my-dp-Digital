@@ -114,9 +114,9 @@ const Home = () => {
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/15 backdrop-blur-xl text-white text-[11px] font-bold">
                 <Sparkles size={14} className="text-[#FF2E9A]" /> Global Acceleration Framework
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
                 {content.revenueHeading}
-              </h1>
+              </h2>
               <p className="text-white/80 text-lg sm:text-xl max-w-xl font-normal leading-relaxed">
                 {content.revenueSubheading}
               </p>
