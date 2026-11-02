@@ -99,13 +99,13 @@ const STATIC_ROUTES = [
     route: '/about',
     title: 'About My DP Digital | Chennai Digital Marketing Agency',
     description:
-      'My DP Digital is a Chennai-based digital marketing and web engineering agency — learn how we turn data into measurable growth for brands worldwide.',
+      'Learn about My DP Digital, serving Chennai businesses with website design, WordPress development, SEO, advertising and creative services.',
   },
   {
     route: '/our-works',
-    title: 'Our Works & Live Client Websites | My DP Digital',
+    title: 'Website & Creative Projects | My DP Digital',
     description:
-      'Explore our verified client portfolio — live websites, e-commerce stores, and digital marketing deployments built by My DP Digital in Chennai.',
+      'Browse selected website and creative projects from My DP Digital, including business websites, e-commerce layouts and digital content work.',
   },
   {
     route: '/blog',
