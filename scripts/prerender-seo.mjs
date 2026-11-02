@@ -45,31 +45,31 @@ const STATIC_ROUTES = [
     route: '/services',
     title: 'Digital Marketing Services in Chennai | My DP Digital',
     description:
-      'Explore SEO, Google Ads, social media advertising, website development, and content services from My DP Digital. Practical digital marketing support for Chennai businesses.'
+      'Explore SEO, Google Ads, social media advertising, website development and content services for Chennai businesses.'
   },
   {
     route: '/services/seo',
     title: 'SEO Services in Chennai | Local & Technical SEO',
     description:
-      'Improve search visibility with SEO services in Chennai: technical SEO, on-page improvements, content strategy, and Google Business Profile optimization for local businesses.'
+      'SEO services in Chennai covering technical fixes, on-page improvements, content planning and local search visibility.'
   },
   {
     route: '/services/paid-social-ads',
     title: 'Google Ads & Social Media Ads in Chennai | My DP Digital',
     description:
-      'Managed Google Ads, Facebook, and Instagram campaigns for Chennai businesses. We plan targeting, creative, tracking, and ongoing optimization around your lead or sales goals.'
+      'Google Ads and Facebook and Instagram campaigns for Chennai businesses, with audience planning, creative, tracking and ongoing optimization.'
   },
   {
     route: '/services/facebook-ads',
     title: 'Facebook Ads Agency in Chennai | Meta Ads Management',
     description:
-      'Facebook and Instagram ad management for Chennai retailers, D2C brands, and product businesses — from campaign setup and creative testing to retargeting and conversion tracking.'
+      'Facebook and Instagram ad management for Chennai retailers and service businesses, from campaign setup and creative testing to retargeting.'
   },
   {
     route: '/services/web-design-development',
     title: 'Website Design & Development in Chennai | My DP Digital',
     description:
-      'SEO-ready business, clinic, and e-commerce websites designed and developed by My DP Digital in Chennai. Get a mobile-friendly website built around your services and enquiries.'
+      'SEO-ready business, clinic and e-commerce websites in Chennai, designed for mobile use, clear service information and customer enquiries.'
   },
   {
     route: '/wordpress-development',
@@ -85,13 +85,13 @@ const STATIC_ROUTES = [
   },
   {
     route: '/youtube-management',
-    title: 'YouTube Channel Management & Video Editing in Chennai | My DP Digital',
+    title: 'YouTube Channel Management in Chennai | My DP Digital',
     description:
       'Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help.',
   },
   {
     route: '/tambaram',
-    title: 'Digital Marketing Agency Serving Tambaram, Chennai | My DP Digital',
+    title: 'Digital Marketing Agency in Tambaram | My DP Digital',
     description:
       'My DP Digital serves businesses in Tambaram, Chennai with SEO, Google Ads, Meta Ads, website design, and branding. Call +91 81483 20217 to discuss your project.',
   },
@@ -241,6 +241,13 @@ async function main() {
   const { render } = await import(pathToFileURL(serverEntryPath).href);
   const allRoutes = [...STATIC_ROUTES, ...getBlogRoutes()];
   const uniqueRoutes = [...new Map(allRoutes.map((meta) => [meta.route, meta])).values()];
+  const invalidMetadata = uniqueRoutes.filter(({ title, description }) => title.length > 60 || description.length > 160);
+  if (invalidMetadata.length > 0) {
+    const details = invalidMetadata.map(({ route, title, description }) =>
+      `${route}: title=${title.length} chars, description=${description.length} chars`
+    ).join('; ');
+    throw new Error(`[prerender-seo] Search metadata exceeds the configured length checks: ${details}`);
+  }
   let written = 0;
 
   const withBody = (html, markup) => {
