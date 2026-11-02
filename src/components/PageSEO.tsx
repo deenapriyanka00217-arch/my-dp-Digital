@@ -47,26 +47,28 @@ const PageSEO: React.FC<PageSEOProps> = ({ title, description, canonicalPath, js
     }
     canonical.setAttribute('href', `${SITE_URL}${canonicalPath}`);
 
-    const injectedScripts: HTMLScriptElement[] = [];
-    if (jsonLd) {
-      const entries = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
-      entries.forEach((data) => {
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.textContent = JSON.stringify(data);
-        document.head.appendChild(script);
-        injectedScripts.push(script);
-      });
-    }
-
     return () => {
       document.title = previousTitle;
-      injectedScripts.forEach((script) => script.remove());
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [title, description, canonicalPath, jsonLd]);
+  }, [title, description, canonicalPath]);
 
-  return null;
+  // Keep structured data in the rendered document so crawlers that inspect
+  // the initial HTML can read it without waiting for JavaScript effects.
+  const entries = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+
+  return (
+    <>
+      {entries.map((entry, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(entry).replace(/</g, '\\u003c'),
+          }}
+        />
+      ))}
+    </>
+  );
 };
 
 export default PageSEO;
