@@ -10,7 +10,7 @@ const ABOUT_JSON_LD = {
   name: 'About My DP Digital',
   url: 'https://www.mydpdigital.in/about',
   description:
-    'My DP Digital is a Chennai-based digital marketing and web engineering agency helping brands turn data into measurable growth through SEO, ads, and website design.',
+    'Learn about My DP Digital, serving Chennai businesses with website design, WordPress development, SEO, advertising and creative services.',
   mainEntity: {
     '@type': 'Organization',
     name: 'My DP Digital',
@@ -25,7 +25,7 @@ const AboutPage = () => {
     <>
     <PageSEO
       title="About My DP Digital | Chennai Digital Marketing Agency"
-      description="My DP Digital is a Chennai-based digital marketing and web engineering agency — learn how we turn data into measurable growth for brands worldwide."
+      description="Learn about My DP Digital, serving Chennai businesses with website design, WordPress development, SEO, advertising and creative services."
       canonicalPath="/about"
       jsonLd={ABOUT_JSON_LD}
     />
