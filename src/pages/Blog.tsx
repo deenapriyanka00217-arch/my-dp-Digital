@@ -34,6 +34,7 @@ import {
 import { subscribeNewsletter } from '../lib/services';
 import PageSEO from '../components/PageSEO';
 import { BLOG_POSTS as STATIC_BLOG_POSTS } from '../data/blogPosts';
+import BLOG_SEO_META from '../data/blogSeoMeta.json';
 
 const BLOG_JSON_LD = [
   {
@@ -220,12 +221,16 @@ export const BlogPage: React.FC = () => {
     return acc;
   }, {} as Record<string, number>);
 
+  const postSeoMeta = singlePostView
+    ? BLOG_SEO_META[singlePostView.slug as keyof typeof BLOG_SEO_META]
+    : undefined;
+
   return (
     <>
     {singlePostView ? (
       <PageSEO
-        title={`${singlePostView.title} | My DP Digital Blog`}
-        description={singlePostView.excerpt}
+        title={postSeoMeta?.title ?? `${singlePostView.title} | My DP Digital Blog`}
+        description={postSeoMeta?.description ?? singlePostView.excerpt}
         canonicalPath={`/blog/${singlePostView.slug}`}
         jsonLd={[
           {
