@@ -143,7 +143,9 @@ function getBlogRoutes() {
     // mistaken for the closing quote.
     const re = new RegExp(`\\b${name}:\\s*\\n?\\s*(['"])((?:(?!\\1)[^\\\\]|\\\\.)*)\\1`);
     const m = text.match(re);
-    return m ? m[2] : null;
+    if (!m) return null;
+    const escaped = { '\\\\': '\\', "'": "'", '"': '"', n: '\n', r: '\r', t: '\t' };
+    return m[2].replace(/\\\\([\\\\'"nrt])/g, (_, code) => escaped[code] ?? code);
   };
 
   const routes = [];
