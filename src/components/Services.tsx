@@ -25,13 +25,13 @@ const services = [
     icon: Zap,
     tag: '3-5 Days Launch',
     color: '#06B6D4',
-    features: ['Instant WhatsApp Integration', 'Sub-second Load Times', 'Conversion Hero Layout'],
+    features: ['Instant WhatsApp Integration', 'Performance-Focused Setup', 'Conversion-Focused Hero Layout'],
   },
   {
     id: '2',
     title: 'Multi-Page Business Portals',
     category: 'Corporate Authority',
-    description: 'Authority business websites structured to convert enterprise clients, establish topical dominance, and rank high on Google search.',
+    description: 'Business websites structured to explain services clearly, support search visibility, and guide visitors toward enquiries.',
     icon: Briefcase,
     tag: 'Authority Grade',
     color: '#3B82F6',
@@ -96,7 +96,7 @@ const Services = () => {
               Engineered For <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">High-Impact Growth</span>
             </h2>
             <p className="text-white/80 text-base sm:text-lg font-normal">
-              We fuse cutting-edge UI design, sub-second speeds, and autonomous revenue pipelines to turn clicks into paying clients.
+              We combine clear website design, performance-conscious development, and practical enquiry workflows to help turn visits into conversations.
             </p>
           </div>
 
