@@ -12,7 +12,7 @@ const CONTACT_JSON_LD = {
   name: 'Contact My DP Digital',
   url: 'https://www.mydpdigital.in/contact',
   mainEntity: {
-    '@type': 'LocalBusiness',
+    '@type': 'Organization',
     name: 'My DP Digital',
     telephone: '+91-81483-20217',
     email: 'growth@mydpdigital.in',
