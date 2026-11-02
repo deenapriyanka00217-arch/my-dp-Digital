@@ -277,7 +277,7 @@ export const FacebookAdsPage: React.FC = () => {
     },
     {
       title: 'Dynamic Catalog Retargeting (DPA)',
-      desc: 'Reconnect with people who viewed products or engaged with your brand using relevant catalog and retargeting campaigns.'
+      desc: 'Reconnect with people who viewed products or engaged with your brand using relevant catalog and retargeting campaigns.',
       icon: RefreshCw,
       tag: 'Cart Recovery',
       metric: 'Retargeting Setup',
