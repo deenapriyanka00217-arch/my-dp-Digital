@@ -156,8 +156,8 @@ export const WordPressPage: React.FC = () => {
   return (
     <>
     <PageSEO
-      title="WordPress Maintenance Services in India | My DP Digital"
-      description="WordPress website maintenance services in India — updates, security, backups, and support plans built for speed, SEO, and reliability."
+      title="WordPress Development in Chennai | My DP Digital"
+      description="Custom WordPress websites, WooCommerce stores, and high-converting landing pages for Chennai businesses, with ongoing maintenance and support available."
       canonicalPath="/wordpress-development"
       jsonLd={WORDPRESS_JSON_LD}
     />
