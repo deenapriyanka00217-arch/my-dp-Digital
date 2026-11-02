@@ -123,7 +123,7 @@ export const initialSiteContent: SiteContent = {
   phone: '+91 81483 20217',
   whatsapp: '918148320217',
   email: 'growth@mydpdigital.in',
-  address: '45 Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar, West Tambaram, Chennai, Tamil Nadu 600045',
+  address: '45, Landmark, The Lords International School, No. 92, Seguvara Street, Kishkintha Main Road, Samathuva Periyar Nagar, West Tambaram, Chennai, Tamil Nadu 600045, India',
   serviceManagementFee: 15000,
 
   homeHeroHeading: 'Digital Marketing & Website Development for Chennai Businesses',
