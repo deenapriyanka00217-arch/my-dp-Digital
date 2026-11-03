@@ -508,16 +508,19 @@ const ServicesPage = () => {
           </div>
         </div>
 
-        {/* ================= QUICK ANSWER: SMALL BUSINESS PACKAGES ================= */}
+        {/* ================= QUICK ANSWER: DIGITAL MARKETING PRICING ================= */}
         <div className="max-w-3xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
           <h3 className="text-lg sm:text-xl font-black text-white mb-2">
-            Looking for digital marketing packages for small business in Chennai?
+            How much does digital marketing cost in Chennai?
           </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-            We put together digital marketing packages in Chennai — SEO, Google Ads, and website design — sized
-            for small and mid-sized businesses rather than one-size-fits-all enterprise pricing. Message us on
-            WhatsApp with your budget and what you're trying to grow, and we'll put together pricing packages
-            that actually fit.
+            Digital marketing pricing in Chennai depends on the work your business needs: SEO and content,
+            website updates, paid-ad setup and management, reporting, and the number of campaigns or service
+            areas. The advertising budget is separate from the service or management fee, so ask for both to
+            be shown clearly. Before you start, request an itemised scope covering setup work, monthly
+            deliverables, ad spend, reporting, and review cadence. We shape proposals around your business
+            goals and budget rather than quoting one package to every business. Message us on WhatsApp with
+            your website, target area, and monthly budget for a scope-based quote.
           </p>
         </div>
 
