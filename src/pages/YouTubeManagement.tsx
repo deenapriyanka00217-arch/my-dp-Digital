@@ -39,10 +39,11 @@ import PageSEO from '../components/PageSEO';
 
 const WHATSAPP_PHONE = '918148320217';
 
-// Public channel examples
+// Public YouTube channels and social profiles supported by DP Digital
 const CLIENT_CHANNELS = [
   {
     id: 'kaasedhaan',
+    platform: 'YouTube',
     name: 'Kaasedhaan Kadavullappa',
     handle: '@Kaasedhaankadavullappa',
     url: 'https://www.youtube.com/@Kaasedhaankadavullappa',
@@ -52,13 +53,14 @@ const CLIENT_CHANNELS = [
     avatarChar: 'KK',
     stats: {
       contentFormat: 'Long-Form & Viral Shorts',
-      deliverables: ['Custom Thumbnail Art', 'Dynamic Video Editing', 'Title & Metadata SEO', 'Shorts Automation']
+      deliverables: ['Video Editing', 'Channel Maintenance']
     },
     description:
-      'Video editing, thumbnail design, and metadata support for Tamil-language entertainment and cultural content.'
+      'Video editing and ongoing YouTube channel maintenance for Tamil-language entertainment and cultural content.'
   },
   {
     id: 'veritastech',
+    platform: 'YouTube',
     name: 'Veritas Tech Pilot Academy',
     handle: '@VeritastechPilotAcademy01',
     url: 'https://www.youtube.com/@VeritastechPilotAcademy01',
@@ -75,19 +77,37 @@ const CLIENT_CHANNELS = [
   },
   {
     id: 'bachelorboys',
+    platform: 'YouTube',
     name: 'Bachelor Boys Vlogz',
-    handle: '@bachelor_boys_vlogz',
-    url: 'https://youtube.com/@bachelor_boys_vlogz?si=mjOiIKHlf37Hx0nG',
+    handle: '@Bachelor_boys_vlogz',
+    url: 'https://www.youtube.com/@Bachelor_boys_vlogz',
     niche: 'Lifestyle, Travel & Entertainment Vlogs',
     tagline: 'Youth Travel & Daily Entertainment Vlogs',
     bannerGradient: 'from-[#FF8A00] via-[#FF2E9A] to-[#0A0710]',
     avatarChar: 'BB',
     stats: {
       contentFormat: 'Cinematic Vlogs & Travel Stories',
-      deliverables: ['Fast-Paced Sound Design', 'Click-Magnet Visuals', 'Viral Reels/Shorts', 'Weekly Upload Cadence']
+      deliverables: ['Video Editing', 'Channel Maintenance']
     },
     description:
-      'Cinematic editing, sound design, short-form clips, and thumbnail concepts for lifestyle, travel, and entertainment videos.'
+      'Video editing and ongoing YouTube channel maintenance for lifestyle, travel, and entertainment vlog content.'
+  },
+  {
+    id: 'one-stop-physics-academy',
+    platform: 'Instagram',
+    name: 'One Stop Physics Academy',
+    handle: '@one_stop_physics_academy',
+    url: 'https://www.instagram.com/one_stop_physics_academy/',
+    niche: 'Physics Education & Academy Content',
+    tagline: 'Physics Learning & Educational Content',
+    bannerGradient: 'from-[#F97316] via-[#C13584] to-[#0A0710]',
+    avatarChar: 'OP',
+    stats: {
+      contentFormat: 'Educational Videos & Reels',
+      deliverables: ['Video Editing', 'Profile Maintenance']
+    },
+    description:
+      'Video editing and Instagram profile maintenance for physics education and academy content.'
   }
 ];
 
@@ -302,24 +322,24 @@ export const YouTubeManagementPage: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-3">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#25D366]/15 border border-[#25D366]/30 text-[#25D366] text-[10px] font-black uppercase tracking-wider">
-                <Award size={13} /> Public Channel Examples
+                <Award size={13} /> Managed Channel & Profile Examples
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-                Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#25D366]">YouTube Channel Examples</span>
+                Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#25D366]">YouTube & Instagram Examples</span>
               </h2>
               <p className="text-sm text-white/70 max-w-2xl">
-                These public channels illustrate different content niches and formats. Each example links to the channel so you can explore it directly.
+                These public channels and profiles show examples of accounts supported by DP Digital with video editing and ongoing channel or profile maintenance. Open each profile to explore its content.
               </p>
             </div>
 
             <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-2xl border border-white/15 shrink-0">
-              <Youtube size={18} className="text-[#FF0000]" />
-              <span className="text-xs font-bold text-white">3 Channel Examples</span>
+              <Video size={18} className="text-[#FF2E9A]" />
+              <span className="text-xs font-bold text-white">{CLIENT_CHANNELS.length} Public Profiles</span>
             </div>
           </div>
 
           {/* Public channel examples grid */}
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
             {CLIENT_CHANNELS.map((ch, idx) => (
               <motion.div
                 key={ch.id}
@@ -333,7 +353,7 @@ export const YouTubeManagementPage: React.FC = () => {
                   {/* Channel Header Banner */}
                   <div className={`h-28 bg-gradient-to-r ${ch.bannerGradient} p-4 flex items-start justify-between relative`}>
                     <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded-full bg-black/40 backdrop-blur-md text-white border border-white/20">
-                      Channel #{idx + 1}
+                      {ch.platform} #{idx + 1}
                     </span>
                     
                     <a
@@ -342,7 +362,7 @@ export const YouTubeManagementPage: React.FC = () => {
                       rel="noopener noreferrer"
                       className="px-3 py-1.5 rounded-xl bg-white/20 hover:bg-white text-white hover:text-[#0A0710] text-[11px] font-bold flex items-center gap-1.5 backdrop-blur-md transition-all shadow-md cursor-pointer"
                     >
-                      <span>Visit Channel</span>
+                      <span>Visit Profile</span>
                       <ExternalLink size={12} />
                     </a>
                   </div>
@@ -394,10 +414,10 @@ export const YouTubeManagementPage: React.FC = () => {
                     href={ch.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3 px-4 rounded-xl bg-white/10 hover:bg-[#FF0000] text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                    className={`w-full py-3 px-4 rounded-xl bg-white/10 ${ch.platform === 'Instagram' ? 'hover:bg-[#C13584]' : 'hover:bg-[#FF0000]'} text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors cursor-pointer`}
                   >
-                    <Youtube size={15} />
-                    <span>Open {ch.name} on YouTube</span>
+                    {ch.platform === 'Instagram' ? <Image size={15} /> : <Youtube size={15} />}
+                    <span>Open {ch.name} on {ch.platform}</span>
                     <ArrowUpRight size={13} />
                   </a>
                 </div>
