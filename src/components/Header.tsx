@@ -17,7 +17,6 @@ import {
   Globe,
   Megaphone,
   LayoutDashboard,
-  MapPin,
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
@@ -57,7 +56,6 @@ export const Header = () => {
   const navLinks = [
     { name: 'Home', path: '/', icon: Home },
     { name: 'Services', path: '/services', icon: Layers },
-    { name: 'Tambaram', path: '/tambaram', icon: MapPin },
     { name: 'Facebook Ads', path: '/services/facebook-ads', icon: Megaphone },
     { name: 'WordPress', path: '/wordpress-development', icon: Globe },
     { name: 'YouTube', path: '/youtube-management', icon: Youtube },
