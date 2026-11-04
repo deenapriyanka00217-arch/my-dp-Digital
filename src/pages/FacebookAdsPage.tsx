@@ -40,9 +40,9 @@ const FACEBOOKADS_JSON_LD = {
     url: 'https://www.mydpdigital.in',
     telephone: '+91-81483-20217',
   },
-  areaServed: 'Chennai, Tamil Nadu, India',
+  areaServed: 'Chennai and Tambaram, Tamil Nadu, India',
   description:
-    'Facebook and Instagram advertising management for Chennai retailers, D2C brands, and product businesses, including campaign setup, creative testing, retargeting, and conversion tracking.',
+    'Facebook and Instagram (Meta) Ads management in Chennai and Tambaram for coaching centres, clinics, local service businesses, retailers, and D2C brands, including lead campaigns, creative testing, retargeting, and conversion tracking.',
 };
 
 // 3D Neon Animated Facebook / Meta Logo Emblem with Glowing Laser Halo
@@ -338,14 +338,6 @@ export const FacebookAdsPage: React.FC = () => {
       <div className="absolute top-[40%] left-[-10%] w-[40vw] h-[40vw] bg-[#00F2FE]/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-10 right-[-5%] w-[35vw] h-[35vw] bg-[#FF2E9A]/10 rounded-full blur-[120px] pointer-events-none" />
 
-      {/* SEO Schema / Keyword Semantic Shell */}
-      <div className="hidden" aria-hidden="true">
-        <div>Facebook Product Ads Agency - Meta Paid Ads & E-Commerce Sales Scaling</div>
-        <p>
-          Specialist Meta & Facebook Ads agency delivering high ROAS product sales campaigns, dynamic product catalog ads, Conversions API setup, click-to-WhatsApp sales funnels, and performance scaling for Shopify, WooCommerce, and D2C brands.
-        </p>
-      </div>
-
       <div className="w-full px-4 sm:px-8 lg:px-12 max-w-[1280px] mx-auto relative z-10 space-y-16 sm:space-y-20">
         {/* ========================================================================= */}
         {/* HERO BANNER SECTION: 3D NEON FACEBOOK LOGO, COPY & ROAS CALCULATOR */}
@@ -357,13 +349,12 @@ export const FacebookAdsPage: React.FC = () => {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1877F2]/15 border border-[#1877F2]/30 text-[#00F2FE] text-[10px] sm:text-xs font-bold uppercase tracking-wider backdrop-blur-xl">
                 <Sparkles size={14} className="text-[#00F2FE]" />
-                <span>Meta & Facebook Product Sales Ads Agency</span>
+                <span>Facebook, Instagram & Meta Ads Management</span>
               </div>
 
               {/* Short intro paragraph for on-page SEO */}
               <p className="text-xs sm:text-sm text-white/60 leading-relaxed font-normal max-w-xl">
-                My DP Digital is a Facebook Ads agency in Chennai helping e-commerce, D2C, and retail businesses
-                turn paid social traffic into real product sales, with campaigns managed directly by our team.
+                My DP Digital manages Facebook and Instagram Ads for businesses in Chennai and Tambaram, including coaching centres, clinics, local service providers, retailers, and D2C brands. Campaigns are planned around the enquiry or sales goal, service area, budget, creative, and follow-up process.
               </p>
 
               {/* Main Display Headline with 3D Neon Facebook Logo */}
@@ -371,7 +362,7 @@ export const FacebookAdsPage: React.FC = () => {
                 <Facebook3DNeonLoop size={52} className="shrink-0" />
                 <div>
                   <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight sm:leading-[1.08]">
-                    Scale Product Sales with <br />
+                    Generate Leads & Sales with <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1877F2] via-[#00F2FE] to-[#FF2E9A]">
                       Facebook & Instagram Ads
                     </span>
@@ -381,7 +372,7 @@ export const FacebookAdsPage: React.FC = () => {
 
               {/* On-Page SEO Rich Value Proposition */}
               <p className="text-sm sm:text-base text-white/80 leading-relaxed font-normal">
-                We help e-commerce, D2C, and retail businesses plan Facebook and Instagram campaigns with audience research, creative testing, product catalog ads, retargeting, and conversion tracking.
+                We plan Facebook and Instagram campaigns for lead generation and product sales. Depending on the business, this can include WhatsApp enquiries, lead forms, local-area targeting, product catalog ads, retargeting, creative testing, and conversion tracking.
               </p>
 
               {/* Key Value Badges */}
@@ -403,7 +394,7 @@ export const FacebookAdsPage: React.FC = () => {
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
                 <a
-                  href={getWhatsAppUrl('Scale My E-Commerce Product Ads')}
+                  href={getWhatsAppUrl('Plan My Facebook and Instagram Ads Campaign')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-[#1877F2] via-[#0866FF] to-[#00F2FE] hover:opacity-95 text-white px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm shadow-lg shadow-[#1877F2]/30 flex items-center justify-center gap-2 transition-all hover:scale-[1.01]"
@@ -512,13 +503,13 @@ export const FacebookAdsPage: React.FC = () => {
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1877F2]/15 border border-[#1877F2]/30 text-[#00F2FE] text-[10px] font-bold uppercase tracking-wider">
               <Target size={12} />
-              <span>Full-Stack Facebook Paid Acquisition</span>
+              <span>Meta Ads Campaign Planning & Management</span>
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-              Engineered Exclusively for <span className="text-[#00F2FE]">Sales & Revenue</span>
+              Campaigns Planned for <span className="text-[#00F2FE]">Leads & Sales</span>
             </h2>
             <p className="text-xs sm:text-sm text-white/70">
-              We do not run vanity awareness campaigns. Every rupee of your ad spend is tracked against direct product purchases, lower customer acquisition cost (CAC), and higher lifetime value.
+              We align campaign objectives, audience, creative, budget, landing page or WhatsApp journey, and tracking with the outcome your business needs. Product-sales campaigns remain available alongside enquiry-generation campaigns for local service businesses.
             </p>
           </div>
 
@@ -551,6 +542,70 @@ export const FacebookAdsPage: React.FC = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
+        {/* LOCAL BUSINESS LEAD GENERATION */}
+        {/* ========================================================================= */}
+        <section
+          aria-labelledby="local-meta-lead-campaigns"
+          className="p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10 space-y-6"
+        >
+          <div className="max-w-3xl space-y-3">
+            <span className="text-[10px] font-bold text-[#00F2FE] uppercase tracking-wider">
+              For Chennai & Tambaram Businesses
+            </span>
+            <h2 id="local-meta-lead-campaigns" className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+              Facebook & Instagram lead generation for coaching centres, clinics and local businesses
+            </h2>
+            <p className="text-sm text-white/70 leading-relaxed">
+              Need more relevant enquiries for a course, appointment, or local service? We plan Meta Ads around
+              your service area, offer, audience, monthly ad budget, and the way your team follows up with leads.
+              The campaign route may use WhatsApp, an instant form, or a dedicated landing page depending on
+              your sales process.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="p-5 rounded-2xl bg-white/[0.04] border border-white/10 space-y-2">
+              <h3 className="font-bold text-white">Coaching centres & academies</h3>
+              <p className="text-xs text-white/65 leading-relaxed">
+                Promote course enquiries, demo classes, admissions information, and workshop registrations
+                with a clear follow-up path.
+              </p>
+            </div>
+            <div className="p-5 rounded-2xl bg-white/[0.04] border border-white/10 space-y-2">
+              <h3 className="font-bold text-white">Clinics & appointment businesses</h3>
+              <p className="text-xs text-white/65 leading-relaxed">
+                Structure local campaigns around service information and appointment enquiries, with careful
+                attention to platform policies and responsible claims.
+              </p>
+            </div>
+            <div className="p-5 rounded-2xl bg-white/[0.04] border border-white/10 space-y-2">
+              <h3 className="font-bold text-white">Shops & local service providers</h3>
+              <p className="text-xs text-white/65 leading-relaxed">
+                Reach people in your chosen service area with offer-led creatives, WhatsApp conversations,
+                or a landing page designed for enquiries.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 border-t border-white/10">
+            <p className="text-xs text-white/60 leading-relaxed max-w-2xl">
+              Before launch, we review the offer, target locations, ad budget, lead destination, and tracking.
+              Ad spend is separate from management fees; results depend on the market, creative, offer, and
+              follow-up process.
+            </p>
+            <a
+              href={getWhatsAppUrl('Plan a local lead-generation campaign for my business in Chennai or Tambaram')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#1877F2] hover:bg-[#0866FF] text-white text-xs font-bold transition-colors"
+            >
+              <WhatsAppIcon size={16} className="text-white" />
+              Discuss a Lead Campaign
+            </a>
           </div>
         </section>
 
