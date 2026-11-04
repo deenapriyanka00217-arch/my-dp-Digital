@@ -19,6 +19,7 @@ import {
   Youtube
 } from 'lucide-react';
 import { WhatsAppIcon } from './StickyWhatsApp';
+import { trackAnalyticsEvent } from '../utils/analytics';
 
 const WHATSAPP_PHONE = '918148320217';
 
@@ -146,7 +147,7 @@ _Sent via My DP Digital Fast Desk_`;
 
     try {
       // Send the email via FormSubmit (AJAX)
-      await fetch('https://formsubmit.co/ajax/deenapriyanka00217@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/deenapriyanka00217@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -164,6 +165,29 @@ _Sent via My DP Digital Fast Desk_`;
           _template: 'table'
         })
       });
+
+      if (response.ok) {
+        let submissionAccepted = true;
+        try {
+          const result: unknown = await response.json();
+          if (typeof result === 'object' && result !== null && 'success' in result) {
+            const success = (result as { success?: unknown }).success;
+            submissionAccepted = success === true || success === 'true';
+          }
+        } catch {
+          // Some FormSubmit responses may not include a JSON body; HTTP success is the fallback.
+        }
+
+        if (submissionAccepted) {
+          trackAnalyticsEvent('generate_lead', {
+            method: 'website_form',
+            service_name: activeService.name,
+            service_category: activeService.category,
+          });
+        }
+      } else {
+        console.error('Service inquiry was not accepted by FormSubmit', response.status);
+      }
     } catch (error) {
       console.error('Email submission failed', error);
       // We continue anyway so WhatsApp still opens
@@ -174,6 +198,12 @@ _Sent via My DP Digital Fast Desk_`;
     setTimeout(() => {
       setIsSending(false);
       setIsSubmitted(true);
+      trackAnalyticsEvent('whatsapp_click', {
+        contact_method: 'whatsapp',
+        cta_location: 'service_inquiry_form',
+        service_name: activeService.name,
+        page_path: window.location.pathname,
+      });
       window.open(whatsappUrl, '_blank');
     }, 400);
   };

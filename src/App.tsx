@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { StickyWhatsApp } from './components/StickyWhatsApp';
 import { CmsProvider } from './context/CmsContext';
+import { trackAnalyticsEvent } from './utils/analytics';
 import { AnimatePresence } from 'framer-motion';
 
 // Keep page code out of the initial bundle until a visitor opens that route.
@@ -34,6 +35,48 @@ const ScrollToTop = () => {
 export const AppContent = () => {
   const { pathname } = useLocation();
   const isAdminRoute = pathname === '/admin' || pathname === '/dashboard';
+
+  useEffect(() => {
+    if (isAdminRoute) return;
+
+    const handleContactClick = (event: MouseEvent) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+
+      const anchor = target.closest('a[href]');
+      if (!(anchor instanceof HTMLAnchorElement)) return;
+
+      const href = (anchor.getAttribute('href') ?? '').trim().toLowerCase();
+      const ctaText =
+        anchor.getAttribute('aria-label') ||
+        anchor.textContent?.trim().slice(0, 80) ||
+        'Contact link';
+      const pagePath = window.location.pathname;
+      const isWhatsAppLink =
+        href.startsWith('https://wa.me/') ||
+        href.startsWith('https://api.whatsapp.com/');
+
+      if (isWhatsAppLink) {
+        trackAnalyticsEvent('whatsapp_click', {
+          contact_method: 'whatsapp',
+          cta_text: ctaText,
+          page_path: pagePath,
+        });
+        return;
+      }
+
+      if (href.startsWith('tel:')) {
+        trackAnalyticsEvent('phone_click', {
+          contact_method: 'phone',
+          cta_text: ctaText,
+          page_path: pagePath,
+        });
+      }
+    };
+
+    document.addEventListener('click', handleContactClick, true);
+    return () => document.removeEventListener('click', handleContactClick, true);
+  }, [isAdminRoute]);
 
   return (
     <div className="flex flex-col min-h-screen bg-[#07050C] text-white selection:bg-[#FF2E9A] selection:text-white relative font-sans">
