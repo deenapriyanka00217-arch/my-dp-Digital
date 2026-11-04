@@ -147,7 +147,7 @@ _Sent via My DP Digital Fast Desk_`;
 
     try {
       // Send the email via FormSubmit (AJAX)
-      const response = await fetch('https://formsubmit.co/ajax/deenapriyanka@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/deenapriyanka00217@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
