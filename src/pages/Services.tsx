@@ -275,7 +275,7 @@ const SERVICES_JSON_LD = [
     },
     areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'Digital marketing, website design, SEO, and Google Ads packages for small and mid-sized businesses in Chennai, with pricing built for real budgets.',
+      'Digital marketing services for Chennai businesses, including SEO, Google Ads, Facebook and Instagram advertising, website design, and content support for small and mid-sized businesses.',
   },
   {
     '@context': 'https://schema.org',
@@ -292,7 +292,7 @@ const ServicesPage = () => {
     <>
     <PageSEO
       title="Digital Marketing Services in Chennai | My DP Digital"
-      description="Explore SEO, Google Ads, social media advertising, website development and content services for Chennai businesses."
+      description="Digital marketing agency in Chennai offering SEO, Google Ads, Facebook and Instagram Ads, website design and content services for coaching centres, clinics and local businesses."
       canonicalPath="/services"
       jsonLd={SERVICES_JSON_LD}
     />
@@ -324,7 +324,7 @@ const ServicesPage = () => {
             </span>
           </h1>
           <p className="text-base sm:text-xl text-white/80 leading-relaxed font-normal max-w-3xl">
-            From single-page fast launches to enterprise multi-page web infrastructures, e-commerce stores, LMS platforms, and algorithmic SEO scaling — explore our full suite of technical growth capabilities.
+            My DP Digital provides SEO, Google Ads, Facebook and Instagram (Meta) Ads, website design, and content support for businesses across Chennai. We plan campaigns and website work around your service, customer enquiry journey, target areas, and working budget.
           </p>
         </div>
 
@@ -334,11 +334,10 @@ const ServicesPage = () => {
             Complete Digital Marketing Services in Chennai
           </h2>
           <p className="text-xs sm:text-sm text-white/60 mt-2 leading-relaxed">
-            From SEO and Google Ads to website development and branding,{' '}
-            <Link to="/" className="text-[#FF7AC6] font-semibold hover:underline">
-              DP Digital
-            </Link>{' '}
-            covers every digital marketing service a growing Chennai business needs under one team.
+            We support coaching centres, clinics, retailers, and local service businesses with SEO, paid advertising, websites, and practical content. Each plan is scoped around the audience you need to reach, the service area you cover, and how enquiries will be handled. For Tambaram and nearby South Chennai businesses, see our{' '}
+            <Link to="/tambaram" className="text-[#FF7AC6] font-semibold hover:underline">
+              dedicated Tambaram digital marketing service area
+            </Link>.
           </p>
         </div>
 
