@@ -46,14 +46,17 @@ export const AppContent = () => {
       const anchor = target.closest('a[href]');
       if (!(anchor instanceof HTMLAnchorElement)) return;
 
-      const href = anchor.getAttribute('href')?.trim() ?? '';
+      const href = (anchor.getAttribute('href') ?? '').trim().toLowerCase();
       const ctaText =
         anchor.getAttribute('aria-label') ||
-        anchor.textContent?.trim().replace(/\\s+/g, ' ').slice(0, 80) ||
+        anchor.textContent?.trim().slice(0, 80) ||
         'Contact link';
       const pagePath = window.location.pathname;
+      const isWhatsAppLink =
+        href.startsWith('https://wa.me/') ||
+        href.startsWith('https://api.whatsapp.com/');
 
-      if (/^https?:\\/\\/(?:wa\\.me|api\\.whatsapp\\.com)(?:\\/|$)/i.test(href)) {
+      if (isWhatsAppLink) {
         trackAnalyticsEvent('whatsapp_click', {
           contact_method: 'whatsapp',
           cta_text: ctaText,
@@ -62,7 +65,7 @@ export const AppContent = () => {
         return;
       }
 
-      if (/^tel:/i.test(href)) {
+      if (href.startsWith('tel:')) {
         trackAnalyticsEvent('phone_click', {
           contact_method: 'phone',
           cta_text: ctaText,
