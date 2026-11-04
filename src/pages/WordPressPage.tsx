@@ -107,7 +107,7 @@ export const WordPressPage: React.FC = () => {
     },
     {
       title: 'Security, Updates & Backups',
-      desc: 'Plan WordPress core and plugin updates, backup routines, SSL configuration, and security checks around your site's hosting, plugins, and maintenance requirements.',
+      desc: "Plan WordPress core and plugin updates, backup routines, SSL configuration, and security checks around your site's hosting, plugins, and maintenance requirements.",
       icon: ShieldCheck,
       tag: 'Ongoing Care',
     },
