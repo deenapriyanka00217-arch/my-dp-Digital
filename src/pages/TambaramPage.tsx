@@ -36,9 +36,15 @@ const tambaramServices = [
   },
   {
     title: 'Google Ads Management for Tambaram Businesses',
-    desc: 'Google Ads and Meta advertising campaign management for Tambaram businesses, with clear budget planning and reporting agreed before campaigns begin.',
+    desc: 'Google Search and paid-search campaign planning for Tambaram businesses, with targeting, budget, conversion tracking, and reporting agreed before launch.',
     icon: Megaphone,
     href: '/services/paid-social-ads',
+  },
+  {
+    title: 'Facebook & Instagram Ads Management in Tambaram',
+    desc: 'Meta Ads campaigns for coaching centres, clinics, shops, and local service providers seeking relevant enquiries or sales. Choose a WhatsApp, instant-form, or landing-page route, with ad spend and management fees explained separately.',
+    icon: Megaphone,
+    href: '/services/facebook-ads',
   },
   {
     title: 'Website Design for Tambaram Businesses',
@@ -76,6 +82,10 @@ const faqs = [
   {
     question: 'What digital marketing services do you offer to Tambaram businesses?',
     answer: `We provide SEO, Google Ads, Meta (Facebook and Instagram) advertising, website design, branding, graphic design, video editing, and YouTube channel support. Call or WhatsApp ${DISPLAY_PHONE} to discuss what fits your business.`,
+  },
+  {
+    question: 'Can you manage Facebook and Instagram Ads for a Tambaram business?',
+    answer: 'Yes. Meta Ads campaigns can be planned for coaching centres, academies, clinics, shops, and local service providers. Depending on the goal, enquiries can go to WhatsApp, an instant form, or a landing page. Campaign scope, ad budget, and management fees are discussed separately before launch.',
   },
   {
     question: 'Which areas around Tambaram do you serve?',
@@ -251,6 +261,13 @@ const TambaramPage: React.FC = () => {
             );
           })}
         </div>
+        <p className="text-center text-xs sm:text-sm text-white/60 mt-6">
+          Looking specifically for paid social lead generation? Explore our{' '}
+          <Link to="/services/facebook-ads" className="text-[#FF7AC6] font-semibold hover:underline">
+            Facebook and Instagram Ads management service
+          </Link>{' '}
+          for campaign details.
+        </p>
       </div>
 
       {/* Local marketing approach */}
