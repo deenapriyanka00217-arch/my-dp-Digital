@@ -26,8 +26,8 @@ const ALL_SERVICES = [
   {
     id: 'youtube-management',
     title: 'YouTube Channel Editing & Management',
-    category: 'Video Production & Viral Growth',
-    tag: 'Trending & Viral',
+    category: 'Video Editing & Channel Management',
+    tag: 'Channel Support',
     timeline: 'Monthly Retainer / 48h Turnaround',
     priceGuide: 'From ₹14,999/mo',
     color: '#FF0000', // YouTube Red / Neon
@@ -241,7 +241,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹15,000/mo',
     color: '#FF7AC6', // Flamingo Pink
     icon: BookOpen,
-    description: 'A Chennai-based digital branding agency handling authoritative technical copywriting, visual brand identity guidelines, thought-leadership blogs, and social content systems that convert readers to advocates.',
+    description: 'Content planning and brand-support services for Chennai businesses, including website copy, useful long-form articles, visual identity guidance and social media creative systems.',
     deliverables: [
       'Brand Visual Design Systems',
       'SEO-Optimized Long-Form Articles',
@@ -260,11 +260,11 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹20,000',
     color: '#06B6D4', // Cyan
     icon: MessageCircle,
-    description: 'WhatsApp and website AI chatbots, plus voice agents, trained on your services, pricing, and FAQs — answering common questions instantly, qualifying leads around the clock, and handing off to your team only when a real conversation is needed.',
+    description: 'WhatsApp and website chatbots, plus voice-agent projects, can be scoped around approved service information, common questions, enquiry capture and handoff to your team. Features, availability and integrations depend on the selected platform and setup.',
     deliverables: [
       'WhatsApp AI Chatbot Setup & Training',
       'Website Chat Widget / Voice Agent',
-      '24/7 Automated Lead Qualification',
+      'Enquiry capture and qualification flows based on agreed availability',
       'Human Handoff for Complex Queries'
     ],
     examples: 'Trained on your real services, pricing, and FAQs'
@@ -483,7 +483,7 @@ const ServicesPage = () => {
           })}
         </div>
 
-        {/* Global Guaranteed Architecture Highlights */}
+        {/* Service delivery and implementation notes */}
         <div className="mb-32 grid sm:grid-cols-3 gap-6">
           <div className="p-8 rounded-3xl bg-white/[0.035] backdrop-blur-xl border border-white/10 space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-[#06B6D4]/15 border border-[#06B6D4]/30 flex items-center justify-center text-[#06B6D4]">
@@ -661,7 +661,7 @@ const ServicesPage = () => {
               </span>
             </h2>
             <p className="text-white/80 text-base sm:text-lg font-normal">
-              Speak directly with our chief tech architect to review requirements, scope out deliverables, and launch within days.
+              Speak with our team to review your requirements, clarify deliverables and discuss a realistic project scope and next steps.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <a
