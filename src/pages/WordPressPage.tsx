@@ -122,8 +122,8 @@ export const WordPressPage: React.FC = () => {
   return (
     <>
     <PageSEO
-      title="WordPress Website Development in Chennai & Tambaram | My DP Digital"
-      description="WordPress website design, development, WooCommerce setup, and maintenance support for businesses in Chennai, Tambaram, and South Chennai."
+      title="WordPress Development in Chennai & Tambaram"
+      description="WordPress website development, Elementor pages, WooCommerce setup and maintenance support for businesses in Chennai and Tambaram."
       canonicalPath="/wordpress-development"
       jsonLd={WORDPRESS_JSON_LD}
     />
