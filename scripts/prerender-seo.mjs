@@ -57,7 +57,7 @@ const STATIC_ROUTES = [
     route: '/services/paid-social-ads',
     title: 'Google Ads & Meta Ads Management in Chennai | My DP Digital',
     description:
-      'Google Search, YouTube, Facebook and Instagram ads management in Chennai, with campaign planning, creative testing and enquiry tracking.'
+      'Google Search, YouTube, Facebook and Instagram ads in Chennai, with planning, creative testing, landing-page review and enquiry tracking.'
   },
   {
     route: '/services/facebook-ads',
@@ -79,9 +79,9 @@ const STATIC_ROUTES = [
   },
   {
     route: '/services/content-marketing-branding',
-    title: 'Content Marketing & Graphic Design in Chennai',
+    title: 'Content & Graphic Design in Chennai | My DP Digital',
     description:
-      'Chennai content marketing, SEO writing, social media creatives and graphic design with clear deliverables and consistent brand messaging.',
+      'Chennai content marketing, SEO writing, social media creatives and graphic design for businesses that need consistent, on-brand communication.',
   },
   {
     route: '/youtube-management',
