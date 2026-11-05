@@ -54,7 +54,7 @@ const ALL_SERVICES = [
     description: 'Fast-loading, responsive single-page websites with clear service messaging, focused calls to action, enquiry forms, and WhatsApp contact options.',
     deliverables: [
       'Custom Responsive UI Layout',
-      'Instant WhatsApp Chat Integration',
+      'WhatsApp contact links with prefilled enquiry messages',
       'Hero Conversion Lead Form',
       'High-Speed CDN Hosting Setup'
     ],
@@ -102,15 +102,15 @@ const ALL_SERVICES = [
   {
     id: 'ecommerce',
     title: 'E-Commerce Product Platforms',
-    category: 'Revenue & Transactional',
-    tag: 'High Revenue',
+    category: 'Online Stores & Payments',
+    tag: 'E-commerce',
     timeline: '10 - 15 Days',
     priceGuide: 'From ₹35,000',
     color: '#10B981', // Emerald Green
     icon: ShoppingCart,
-    description: 'High-converting online storefronts with streamlined product catalogs, UPI & card payment gateways, automated invoice dispatch, and order tracking.',
+    description: 'E-commerce storefronts with product catalogues, UPI and card payment integration, order notifications and tracking options planned around the store workflow.',
     deliverables: [
-      'Razorpay/Stripe Instant Checkout',
+      'Razorpay or Stripe payment gateway integration',
       'Dynamic Inventory & Order Manager',
       'One-Click WhatsApp Order Alerts',
       'Abandoned Cart Email Sequences'
@@ -127,7 +127,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹20,000',
     color: '#F97316', // Sunset Orange
     icon: Globe,
-    description: 'Direct-response sales engines with countdown urgency timers, video embeds, automated CRM lead sync, and instant booking calendar integration.',
+    description: 'Landing pages and funnels for webinars and paid campaigns, with optional video, enquiry forms, CRM or spreadsheet integrations, booking tools and follow-up workflows based on the agreed scope.',
     deliverables: [
       'Psychological Direct-Response Layout',
       'Automated Lead Nurturing Webhooks',
@@ -216,7 +216,7 @@ const ALL_SERVICES = [
   {
     id: 'paid-ads',
     title: 'Meta & Google Ads Management',
-    category: 'Paid Acquisition & ROAS',
+    category: 'Paid Acquisition & Reporting',
     tag: 'Paid Acquisition',
     timeline: 'Monthly Retainer',
     priceGuide: 'From ₹22,000/mo',
@@ -439,7 +439,7 @@ const ServicesPage = () => {
                     {/* Example Sites Reference */}
                     {service.examples && (
                       <div className="p-3 rounded-2xl bg-white/[0.03] border border-white/5 text-[11px] text-white/60">
-                        <span className="font-bold text-white/80 block mb-0.5">Live Portfolios:</span>
+                        <span className="font-bold text-white/80 block mb-0.5">Project examples / scope:</span>
                         <span className="text-white/60 line-clamp-1 italic">{service.examples}</span>
                       </div>
                     )}
