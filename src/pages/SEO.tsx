@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
-import { Search, TrendingUp, BarChart3, Globe, Check, ArrowRight, Sparkles, Zap } from 'lucide-react';
+import { Search, TrendingUp, BarChart3, Globe, Check, ArrowRight, Sparkles, Zap, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
 import PageSEO from '../components/PageSEO';
+
+const WHATSAPP_PHONE = '918148320217';
 
 const SEO_JSON_LD = [
   {
@@ -18,7 +20,7 @@ const SEO_JSON_LD = [
     },
     areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'Local SEO services in Chennai to help businesses rank higher on Google Maps and local search, including Google Business Profile optimization and local citations.',
+      'SEO services in Chennai covering technical reviews, on-page improvements, keyword mapping, local search content and organic performance reporting.',
   },
   {
     '@context': 'https://schema.org',
@@ -36,7 +38,7 @@ const SEOPage = () => {
     <>
     <PageSEO
       title="SEO Services in Chennai | Local & Technical SEO"
-      description="SEO services in Chennai covering technical fixes, on-page improvements, content planning and local search visibility."
+      description="Chennai SEO services for technical checks, on-page improvements, keyword mapping, local search content and organic performance reporting."
       canonicalPath="/services/seo"
       jsonLd={SEO_JSON_LD}
     />
@@ -54,7 +56,7 @@ const SEOPage = () => {
             SEO Services in Chennai <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">That Help Customers Find You.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
-            Data-driven technical SEO, topical semantic authority, and global search optimization engineered to turn search traffic into a permanent competitive advantage.
+            Practical SEO planning and implementation for Chennai businesses: technical checks, keyword-to-page mapping, useful service content, internal links and Search Console reporting. Work is prioritised around your site, target areas and commercial goals — without ranking guarantees.
           </p>
         </div>
 
@@ -62,10 +64,10 @@ const SEOPage = () => {
           <div className="lg:col-span-6 space-y-10">
             <div className="grid sm:grid-cols-2 gap-6">
               {[
-                { title: 'Technical Audit', desc: 'Core Web Vitals & architecture optimization.', icon: Zap },
-                { title: 'Semantic Authority', desc: 'Topical graph & keyword cluster strategy.', icon: Search },
-                { title: 'Global Scaling', desc: 'Rank globally with localized intent capture.', icon: Globe },
-                { title: 'Data Dashboards', desc: 'Real-time ROI & keyword tracking.', icon: BarChart3 },
+                { title: 'Technical Review', desc: 'Indexability, crawl paths, redirects and performance checks.', icon: Zap },
+                { title: 'Keyword Mapping', desc: 'Match commercial search intent to the right service page.', icon: Search },
+                { title: 'Local Search Content', desc: 'Useful Chennai-area service information without doorway pages.', icon: Globe },
+                { title: 'Search Reporting', desc: 'Review clicks, impressions, CTR and average position in Search Console.', icon: BarChart3 },
               ].map((item, idx) => (
                 <div key={idx} className="p-6 rounded-3xl bg-white/[0.035] backdrop-blur-xl border border-white/10 space-y-3 shadow-2xl hover:border-white/20 transition-all">
                   <div className="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-[#FF7AC6]">
@@ -81,10 +83,10 @@ const SEOPage = () => {
               <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">The Growth Process</h2>
               <div className="space-y-4">
                 {[
-                  { step: '01', title: 'Deep Forensic Audit', text: 'We diagnose every technical hurdle and competitor blind spot.' },
-                  { step: '02', title: 'Topical Roadmap', text: 'We build the semantic structure required for authority.' },
-                  { step: '03', title: 'Precision Execution', text: 'On-page, technical, and link acquisition sprints.' },
-                  { step: '04', title: 'Continuous Scaling', text: 'Monthly data-led iteration to maintain leadership.' },
+                  { step: '01', title: 'Baseline Review', text: 'Review indexability, page structure, current search data and the enquiries the site needs to generate.' },
+                  { step: '02', title: 'Keyword-to-Page Plan', text: 'Assign one clear search-intent cluster to each relevant service or location page.' },
+                  { step: '03', title: 'On-Page Improvements', text: 'Improve titles, headings, useful content, internal links and technical issues identified in the audit.' },
+                  { step: '04', title: 'Measure & Refine', text: 'Use settled Search Console data to decide what to improve next; ranking movement is an outcome, not a promise.' },
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-lg border border-white/10 items-start">
                     <span className="text-xl font-black text-[#FF7AC6] leading-none">{item.step}</span>
