@@ -4,24 +4,24 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: 'How do your 3D sales funnels accelerate lead conversions?',
-    answer: 'By replacing static forms with interactive, immersive WebGL experiences and instant zero-second WhatsApp bot routing, prospect engagement increases by 320% and drop-off friction is virtually eliminated.'
+    question: 'How do you decide which marketing work a business needs first?',
+    answer: 'We start with your service, target locations, website or landing page, current enquiry route and budget. From there, we identify the most useful next steps—such as improving a service page, running a focused campaign, fixing a tracking gap or creating content. The scope is agreed before work begins.'
   },
   {
-    question: 'How fast do 3D WebGL interfaces load on mobile devices?',
-    answer: 'Our 3D elements use hardware-accelerated shaders and adaptive geometry level-of-detail (LOD) to maintain flawless 60fps performance and sub-1.2 second loading times across all iOS and Android devices.'
+    question: 'How do you measure enquiries and campaign performance?',
+    answer: 'We separate website form submissions, WhatsApp clicks and phone clicks, and review the available traffic and campaign data. A click is not the same as a qualified lead or sale. Where analytics access and consent allow, we can configure and test conversion events; actual lead counts are reported only after the events are verified.'
   },
   {
-    question: 'How quickly can we expect measurable SEO & lead growth?',
-    answer: 'While technical Core Web Vitals fixes and 3D funnel landing page optimizations trigger immediate conversion increases within 7-14 days, algorithmic organic search authority compounds strongly over 60-90 days.'
+    question: 'How long does SEO or digital marketing take to show results?',
+    answer: 'There is no reliable fixed timeline for every business. Timing depends on the starting condition of the website or campaign, competition, target locations, content, budget, approvals and follow-up speed. We agree practical milestones and review the data as it matures, but we do not guarantee a ranking position, traffic increase or number of leads.'
   },
   {
-    question: 'Can you integrate autonomous WhatsApp bots with our existing CRM?',
-    answer: 'Yes! We build custom webhook automations across Zapier, Make, and WhatsApp Business Cloud API to sync leads directly into Salesforce, HubSpot, Zoho, LeadSquared, or Google Sheets with instant real-time notifications.'
+    question: 'Can you connect website enquiries or WhatsApp to our CRM?',
+    answer: 'We can review options for routing website forms and WhatsApp enquiries into a spreadsheet, CRM or automation tool. The exact setup depends on the CRM, WhatsApp Business/API access, available integrations, permissions and any third-party costs. We confirm what is supported before including it in a proposal.'
   },
   {
-    question: 'What is your investment and engagement model?',
-    answer: 'We offer performance-oriented monthly growth partnerships as well as bespoke project sprints for custom 3D web development, brand funnels, and enterprise automation pipelines.'
+    question: 'How are service fees and advertising budgets handled?',
+    answer: 'Website projects and ongoing services are quoted according to the agreed pages, deliverables, platforms, content volume, integrations and support. For paid advertising, the media spend paid to the ad platform is separate from the campaign-management fee. You receive an itemised scope before approving the work.'
   }
 ];
 
