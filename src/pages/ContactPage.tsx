@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Sparkles, Clock, ShieldCheck } from 'lucide-react';
+import { Mail, MapPin, Sparkles, Clock, ShieldCheck, Phone } from 'lucide-react';
 import { WhatsAppIcon } from '../components/StickyWhatsApp';
 import { BannerServicesForm } from '../components/BannerServicesForm';
 import PageSEO from '../components/PageSEO';
@@ -63,13 +63,21 @@ const ContactPage = () => {
                   <WhatsAppIcon size={22} className="text-white" />
                 </div>
                 <div>
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#25D366]">Direct WhatsApp Desk</div>
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#25D366]">Call or WhatsApp Our Team</div>
                   <div className="text-sm font-bold text-white">+91 81483 20217</div>
                 </div>
               </div>
               <p className="text-xs text-white/70">
-                Need an immediate answer or custom estimate? Chat with our team in real-time.
+                Need an immediate answer or custom estimate? Call us directly or send a WhatsApp message.
               </p>
+              <a
+                href="tel:+918148320217"
+                aria-label="Call My DP Digital at +91 81483 20217"
+                className="w-full bg-gradient-to-r from-[#FF2E9A] to-[#B026FF] hover:opacity-95 text-white py-2.5 px-4 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-md shadow-[#FF2E9A]/20"
+              >
+                <Phone size={16} />
+                <span>Call Now · +91 81483 20217</span>
+              </a>
               <a
                 href={`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent('Hi DP Digital, I want to consult about a project.')}`}
                 target="_blank"

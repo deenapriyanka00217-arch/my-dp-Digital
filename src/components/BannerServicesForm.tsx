@@ -118,10 +118,14 @@ export const ALL_SERVICES: ServiceItem[] = [
 export const BannerServicesForm: React.FC = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
+  const [businessName, setBusinessName] = useState('');
+  const [businessArea, setBusinessArea] = useState('');
   const [selectedService, setSelectedService] = useState<string>('wordpress-dev');
   const [note, setNote] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSending, setIsSending] = useState(false);
+  const [emailSubmissionStatus, setEmailSubmissionStatus] = useState<'sent' | 'failed' | null>(null);
+  const [submittedWhatsAppUrl, setSubmittedWhatsAppUrl] = useState('');
 
   const activeService = ALL_SERVICES.find((s) => s.id === selectedService) || ALL_SERVICES[0];
 
@@ -132,12 +136,18 @@ export const BannerServicesForm: React.FC = () => {
       return;
     }
 
-    setIsSending(true);
+    const normalizedPhone = phone.replace(/\D/g, '');
+    if (!/^(?:91)?[6-9]\d{9}$/.test(normalizedPhone)) {
+      alert('Please enter a valid 10-digit Indian mobile number, with or without +91.');
+      return;
+    }
 
     const message = `*New Service Inquiry from Website*
 -----------------------------------
 *Client Name:* ${name.trim()}
 *Mobile / WhatsApp:* ${phone.trim()}
+*Business / Website:* ${businessName.trim() || 'Not provided'}
+*Business Location:* ${businessArea.trim() || 'Not provided'}
 *Required Service:* ${activeService.name}
 *Category:* ${activeService.category}
 *Estimated Timeline:* ${activeService.timeline}
@@ -145,8 +155,29 @@ export const BannerServicesForm: React.FC = () => {
 -----------------------------------
 _Sent via My DP Digital Fast Desk_`;
 
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+    setSubmittedWhatsAppUrl(whatsappUrl);
+
+    // Open WhatsApp synchronously during the submit click. Opening it only
+    // after the email request completes can be blocked by browser popup protection.
+    const whatsappWindow = window.open(whatsappUrl, '_blank');
+    if (whatsappWindow) {
+      whatsappWindow.opener = null;
+      trackAnalyticsEvent('whatsapp_click', {
+        contact_method: 'whatsapp',
+        cta_location: 'service_inquiry_form',
+        service_name: activeService.name,
+        page_path: window.location.pathname,
+      });
+    }
+    // If the popup is blocked, the visible fallback link is the actual
+    // WhatsApp click and is tracked by the site-wide anchor listener.
+
+    setIsSending(true);
+    setEmailSubmissionStatus(null);
+    let emailAccepted = false;
+
     try {
-      // Send the email via FormSubmit (AJAX)
       const response = await fetch('https://formsubmit.co/ajax/deenapriyanka00217@gmail.com', {
         method: 'POST',
         headers: {
@@ -157,6 +188,8 @@ _Sent via My DP Digital Fast Desk_`;
           _subject: `New Lead: ${name.trim()} - ${activeService.name}`,
           name: name.trim(),
           phone: phone.trim(),
+          business_name: businessName.trim(),
+          business_area: businessArea.trim(),
           service: activeService.name,
           category: activeService.category,
           timeline: activeService.timeline,
@@ -179,33 +212,25 @@ _Sent via My DP Digital Fast Desk_`;
         }
 
         if (submissionAccepted) {
+          emailAccepted = true;
           trackAnalyticsEvent('generate_lead', {
             method: 'website_form',
             service_name: activeService.name,
             service_category: activeService.category,
           });
         }
-      } else {
-        console.error('Service inquiry was not accepted by FormSubmit', response.status);
+      }
+
+      if (!emailAccepted) {
+        console.error('Service inquiry was not confirmed by FormSubmit', response.status);
       }
     } catch (error) {
       console.error('Email submission failed', error);
-      // We continue anyway so WhatsApp still opens
     }
 
-    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
-    
-    setTimeout(() => {
-      setIsSending(false);
-      setIsSubmitted(true);
-      trackAnalyticsEvent('whatsapp_click', {
-        contact_method: 'whatsapp',
-        cta_location: 'service_inquiry_form',
-        service_name: activeService.name,
-        page_path: window.location.pathname,
-      });
-      window.open(whatsappUrl, '_blank');
-    }, 400);
+    setEmailSubmissionStatus(emailAccepted ? 'sent' : 'failed');
+    setIsSending(false);
+    setIsSubmitted(true);
   };
 
   return (
@@ -221,7 +246,7 @@ _Sent via My DP Digital Fast Desk_`;
             <span>Get Quick Quote & Strategy</span>
           </h3>
           <p className="text-[11px] text-white/60 font-medium mt-0.5">
-            Share details to get instant quotation & timeline
+            Share your service requirement and business location for a relevant quote
           </p>
         </div>
 
@@ -287,11 +312,39 @@ _Sent via My DP Digital Fast Desk_`;
               </select>
             </div>
 
+            {/* Optional business context helps qualify the enquiry without adding required steps */}
+            <div className="grid sm:grid-cols-2 gap-2.5">
+              <div>
+                <label className="text-[10px] font-bold uppercase tracking-wider text-white/70 block mb-1">
+                  Business / Website (optional)
+                </label>
+                <input
+                  type="text"
+                  placeholder="Business name or website"
+                  value={businessName}
+                  onChange={(e) => setBusinessName(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-white/[0.06] border border-white/15 text-xs text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF2E9A] transition-all font-medium"
+                />
+              </div>
+              <div>
+                <label className="text-[10px] font-bold uppercase tracking-wider text-white/70 block mb-1">
+                  Business Location (optional)
+                </label>
+                <input
+                  type="text"
+                  placeholder="e.g. Tambaram, Chennai"
+                  value={businessArea}
+                  onChange={(e) => setBusinessArea(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-white/[0.06] border border-white/15 text-xs text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF2E9A] transition-all font-medium"
+                />
+              </div>
+            </div>
+
             {/* Step 4: Optional Note / Requirement */}
             <div>
               <input
                 type="text"
-                placeholder="Specific requirements or domain (optional)"
+                placeholder="What would you like help with? (optional)"
                 value={note}
                 onChange={(e) => setNote(e.target.value)}
                 className="w-full px-3.5 py-2 rounded-xl bg-white/[0.06] border border-white/15 text-xs text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF2E9A] transition-all font-medium"
@@ -306,7 +359,7 @@ _Sent via My DP Digital Fast Desk_`;
                 className="w-full bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#0073AA] hover:opacity-95 text-white py-3 px-5 rounded-xl font-bold text-xs sm:text-sm shadow-lg shadow-[#FF2E9A]/20 transition-all flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.01]"
               >
                 <WhatsAppIcon size={18} className="text-white" />
-                <span>{isSending ? 'Connecting...' : 'Get Instant Quote & Strategy'}</span>
+                <span>{isSending ? 'Sending enquiry...' : 'Send Enquiry & Open WhatsApp'}</span>
                 <ArrowRight size={15} />
               </button>
 
@@ -333,8 +386,21 @@ _Sent via My DP Digital Fast Desk_`;
             <div className="space-y-1">
               <h4 className="text-lg font-black text-white">Thank You, {name}!</h4>
               <p className="text-xs text-white/70 max-w-xs mx-auto">
-                We have registered your requirement for <strong className="text-white">{activeService.name}</strong>.
+                {emailSubmissionStatus === 'sent'
+                  ? <>Your details were submitted for <strong className="text-white">{activeService.name}</strong>. WhatsApp should also be open with your message ready. Tap Send in WhatsApp to complete the direct enquiry.</>
+                  : <>We could not confirm the email submission for <strong className="text-white">{activeService.name}</strong>. Please use the button below to send your enquiry directly on WhatsApp.</>}
               </p>
+              {submittedWhatsAppUrl && (
+                <a
+                  href={submittedWhatsAppUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white px-4 py-2.5 text-xs font-bold shadow-md shadow-[#25D366]/20 transition-all"
+                >
+                  <WhatsAppIcon size={16} className="text-white" />
+                  <span>Open WhatsApp & Send Enquiry</span>
+                </a>
+              )}
             </div>
 
             <div className="p-3 rounded-xl bg-white/[0.05] border border-white/10 text-xs text-left max-w-xs mx-auto space-y-1">
