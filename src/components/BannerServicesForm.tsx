@@ -161,14 +161,17 @@ _Sent via My DP Digital Fast Desk_`;
     // Open WhatsApp synchronously during the submit click. Opening it only
     // after the email request completes can be blocked by browser popup protection.
     const whatsappWindow = window.open(whatsappUrl, '_blank');
-    if (whatsappWindow) whatsappWindow.opener = null;
-
-    trackAnalyticsEvent('whatsapp_click', {
-      contact_method: 'whatsapp',
-      cta_location: 'service_inquiry_form',
-      service_name: activeService.name,
-      page_path: window.location.pathname,
-    });
+    if (whatsappWindow) {
+      whatsappWindow.opener = null;
+      trackAnalyticsEvent('whatsapp_click', {
+        contact_method: 'whatsapp',
+        cta_location: 'service_inquiry_form',
+        service_name: activeService.name,
+        page_path: window.location.pathname,
+      });
+    }
+    // If the popup is blocked, the visible fallback link is the actual
+    // WhatsApp click and is tracked by the site-wide anchor listener.
 
     setIsSending(true);
     setEmailSubmissionStatus(null);
