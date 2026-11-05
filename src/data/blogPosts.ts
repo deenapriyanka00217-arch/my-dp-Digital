@@ -535,7 +535,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "how-much-can-a-digital-marketing-agency-make",
     slug: "how-much-can-a-digital-marketing-agency-make",
-    title: "How Much Can a Digital Marketing Agency Make? A Straight Answer for Business Owners",
+    title: "Digital Marketing Agency Fees in Chennai: A Business Owner’s Guide",
     excerpt:
       "A quote from a digital marketing agency can feel arbitrary until you understand how retainers, project fees, and ad-spend percentages actually work — and what eats into agency margins before anyone sees a profit.",
     date: "August 19, 2026",
