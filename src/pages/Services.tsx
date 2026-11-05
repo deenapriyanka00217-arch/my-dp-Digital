@@ -460,7 +460,7 @@ const ServicesPage = () => {
                     {service.link ? (
                       <Link
                         to={service.link}
-                        className="px-4 py-2.5 rounded-xl bg-[#FF0000] hover:bg-[#ff2626] text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-all shadow-md"
+                        className="px-4 py-2.5 rounded-xl text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-all shadow-md" style={{ backgroundColor: service.color }}
                       >
                         <span>Service Details</span>
                         <ArrowRight size={14} />
