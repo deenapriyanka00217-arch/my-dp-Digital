@@ -51,7 +51,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹12,000',
     color: '#06B6D4', // Cyan
     icon: Zap,
-    description: 'Fast-loading, responsive single-page websites with clear service messaging, focused calls to action, enquiry forms, and WhatsApp contact options.'
+    description: 'Fast-loading, responsive single-page websites with clear service messaging, focused calls to action, enquiry forms, and WhatsApp contact options.',
     deliverables: [
       'Custom Responsive UI Layout',
       'Instant WhatsApp Chat Integration',
@@ -165,7 +165,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹18,000/mo',
     color: '#00F5D4', // Mint Green
     icon: Search,
-    description: 'Technical SEO reviews, on-page improvements, local search optimisation, helpful content planning, and measurement for relevant search queries.'
+    description: 'Technical SEO reviews, on-page improvements, local search optimisation, helpful content planning, and measurement for relevant search queries.',
     deliverables: [
       'Forensic Technical Architecture Audit',
       'Topical Authority Keyword Matrix',
@@ -184,7 +184,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹18,000/mo',
     color: '#1877F2', // Meta Blue
     icon: Megaphone,
-    description: 'Plan, launch, and optimise Facebook and Instagram campaigns for relevant enquiries and sales, using creative testing, WhatsApp or lead-form routes, retargeting, and conversion tracking.'
+    description: 'Plan, launch, and optimise Facebook and Instagram campaigns for relevant enquiries and sales, using creative testing, WhatsApp or lead-form routes, retargeting, and conversion tracking.',
     deliverables: [
       'Campaign creative concepts, video hooks and ad copy',
       'Meta Pixel and Conversions API setup and checks where supported',
@@ -203,7 +203,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹15,000',
     color: '#0073AA', // WordPress Blue
     icon: Globe,
-    description: 'WordPress and WooCommerce websites built around the required pages, plugins, payment flow, basic on-page SEO, backups, and enquiry routing.'
+    description: 'WordPress and WooCommerce websites built around the required pages, plugins, payment flow, basic on-page SEO, backups, and enquiry routing.',
     deliverables: [
       'Custom Gutenberg / Elementor Theme',
       'Performance and Core Web Vitals checks',
@@ -222,7 +222,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹22,000/mo',
     color: '#B026FF', // Ultra Violet
     icon: Megaphone,
-    description: 'Campaign planning and management across Google Search and relevant social platforms, with budget monitoring, conversion tracking, creative testing, and landing-page review.'
+    description: 'Campaign planning and management across Google Search and relevant social platforms, with budget monitoring, conversion tracking, creative testing, and landing-page review.',
     deliverables: [
       'Creative Video & Static Ad Sprints',
       'Algorithmic Smart-Bidding Setup',
