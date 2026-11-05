@@ -1,4 +1,4 @@
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="text-[10px] font-bold uppercase tracking-widest text-white/40">Direct WhatsApp</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-widest text-white/40">Call or WhatsApp</h4>
             <div className="p-6 rounded-[28px] bg-gradient-to-br from-white/[0.05] to-white/[0.02] backdrop-blur-xl border border-[#25D366]/30 space-y-4 shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-[#25D366]/15 blur-2xl rounded-full pointer-events-none" />
 
@@ -91,15 +91,23 @@ const Footer = () => {
                     <MessageCircle size={18} fill="#25D366" className="text-[#25D366]" />
                   </div>
                   <div>
-                    <div className="text-xs font-black text-white">Live WhatsApp Desk</div>
+                    <div className="text-xs font-black text-white">Talk to My DP Digital</div>
                     <div className="text-[10px] text-[#25D366] font-bold flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse" />
-                      <span>Send us a WhatsApp message</span>
+                      <span>Call us or send a WhatsApp message</span>
                     </div>
                   </div>
                 </div>
               </div>
 
+              <a
+                href="tel:+918148320217"
+                aria-label="Call My DP Digital at +91 81483 20217"
+                className="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#FF2E9A] to-[#B026FF] hover:opacity-95 text-white font-black text-xs flex items-center justify-center gap-2 shadow-lg shadow-[#FF2E9A]/25 transition-all cursor-pointer"
+              >
+                <Phone size={15} />
+                <span>Call Now · +91 81483 20217</span>
+              </a>
               <a
                 href="https://wa.me/918148320217?text=Hi%20DP%20Digital,%20I%20am%20reaching%20out%20via%20the%20footer%20chat%20to%20discuss%20a%20website%20project."
                 target="_blank"
