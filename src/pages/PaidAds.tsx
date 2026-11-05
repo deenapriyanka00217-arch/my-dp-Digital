@@ -38,7 +38,7 @@ const PaidAdsPage = () => {
     <>
     <PageSEO
       title="Google Ads & Meta Ads Management in Chennai | My DP Digital"
-      description="Google Search, YouTube, Facebook and Instagram campaign management in Chennai, with audience planning, creative testing, landing-page review and enquiry tracking."
+      description="Google Search, YouTube, Facebook and Instagram ads in Chennai, with planning, creative testing, landing-page review and enquiry tracking."
       canonicalPath="/services/paid-social-ads"
       jsonLd={PAIDADS_JSON_LD}
     />
