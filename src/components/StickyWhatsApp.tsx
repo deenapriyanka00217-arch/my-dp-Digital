@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ArrowRight } from 'lucide-react';
+import { X, ArrowRight, Phone } from 'lucide-react';
 
 const WHATSAPP_PHONE = '918148320217';
 
@@ -121,24 +121,36 @@ export const StickyWhatsApp: React.FC = () => {
         )}
       </AnimatePresence>
 
-      {/* Persistent Sticky WhatsApp Button */}
-      <div className="relative group">
-        {/* Pulsing Emerald Aura Waves */}
-        <span className="absolute -inset-1 bg-[#25D366]/40 rounded-full blur-md group-hover:bg-[#25D366]/60 transition-all animate-pulse" />
-
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          id="sticky-whatsapp-button"
-          aria-label="Chat on WhatsApp"
-          className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-[0_8px_25px_rgba(37,211,102,0.45)] border-2 border-white/50 hover:scale-105 active:scale-95 transition-all duration-300 group-hover:shadow-[0_12px_35px_rgba(37,211,102,0.65)] cursor-pointer"
+      {/* Persistent Call and WhatsApp Actions */}
+      <div className="flex items-center gap-2">
+        <a
+          href="tel:+918148320217"
+          aria-label="Call My DP Digital at +91 81483 20217"
+          className="inline-flex items-center gap-2 rounded-full bg-white text-[#0A0710] border border-[#FF2E9A]/30 px-4 py-3 text-xs font-black shadow-[0_8px_25px_rgba(0,0,0,0.35)] hover:bg-[#FFF5FA] active:scale-95 transition-all"
         >
-          <WhatsAppIcon size={28} className="text-white" />
-          
-          {/* Notification Badge */}
-          <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#FF2E9A] text-white text-[9px] font-black rounded-full flex items-center justify-center border-2 border-white shadow-md">
-            1
-          </span>
-        </button>
+          <Phone size={16} className="text-[#B026FF]" />
+          <span>Call Now</span>
+        </a>
+
+        {/* Persistent Sticky WhatsApp Button */}
+        <div className="relative group">
+          {/* Pulsing Emerald Aura Waves */}
+          <span className="absolute -inset-1 bg-[#25D366]/40 rounded-full blur-md group-hover:bg-[#25D366]/60 transition-all animate-pulse" />
+
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            id="sticky-whatsapp-button"
+            aria-label="Chat on WhatsApp"
+            className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-[0_8px_25px_rgba(37,211,102,0.45)] border-2 border-white/50 hover:scale-105 active:scale-95 transition-all duration-300 group-hover:shadow-[0_12px_35px_rgba(37,211,102,0.65)] cursor-pointer"
+          >
+            <WhatsAppIcon size={28} className="text-white" />
+
+            {/* Notification Badge */}
+            <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#FF2E9A] text-white text-[9px] font-black rounded-full flex items-center justify-center border-2 border-white shadow-md">
+              1
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   );
