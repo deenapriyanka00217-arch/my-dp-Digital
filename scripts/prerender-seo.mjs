@@ -51,7 +51,7 @@ const STATIC_ROUTES = [
     route: '/services/seo',
     title: 'SEO Services in Chennai | Local & Technical SEO',
     description:
-      'SEO services in Chennai covering technical fixes, on-page improvements, content planning and local search visibility.'
+      'Chennai SEO services for technical checks, on-page improvements, keyword mapping, local search content and organic performance reporting.'
   },
   {
     route: '/services/paid-social-ads',
@@ -69,7 +69,7 @@ const STATIC_ROUTES = [
     route: '/services/web-design-development',
     title: 'Website Design & Development in Chennai | My DP Digital',
     description:
-      'SEO-ready business, clinic and e-commerce websites in Chennai, designed for mobile use, clear service information and customer enquiries.'
+      'Business, clinic and e-commerce website design in Chennai with mobile-first layouts, clear service pages, enquiry forms and scoped development.'
   },
   {
     route: '/wordpress-development',
