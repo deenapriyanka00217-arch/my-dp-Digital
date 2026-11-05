@@ -87,7 +87,7 @@ const STATIC_ROUTES = [
     route: '/youtube-management',
     title: 'YouTube Channel Management in Chennai | My DP Digital',
     description:
-      'Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help.',
+      'YouTube video editing, custom thumbnails, Shorts repurposing, channel SEO and upload management for Chennai creators, brands and academies. Request a quote.',
   },
   {
     route: '/tambaram',
