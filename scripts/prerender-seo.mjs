@@ -45,19 +45,19 @@ const STATIC_ROUTES = [
     route: '/services',
     title: 'Digital Marketing Services in Chennai | My DP Digital',
     description:
-      'Explore SEO, Google Ads, social media advertising, website development and content services for Chennai businesses.'
+      'SEO, Google Ads, Facebook and Instagram Ads, website design and content services for coaching centres, clinics and local businesses in Chennai.'
   },
   {
     route: '/services/seo',
     title: 'SEO Services in Chennai | Local & Technical SEO',
     description:
-      'SEO services in Chennai covering technical fixes, on-page improvements, content planning and local search visibility.'
+      'Chennai SEO services for technical checks, on-page improvements, keyword mapping, local search content and organic performance reporting.'
   },
   {
     route: '/services/paid-social-ads',
-    title: 'Google Ads & Social Media Ads in Chennai | My DP Digital',
+    title: 'Google Ads & Meta Ads Management in Chennai | My DP Digital',
     description:
-      'Google Ads and Facebook and Instagram campaigns for Chennai businesses, with audience planning, creative, tracking and ongoing optimization.'
+      'Google Search, YouTube, Facebook and Instagram ads in Chennai, with planning, creative testing, landing-page review and enquiry tracking.'
   },
   {
     route: '/services/facebook-ads',
@@ -69,25 +69,25 @@ const STATIC_ROUTES = [
     route: '/services/web-design-development',
     title: 'Website Design & Development in Chennai | My DP Digital',
     description:
-      'SEO-ready business, clinic and e-commerce websites in Chennai, designed for mobile use, clear service information and customer enquiries.'
+      'Business, clinic and e-commerce website design in Chennai with mobile-first layouts, clear service pages, enquiry forms and scoped development.'
   },
   {
     route: '/wordpress-development',
-    title: 'WordPress Development in Chennai | My DP Digital',
+    title: 'WordPress Development in Chennai & Tambaram',
     description:
-      'Custom WordPress websites, WooCommerce stores, and high-converting landing pages for Chennai businesses, with ongoing maintenance and support available.'
+      'WordPress website development, Elementor pages, WooCommerce setup and maintenance support for businesses in Chennai and Tambaram.'
   },
   {
     route: '/services/content-marketing-branding',
-    title: 'Graphic Design & Content Writing Services in Chennai',
+    title: 'Content & Graphic Design in Chennai | My DP Digital',
     description:
-      'Graphic design and content writing services in Chennai — branding, SEO copywriting, and visual design that builds authority and drives traffic.',
+      'Chennai content marketing, SEO writing, social media creatives and graphic design for businesses that need consistent, on-brand communication.'
   },
   {
     route: '/youtube-management',
     title: 'YouTube Channel Management in Chennai | My DP Digital',
     description:
-      'Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help.',
+      'YouTube video editing, custom thumbnails, Shorts repurposing, channel SEO and upload management for Chennai creators, brands and academies. Request a quote.'
   },
   {
     route: '/tambaram',

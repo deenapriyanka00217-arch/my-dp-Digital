@@ -26,18 +26,18 @@ const ALL_SERVICES = [
   {
     id: 'youtube-management',
     title: 'YouTube Channel Editing & Management',
-    category: 'Video Production & Viral Growth',
-    tag: 'Trending & Viral',
+    category: 'Video Editing & Channel Management',
+    tag: 'Channel Support',
     timeline: 'Monthly Retainer / 48h Turnaround',
     priceGuide: 'From ₹14,999/mo',
     color: '#FF0000', // YouTube Red / Neon
     icon: Youtube,
-    description: 'High-pacing video editing, 12%+ CTR thumbnail design, keyword-ranked on-page YouTube SEO, and end-to-end channel upload management.',
+    description: 'Video editing, thumbnail design, YouTube search optimisation, and end-to-end channel upload support for a consistent publishing workflow.',
     deliverables: [
       'Retention Pacing, SFX & Color Grading',
-      'High-CTR Custom Designed Thumbnails (A/B)',
-      '100/100 TubeBuddy & VidIQ On-Page SEO',
-      'Viral YouTube Shorts / Reels Repurposing'
+      'Custom thumbnail concepts for review and testing',
+      'YouTube titles, descriptions, metadata and keyword research',
+      'Short-form video repurposing for Shorts and Reels'
     ],
     examples: 'Kaasedhaan Kadavullappa, Veritas Tech Pilot Academy, Bachelor Boys Vlogz',
     link: '/youtube-management'
@@ -51,14 +51,15 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹12,000',
     color: '#06B6D4', // Cyan
     icon: Zap,
-    description: 'Ultra-fast, responsive single-page web experiences engineered with precision storytelling, smooth scroll sections, and embedded WhatsApp lead routing.',
+    description: 'Fast-loading, responsive single-page websites with clear service messaging, focused calls to action, enquiry forms, and WhatsApp contact options.',
     deliverables: [
       'Custom Responsive UI Layout',
-      'Instant WhatsApp Chat Integration',
+      'WhatsApp contact links with prefilled enquiry messages',
       'Hero Conversion Lead Form',
       'High-Speed CDN Hosting Setup'
     ],
-    examples: 'sparklingpurity.in, skburners.in, eliteexpressenterprises.in'
+    examples: 'sparklingpurity.in, skburners.in, eliteexpressenterprises.in',
+    link: '/services/web-design-development'
   },
   {
     id: 'business-site',
@@ -74,9 +75,10 @@ const ALL_SERVICES = [
       'Dynamic Services & About Pages',
       'On-Page Semantic SEO Structure',
       'Lead Capture & Quote Generator',
-      'Mobile-First Google Speed 95+'
+      'Mobile-first layout and performance checks'
     ],
-    examples: 'chennaivisaservices.in, sparklecleanings.in, rsnproperties.in'
+    examples: 'chennaivisaservices.in, sparklecleanings.in, rsnproperties.in',
+    link: '/services/web-design-development'
   },
   {
     id: 'custom-20plus',
@@ -94,25 +96,27 @@ const ALL_SERVICES = [
       'Advanced Custom Search & Filter',
       'Multi-Location Landing Architecture'
     ],
-    examples: 'maxprohracademy.com, maxprohrsolution.in'
+    examples: 'maxprohracademy.com, maxprohrsolution.in',
+    link: '/services/web-design-development'
   },
   {
     id: 'ecommerce',
     title: 'E-Commerce Product Platforms',
-    category: 'Revenue & Transactional',
-    tag: 'High Revenue',
+    category: 'Online Stores & Payments',
+    tag: 'E-commerce',
     timeline: '10 - 15 Days',
     priceGuide: 'From ₹35,000',
     color: '#10B981', // Emerald Green
     icon: ShoppingCart,
-    description: 'High-converting online storefronts with streamlined product catalogs, UPI & card payment gateways, automated invoice dispatch, and order tracking.',
+    description: 'E-commerce storefronts with product catalogues, UPI and card payment integration, order notifications and tracking options planned around the store workflow.',
     deliverables: [
-      'Razorpay/Stripe Instant Checkout',
+      'Razorpay or Stripe payment gateway integration',
       'Dynamic Inventory & Order Manager',
       'One-Click WhatsApp Order Alerts',
       'Abandoned Cart Email Sequences'
     ],
-    examples: 'lakshminalabagam.com'
+    examples: 'lakshminalabagam.com',
+    link: '/services/web-design-development'
   },
   {
     id: 'sales-landing',
@@ -123,14 +127,15 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹20,000',
     color: '#F97316', // Sunset Orange
     icon: Globe,
-    description: 'Direct-response sales engines with countdown urgency timers, video embeds, automated CRM lead sync, and instant booking calendar integration.',
+    description: 'Landing pages and funnels for webinars and paid campaigns, with optional video, enquiry forms, CRM or spreadsheet integrations, booking tools and follow-up workflows based on the agreed scope.',
     deliverables: [
       'Psychological Direct-Response Layout',
       'Automated Lead Nurturing Webhooks',
       'Webinar & Event Registration Engine',
       'Split Testing & A/B Tracking Ready'
     ],
-    examples: 'maxprohracademy.in, veritastechpilotacademy.com/freewebinar01'
+    examples: 'maxprohracademy.in, veritastechpilotacademy.com/freewebinar01',
+    link: '/services/web-design-development'
   },
   {
     id: 'lms-portal',
@@ -148,43 +153,45 @@ const ALL_SERVICES = [
       'Automated Certificate Generator',
       'Subscription & One-Time Payments'
     ],
-    examples: 'ambedkaracademytnpsc.in, ejveritastech.com'
+    examples: 'ambedkaracademytnpsc.in, ejveritastech.com',
+    link: '/services/web-design-development'
   },
   {
     id: 'seo-strategy',
-    title: 'Algorithmic SEO & SERP Domination',
-    category: 'Organic Compounding Traffic',
-    tag: 'Organic Traffic',
+    title: 'SEO & Organic Search Optimisation',
+    category: 'Technical, Content & Local SEO',
+    tag: 'Search Visibility',
     timeline: 'Monthly Retainer',
     priceGuide: 'From ₹18,000/mo',
     color: '#00F5D4', // Mint Green
     icon: Search,
-    description: 'Technical audits, Core Web Vitals perfection, semantic topic clusters, and white-hat link acquisition to rank #1 on Google for high-buyer intent keywords.',
+    description: 'Technical SEO reviews, on-page improvements, local search optimisation, helpful content planning, and measurement for relevant search queries.',
     deliverables: [
       'Forensic Technical Architecture Audit',
       'Topical Authority Keyword Matrix',
       'Schema Markup & Rich Snippets',
       'Monthly Keyword Ranking Dashboards'
     ],
-    examples: 'Verified +340% Organic Impressions Across Client Network'
+    examples: 'SEO work scoped around the website, market, and available evidence',
+    link: '/services/seo'
   },
   {
     id: 'facebook-ads',
-    title: 'Facebook & Meta Product Sales Ads',
-    category: 'E-Commerce Product Sales & High ROAS',
-    tag: 'Product Sales Ads',
+    title: 'Facebook & Instagram (Meta) Ads Management',
+    category: 'Lead Generation & Paid Social',
+    tag: 'Lead Generation',
     timeline: 'Monthly Retainer / Continuous Sprints',
     priceGuide: 'From ₹18,000/mo',
     color: '#1877F2', // Meta Blue
     icon: Megaphone,
-    description: 'High-converting UGC reels, dynamic product carousels (DPA), Click-to-WhatsApp ads, server-side Conversions API, and CBO scaling generating ₹4.8Cr+ in sales.',
+    description: 'Plan, launch, and optimise Facebook and Instagram campaigns for relevant enquiries and sales, using creative testing, WhatsApp or lead-form routes, retargeting, and conversion tracking.',
     deliverables: [
-      'High-CTR UGC Video Hooks & Ad Copy',
-      'Meta Conversions API (CAPI) & Pixel Setup',
+      'Campaign creative concepts, video hooks and ad copy',
+      'Meta Pixel and Conversions API setup and checks where supported',
       'Dynamic Product Catalog Ads (DPA)',
-      'Click-to-WhatsApp Direct Checkout Funnels'
+      'Click-to-WhatsApp and lead-form enquiry journeys'
     ],
-    examples: 'Verified 4.6x–8.2x Client ROAS & 150K+ Orders',
+    
     link: '/services/facebook-ads'
   },
   {
@@ -196,10 +203,10 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹15,000',
     color: '#0073AA', // WordPress Blue
     icon: Globe,
-    description: 'Bespoke, lightweight WordPress & WooCommerce themes, 90+ PageSpeed guarantee, technical on-page SEO, automated backups, and WhatsApp lead routing.',
+    description: 'WordPress and WooCommerce websites built around the required pages, plugins, payment flow, basic on-page SEO, backups, and enquiry routing.',
     deliverables: [
       'Custom Gutenberg / Elementor Theme',
-      'Ultra-Fast 90+ Google PageSpeed Score',
+      'Performance and Core Web Vitals checks',
       'WooCommerce E-Commerce Engine & Razorpay',
       'Deep On-Page SEO & Schema Architecture'
     ],
@@ -208,21 +215,22 @@ const ALL_SERVICES = [
   },
   {
     id: 'paid-ads',
-    title: 'Meta & Google Ads Scaling',
-    category: 'Paid Acquisition & ROAS',
-    tag: 'High ROAS',
+    title: 'Meta & Google Ads Management',
+    category: 'Paid Acquisition & Reporting',
+    tag: 'Paid Acquisition',
     timeline: 'Monthly Retainer',
     priceGuide: 'From ₹22,000/mo',
     color: '#B026FF', // Ultra Violet
     icon: Megaphone,
-    description: 'Full-funnel paid media campaigns across Google Search, Shopping, YouTube, Instagram, and Facebook engineered for positive return on ad spend (ROAS).',
+    description: 'Campaign planning and management across Google Search and relevant social platforms, with budget monitoring, conversion tracking, creative testing, and landing-page review.',
     deliverables: [
       'Creative Video & Static Ad Sprints',
       'Algorithmic Smart-Bidding Setup',
       'Conversion API & Pixel Tracking',
       'Multi-Variant Copy & Landing Tests'
     ],
-    examples: 'Average 4.8x - 6.5x Client ROAS'
+    examples: 'Campaign scope and reporting aligned to the agreed objectives',
+    link: '/services/paid-social-ads'
   },
   {
     id: 'content-branding',
@@ -233,14 +241,15 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹15,000/mo',
     color: '#FF7AC6', // Flamingo Pink
     icon: BookOpen,
-    description: 'A Chennai-based digital branding agency handling authoritative technical copywriting, visual brand identity guidelines, thought-leadership blogs, and social content systems that convert readers to advocates.',
+    description: 'Content planning and brand-support services for Chennai businesses, including website copy, useful long-form articles, visual identity guidance and social media creative systems.',
     deliverables: [
       'Brand Visual Design Systems',
       'SEO-Optimized Long-Form Articles',
       'Social Graphics & Video Templates',
       'Buyer Persona Voice & Messaging Matrix'
     ],
-    examples: 'Over 100+ High-Ranking Longform Strategy Playbooks'
+    examples: 'Content plans aligned to brand voice, audience needs, and search intent',
+    link: '/services/content-marketing-branding'
   },
   {
     id: 'ai-chatbots-voice',
@@ -251,11 +260,11 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹20,000',
     color: '#06B6D4', // Cyan
     icon: MessageCircle,
-    description: 'WhatsApp and website AI chatbots, plus voice agents, trained on your services, pricing, and FAQs — answering common questions instantly, qualifying leads around the clock, and handing off to your team only when a real conversation is needed.',
+    description: 'WhatsApp and website chatbots, plus voice-agent projects, can be scoped around approved service information, common questions, enquiry capture and handoff to your team. Features, availability and integrations depend on the selected platform and setup.',
     deliverables: [
       'WhatsApp AI Chatbot Setup & Training',
       'Website Chat Widget / Voice Agent',
-      '24/7 Automated Lead Qualification',
+      'Enquiry capture and qualification flows based on agreed availability',
       'Human Handoff for Complex Queries'
     ],
     examples: 'Trained on your real services, pricing, and FAQs'
@@ -275,7 +284,7 @@ const SERVICES_JSON_LD = [
     },
     areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'Digital marketing, website design, SEO, and Google Ads packages for small and mid-sized businesses in Chennai, with pricing built for real budgets.',
+      'Digital marketing services for Chennai businesses, including SEO, Google Ads, Facebook and Instagram advertising, website design, and content support for small and mid-sized businesses.',
   },
   {
     '@context': 'https://schema.org',
@@ -292,7 +301,7 @@ const ServicesPage = () => {
     <>
     <PageSEO
       title="Digital Marketing Services in Chennai | My DP Digital"
-      description="Explore SEO, Google Ads, social media advertising, website development and content services for Chennai businesses."
+      description="SEO, Google Ads, Facebook and Instagram Ads, website design and content services for coaching centres, clinics and local businesses in Chennai."
       canonicalPath="/services"
       jsonLd={SERVICES_JSON_LD}
     />
@@ -324,7 +333,7 @@ const ServicesPage = () => {
             </span>
           </h1>
           <p className="text-base sm:text-xl text-white/80 leading-relaxed font-normal max-w-3xl">
-            From single-page fast launches to enterprise multi-page web infrastructures, e-commerce stores, LMS platforms, and algorithmic SEO scaling — explore our full suite of technical growth capabilities.
+            My DP Digital provides SEO, Google Ads, Facebook and Instagram (Meta) Ads, website design, and content support for businesses across Chennai. We plan campaigns and website work around your service, customer enquiry journey, target areas, and working budget.
           </p>
         </div>
 
@@ -334,11 +343,10 @@ const ServicesPage = () => {
             Complete Digital Marketing Services in Chennai
           </h2>
           <p className="text-xs sm:text-sm text-white/60 mt-2 leading-relaxed">
-            From SEO and Google Ads to website development and branding,{' '}
-            <Link to="/" className="text-[#FF7AC6] font-semibold hover:underline">
-              DP Digital
-            </Link>{' '}
-            covers every digital marketing service a growing Chennai business needs under one team.
+            We support coaching centres, clinics, retailers, and local service businesses with SEO, paid advertising, websites, and practical content. Each plan is scoped around the audience you need to reach, the service area you cover, and how enquiries will be handled. For Tambaram and nearby South Chennai businesses, see our{' '}
+            <Link to="/tambaram" className="text-[#FF7AC6] font-semibold hover:underline">
+              dedicated Tambaram digital marketing service area
+            </Link>.
           </p>
         </div>
 
@@ -431,7 +439,7 @@ const ServicesPage = () => {
                     {/* Example Sites Reference */}
                     {service.examples && (
                       <div className="p-3 rounded-2xl bg-white/[0.03] border border-white/5 text-[11px] text-white/60">
-                        <span className="font-bold text-white/80 block mb-0.5">Live Portfolios:</span>
+                        <span className="font-bold text-white/80 block mb-0.5">Project examples / scope:</span>
                         <span className="text-white/60 line-clamp-1 italic">{service.examples}</span>
                       </div>
                     )}
@@ -452,9 +460,9 @@ const ServicesPage = () => {
                     {service.link ? (
                       <Link
                         to={service.link}
-                        className="px-4 py-2.5 rounded-xl bg-[#FF0000] hover:bg-[#ff2626] text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-all shadow-md"
+                        className="px-4 py-2.5 rounded-xl text-white text-xs font-bold flex items-center justify-center gap-1.5 transition-all shadow-md" style={{ backgroundColor: service.color }}
                       >
-                        <span>View Hub</span>
+                        <span>Service Details</span>
                         <ArrowRight size={14} />
                       </Link>
                     ) : (
@@ -475,15 +483,15 @@ const ServicesPage = () => {
           })}
         </div>
 
-        {/* Global Guaranteed Architecture Highlights */}
+        {/* Service delivery and implementation notes */}
         <div className="mb-32 grid sm:grid-cols-3 gap-6">
           <div className="p-8 rounded-3xl bg-white/[0.035] backdrop-blur-xl border border-white/10 space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-[#06B6D4]/15 border border-[#06B6D4]/30 flex items-center justify-center text-[#06B6D4]">
               <Zap size={22} />
             </div>
-            <h3 className="text-xl font-black text-white">Sub-Second Speed</h3>
+            <h3 className="text-xl font-black text-white">Performance-Aware Websites</h3>
             <p className="text-white/70 text-xs sm:text-sm font-normal leading-relaxed">
-              Every website is engineered for Google Core Web Vitals compliance with 90+ PageSpeed benchmarks on mobile and desktop.
+              We consider mobile usability and Core Web Vitals during development. Actual performance depends on hosting, content, third-party scripts, and project scope.
             </p>
           </div>
 
@@ -491,9 +499,9 @@ const ServicesPage = () => {
             <div className="w-12 h-12 rounded-2xl bg-[#25D366]/15 border border-[#25D366]/30 flex items-center justify-center text-[#25D366]">
               <MessageCircle size={22} />
             </div>
-            <h3 className="text-xl font-black text-white">Direct WhatsApp Sync</h3>
+            <h3 className="text-xl font-black text-white">Clear Enquiry Paths</h3>
             <p className="text-white/70 text-xs sm:text-sm font-normal leading-relaxed">
-              Eliminate lead friction. Capture inbound clients directly into your WhatsApp inbox within seconds of site visits.
+              Where included in the agreed scope, forms, phone links, and WhatsApp calls to action give visitors a clear way to contact the business.
             </p>
           </div>
 
@@ -501,9 +509,9 @@ const ServicesPage = () => {
             <div className="w-12 h-12 rounded-2xl bg-[#FF2E9A]/15 border border-[#FF2E9A]/30 flex items-center justify-center text-[#FF2E9A]">
               <ShieldCheck size={22} />
             </div>
-            <h3 className="text-xl font-black text-white">Clean NDA & 100% Security</h3>
+            <h3 className="text-xl font-black text-white">Maintainable, Security-Minded Builds</h3>
             <p className="text-white/70 text-xs sm:text-sm font-normal leading-relaxed">
-              Clean, modular, scalable codebases with full intellectual property ownership, zero recurring lock-in, and 256-bit SSL encryption.
+              We aim for maintainable code, sensible access controls, routine updates, and backup practices appropriate to the site's platform and support plan.
             </p>
           </div>
         </div>
@@ -653,7 +661,7 @@ const ServicesPage = () => {
               </span>
             </h2>
             <p className="text-white/80 text-base sm:text-lg font-normal">
-              Speak directly with our chief tech architect to review requirements, scope out deliverables, and launch within days.
+              Speak with our team to review your requirements, clarify deliverables and discuss a realistic project scope and next steps.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <a
