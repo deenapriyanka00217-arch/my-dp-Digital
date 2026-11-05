@@ -301,7 +301,7 @@ const ServicesPage = () => {
     <>
     <PageSEO
       title="Digital Marketing Services in Chennai | My DP Digital"
-      description="Digital marketing agency in Chennai offering SEO, Google Ads, Facebook and Instagram Ads, website design and content services for coaching centres, clinics and local businesses."
+      description="SEO, Google Ads, Facebook and Instagram Ads, website design and content services for coaching centres, clinics and local businesses in Chennai."
       canonicalPath="/services"
       jsonLd={SERVICES_JSON_LD}
     />
