@@ -5,6 +5,8 @@ import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
 import PageSEO from '../components/PageSEO';
 
+const WHATSAPP_PHONE = '918148320217';
+
 const PAIDADS_JSON_LD = [
   {
     '@context': 'https://schema.org',
@@ -18,7 +20,7 @@ const PAIDADS_JSON_LD = [
     },
     areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'Social media marketing and paid ads management for businesses in Chennai, covering Google Ads, Meta Ads, and full-funnel paid acquisition.',
+      'Google Search and YouTube advertising alongside Facebook and Instagram campaign management for businesses in Chennai, with clear campaign scope and enquiry tracking.',
   },
   {
     '@context': 'https://schema.org',
@@ -35,8 +37,8 @@ const PaidAdsPage = () => {
   return (
     <>
     <PageSEO
-      title="Google Ads & Social Media Ads in Chennai | My DP Digital"
-      description="Google Ads and Facebook and Instagram campaigns for Chennai businesses, with audience planning, creative, tracking and ongoing optimization."
+      title="Google Ads & Meta Ads Management in Chennai | My DP Digital"
+      description="Google Search, YouTube, Facebook and Instagram campaign management in Chennai, with audience planning, creative testing, landing-page review and enquiry tracking."
       canonicalPath="/services/paid-social-ads"
       jsonLd={PAIDADS_JSON_LD}
     />
@@ -53,8 +55,22 @@ const PaidAdsPage = () => {
             Google Ads & Social Media <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">Advertising in Chennai.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
-            We turn ad spend into measurable revenue. From Google Shopping dominance to high-converting Meta creative, we manage every layer of your paid acquisition funnel.
+            We manage Google Search and relevant YouTube campaigns when customers are actively searching, and Facebook and Instagram campaigns when your business needs to reach and qualify new audiences. Every plan is scoped around your offer, service area, budget, landing page and enquiry-tracking setup.
           </p>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <a
+              href={`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent('Hi My DP Digital, I want to discuss Google Ads or Meta Ads management. Business type: __. Target area: __. Monthly ad budget: __.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-xs font-bold text-white transition-colors hover:bg-[#20ba59]"
+              aria-label="Discuss Google Ads and Meta Ads management on WhatsApp"
+            >
+              Discuss Your Campaign on WhatsApp <ArrowRight size={14} />
+            </a>
+            <Link to="/contact" className="inline-flex items-center rounded-xl border border-white/20 px-5 py-3 text-xs font-bold text-white hover:bg-white/10">
+              Request a Campaign Proposal
+            </Link>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-32">
@@ -120,28 +136,31 @@ const PaidAdsPage = () => {
                 <div className="absolute top-0 right-0 w-48 h-48 bg-[#B026FF]/20 blur-3xl rounded-full" />
                 <div className="relative z-10 space-y-8">
                   <div className="inline-flex px-3 py-1 rounded-full bg-[#B026FF]/20 border border-[#B026FF]/30 text-[#FF7AC6] text-[10px] font-bold uppercase tracking-widest">
-                    Performance Stats
+                    Clear Campaign Scope
                   </div>
-                  <h3 className="text-3xl font-black text-white tracking-tight">Campaign Benchmarks</h3>
-                  <div className="space-y-6">
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Avg ROAS Achieved</span>
-                      <span className="text-3xl font-black text-[#FF7AC6]">5.8x</span>
-                    </div>
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">CPC Reduction</span>
-                      <span className="text-3xl font-black text-white">-35%</span>
-                    </div>
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Lead Volume Lift</span>
-                      <span className="text-3xl font-black text-emerald-400">+180%</span>
-                    </div>
+                  <h3 className="text-3xl font-black text-white tracking-tight">What Campaign Management Includes</h3>
+                  <div className="space-y-4">
+                    {[
+                      'Campaign objective, audience and location planning',
+                      'Google Search keyword structure or Meta creative testing',
+                      'Landing-page and enquiry-form journey review',
+                      'Budget pacing and regular performance reporting',
+                      'Lead-event and contact-path checks where access allows',
+                    ].map((item) => (
+                      <div key={item} className="flex items-start gap-3 border-b border-white/10 pb-4 text-sm text-white/80">
+                        <Check size={16} className="mt-0.5 shrink-0 text-[#25D366]" />
+                        <span>{item}</span>
+                      </div>
+                    ))}
                   </div>
+                  <p className="text-xs leading-relaxed text-white/55">
+                    Your advertising spend is separate from the campaign-management fee. We confirm the scope, platforms, deliverables and reporting before work begins. Results depend on the offer, market, budget, website and follow-up process; no fixed ROAS or lead-volume outcome is promised.
+                  </p>
                   <Link
                     to="/contact"
                     className="w-full py-5 rounded-2xl bg-gradient-to-r from-[#FF2E9A] to-[#B026FF] text-white font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 shadow-xl shadow-[#FF2E9A]/25 hover:from-[#FF7AC6] hover:to-[#FF2E9A] transition-all"
                   >
-                    <span>Launch Paid Scaling</span>
+                    <span>Request Paid Ads Proposal</span>
                     <ArrowRight size={16} />
                   </Link>
                 </div>
