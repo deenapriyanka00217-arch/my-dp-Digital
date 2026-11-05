@@ -67,10 +67,10 @@ export const StickyWhatsApp: React.FC = () => {
                   <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-white border-2 border-[#25D366] rounded-full animate-pulse" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm tracking-tight leading-none text-white">DP Digital Live Desk</h4>
+                  <h4 className="font-bold text-sm tracking-tight leading-none text-white">My DP Digital WhatsApp</h4>
                   <div className="flex items-center gap-1.5 mt-1">
-                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-white animate-ping" />
-                    <span className="text-[10px] font-medium text-white/90">Online Now • Instant WhatsApp Reply</span>
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-white/80" />
+                    <span className="text-[10px] font-medium text-white/90">Send a message to discuss your project</span>
                   </div>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export const StickyWhatsApp: React.FC = () => {
                 <p className="text-xs text-[#0A0710]/80 font-medium leading-relaxed">
                   👋 Hello! Welcome to <strong className="text-[#0A0710]">My DP Digital</strong>.
                 </p>
-                <p className="text-[10px] text-[#0A0710]/50">Tap any quick topic below to start chatting directly on WhatsApp:</p>
+                <p className="text-[10px] text-[#0A0710]/50">Choose a service to prepare your WhatsApp enquiry:</p>
               </div>
 
               {/* Quick Template Chips */}
@@ -145,10 +145,7 @@ export const StickyWhatsApp: React.FC = () => {
           >
             <WhatsAppIcon size={28} className="text-white" />
 
-            {/* Notification Badge */}
-            <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#FF2E9A] text-white text-[9px] font-black rounded-full flex items-center justify-center border-2 border-white shadow-md">
-              1
-            </span>
+
           </button>
         </div>
       </div>
