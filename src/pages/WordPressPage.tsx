@@ -1,22 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Globe, 
-  Zap, 
-  ShieldCheck, 
-  Search, 
-  ShoppingCart, 
-  Cpu, 
-  CheckCircle2, 
-  ArrowRight, 
-  Sparkles, 
-  Layers, 
-  Gauge, 
-  Lock, 
-  RefreshCw,
+import {
+  Globe,
+  ShieldCheck,
+  Search,
+  ShoppingCart,
+  Cpu,
+  CheckCircle2,
+  ArrowRight,
+  Gauge,
   Code2,
-  Database,
-  Rocket
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { WhatsAppIcon } from '../components/StickyWhatsApp';
@@ -37,7 +30,7 @@ const WORDPRESS_JSON_LD = [
     },
     areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'WordPress website development in Chennai, including custom business websites, WooCommerce stores, landing pages, and ongoing maintenance and support.',
+      'WordPress website development and maintenance support for businesses in Chennai and Tambaram, including business websites, Elementor pages, and WooCommerce stores.',
   },
   {
     '@context': 'https://schema.org',
@@ -89,75 +82,48 @@ export const WordPressPage: React.FC = () => {
 
   const wpSpecialties = [
     {
-      title: 'Custom Theme & Block Engineering',
-      desc: 'Bespoke, lightweight WordPress themes crafted with clean PHP, modern CSS, and tailored Gutenberg blocks or Elementor Pro without bloated third-party plugins.',
+      title: 'Custom WordPress Websites',
+      desc: 'Business websites and landing pages built around your services, content, page structure, and preferred editing workflow using WordPress, Gutenberg, or Elementor.',
       icon: Code2,
-      tag: 'Zero Bloat',
+      tag: 'Built to Scope',
     },
     {
-      title: 'Ultra-Fast 90+ PageSpeed Score',
-      desc: 'Advanced server-side caching (LiteSpeed/Redis), WebP image compression, script deferment, and Cloudflare CDN configuration to guarantee A+ performance.',
+      title: 'Website Performance Optimisation',
+      desc: 'Review hosting, caching, images, themes, plugins, and scripts, then prioritise practical improvements. Actual speed results depend on the hosting plan, site features, and third-party tools.',
       icon: Gauge,
-      tag: '< 1.2s Load Time',
+      tag: 'Measured Improvements',
     },
     {
-      title: 'WooCommerce E-Commerce Engines',
-      desc: 'Seamless product catalogs, one-click checkout funnels, Razorpay/Stripe/UPI integration, WhatsApp order tracking, and inventory automation.',
+      title: 'WooCommerce Store Setup',
+      desc: 'Product catalogues, product variations, checkout configuration, and payment options such as Razorpay or UPI where supported by the chosen gateway and hosting setup.',
       icon: ShoppingCart,
-      tag: 'High Conversion',
+      tag: 'Online Store',
     },
     {
-      title: 'On-Page & Off-Page SEO Setup',
-      desc: 'Deep technical SEO architecture, structured Schema markup, XML sitemaps, RankMath/Yoast setup, instant Google Indexing, and search ranking velocity.',
+      title: 'Search-ready WordPress Setup',
+      desc: 'Page titles, meta descriptions, canonical URLs, XML sitemaps, and relevant structured data to give search engines clear technical information. Rankings are not guaranteed.',
       icon: Search,
-      tag: 'Top Google Rank',
+      tag: 'Technical SEO',
     },
     {
-      title: 'Enterprise Security & Shielding',
-      desc: 'Automated malware scanning, Cloudflare WAF firewall rules, brute-force defense, SSL hardening, and automated off-site daily cloud backups.',
-      icon: Lock,
-      tag: '100% Secure',
+      title: 'Security, Updates & Backups',
+      desc: "Plan WordPress core and plugin updates, backup routines, SSL configuration, and security checks around your site's hosting, plugins, and maintenance requirements.",
+      icon: ShieldCheck,
+      tag: 'Ongoing Care',
     },
     {
-      title: 'WhatsApp & Lead Automation',
-      desc: 'Connect WordPress forms (Contact Form 7, Elementor, WPForms) directly to WhatsApp, CRM systems, Google Sheets, and email marketing sequences.',
+      title: 'Forms & Lead Integrations',
+      desc: 'Connect suitable WordPress forms with email, WhatsApp, Google Sheets, or CRM tools. Available integrations depend on the selected plugins, accounts, and API access.',
       icon: Cpu,
-      tag: 'Instant Sync',
-    },
-  ];
-
-  const wpProjects = [
-    {
-      title: 'Viraat Healthcare Corporate Portal',
-      type: 'WordPress Multi-Specialty Clinic',
-      speed: '96/100 PageSpeed',
-      features: ['Doctor Appointment Booking', 'Live WhatsApp Chat', 'Schema SEO'],
-    },
-    {
-      title: 'Elite Furnishings E-Commerce Store',
-      type: 'WooCommerce Custom Store',
-      speed: '94/100 PageSpeed',
-      features: ['UPI / Razorpay Checkout', 'Product Variants', 'WhatsApp Order Ping'],
-    },
-    {
-      title: 'Apex Law & Consulting Firm',
-      type: 'Bespoke Elementor Pro Business Site',
-      speed: '98/100 PageSpeed',
-      features: ['Case Study Showcase', 'Client Lead Funnel', 'Dynamic Blog System'],
-    },
-    {
-      title: 'EduPro Learning Academy LMS',
-      type: 'WordPress Learndash LMS Portal',
-      speed: '92/100 PageSpeed',
-      features: ['Video Streaming', 'Student Quizzes', 'Certificate Generation'],
+      tag: 'Lead Workflow',
     },
   ];
 
   return (
     <>
     <PageSEO
-      title="WordPress Development in Chennai | My DP Digital"
-      description="Custom WordPress websites, WooCommerce stores, and high-converting landing pages for Chennai businesses, with ongoing maintenance and support available."
+      title="WordPress Development in Chennai & Tambaram"
+      description="WordPress website development, Elementor pages, WooCommerce setup and maintenance support for businesses in Chennai and Tambaram."
       canonicalPath="/wordpress-development"
       jsonLd={WORDPRESS_JSON_LD}
     />
@@ -173,18 +139,18 @@ export const WordPressPage: React.FC = () => {
             <div className="lg:col-span-8 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0073AA]/20 border border-[#0073AA]/40 text-[#00A0D2] text-xs font-bold">
                 <Globe size={14} />
-                <span>Specialist WordPress Engineering Studio</span>
+                <span>WordPress Website Development & Support</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
-                WordPress Website Development <br />
+                WordPress Website Development in Chennai <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00A0D2] via-[#0073AA] to-[#25D366]">
-                  Built for Speed, SEO & High Sales.
+                  Built Around Your Business.
                 </span>
               </h1>
 
               <p className="text-sm sm:text-base text-white/80 max-w-2xl leading-relaxed">
-                We are dedicated WordPress specialists. We develop custom WordPress business portals, WooCommerce stores, and high-performance landing pages optimized for 90+ Google PageSpeed, unbreakable security, and effortless content management.
+                We plan, build, and support WordPress business websites, Elementor pages, and WooCommerce stores for businesses across Chennai, Tambaram, and South Chennai. Each project is scoped around the pages, features, content, integrations, and ongoing support you need.
               </p>
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -207,14 +173,9 @@ export const WordPressPage: React.FC = () => {
                 </Link>
               </div>
 
-              {/* Near Tambaram note + NAP block */}
               <div className="pt-3 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[11px] sm:text-xs text-white/60">
-                <span>Searching for a web developer near me? We're a Chennai-based WordPress team, not outsourced.</span>
-                <span>Also serving businesses near Tambaram &amp; South Chennai</span>
-                <span className="flex items-center gap-1.5">
-                  <Globe size={12} className="text-[#00A0D2]" />
-                  My DP Digital, Anna Salai, Chennai, Tamil Nadu
-                </span>
+                <span>Working with businesses across Chennai and South Chennai.</span>
+                <span>Tambaram, Chromepet, Selaiyur, and nearby areas.</span>
                 <a href="tel:+918148320217" className="flex items-center gap-1.5 text-[#00A0D2] hover:underline">
                   +91 81483 20217
                 </a>
@@ -224,13 +185,13 @@ export const WordPressPage: React.FC = () => {
             {/* Right Side: 3D WordPress Visual Element */}
             <div className="lg:col-span-4 flex flex-col items-center justify-center text-center p-6 bg-white/[0.03] border border-white/10 rounded-2xl backdrop-blur-xl">
               <WordPress3DLoop size={72} className="mb-4" />
-              <h3 className="font-black text-lg text-white">Official WordPress Stack</h3>
+              <h3 className="font-black text-lg text-white">WordPress Toolkit</h3>
               <p className="text-xs text-white/60 mt-1 max-w-[240px]">
-                Theme Development • Elementor Pro • WooCommerce • LiteSpeed • REST API
+                WordPress • Gutenberg • Elementor • WooCommerce • Hosting & Integrations
               </p>
               <div className="mt-3 flex items-center gap-1.5 text-[11px] font-bold text-[#10B981]">
                 <CheckCircle2 size={13} />
-                <span>PageSpeed Score Guarantee</span>
+                <span>Scope-led build and support</span>
               </div>
             </div>
           </div>
@@ -244,7 +205,7 @@ export const WordPressPage: React.FC = () => {
             Why Choose DP Digital For WordPress?
           </h2>
           <p className="text-xs sm:text-sm text-white/60 mt-2">
-            No cookie-cutter templates or bloated page builders. We build lean, high-velocity WordPress platforms.
+            Practical WordPress builds with a clear scope, maintainable setup, and support options that fit the way your business works.
           </p>
         </div>
 
@@ -285,62 +246,22 @@ export const WordPressPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Featured WordPress Case Studies */}
+      {/* WordPress project examples */}
       <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white">Recent WordPress Builds</h2>
-            <p className="text-xs sm:text-sm text-white/60 mt-1">Live customer projects delivered with custom WordPress architecture.</p>
-          </div>
-          <Link
-            to="/our-works"
-            className="text-xs font-bold text-[#00A0D2] hover:underline flex items-center gap-1.5"
-          >
-            <span>View All 22+ Works</span>
-            <ArrowRight size={14} />
-          </Link>
-        </div>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {wpProjects.map((project, idx) => (
-            <div
-              key={idx}
-              className="p-5 rounded-2xl bg-white/[0.04] border border-white/10 hover:border-white/20 transition-all flex flex-col justify-between"
+        <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-6 sm:p-8 lg:p-10">
+          <div className="max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl font-black text-white">See Website Examples & Project Types</h2>
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed mt-3">
+              Explore the published website and creative work in our portfolio. Each project page shows the available details and links, so you can review examples before discussing a similar WordPress or WooCommerce build.
+            </p>
+            <Link
+              to="/our-works"
+              className="inline-flex items-center gap-2 mt-5 text-sm font-bold text-[#00A0D2] hover:underline"
             >
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-[#0073AA]/20 text-[#00A0D2] border border-[#0073AA]/30">
-                    WordPress
-                  </span>
-                  <span className="text-[10px] font-bold text-[#10B981]">{project.speed}</span>
-                </div>
-
-                <h4 className="font-bold text-sm text-white">{project.title}</h4>
-                <p className="text-[11px] text-white/60">{project.type}</p>
-
-                <div className="space-y-1 pt-1">
-                  {project.features.map((feat, fIdx) => (
-                    <div key={fIdx} className="text-[10px] text-white/70 flex items-center gap-1.5">
-                      <span className="w-1 h-1 rounded-full bg-[#00A0D2]" />
-                      <span>{feat}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="pt-4 mt-4 border-t border-white/5">
-                <a
-                  href={getWhatsAppUrl(`Inquiry about ${project.title}`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-2 px-3 rounded-lg bg-white/5 hover:bg-[#25D366] hover:text-white text-white/80 text-[11px] font-bold transition-all flex items-center justify-center gap-1.5"
-                >
-                  <WhatsAppIcon size={14} />
-                  <span>Build Similar Site</span>
-                </a>
-              </div>
-            </div>
-          ))}
+              <span>Browse the project portfolio</span>
+              <ArrowRight size={15} />
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -352,10 +273,9 @@ export const WordPressPage: React.FC = () => {
           </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
             My DP Digital builds custom WordPress business portals and WooCommerce stores for businesses across
-            Chennai and the wider Tambaram / South Chennai belt — with real UPI/Razorpay checkout, sub-1.2s load
-            times, and direct WhatsApp support instead of ticket queues. Whether you need a WordPress developer in
-            Chennai for a new build or ongoing support, message us on WhatsApp for a free scope and timeline for
-            your WordPress or WooCommerce project.
+            Chennai, Tambaram, and nearby South Chennai areas. Depending on the project, we can configure product
+            catalogues, payment gateway options such as Razorpay/UPI, and WhatsApp contact paths. Share your
+            requirements to discuss the right platform, integrations, delivery scope, and support options.
           </p>
         </div>
       </div>
@@ -379,14 +299,13 @@ export const WordPressPage: React.FC = () => {
       <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
         <div className="max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
           <h3 className="text-lg sm:text-xl font-black text-white mb-2">
-            Need ongoing WordPress website maintenance services in India?
+            Need WordPress website maintenance in Chennai or Tambaram?
           </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-            Beyond new builds, we offer WordPress website maintenance for businesses across India — plugin and
-            core updates, malware scanning and security hardening, automated backups, and speed optimization, so
-            your site stays fast and secure without you having to manage it yourself. Website maintenance cost per
-            month depends on your site's size and how much ongoing support you need, so message us on WhatsApp
-            with a link to your site and we'll give you a straightforward monthly quote.
+            Maintenance can include WordPress core and plugin updates, backup checks, security reviews, and help
+            investigating site or performance issues. The exact tasks and response arrangements are agreed in
+            advance based on your website, hosting, and support needs. Share your website link and the issue you
+            need help with to discuss a suitable maintenance scope.
           </p>
         </div>
       </div>
@@ -395,10 +314,10 @@ export const WordPressPage: React.FC = () => {
       <div className="w-full px-5 sm:px-8 lg:px-12 xl:px-16 max-w-[1540px] mx-auto mt-16">
         <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#0073AA]/30 via-[#0D091B] to-[#25D366]/20 border border-[#0073AA]/40 text-center space-y-4">
           <h3 className="text-2xl sm:text-3xl font-black text-white">
-            Need a High-Performance WordPress Website?
+            Planning a WordPress Website for Your Business?
           </h3>
           <p className="text-xs sm:text-sm text-white/70 max-w-xl mx-auto">
-            Get your business online in 3 to 7 days with custom design, mobile responsiveness, fast hosting configuration, and full WhatsApp integration.
+            Discuss your page requirements, design, content, integrations, hosting, and preferred launch timeline. We will help define a practical project scope before work begins.
           </p>
           <div className="pt-2">
             <a
