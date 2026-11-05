@@ -35,7 +35,7 @@ const ContentBrandingPage = () => {
   return (
     <>
     <PageSEO
-      title="Content Marketing & Graphic Design in Chennai | My DP Digital"
+      title="Content & Graphic Design in Chennai | My DP Digital"
       description="Chennai content marketing, SEO writing, social media creatives and graphic design for businesses that need consistent, on-brand communication."
       canonicalPath="/services/content-marketing-branding"
       jsonLd={CONTENTBRANDING_JSON_LD}
