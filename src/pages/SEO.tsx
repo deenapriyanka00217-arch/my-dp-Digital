@@ -170,6 +170,13 @@ const SEOPage = () => {
             internal links and indexability checks. Google Maps or Local Pack placement is not guaranteed. Message us
             with your website, business type and target area to discuss a realistic plan.
           </p>
+          <p className="mt-3 text-xs sm:text-sm text-white/60 leading-relaxed">
+            Serving customers around Tambaram and South Chennai? See our{' '}
+            <Link to="/tambaram" className="text-[#FF7AC6] font-semibold hover:underline">
+              digital marketing services in Tambaram
+            </Link>{' '}
+            page for the local service-area details.
+          </p>
         </div>
 
         {/* ================= QUICK ANSWER: LOCAL SEO SERVICES IN CHENNAI ================= */}
