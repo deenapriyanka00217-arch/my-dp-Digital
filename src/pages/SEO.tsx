@@ -54,7 +54,7 @@ const SEOPage = () => {
             SEO Services in Chennai <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">That Help Customers Find You.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
-            Data-driven technical SEO, topical semantic authority, and global search optimization engineered to turn search traffic into a permanent competitive advantage.
+            Practical SEO for Chennai businesses: technical checks, service-page improvements, local search support, and monthly reporting based on what people actually search for.
           </p>
         </div>
 
@@ -62,10 +62,10 @@ const SEOPage = () => {
           <div className="lg:col-span-6 space-y-10">
             <div className="grid sm:grid-cols-2 gap-6">
               {[
-                { title: 'Technical Audit', desc: 'Core Web Vitals & architecture optimization.', icon: Zap },
-                { title: 'Semantic Authority', desc: 'Topical graph & keyword cluster strategy.', icon: Search },
-                { title: 'Global Scaling', desc: 'Rank globally with localized intent capture.', icon: Globe },
-                { title: 'Data Dashboards', desc: 'Real-time ROI & keyword tracking.', icon: BarChart3 },
+                { title: 'Technical SEO', desc: 'Review crawl access, indexing signals, canonical URLs, structured data, and page experience.', icon: Zap },
+                { title: 'Page Relevance', desc: 'Match each important service page to a clear search intent, useful headings, and helpful content.', icon: Search },
+                { title: 'Local Search', desc: 'Improve eligible local-business information, service-area clarity, and relevant local references.', icon: Globe },
+                { title: 'Search Reporting', desc: 'Review Search Console queries, page impressions, clicks, and tracked enquiries where analytics is configured.', icon: BarChart3 },
               ].map((item, idx) => (
                 <div key={idx} className="p-6 rounded-3xl bg-white/[0.035] backdrop-blur-xl border border-white/10 space-y-3 shadow-2xl hover:border-white/20 transition-all">
                   <div className="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-[#FF7AC6]">
@@ -102,30 +102,37 @@ const SEOPage = () => {
             <Card3DTilt maxTilt={8} depth={30}>
               <div className="bg-white/[0.035] backdrop-blur-2xl p-8 sm:p-12 rounded-[48px] border border-white/15 relative overflow-hidden shadow-2xl">
                 <div className="absolute top-0 right-0 w-48 h-48 bg-[#FF2E9A]/20 blur-3xl rounded-full" />
-                <div className="relative z-10 space-y-8">
+                <div className="relative z-10 space-y-7">
                   <div className="inline-flex px-3 py-1 rounded-full bg-[#FF2E9A]/20 border border-[#FF2E9A]/30 text-[#FF7AC6] text-[10px] font-bold uppercase tracking-widest">
-                    Verified ROI Matrix
+                    SEO Delivery & Reporting
                   </div>
-                  <h3 className="text-3xl font-black text-white tracking-tight">Typical Engagement Outcomes</h3>
-                  <div className="space-y-6">
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Organic Visibility</span>
-                      <span className="text-3xl font-black text-[#FF7AC6]">+240%</span>
+                  <h3 className="text-3xl font-black text-white tracking-tight">What We Review and Improve</h3>
+                  <div className="space-y-5">
+                    <div className="border-b border-white/10 pb-4">
+                      <h4 className="text-sm font-bold text-[#FF7AC6] mb-1">Technical health</h4>
+                      <p className="text-xs text-white/65 leading-relaxed">Crawl access, indexability, canonical URLs, redirects, structured data, and page experience checks.</p>
                     </div>
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Customer LTV Growth</span>
-                      <span className="text-3xl font-black text-white">4.2x</span>
+                    <div className="border-b border-white/10 pb-4">
+                      <h4 className="text-sm font-bold text-white mb-1">Service-page relevance</h4>
+                      <p className="text-xs text-white/65 leading-relaxed">Search-intent mapping, clear page titles and headings, useful service information, and relevant internal links.</p>
                     </div>
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Core Web Vitals Pass</span>
-                      <span className="text-3xl font-black text-emerald-400">100%</span>
+                    <div className="border-b border-white/10 pb-4">
+                      <h4 className="text-sm font-bold text-white mb-1">Local visibility</h4>
+                      <p className="text-xs text-white/65 leading-relaxed">Accurate service-area information and Google Business Profile guidance for businesses that meet Google's eligibility rules.</p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-bold text-white mb-1">Progress measurement</h4>
+                      <p className="text-xs text-white/65 leading-relaxed">Monthly Search Console query and page trends, with call or WhatsApp enquiry events reviewed where analytics access is available.</p>
                     </div>
                   </div>
+                  <p className="text-xs text-white/50 leading-relaxed">
+                    We report the work completed and the search data observed. Rankings, traffic, and enquiries depend on competition, website history, implementation, and the market; no fixed result is promised.
+                  </p>
                   <Link
                     to="/contact"
                     className="w-full py-5 rounded-2xl bg-gradient-to-r from-[#FF2E9A] to-[#B026FF] text-white font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 shadow-xl shadow-[#FF2E9A]/25 hover:from-[#FF7AC6] hover:to-[#FF2E9A] transition-all"
                   >
-                    <span>Request SEO Roadmap</span>
+                    <span>Request an SEO Review</span>
                     <ArrowRight size={16} />
                   </Link>
                 </div>
@@ -138,10 +145,11 @@ const SEOPage = () => {
         <div className="mb-16 max-w-3xl mx-auto p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
           <h3 className="text-lg sm:text-xl font-black text-white mb-2">How long does SEO take to rank?</h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-            Most Chennai businesses start seeing meaningful ranking movement within 60–90 days of technical fixes
-            and content work beginning, with stronger, more stable gains building over 4–6 months. Highly
-            competitive keywords can take longer, while local, lower-competition terms often move faster —
-            we'll give you a realistic timeline for your specific keywords before you commit to anything.
+            SEO has no dependable fixed ranking deadline. After technical and page improvements are published,
+            Google may need time to recrawl and reassess them; some changes can appear within weeks, while others
+            take several months or longer. Competitive Chennai agency searches can take more work than narrow
+            local terms. We review Search Console data regularly and adjust the plan, but we do not promise a
+            specific position or date.
           </p>
         </div>
 
@@ -151,10 +159,14 @@ const SEOPage = () => {
             Looking for SEO that gets you found in local search?
           </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-            My DP Digital handles local SEO for businesses across Chennai — Google Business Profile optimization,
-            local citations, and on-page fixes aimed at getting you visible on Google Maps and in local search
-            results when nearby customers are searching. Message us on WhatsApp with your business type and area,
-            and we'll walk you through what a local search plan would look like for you.
+            My DP Digital supports eligible local businesses with accurate Business Profile information,
+            local search content, relevant local references, and on-page improvements. Local visibility also
+            depends on the searcher's location and the prominence and relevance of the business. For businesses
+            around Tambaram and South Chennai, see our{' '}
+            <Link to="/tambaram" className="text-[#FF7AC6] font-semibold hover:underline">
+              digital marketing services in Tambaram
+            </Link>{' '}
+            page for the service-area details.
           </p>
         </div>
 
