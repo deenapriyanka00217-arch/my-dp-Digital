@@ -607,6 +607,13 @@ export const FacebookAdsPage: React.FC = () => {
               Discuss a Lead Campaign
             </a>
           </div>
+          <p className="text-xs text-white/60 leading-relaxed">
+            Looking for broader digital marketing support in the same area? See our{' '}
+            <Link to="/tambaram" className="text-[#7DD3FC] font-semibold hover:underline">
+              digital marketing services in Tambaram and South Chennai
+            </Link>{' '}
+            page for local SEO, website, and service-area information.
+          </p>
         </section>
 
         {/* ========================================================================= */}
