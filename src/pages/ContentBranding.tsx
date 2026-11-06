@@ -18,7 +18,7 @@ const CONTENTBRANDING_JSON_LD = [
     },
     areaServed: 'Chennai, Tamil Nadu, India',
     description:
-      'Graphic design and content writing services in Chennai, covering brand identity, SEO copywriting, and visual design for growing businesses.',
+      'Content strategy, SEO website copy, blog content, social media creatives and brand identity design for growing businesses in Chennai.',
   },
   {
     '@context': 'https://schema.org',
@@ -35,8 +35,8 @@ const ContentBrandingPage = () => {
   return (
     <>
     <PageSEO
-      title="Graphic Design & Content Writing Services in Chennai"
-      description="Graphic design and content writing services in Chennai — branding, SEO copywriting, and visual design that builds authority and drives traffic."
+      title="Content & Graphic Design in Chennai | My DP Digital"
+      description="Chennai content marketing, SEO writing, social media creatives and graphic design for businesses that need consistent, on-brand communication."
       canonicalPath="/services/content-marketing-branding"
       jsonLd={CONTENTBRANDING_JSON_LD}
     />
@@ -53,8 +53,22 @@ const ContentBrandingPage = () => {
             Content Marketing, Graphic Design <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">& Branding Services.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
-            We fuse data-driven SEO content strategy with world-class brand identity. From technical blogging to high-impact design systems, we build the voice that dominates niches.
+            My DP Digital helps Chennai businesses plan and produce useful website copy, SEO-led blog content, social media creatives and consistent brand visuals. The scope is agreed around your audience, channels, publishing frequency and the assets your team needs.
           </p>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <a
+              href={`https://wa.me/918148320217?text=${encodeURIComponent('Hi My DP Digital, I need content marketing or graphic design support. Business type: __. Required assets: __. Monthly quantity: __.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-xs font-bold text-white transition-colors hover:bg-[#20ba59]"
+              aria-label="Discuss content marketing and graphic design on WhatsApp"
+            >
+              Discuss Your Content Requirements <ArrowRight size={14} />
+            </a>
+            <Link to="/contact" className="inline-flex items-center rounded-xl border border-white/20 px-5 py-3 text-xs font-bold text-white hover:bg-white/10">
+              Request a Content Proposal
+            </Link>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-32">
@@ -103,28 +117,31 @@ const ContentBrandingPage = () => {
                 <div className="absolute top-0 left-0 w-48 h-48 bg-[#FF2E9A]/20 blur-3xl rounded-full" />
                 <div className="relative z-10 space-y-8">
                   <div className="inline-flex px-3 py-1 rounded-full bg-[#FF2E9A]/20 border border-[#FF2E9A]/30 text-[#FF7AC6] text-[10px] font-bold uppercase tracking-widest">
-                    Authority Matrix
+                    Practical Content Support
                   </div>
-                  <h3 className="text-3xl font-black text-white tracking-tight">Engagement Impacts</h3>
-                  <div className="space-y-6">
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Organic Impressions</span>
-                      <span className="text-3xl font-black text-[#FF7AC6]">+420%</span>
-                    </div>
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Inbound Lead Quality</span>
-                      <span className="text-3xl font-black text-white">Tier-1</span>
-                    </div>
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Brand Recall Lift</span>
-                      <span className="text-3xl font-black text-emerald-400">+75%</span>
-                    </div>
+                  <h3 className="text-3xl font-black text-white tracking-tight">What Your Content Plan Can Include</h3>
+                  <div className="space-y-4">
+                    {[
+                      'Website service-page copy and clear calls to action',
+                      'SEO-led blog briefs, articles and content refreshes',
+                      'Social media post, carousel and reel creative',
+                      'Brand templates and visual consistency guidelines',
+                      'A publishing calendar with agreed review and delivery steps',
+                    ].map((item) => (
+                      <div key={item} className="flex items-start gap-3 border-b border-white/10 pb-4 text-sm text-white/80">
+                        <Check size={16} className="mt-0.5 shrink-0 text-[#25D366]" />
+                        <span>{item}</span>
+                      </div>
+                    ))}
                   </div>
+                  <p className="text-xs leading-relaxed text-white/55">
+                    Deliverables and fees depend on the content formats, monthly quantity, research needs, design complexity and revision scope. We agree the plan before production begins; reach and lead outcomes are measured rather than guaranteed.
+                  </p>
                   <Link
                     to="/contact"
                     className="w-full py-5 rounded-2xl bg-gradient-to-r from-[#FF2E9A] to-[#B026FF] text-white font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 shadow-xl shadow-[#FF2E9A]/25 hover:from-[#FF7AC6] hover:to-[#FF2E9A] transition-all"
                   >
-                    <span>Request Content Strategy</span>
+                    <span>Request Content & Design Proposal</span>
                     <ArrowRight size={16} />
                   </Link>
                 </div>
