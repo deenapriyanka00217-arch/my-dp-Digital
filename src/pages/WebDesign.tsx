@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
-import { Layout, Globe, Code, Zap, Check, ArrowRight, Sparkles, Smartphone, Layers } from 'lucide-react';
+import { Layout, Globe, Code, Zap, Check, ArrowRight, Sparkles, Smartphone, Layers, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Card3DTilt } from '../components/Card3DTilt';
 import FAQ from '../components/FAQ';
 import PageSEO from '../components/PageSEO';
+
+const WHATSAPP_PHONE = '918148320217';
 
 const webDesignExamples = [
   {
@@ -59,7 +61,7 @@ const WebDesignPage = () => {
     <>
     <PageSEO
       title="Website Design & Development in Chennai | My DP Digital"
-      description="SEO-ready business, clinic and e-commerce websites in Chennai, designed for mobile use, clear service information and customer enquiries."
+      description="Business, clinic and e-commerce website design in Chennai with mobile-first layouts, clear service pages, enquiry forms and scoped development."
       canonicalPath="/services/web-design-development"
       jsonLd={WEBDESIGN_JSON_LD}
     />
@@ -76,8 +78,22 @@ const WebDesignPage = () => {
             Website Design & Development in Chennai <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2E9A] via-[#B026FF] to-[#06B6D4]">for Growing Businesses.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-normal">
-            Custom web development and website design — blazing-fast, SEO-ready, built with modern frameworks and interactive elements. We build digital assets that drive bottom-line results.
+            Business websites, landing pages and e-commerce builds for Chennai businesses. We plan the page structure, content sections, mobile layout, enquiry routes and required integrations around what your customers need to do on the site.
           </p>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <a
+              href={`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent('Hi My DP Digital, I would like a website development quote. Business type: __. Website type: __. Approximate pages: __. Required features: __. Target area: __. Budget range: __.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-xs font-bold text-white transition-colors hover:bg-[#20ba59]"
+              aria-label="Request a website quote on WhatsApp"
+            >
+              <MessageCircle size={15} /> Discuss Your Website on WhatsApp
+            </a>
+            <Link to="/contact" className="inline-flex items-center rounded-xl border border-white/20 px-5 py-3 text-xs font-bold text-white hover:bg-white/10">
+              Request a Website Proposal
+            </Link>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-32">
@@ -103,10 +119,10 @@ const WebDesignPage = () => {
               <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">Tech Stack & Ethics</h2>
               <div className="space-y-4">
                 {[
-                  { step: '01', title: 'Performance First', text: 'Sub-second load times via modern build tools and static generation.' },
-                  { step: '02', title: 'Conversion Psych', text: 'Layouts designed following proven behavioral principles.' },
-                  { step: '03', title: 'Responsive Flow', text: 'Pixel-perfect across mobile, tablet, and ultra-wide.' },
-                  { step: '04', title: 'Clean Architecture', text: 'Maintainable, scalable, and secure codebase.' },
+                  { step: '01', title: 'Page & Content Plan', text: 'Agree the pages, navigation, key messages and customer actions before development starts.' },
+                  { step: '02', title: 'Mobile-First Layout', text: 'Build responsive page layouts and check common mobile, tablet and desktop widths.' },
+                  { step: '03', title: 'Enquiry Journey', text: 'Set up the agreed contact form, phone and WhatsApp routes, then review the submission flow.' },
+                  { step: '04', title: 'Launch Checks', text: 'Review page titles, indexability, images, links and the agreed integrations before handover.' },
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-lg border border-white/10 items-start">
                     <span className="text-xl font-black text-[#FF7AC6] leading-none">{item.step}</span>
@@ -126,23 +142,26 @@ const WebDesignPage = () => {
                 <div className="absolute bottom-0 right-0 w-48 h-48 bg-[#FF7AC6]/20 blur-3xl rounded-full" />
                 <div className="relative z-10 space-y-8">
                   <div className="inline-flex px-3 py-1 rounded-full bg-[#FF7AC6]/20 border border-[#FF7AC6]/30 text-[#FF7AC6] text-[10px] font-bold uppercase tracking-widest">
-                    Vitals Scoreboard
+                    Project Scope
                   </div>
-                  <h3 className="text-3xl font-black text-white tracking-tight">Technical Benchmarks</h3>
-                  <div className="space-y-6">
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Google PageSpeed</span>
-                      <span className="text-3xl font-black text-[#FF7AC6]">98+</span>
-                    </div>
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Load Time (LCP)</span>
-                      <span className="text-3xl font-black text-white">0.8s</span>
-                    </div>
-                    <div className="flex items-end justify-between border-b border-white/10 pb-4">
-                      <span className="text-xs font-bold text-white/50 uppercase tracking-widest">Conversion Lift</span>
-                      <span className="text-3xl font-black text-emerald-400">+120%</span>
-                    </div>
+                  <h3 className="text-3xl font-black text-white tracking-tight">What Your Website Build Can Include</h3>
+                  <div className="space-y-4">
+                    {[
+                      'Agreed page structure, navigation and responsive layouts',
+                      'Service pages, project galleries or product catalogues as required',
+                      'Contact forms, phone and WhatsApp enquiry routes',
+                      'Basic on-page SEO setup and relevant structured data',
+                      'Testing of agreed forms, links and third-party integrations',
+                    ].map((item) => (
+                      <div key={item} className="flex items-start gap-3 border-b border-white/10 pb-4 text-sm text-white/80">
+                        <Check size={16} className="mt-0.5 shrink-0 text-[#25D366]" />
+                        <span>{item}</span>
+                      </div>
+                    ))}
                   </div>
+                  <p className="text-xs leading-relaxed text-white/55">
+                    The final scope and quote depend on page count, content readiness, design complexity, integrations and ongoing support. Speed results depend on hosting, content and third-party tools, so performance is checked rather than promised as a fixed score or load time.
+                  </p>
                   <Link
                     to="/contact"
                     className="w-full py-5 rounded-2xl bg-gradient-to-r from-[#FF2E9A] to-[#B026FF] text-white font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-3 shadow-xl shadow-[#FF2E9A]/25 hover:from-[#FF7AC6] hover:to-[#FF2E9A] transition-all"
