@@ -42,7 +42,7 @@ const FACEBOOKADS_JSON_LD = {
   },
   areaServed: 'Chennai and Tambaram, Tamil Nadu, India',
   description:
-    'Facebook and Instagram (Meta) Ads management in Chennai and Tambaram for coaching centres, clinics, local service businesses, retailers, and D2C brands, including lead campaigns, creative testing, retargeting, and conversion tracking.',
+    'Meta Ads management for Chennai and Tambaram businesses, including lead forms, WhatsApp campaigns, creative testing, retargeting and conversion tracking.',
 };
 
 // 3D Neon Animated Facebook / Meta Logo Emblem with Glowing Laser Halo
@@ -238,16 +238,16 @@ export const FacebookAdsPage: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const getWhatsAppUrl = (topic: string) => {
-    return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(`Hi DP Digital, I want to discuss Facebook Product Sales Ads: ${topic}`)}`;
+    return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(`Hi DP Digital, I want to discuss Facebook and Instagram (Meta) Ads for my business: ${topic}`)}`;
   };
 
   const adFeatures = [
     {
-      title: 'High-Converting Product Sales Ads',
-      desc: 'We create product ads, offer-led videos, single-item spotlights, carousels, and user-generated-content style creatives for product campaigns.',
-      icon: ShoppingCart,
-      tag: 'E-Com Specialist',
-      metric: 'Product Campaigns',
+      title: 'Lead Generation & Product Sales Ads',
+      desc: 'Plan Facebook and Instagram campaigns for enquiries or purchases using lead forms, click-to-WhatsApp, offer-led creatives, product ads, and retargeting based on the business goal.',
+      icon: Target,
+      tag: 'Lead & Sales Campaigns',
+      metric: 'Campaign Objectives',
     },
     {
       title: 'Conversions API & Pixel Tracking',
@@ -264,11 +264,11 @@ export const FacebookAdsPage: React.FC = () => {
       metric: 'Audience Testing',
     },
     {
-      title: 'Click-to-WhatsApp Product Ads',
-      desc: 'Direct prospective buyers from Facebook and Instagram straight into your WhatsApp sales desk with pre-filled product inquiry templates for instant checkout.',
+      title: 'Click-to-WhatsApp & Lead Form Campaigns',
+      desc: 'Route interested prospects from Facebook and Instagram to WhatsApp conversations or Meta instant forms, with a follow-up process agreed before launch.',
       icon: Zap,
-      tag: 'Instant Orders',
-      metric: 'WhatsApp Enquiries',
+      tag: 'Enquiry Routes',
+      metric: 'WhatsApp & Forms',
     },
     {
       title: 'Dynamic Catalog Retargeting (DPA)',
@@ -278,10 +278,10 @@ export const FacebookAdsPage: React.FC = () => {
       metric: 'Retargeting Setup',
     },
     {
-      title: 'Ad Creative Sprint & Copywriting',
-      desc: 'Continuous weekly production of high-converting hooks, persuasive direct-response Tamil/English ad scripts, custom graphic overlays, and A/B thumbnail variations.',
+      title: 'Ad Creative Planning & Copywriting',
+      desc: 'Prepare Tamil and English ad copy, short-form video concepts, static creatives, and variations based on the agreed campaign objective and production scope.',
       icon: Layers,
-      tag: 'Continuous A/B Sprints',
+      tag: 'Creative Variations',
       metric: 'Creative Testing',
     },
   ];
@@ -328,7 +328,7 @@ export const FacebookAdsPage: React.FC = () => {
     <>
     <PageSEO
       title="Facebook Ads Agency in Chennai | Meta Ads Management"
-      description="Facebook and Instagram ad management for Chennai retailers and service businesses, from campaign setup and creative testing to retargeting."
+      description="Meta Ads management in Chennai for coaching centres, clinics and local businesses. Lead forms, WhatsApp campaigns, creative testing and retargeting."
       canonicalPath="/services/facebook-ads"
       jsonLd={FACEBOOKADS_JSON_LD}
     />
@@ -619,11 +619,11 @@ export const FacebookAdsPage: React.FC = () => {
                 Ad Formats & Creatives
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                Tested E-Commerce Ad Formats
+                Product-Sales Creative Formats
               </h2>
             </div>
             <p className="text-xs text-white/70 max-w-md">
-              We test 10+ creative angles weekly across vertical reels, product carousels, and WhatsApp direct funnels to find your winning scaling asset.
+              For product campaigns, we select formats such as vertical video, product carousels, and click-to-WhatsApp ads based on the offer, audience, and available creative assets.
             </p>
           </div>
 
@@ -682,29 +682,25 @@ export const FacebookAdsPage: React.FC = () => {
         </section>
 
         {/* ========================================================================= */}
-        {/* ON-PAGE SEO TARGET KEYWORD INDEX CLOUD */}
+        {/* META ADS CAMPAIGN SCOPE */}
         {/* ========================================================================= */}
         <section className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 space-y-3">
           <div className="text-xs font-bold text-white/70 uppercase tracking-wider flex items-center gap-2">
             <Award size={14} className="text-[#00F2FE]" />
-            <span>Target Meta Paid Ads Competencies & SEO Architecture</span>
+            <span>Meta Ads Campaign Capabilities</span>
           </div>
           <div className="flex flex-wrap gap-2">
             {[
-              'Facebook Product Ads Agency',
-              'Meta E-Commerce Sales Ads',
-              'High ROAS Facebook Ads',
-              'Instagram Shopping Ads',
-              'Conversions API (CAPI) Setup',
-              'Dynamic Product Ads (DPA)',
-              'Click-to-WhatsApp Product Ads',
-              'Shopify Facebook Ad Management',
-              'WooCommerce Meta Ads Scaling',
-              'D2C Brand Performance Marketing',
-              'Advantage+ Shopping Campaigns',
-              'Direct Response Ad Creative',
-              'Cart Abandonment Retargeting',
-              'Meta Lead Generation Funnels',
+              'Lead Generation Campaigns',
+              'Meta Instant Forms',
+              'Click-to-WhatsApp Campaigns',
+              'Facebook & Instagram Placements',
+              'Local-Area Audience Planning',
+              'Tamil / English Ad Copy',
+              'Creative Testing & Reporting',
+              'Meta Pixel & CAPI Setup',
+              'Retargeting & Custom Audiences',
+              'Product Catalogue Ads',
             ].map((kw, idx) => (
               <span
                 key={idx}
@@ -717,40 +713,6 @@ export const FacebookAdsPage: React.FC = () => {
         </section>
 
         {/* ========================================================================= */}
-        {/* QUICK ANSWER: GOOGLE ADS AGENCY IN CHENNAI */}
-        {/* ========================================================================= */}
-        <section className="w-full max-w-3xl mx-auto">
-          <div className="p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
-            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
-              Looking for a Google Ads agency near you in Chennai?
-            </h3>
-            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-              Alongside Meta/Facebook Ads, My DP Digital also manages Google Ads (Search, Shopping, and
-              Performance Max) for businesses in Chennai — built around the same PPC management and ROAS-focused
-              approach as our Facebook campaigns. Message us on WhatsApp with your monthly budget and we'll map
-              out a Google Ads plan alongside your Facebook strategy.
-            </p>
-          </div>
-        </section>
-
-        {/* ========================================================================= */}
-        {/* QUICK ANSWER: BEST GOOGLE ADS AGENCY IN CHENNAI */}
-        {/* ========================================================================= */}
-        <section className="w-full max-w-3xl mx-auto">
-          <div className="p-6 sm:p-8 rounded-3xl bg-white/[0.03] border border-white/10">
-            <h3 className="text-lg sm:text-xl font-black text-white mb-2">
-              Comparing agencies to find the best Google Ads agency in Chennai?
-            </h3>
-            <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-              Rather than claim to be "the best," we'll show you our actual campaign structures, bidding
-              approach, and reporting before you commit — so you can judge for yourself alongside other agencies
-              you're considering. Message us on WhatsApp with your monthly budget and current results and we'll
-              give you an honest read.
-            </p>
-          </div>
-        </section>
-
-        {/* ========================================================================= */}
         {/* QUICK ANSWER: FACEBOOK ADS AGENCY IN CHENNAI */}
         {/* ========================================================================= */}
         <section className="w-full max-w-3xl mx-auto">
@@ -759,9 +721,16 @@ export const FacebookAdsPage: React.FC = () => {
               Looking for a Facebook Ads agency in Chennai?
             </h3>
             <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-              As a Facebook Ads agency for businesses across Chennai, we handle creative production, audience
-              targeting, and retargeting on Facebook and Instagram, managed alongside your Google Ads so every
-              rupee works as one funnel. Message us on WhatsApp with your monthly budget and we'll map out a plan.
+              My DP Digital plans and manages Facebook and Instagram (Meta) campaigns for Chennai businesses,
+              including lead forms, click-to-WhatsApp campaigns, local audience planning, creative testing, and
+              retargeting. We agree the objective, target area, ad budget, and follow-up route before launch.
+              Message us with your business type and target area to discuss a campaign.
+            </p>
+            <p className="text-xs text-white/55 leading-relaxed mt-3">
+              Need Google Search, Shopping, or Performance Max campaigns? Explore our{' '}
+              <Link to="/services/paid-social-ads" className="text-[#00F2FE] underline underline-offset-4">
+                Google Ads management service
+              </Link>.
             </p>
           </div>
         </section>
@@ -784,7 +753,7 @@ export const FacebookAdsPage: React.FC = () => {
               Request Your Meta Ads Strategy
             </h2>
             <p className="text-xs sm:text-sm text-white/70">
-              Share your product details and target monthly budget to receive an actionable campaign roadmap and ROAS forecast.
+              Share your business type, campaign goal, target area, and approximate monthly ad budget so we can discuss a scoped Meta Ads plan.
             </p>
           </div>
 
