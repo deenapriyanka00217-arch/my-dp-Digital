@@ -63,7 +63,7 @@ const STATIC_ROUTES = [
     route: '/services/facebook-ads',
     title: 'Facebook Ads Agency in Chennai | Meta Ads Management',
     description:
-      'Facebook and Instagram ad management for Chennai retailers and service businesses, from campaign setup and creative testing to retargeting.'
+      'Meta Ads management in Chennai for coaching centres, clinics and local businesses. Lead forms, WhatsApp campaigns, creative testing and retargeting.'
   },
   {
     route: '/services/web-design-development',
