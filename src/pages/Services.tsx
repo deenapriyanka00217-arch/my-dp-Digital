@@ -70,7 +70,7 @@ const ALL_SERVICES = [
     priceGuide: 'From ₹25,000',
     color: '#3B82F6', // Royal Blue
     icon: Briefcase,
-    description: 'Comprehensive 5-10 page corporate websites built to establish credibility, rank on Google, and capture enterprise client inquiries.',
+    description: 'Comprehensive 5-10 page business websites planned to establish credibility, explain services clearly, support search visibility, and guide visitors towards enquiries.',
     deliverables: [
       'Dynamic Services & About Pages',
       'On-Page Semantic SEO Structure',
@@ -167,10 +167,10 @@ const ALL_SERVICES = [
     icon: Search,
     description: 'Technical SEO reviews, on-page improvements, local search optimisation, helpful content planning, and measurement for relevant search queries.',
     deliverables: [
-      'Forensic Technical Architecture Audit',
-      'Topical Authority Keyword Matrix',
-      'Schema Markup & Rich Snippets',
-      'Monthly Keyword Ranking Dashboards'
+      'Technical SEO & Indexability Review',
+      'Search Intent & Keyword Mapping',
+      'Relevant Structured Data Implementation',
+      'Monthly Search Console Performance Reports'
     ],
     examples: 'SEO work scoped around the website, market, and available evidence',
     link: '/services/seo'
