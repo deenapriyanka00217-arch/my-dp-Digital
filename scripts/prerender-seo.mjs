@@ -73,9 +73,9 @@ const STATIC_ROUTES = [
   },
   {
     route: '/wordpress-development',
-    title: 'WordPress Development in Chennai | My DP Digital',
+    title: 'WordPress Development in Chennai & Tambaram',
     description:
-      'Custom WordPress websites, WooCommerce stores, and high-converting landing pages for Chennai businesses, with ongoing maintenance and support available.'
+      'WordPress website development, Elementor pages, WooCommerce setup and maintenance support for businesses in Chennai and Tambaram.'
   },
   {
     route: '/services/content-marketing-branding',
