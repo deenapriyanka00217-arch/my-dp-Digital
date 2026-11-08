@@ -48,11 +48,11 @@ const CLIENT_CHANNELS = [
     handle: '@Kaasedhaankadavullappa',
     url: 'https://www.youtube.com/@Kaasedhaankadavullappa',
     niche: 'Entertainment & Cultural Media',
-    tagline: 'High Engagement Entertainment & Lifestyle Channel',
+    tagline: 'Tamil-language entertainment and cultural channel',
     bannerGradient: 'from-[#FF2E9A] via-[#B026FF] to-[#0A0710]',
     avatarChar: 'KK',
     stats: {
-      contentFormat: 'Long-Form & Viral Shorts',
+      contentFormat: 'Long-Form & Shorts',
       deliverables: ['Video Editing', 'Channel Maintenance']
     },
     description:
@@ -116,16 +116,16 @@ const ON_PAGE_SEO_CHECKLIST = [
     category: 'Title & Hook Optimization',
     points: [
       'Keyword placement within first 40 characters of the video title',
-      'High-curiosity emotional trigger words (e.g. "Step-by-Step", "Proven", "2026 Strategy")',
+      'Clear, curiosity-building titles that accurately reflect the video content',
       'Compare title options using clear keyword relevance and audience intent'
     ]
   },
   {
     category: 'Semantic Description Architecture',
     points: [
-      '250+ word rich topical summary covering LSI semantic search terms',
-      'Interactive Chapter Timestamps for Google Search Key Moments indexing',
-      'Direct Lead Funnel links & WhatsApp inquiry CTA at line 3 above the fold',
+      'Searchable descriptions that summarise the video and use relevant terms naturally',
+      'Chapter timestamps where they help viewers navigate longer videos',
+      'Clear next-step links and a WhatsApp enquiry CTA where included in the agreed workflow',
       'Branded Social Profiles & Playlist Authority Silo links'
     ]
   },
@@ -168,7 +168,7 @@ export const YouTubeManagementPage: React.FC = () => {
     <>
     <PageSEO
       title="YouTube Channel Management in Chennai | My DP Digital"
-      description="Professional YouTube channel management, video editing, and thumbnail design for creators and brands in Chennai — grow your channel with expert help."
+      description="YouTube video editing, custom thumbnails, Shorts repurposing, channel SEO and upload management for Chennai creators, brands and academies. Request a quote."
       canonicalPath="/youtube-management"
       jsonLd={schemaData}
     />
@@ -195,22 +195,22 @@ export const YouTubeManagementPage: React.FC = () => {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FF0000]/15 border border-[#FF0000]/30 backdrop-blur-xl text-white text-[11px] font-black uppercase tracking-widest">
               <Youtube size={15} className="text-[#FF0000] fill-[#FF0000]" />
-              <span>Full-Stack YouTube Production & Growth</span>
+              <span>YouTube Editing & Channel Management</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.08] tracking-tight">
-              YouTube Video Editing, <br />
+              YouTube Channel Management in Chennai <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF0000] via-[#FF2E9A] to-[#B026FF]">
-                High-CTR Thumbnails & Management
+                Video Editing, Thumbnails & Shorts
               </span>
             </h1>
 
             <p className="text-base sm:text-lg text-white/80 leading-relaxed font-medium max-w-2xl">
-              Turn raw footage into viral, binge-worthy YouTube assets. We handle end-to-end 
+              Turn raw footage into polished YouTube videos and Shorts. We handle 
               <strong className="text-white"> post-production video editing</strong>, 
               <strong className="text-[#FF7AC6]"> custom thumbnail design</strong>, 
-              <strong className="text-[#25D366]"> on-page YouTube SEO</strong>, and 
-              <strong className="text-white"> channel upload management</strong> so you can focus purely on creating.
+              <strong className="text-[#25D366]"> YouTube search optimisation</strong>, and 
+              <strong className="text-white"> channel upload management</strong> so you can focus on creating.
             </p>
 
             {/* Quick Action CTAs */}
@@ -222,7 +222,7 @@ export const YouTubeManagementPage: React.FC = () => {
                 className="px-8 py-4 rounded-2xl bg-gradient-to-r from-[#FF0000] via-[#FF2E9A] to-[#B026FF] hover:from-[#FF4D4D] hover:to-[#FF2E9A] text-white font-black text-xs uppercase tracking-widest flex items-center gap-3 shadow-xl shadow-[#FF0000]/25 active:scale-98 transition-all cursor-pointer"
               >
                 <MessageCircle size={17} fill="currentColor" />
-                <span>Get Free Channel Audit & Quote</span>
+                <span>Request a Channel Review & Quote</span>
               </a>
 
               <a
@@ -263,12 +263,12 @@ export const YouTubeManagementPage: React.FC = () => {
                       <Play size={20} fill="white" className="ml-0.5" />
                     </div>
                     <div>
-                      <div className="text-sm font-black text-white">Full-Funnel YouTube Engine</div>
-                      <div className="text-[10px] text-[#25D366] font-bold">● Active 2026 Production Desk</div>
+                      <div className="text-sm font-black text-white">YouTube Channel Workflow</div>
+                      <div className="text-[10px] text-[#25D366] font-bold">Editing & Channel Support</div>
                     </div>
                   </div>
                   <span className="px-2.5 py-1 rounded-md bg-white/10 text-[10px] font-bold uppercase">
-                    360° Studio
+                    Service Workflow
                   </span>
                 </div>
 
@@ -276,9 +276,9 @@ export const YouTubeManagementPage: React.FC = () => {
                 <div className="space-y-3">
                   {[
                     { step: '01', title: 'Pacing & Retention Editing', desc: 'Premiere & DaVinci cutdowns, multi-cam sync, hook retention.', icon: Scissors, color: '#FF2E9A' },
-                    { step: '02', title: 'High-CTR Psychological Thumbnails', desc: 'Custom Photoshop design, color contrast, A/B variant testing.', icon: Palette, color: '#06B6D4' },
+                    { step: '02', title: 'Custom Thumbnail Design', desc: 'Clear text hierarchy, strong contrast, brand consistency and creative variants for review.', icon: Palette, color: '#06B6D4' },
                     { step: '03', title: 'On-Page YouTube SEO & Meta', desc: 'Topic research, chapter planning, searchable descriptions, and relevant metadata.', icon: Search, color: '#25D366' },
-                    { step: '04', title: 'Viral Shorts Repurposing', desc: 'Auto-captions, vertical 9:16 re-framing, sound effects.', icon: Zap, color: '#FF8A00' }
+                    { step: '04', title: 'Shorts Repurposing', desc: 'Vertical 9:16 editing, caption review, reframing and sound design where suitable.', icon: Zap, color: '#FF8A00' }
                   ].map((wf, idx) => (
                     <div key={idx} className="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-between gap-3">
                       <div className="flex items-center gap-3">
@@ -298,7 +298,7 @@ export const YouTubeManagementPage: React.FC = () => {
                 <div className="p-4 rounded-2xl bg-[#25D366]/10 border border-[#25D366]/30 flex items-center justify-between">
                   <div className="space-y-0.5">
                     <div className="text-xs font-black text-white">Direct WhatsApp Consultation</div>
-                    <div className="text-[10px] text-[#25D366]">Connect directly with our Lead YouTube Producer</div>
+                    <div className="text-[10px] text-[#25D366]">Discuss your channel requirements with us</div>
                   </div>
                   <a
                     href={`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent('Hi DP Digital, I want to talk about YouTube Video Editing and Channel Management.')}`}
@@ -504,7 +504,7 @@ export const YouTubeManagementPage: React.FC = () => {
             My DP Digital works as a full-service YouTube channel management company — handling editing,
             thumbnails, upload scheduling, and on-page YouTube SEO end-to-end, so creators and brands don't
             have to juggle freelancers for each piece. Packages start from ₹14,999/month depending on upload
-            frequency and editing complexity; message us on WhatsApp for a free channel audit and quote.
+            frequency and editing complexity. Message us on WhatsApp to discuss a channel review and quote.
           </p>
         </div>
       </section>
