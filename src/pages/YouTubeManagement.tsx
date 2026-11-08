@@ -195,13 +195,13 @@ export const YouTubeManagementPage: React.FC = () => {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FF0000]/15 border border-[#FF0000]/30 backdrop-blur-xl text-white text-[11px] font-black uppercase tracking-widest">
               <Youtube size={15} className="text-[#FF0000] fill-[#FF0000]" />
-              <span>Full-Stack YouTube Production & Growth</span>
+              <span>YouTube Editing & Channel Management</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.08] tracking-tight">
-              YouTube Video Editing, <br />
+              YouTube Channel Management in Chennai <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF0000] via-[#FF2E9A] to-[#B026FF]">
-                Custom Thumbnails & Channel Management
+                Video Editing, Thumbnails & Shorts
               </span>
             </h1>
 
@@ -222,7 +222,7 @@ export const YouTubeManagementPage: React.FC = () => {
                 className="px-8 py-4 rounded-2xl bg-gradient-to-r from-[#FF0000] via-[#FF2E9A] to-[#B026FF] hover:from-[#FF4D4D] hover:to-[#FF2E9A] text-white font-black text-xs uppercase tracking-widest flex items-center gap-3 shadow-xl shadow-[#FF0000]/25 active:scale-98 transition-all cursor-pointer"
               >
                 <MessageCircle size={17} fill="currentColor" />
-                <span>Get Free Channel Audit & Quote</span>
+                <span>Request a Channel Review & Quote</span>
               </a>
 
               <a
@@ -263,12 +263,12 @@ export const YouTubeManagementPage: React.FC = () => {
                       <Play size={20} fill="white" className="ml-0.5" />
                     </div>
                     <div>
-                      <div className="text-sm font-black text-white">Full-Funnel YouTube Engine</div>
-                      <div className="text-[10px] text-[#25D366] font-bold">● Active 2026 Production Desk</div>
+                      <div className="text-sm font-black text-white">YouTube Channel Workflow</div>
+                      <div className="text-[10px] text-[#25D366] font-bold">Editing & Channel Support</div>
                     </div>
                   </div>
                   <span className="px-2.5 py-1 rounded-md bg-white/10 text-[10px] font-bold uppercase">
-                    360° Studio
+                    Service Workflow
                   </span>
                 </div>
 
@@ -298,7 +298,7 @@ export const YouTubeManagementPage: React.FC = () => {
                 <div className="p-4 rounded-2xl bg-[#25D366]/10 border border-[#25D366]/30 flex items-center justify-between">
                   <div className="space-y-0.5">
                     <div className="text-xs font-black text-white">Direct WhatsApp Consultation</div>
-                    <div className="text-[10px] text-[#25D366]">Connect directly with our Lead YouTube Producer</div>
+                    <div className="text-[10px] text-[#25D366]">Discuss your channel requirements with us</div>
                   </div>
                   <a
                     href={`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent('Hi DP Digital, I want to talk about YouTube Video Editing and Channel Management.')}`}
@@ -504,7 +504,7 @@ export const YouTubeManagementPage: React.FC = () => {
             My DP Digital works as a full-service YouTube channel management company — handling editing,
             thumbnails, upload scheduling, and on-page YouTube SEO end-to-end, so creators and brands don't
             have to juggle freelancers for each piece. Packages start from ₹14,999/month depending on upload
-            frequency and editing complexity; message us on WhatsApp for a free channel audit and quote.
+            frequency and editing complexity. Message us on WhatsApp to discuss a channel review and quote.
           </p>
         </div>
       </section>
