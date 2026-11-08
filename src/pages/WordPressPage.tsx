@@ -287,10 +287,9 @@ export const WordPressPage: React.FC = () => {
             Looking for a WordPress development company in Tambaram?
           </h3>
           <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-            As a WordPress development company serving Tambaram and the wider South Chennai belt, we build and
-            support WordPress and WooCommerce sites for local businesses directly — no agency middleman relaying
-            requests. Message us on WhatsApp with your business and area and we'll give you a free scope and
-            timeline.
+            We build and support WordPress and WooCommerce websites for businesses in Tambaram and the wider
+            South Chennai area. Share your website requirements, preferred features, and target launch window on
+            WhatsApp so we can discuss a suitable project scope, timeline, and support options.
           </p>
         </div>
       </div>
