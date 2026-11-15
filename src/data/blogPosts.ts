@@ -1561,7 +1561,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "Web Design & Funnels",
     "readingTime": "6 min read",
@@ -1618,7 +1618,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "Web Design & Funnels",
     "readingTime": "4 min read",
@@ -1675,7 +1675,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "Web Design & Funnels",
     "readingTime": "5 min read",
@@ -1730,7 +1730,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "SEO & Growth",
     "readingTime": "5 min read",
@@ -1786,7 +1786,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "Paid Ads & Meta",
     "readingTime": "5 min read",
@@ -1843,7 +1843,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "Paid Ads & Meta",
     "readingTime": "5 min read",
@@ -1901,7 +1901,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "SEO & Growth",
     "readingTime": "5 min read",
@@ -1958,7 +1958,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "Strategy & Architecture",
     "readingTime": "5 min read",
@@ -2021,7 +2021,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "Strategy & Architecture",
     "readingTime": "5 min read",
@@ -2087,7 +2087,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "author": {
       "name": "My DP Digital Editorial Team",
       "role": "My DP Digital",
-      "avatar": ""
+      "avatar": "/favicon-32.png"
     },
     "category": "Strategy & Architecture",
     "readingTime": "5 min read",
