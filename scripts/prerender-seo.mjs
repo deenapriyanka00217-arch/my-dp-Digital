@@ -131,14 +131,14 @@ function getBlogRoutes() {
   // (or end of file) for that same post's slug/title/excerpt. This avoids
   // depending on consistent object-boundary whitespace/quote style, which
   // has varied between posts added by different tools/sessions.
-  const idMatches = [...src.matchAll(/\bid:\s*['"]([^'"]+)['"]/g)];
+  const idMatches = [...src.matchAll(/^\s*["']?id["']?\s*:\s*(['"])(.*?)\1\s*,?\s*$/gm)];
 
   const field = (text, name) => {
     // Matches: name: "value"   or   name: 'value'   or   name:\n   "value"
     // The quote character is captured so content containing the OTHER
     // quote type (e.g. an apostrophe inside a double-quoted string) isn't
     // mistaken for the closing quote.
-    const re = new RegExp(`\\b${name}:\\s*\\n?\\s*(['"])((?:(?!\\1)[^\\\\]|\\\\.)*)\\1`);
+    const re = new RegExp(`["']?${name}["']?\\s*:\\s*\\n?\\s*(['"])((?:(?!\\1)[^\\\\]|\\\\.)*)\\1`);
     const m = text.match(re);
     if (!m) return null;
     return m[2].replace(/\\(["'])/g, '$1');

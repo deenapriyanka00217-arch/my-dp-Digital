@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "website-content-brief-small-business": {
+    "title": "Website Content Brief for Small Businesses",
+    "description": "Create a useful website content brief with audience, page goal, search intent, key messages, proof, headings, calls to action and required assets."
+  },
+  "wordpress-website-backup-checklist": {
+    "title": "WordPress Website Backup Checklist",
+    "description": "Use this WordPress backup checklist to protect files and database, store copies off-site, set a suitable schedule and test that restoration works."
+  },
+  "how-to-update-wordpress-plugins-safely": {
+    "title": "How to Update WordPress Plugins Safely",
+    "description": "Follow a safer WordPress plugin update process: check compatibility, back up the site, use staging where possible and test important functions after updates."
+  },
+  "local-seo-for-service-area-businesses": {
+    "title": "Local SEO for Service-Area Businesses",
+    "description": "Learn how service-area businesses can improve local search clarity with accurate business details, useful service pages, crawlable links and realistic coverage."
+  },
+  "meta-lead-forms-vs-landing-page": {
+    "title": "Meta Lead Forms vs Landing Pages",
+    "description": "Compare Meta instant forms with website landing pages. Learn how friction, qualification, context, follow-up and tracking affect lead quality."
+  },
+  "google-ads-conversion-tracking-small-business": {
+    "title": "Google Ads Conversion Tracking Guide",
+    "description": "Learn how small businesses can track real Google Ads enquiries, test conversion actions, avoid duplicate counts and connect ad data to lead quality."
+  },
+  "what-is-included-in-an-seo-audit": {
+    "title": "What Is Included in an SEO Audit? Checklist",
+    "description": "Learn what a useful SEO audit checks: crawling, indexing, content, on-page signals, local visibility, links and a prioritised action plan for your business."
+  },
+  "how-to-measure-digital-marketing-agency-results": {
+    "title": "How to Measure Digital Marketing Results",
+    "description": "Measure digital marketing with clear goals, qualified leads, conversion tracking and channel-level reporting—not clicks and impressions alone."
+  },
+  "digital-marketing-proposal-checklist": {
+    "title": "Digital Marketing Proposal: What to Check",
+    "description": "Review a digital marketing proposal before signing. Check goals, scope, deliverables, fees, ad spend, timelines, tracking, reporting and responsibilities."
+  },
+  "youtube-shorts-content-calendar-for-business": {
+    "title": "YouTube Shorts Content Calendar for Business",
+    "description": "Build a sustainable YouTube Shorts calendar with content pillars, repeatable formats, batch production, clear calls to action and useful performance reviews."
   }
 }
