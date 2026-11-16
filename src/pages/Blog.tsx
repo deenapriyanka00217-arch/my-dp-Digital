@@ -88,7 +88,9 @@ const CATEGORIES = [
   'SEO & Growth',
   'E-Commerce & Retail',
   'Paid Ads & Meta',
-  'Strategy & Architecture'
+  'Strategy & Architecture',
+  'Content & Video',
+  'Branding'
 ];
 
 const POPULAR_TAGS = [
@@ -103,6 +105,27 @@ const POPULAR_TAGS = [
   'ECommerce',
   'ROAS'
 ];
+
+
+const renderInlineLinks = (text: string) => {
+  const linkPattern = /(\[[^\]]+\]\(https:\/\/[^)]+\))/g;
+  return text.split(linkPattern).map((part, index) => {
+    const match = part.match(/^\[([^\]]+)\]\((https:\/\/[^)]+)\)$/);
+    if (!match) return part;
+    const isInternal = match[2].startsWith('https://www.mydpdigital.in/');
+    return (
+      <a
+        key={index}
+        href={match[2]}
+        target={isInternal ? undefined : '_blank'}
+        rel={isInternal ? undefined : 'noopener noreferrer'}
+        className="text-[#FF7AC6] underline decoration-[#FF7AC6]/40 underline-offset-4 hover:text-white transition-colors"
+      >
+        {match[1]}
+      </a>
+    );
+  });
+};
 
 const ARCHIVE_MONTHS = [
   { month: 'August 2026', count: 3 },
@@ -544,14 +567,14 @@ export const BlogPage: React.FC = () => {
                               <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-white/90">
                                 <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
                                 <div>
-                                  <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                                  <span>{renderInlineLinks(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                                 </div>
                               </div>
                             ))}
                           </div>
                         );
                       }
-                      return <p key={pIdx} className="leading-relaxed">{paragraph}</p>;
+                      return <p key={pIdx} className="leading-relaxed">{renderInlineLinks(paragraph)}</p>;
                     })}
                   </div>
 
