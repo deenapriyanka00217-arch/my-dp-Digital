@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "youtube-thumbnail-design-checklist": {
+    "title": "YouTube Thumbnail Design Tips | My DP Digital",
+    "description": "Plan clearer YouTube thumbnails with practical design checks, current image guidance and eligible title-and-thumbnail testing."
+  },
+  "website-accessibility-checklist-small-business": {
+    "title": "Website Accessibility Checklist | My DP Digital",
+    "description": "Use this website accessibility checklist to review headings, images, forms, keyboard access, contrast, captions and mobile usability."
+  },
+  "canonical-tag-vs-redirect-seo-guide": {
+    "title": "Canonical Tag vs Redirects | My DP Digital",
+    "description": "Understand when to use a canonical tag or a 301 redirect, how Google interprets each and how to avoid duplicate-URL mistakes."
+  },
+  "meta-pixel-vs-conversions-api-guide": {
+    "title": "Meta Pixel vs Conversions API | My DP Digital",
+    "description": "Compare the Meta Pixel and Conversions API, how browser and server events work, and what to check before relying on conversion data."
+  },
+  "wordpress-vs-custom-coded-website-small-business": {
+    "title": "WordPress vs Custom Websites | My DP Digital",
+    "description": "Compare WordPress and custom-coded websites by editing, flexibility, maintenance and fit. Choose a platform based on your real business requirements."
+  },
+  "google-ads-negative-keywords-guide": {
+    "title": "Google Ads Negative Keywords Guide | My DP Digital",
+    "description": "Learn how Google Ads negative keywords work, where to add them and how to review search terms without blocking valuable leads."
+  },
+  "faq-content-business-website-ai-search": {
+    "title": "FAQ Content for Business Websites | My DP Digital",
+    "description": "Write direct, useful FAQ answers for customers and search systems without keyword stuffing or promising FAQ rich results."
+  },
+  "structured-data-ai-search-small-business": {
+    "title": "Structured Data and AI Search | My DP Digital",
+    "description": "Learn what structured data tells search engines, where LocalBusiness and Article markup fit, and why valid markup cannot guarantee AI citations."
+  },
+  "content-pillars-small-business-guide": {
+    "title": "Content Pillars for Small Business | My DP Digital",
+    "description": "Build content pillars around customer needs, service expertise and business goals instead of posting unrelated ideas every week."
+  },
+  "llms-txt-small-business-website": {
+    "title": "llms.txt for Small Business Websites | My DP Digital",
+    "description": "Learn what llms.txt is, how the proposal is structured and why it does not replace robots.txt, sitemaps or useful website content."
   }
 }
