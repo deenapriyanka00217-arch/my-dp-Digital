@@ -104,6 +104,11 @@ const POPULAR_TAGS = [
   'ROAS'
 ];
 
+const toIsoDate = (dateText: string): string | undefined => {
+  const parsed = new Date(dateText);
+  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
+};
+
 const renderInlineLinks = (text: string): React.ReactNode => {
   const parts = text.split(/(\[[^\]]+\]\(https?:\/\/[^)\s]+\))/g);
   return parts.map((part, index) => {
@@ -264,8 +269,8 @@ export const BlogPage: React.FC = () => {
               name: 'My DP Digital',
               url: 'https://www.mydpdigital.in',
             },
-            datePublished: singlePostView.date,
-            dateModified: singlePostView.date,
+            datePublished: toIsoDate(singlePostView.date),
+            dateModified: toIsoDate(singlePostView.date),
             mainEntityOfPage: `https://www.mydpdigital.in/blog/${singlePostView.slug}`,
           },
           {
