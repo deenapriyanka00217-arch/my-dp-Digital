@@ -104,6 +104,28 @@ const POPULAR_TAGS = [
   'ROAS'
 ];
 
+const toIsoDate = (dateText: string): string | undefined => {
+  const parsed = new Date(dateText);
+  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
+};
+
+const renderInlineLinks = (text: string): React.ReactNode => {
+  const parts = text.split(/(\[[^\]]+\]\(https?:\/\/[^)\s]+\))/g);
+  return parts.map((part, index) => {
+    const match = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)$/);
+    if (!match) return part;
+    return (
+      <a
+        key={index}
+        href={match[2]}
+        className="text-[#FF7AC6] underline decoration-white/30 underline-offset-4 hover:text-white transition-colors"
+      >
+        {match[1]}
+      </a>
+    );
+  });
+};
+
 const ARCHIVE_MONTHS = [
   { month: 'August 2026', count: 3 },
   { month: 'July 2026', count: 7 },
@@ -247,8 +269,8 @@ export const BlogPage: React.FC = () => {
               name: 'My DP Digital',
               url: 'https://www.mydpdigital.in',
             },
-            datePublished: singlePostView.date,
-            dateModified: singlePostView.date,
+            datePublished: toIsoDate(singlePostView.date),
+            dateModified: toIsoDate(singlePostView.date),
             mainEntityOfPage: `https://www.mydpdigital.in/blog/${singlePostView.slug}`,
           },
           {
@@ -544,14 +566,14 @@ export const BlogPage: React.FC = () => {
                               <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-white/90">
                                 <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
                                 <div>
-                                  <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                                  <span>{renderInlineLinks(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                                 </div>
                               </div>
                             ))}
                           </div>
                         );
                       }
-                      return <p key={pIdx} className="leading-relaxed">{paragraph}</p>;
+                      return <p key={pIdx} className="leading-relaxed">{renderInlineLinks(paragraph)}</p>;
                     })}
                   </div>
 
