@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "track-ai-search-traffic-ga4": {
+    "title": "How to Track AI Search Traffic in GA4",
+    "description": "Use GA4 traffic acquisition, source/medium, referrals and landing pages to identify visible AI-search visits while accounting for missing referrers."
+  },
+  "measure-ai-search-visibility": {
+    "title": "How to Measure AI Search Visibility: A Practical Guide",
+    "description": "Track AI-search visibility with repeatable prompts, cited URLs, brand mentions, referral sessions and qualified enquiries—without fake visibility scores."
+  },
+  "local-seo-report-checklist": {
+    "title": "Local SEO Report Checklist: What to Measure",
+    "description": "Learn what a useful local SEO report should show, from Google Business Profile activity and Search Console data to calls, leads and local visibility."
+  },
+  "measure-facebook-ads-lead-quality": {
+    "title": "How to Measure Facebook Ads Lead Quality",
+    "description": "Track Facebook and Instagram lead quality with qualification stages, CRM feedback, response time, booked appointments and sales—not form volume alone."
+  },
+  "how-to-measure-google-ads-roi": {
+    "title": "How to Measure Google Ads ROI for a Small Business",
+    "description": "Measure Google Ads ROI with real revenue, gross margin, ad spend, agency fees, conversion tracking and lead-quality data—not clicks alone."
+  },
+  "oai-searchbot-robots-txt-guide": {
+    "title": "What Is OAI-SearchBot? Should You Allow It?",
+    "description": "Learn how OAI-SearchBot differs from GPTBot and ChatGPT-User, how robots.txt controls access, and what site owners should check before allowing it."
+  },
+  "how-to-run-facebook-ads-real-estate-agents-chennai": {
+    "title": "How to Run Facebook Ads for Real Estate Agents",
+    "description": "Plan real-estate Facebook and Instagram campaigns with accurate property details, clear lead forms, local audiences, follow-up and quality tracking."
+  },
+  "local-seo-checklist-dental-clinics-chennai": {
+    "title": "Local SEO for Dental Clinics in Chennai: Checklist",
+    "description": "Practical local SEO for dental clinics: profile accuracy, service pages, location details, reviews, patient privacy and measurement."
+  },
+  "questions-to-ask-google-ads-agency": {
+    "title": "Questions to Ask a Google Ads Agency Before Hiring",
+    "description": "Ask about account ownership, targeting, tracking, negative keywords, reporting, fees and lead quality before choosing a Google Ads agency."
+  },
+  "website-design-proposal-checklist": {
+    "title": "Website Design Proposal Checklist for Small Businesses",
+    "description": "See what a website design proposal should cover: scope, pages, content, integrations, ownership, SEO, testing, timelines and support."
   }
 }
