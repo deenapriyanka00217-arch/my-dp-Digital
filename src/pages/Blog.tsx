@@ -36,6 +36,28 @@ import PageSEO from '../components/PageSEO';
 import { BLOG_POSTS as STATIC_BLOG_POSTS } from '../data/blogPosts';
 import BLOG_SEO_META from '../data/blogSeoMeta.json';
 
+// Render safe Markdown-style links embedded in static article paragraphs.
+// Internal My DP Digital links stay in the same tab; official external sources open separately.
+const renderInlineLinks = (text: string) => {
+  const chunks = text.split(/(\\[[^\\]]+\\]\\(https?:\\/\\/[^)\\s]+\\))/g);
+  return chunks.map((chunk, index) => {
+    const match = chunk.match(/^\\[([^\\]]+)\\]\\((https?:\\/\\/[^)\\s]+)\\)$/);
+    if (!match) return chunk;
+    const isInternal = match[2].startsWith('https://www.mydpdigital.in/');
+    return (
+      <a
+        key={index}
+        href={match[2]}
+        target={isInternal ? undefined : '_blank'}
+        rel={isInternal ? undefined : 'noopener noreferrer'}
+        className="text-[#FF7AC6] underline underline-offset-4 hover:text-white transition-colors"
+      >
+        {match[1]}
+      </a>
+    );
+  });
+};
+
 const BLOG_JSON_LD = [
   {
     '@context': 'https://schema.org',
@@ -544,14 +566,14 @@ export const BlogPage: React.FC = () => {
                               <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-white/90">
                                 <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
                                 <div>
-                                  <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                                  <span>{renderInlineLinks(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                                 </div>
                               </div>
                             ))}
                           </div>
                         );
                       }
-                      return <p key={pIdx} className="leading-relaxed">{paragraph}</p>;
+                      return <p key={pIdx} className="leading-relaxed">{renderInlineLinks(paragraph)}</p>;
                     })}
                   </div>
 
