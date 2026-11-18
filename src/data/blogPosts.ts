@@ -1530,7 +1530,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "Avoid copying a few low-volume rows into a public performance claim. The report is account-specific and can contain sensitive commercial information. Use it internally to improve relevance and protect customer privacy.",
     "### A short weekly review checklist",
     "- Choose a consistent date range and compare like with like.\n- Filter by campaign or ad group before making a decision.\n- Separate relevant, irrelevant and uncertain search intent.\n- Check the matched keyword, match type, ad and landing page.\n- Add exclusions only when the business truly cannot serve the query.\n- Record the reason for each significant change.\n- Recheck qualified conversions after enough data accumulates.",
-    "The search terms report is most useful when it becomes a calm, documented review habit. It helps a small business spend less time guessing what its keywords mean and more time matching ads to real customer needs. For help with campaign structure and search-term reviews, see [My DP Digital's Google Ads service](https://www.mydpdigital.in/services/paid-social-ads) or [send a campaign enquiry](https://www.mydpdigital.in/contact)."
+    "The search terms report is most useful when it becomes a calm, documented review habit. It helps a small business spend less time guessing what its keywords mean and more time matching ads to real customer needs. For help with campaign structure and search-term reviews, see [My DP Digital's Google Ads service](https://www.mydpdigital.in/services) or [send a campaign enquiry](https://www.mydpdigital.in/contact)."
   ],
   "date": "November 18, 2026",
   "author": {
@@ -1581,7 +1581,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "Do not assume chapters guarantee better rankings or more views. They are a navigation feature. Their value is that viewers can find relevant sections and return to useful information more easily. Evaluate the video using the metrics and audience feedback available in YouTube Studio, not by treating chapter inclusion as a ranking trick.",
     "### A chapter publishing checklist",
     "- Plan sections while scripting or editing.\n- Use 00:00 as the first timestamp.\n- Include at least three timestamps in ascending order.\n- Make every chapter at least 10 seconds.\n- Use accurate, descriptive chapter titles.\n- Recheck times after the final edit.\n- Test chapter markers on the public video.\n- Review automatic-chapter eligibility and settings separately.",
-    "Video chapters are a small publishing detail that can make a longer lesson easier to use. For help with editing, thumbnails, publishing and channel workflows, explore [My DP Digital's YouTube management service](https://www.mydpdigital.in/youtube-management), [content and branding service](https://www.mydpdigital.in/services/content-marketing-branding) or [contact the team](https://www.mydpdigital.in/contact)."
+    "Video chapters are a small publishing detail that can make a longer lesson easier to use. For help with editing, thumbnails, publishing and channel workflows, explore [My DP Digital's YouTube management service](https://www.mydpdigital.in/youtube-management), [content and branding service](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
   ],
   "date": "November 18, 2026",
   "author": {
@@ -1629,7 +1629,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "No. Core Web Vitals are part of Google's page-experience guidance, but a good INP score does not guarantee a particular ranking. Search systems consider many factors, and relevance remains essential. Improving responsiveness is worthwhile because it makes the site easier to use, especially when visitors need to navigate services or complete an enquiry.",
     "### A practical INP checklist",
     "- Identify the slow page and interaction, not just the overall score.\n- Review field data and reproduce the journey on a real device.\n- Inspect JavaScript tasks, event handlers and third-party scripts.\n- Reduce unnecessary work before the next paint.\n- Give immediate, accurate visual feedback where appropriate.\n- Test forms, menus and key actions on mobile and desktop.\n- Recheck field data after enough real visits accumulate.",
-    "INP is a useful way to look beyond the first screen and ask whether a website responds when people need it. For help with responsive development and technical SEO, explore [My DP Digital's website development service](https://www.mydpdigital.in/services/web-design-development) or [SEO service](https://www.mydpdigital.in/services/seo)."
+    "INP is a useful way to look beyond the first screen and ask whether a website responds when people need it. For help with responsive development and technical SEO, explore [My DP Digital's website development service](https://www.mydpdigital.in/services) or [SEO service](https://www.mydpdigital.in/services)."
   ],
   "date": "November 18, 2026",
   "author": {
@@ -1676,7 +1676,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "Measure the outcome through relevant enquiries, calls and customer feedback. If the business receives many requests from places it cannot serve, refine the service information and advertising targeting. Do not treat a profile's list of areas as proof of exact local ranking in each area.",
     "### Service-area profile checklist",
     "- Confirm whether the business is service-area, hybrid or a true storefront.\n- Hide the address if customers are not served there.\n- Select only supported cities or postal areas that are genuinely served.\n- Keep the overall boundary within Google's guidance.\n- Do not use a radius setting for a service-area profile.\n- Avoid duplicate profiles for individual neighbourhoods.\n- Align website service-area information with real operations.\n- Review calls and enquiries from the selected locations.",
-    "A correct service area is a customer-information decision first. It should reflect the way the business works, not an attempt to manufacture local visibility. For help with local SEO and website consistency in Chennai and Tambaram, explore [My DP Digital's SEO service](https://www.mydpdigital.in/services/seo), [Tambaram service-area page](https://www.mydpdigital.in/tambaram) or [contact the team](https://www.mydpdigital.in/contact)."
+    "A correct service area is a customer-information decision first. It should reflect the way the business works, not an attempt to manufacture local visibility. For help with local SEO and website consistency in Chennai and Tambaram, explore [My DP Digital's SEO service](https://www.mydpdigital.in/services), [Tambaram service-area page](https://www.mydpdigital.in/tambaram) or [contact the team](https://www.mydpdigital.in/contact)."
   ],
   "date": "November 18, 2026",
   "author": {
@@ -1726,7 +1726,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "Once the destination passes testing, plan the DNS change with the host or administrator. Keep the old environment available until the new site has been verified. After the change, check HTTPS, redirects, key pages, forms, email and server errors from more than one network or device. Review analytics and Search Console after data becomes available, and monitor 404s and crawl issues.",
     "### Migration checklist",
     "- Document the domain, URL, host and server changes.\n- Back up both files and database and store a copy off-server.\n- Confirm the destination's PHP, database, SSL and resource requirements.\n- Transfer files and database as a matched backup set.\n- Use a serialization-aware method for URL replacement.\n- Test pages, forms, accounts, payments, email and integrations.\n- Map old URLs to relevant permanent redirects where needed.\n- Review canonicals, robots, sitemap and internal links.\n- Plan DNS and email records before cutover.\n- Keep rollback access and monitor the new site after launch.",
-    "A migration is complete only when the new site works for visitors and the business can still receive enquiries, process transactions and manage content. For help with a WordPress move and its technical SEO checks, explore [My DP Digital's WordPress service](https://www.mydpdigital.in/wordpress-development), [SEO service](https://www.mydpdigital.in/services/seo) or [contact the team](https://www.mydpdigital.in/contact)."
+    "A migration is complete only when the new site works for visitors and the business can still receive enquiries, process transactions and manage content. For help with a WordPress move and its technical SEO checks, explore [My DP Digital's WordPress service](https://www.mydpdigital.in/wordpress-development), [SEO service](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
   ],
   "date": "November 18, 2026",
   "author": {
@@ -1773,7 +1773,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "### A simple service-enquiry form blueprint",
     "- Name — required if the team needs to address the visitor personally.\n- Phone or email — collect the contact route the team will actually use.\n- Service required — use a short list if the business offers several services.\n- Requirement summary — optional free-text context.\n- Preferred contact time — include only if the team can use it.\n- Privacy notice and clear submit action — explain the next step.",
     "This is a starting point, not a rule for every offer. A booking, e-commerce checkout and high-consideration project enquiry each need a different flow. Review the form with the person who handles the leads, not only the person who designs the page.",
-    "A useful form respects the visitor's time and gives the business enough context to respond well. If you need a campaign page that connects the ad promise, mobile experience and enquiry process, explore [My DP Digital's website and landing-page development service](https://www.mydpdigital.in/services/web-design-development) or [contact the team](https://www.mydpdigital.in/contact)."
+    "A useful form respects the visitor's time and gives the business enough context to respond well. If you need a campaign page that connects the ad promise, mobile experience and enquiry process, explore [My DP Digital's website and landing-page development service](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
   ],
   "date": "November 18, 2026",
   "author": {
@@ -1865,7 +1865,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "- Copying a trend without connecting it to the business.\n- Making every video a sales message.\n- Publishing without a clear audience or purpose.\n- Using captions or text that are too small to read.\n- Repeating the same topic with only a different background.\n- Judging success only by views or follower count.\n- Making unsupported claims or presenting staged footage as a real customer result.",
     "### A one-week planning example",
     "A practical week could include one short explainer, one product or service demonstration, one customer-question answer, one behind-the-scenes process clip and one direct invitation to enquire. The topics should come from the business's actual services and customer questions. If the team cannot film all five, publish fewer and keep the quality and accuracy.",
-    "A useful Instagram Reels strategy is built around clarity, repeatability and honest measurement. For help planning branded content and short-form video, explore [My DP Digital's content and branding service](https://www.mydpdigital.in/services/content-marketing-branding), [YouTube management service](https://www.mydpdigital.in/youtube-management) or [contact the team](https://www.mydpdigital.in/contact)."
+    "A useful Instagram Reels strategy is built around clarity, repeatability and honest measurement. For help planning branded content and short-form video, explore [My DP Digital's content and branding service](https://www.mydpdigital.in/services), [YouTube management service](https://www.mydpdigital.in/youtube-management) or [contact the team](https://www.mydpdigital.in/contact)."
   ],
   "date": "November 18, 2026",
   "author": {
@@ -1910,7 +1910,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "UTM parameters classify campaign traffic; they do not measure business outcomes by themselves. To understand whether a campaign produced an enquiry, configure and test the appropriate form, phone or purchase events. Keep event names and business definitions consistent. A campaign can generate visits without producing qualified leads.",
     "### A simple campaign tagging workflow",
     "Before sharing a link, write down the campaign owner, source, medium, campaign name and any creative label. Generate the URL, test the redirect and record the final link in the campaign sheet. After launch, check the traffic acquisition report and compare sessions, engagement and the conversion events that have been correctly implemented.",
-    "A good UTM system makes reports easier to interpret because every team member uses the same language. For help connecting paid campaigns with analytics and conversion measurement, explore [My DP Digital's paid advertising service](https://www.mydpdigital.in/services/paid-social-ads), [Meta Ads service](https://www.mydpdigital.in/services/facebook-ads) or [contact the team](https://www.mydpdigital.in/contact)."
+    "A good UTM system makes reports easier to interpret because every team member uses the same language. For help connecting paid campaigns with analytics and conversion measurement, explore [My DP Digital's paid advertising service](https://www.mydpdigital.in/services), [Meta Ads service](https://www.mydpdigital.in/services/facebook-ads) or [contact the team](https://www.mydpdigital.in/contact)."
   ],
   "date": "November 18, 2026",
   "author": {
@@ -1954,7 +1954,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "### Common location-targeting mistakes",
     "- Selecting a large city when the business only serves a small travel area.\n- Treating interest in a location as the same as being physically present there.\n- Assuming radius targeting is perfectly precise.\n- Adding many tiny locations that fragment a limited budget.\n- Forgetting to review excluded areas and actual lead quality.\n- Sending every location's traffic to a generic page with no service-area explanation.",
     "Before launch, write a simple rule: who can buy, where they can receive the service and what the campaign should do when someone outside that area searches for the offer. That rule makes the settings easier to review and gives the business a defensible reason for each included or excluded location.",
-    "Google Ads location targeting works best when it reflects real delivery capacity and is measured against qualified enquiries, not map coverage alone. For help planning a local search campaign, explore [My DP Digital's paid advertising service](https://www.mydpdigital.in/services/paid-social-ads) or [contact the team](https://www.mydpdigital.in/contact)."
+    "Google Ads location targeting works best when it reflects real delivery capacity and is measured against qualified enquiries, not map coverage alone. For help planning a local search campaign, explore [My DP Digital's paid advertising service](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
   ],
   "date": "November 18, 2026",
   "author": {
