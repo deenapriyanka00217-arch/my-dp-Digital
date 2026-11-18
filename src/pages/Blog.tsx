@@ -39,9 +39,9 @@ import BLOG_SEO_META from '../data/blogSeoMeta.json';
 // Render safe Markdown-style links embedded in static article paragraphs.
 // Internal My DP Digital links stay in the same tab; official external sources open separately.
 const renderInlineLinks = (text: string) => {
-  const chunks = text.split(/(\\[[^\\]]+\\]\\(https?:\\/\\/[^)\\s]+\\))/g);
+  const chunks = text.split(/(\[[^\]]+\]\(https?:\/\/[^)\s]+\))/g);
   return chunks.map((chunk, index) => {
-    const match = chunk.match(/^\\[([^\\]]+)\\]\\((https?:\\/\\/[^)\\s]+)\\)$/);
+    const match = chunk.match(/^\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)$/);
     if (!match) return chunk;
     const isInternal = match[2].startsWith('https://www.mydpdigital.in/');
     return (
@@ -1340,13 +1340,13 @@ export const BlogPage: React.FC = () => {
                           {items.map((it, i) => (
                             <div key={i} className="flex items-start gap-2 text-xs sm:text-sm text-white/90">
                               <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
-                              <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                              <span>{renderInlineLinks(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                             </div>
                           ))}
                         </div>
                       );
                     }
-                    return <p key={pIdx}>{paragraph}</p>;
+                    return <p key={pIdx}>{renderInlineLinks(paragraph)}</p>;
                   })}
                 </div>
 
