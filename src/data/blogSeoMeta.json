@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "google-ads-search-terms-report-guide": {
+    "title": "Google Ads Search Terms Report Guide | My DP Digital",
+    "description": "Learn where to find the Google Ads search terms report, compare actual searches with keywords and decide what to keep, refine or exclude."
+  },
+  "youtube-video-chapters-guide": {
+    "title": "YouTube Video Chapters: Add Timestamps",
+    "description": "Learn how to add YouTube video chapters with a 00:00 start, three or more timestamps and clear titles that help viewers navigate longer videos."
+  },
+  "core-web-vitals-inp-small-business": {
+    "title": "INP Core Web Vitals: A Practical Guide",
+    "description": "Understand Interaction to Next Paint (INP), Google's good threshold and how to diagnose slow website interactions on mobile and desktop."
+  },
+  "google-business-profile-service-area-guide": {
+    "title": "Google Business Profile Service Area Guide",
+    "description": "Learn who can use a Google Business Profile service area, when to hide an address and how to choose accurate cities or postal areas."
+  },
+  "wordpress-website-migration-checklist": {
+    "title": "WordPress Website Migration Checklist",
+    "description": "Use this WordPress migration checklist to back up files and databases, move URLs safely, test redirects and protect forms, email and SEO."
+  },
+  "landing-page-form-fields-small-business": {
+    "title": "Landing Page Form Fields: What to Ask",
+    "description": "Choose landing page form fields that capture useful enquiries without creating unnecessary friction. Includes mobile, privacy and follow-up checks."
+  },
+  "wordpress-staging-site-guide": {
+    "title": "WordPress Staging Site Guide | My DP Digital",
+    "description": "Learn what a WordPress staging site is, how to create a safe test copy and what to check before moving changes to your live website."
+  },
+  "instagram-reels-content-strategy-small-business": {
+    "title": "Instagram Reels Strategy for Small Business",
+    "description": "Build an Instagram Reels content strategy with useful content pillars, repeatable formats, clear calls to action and practical performance reviews."
+  },
+  "ga4-utm-parameters-campaign-tracking": {
+    "title": "GA4 UTM Parameters: Campaign Tracking Guide",
+    "description": "Learn how UTM parameters work in GA4, choose source, medium and campaign values, build tagged URLs and avoid inconsistent campaign reports."
+  },
+  "google-ads-location-targeting-small-business": {
+    "title": "Google Ads Location Targeting Guide | My DP Digital",
+    "description": "Learn how Google Ads location targeting works, compare presence options, set radius targets and review location performance for local campaigns."
   }
 }
