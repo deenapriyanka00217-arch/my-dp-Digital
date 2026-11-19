@@ -112,6 +112,22 @@ const ARCHIVE_MONTHS = [
   { month: 'April 2026', count: 15 },
 ];
 
+
+const renderInlineLinks = (text: string): React.ReactNode[] => {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, index) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!match) return part;
+    const href = match[2];
+    const external = /^https?:\/\//i.test(href) && !href.startsWith('https://www.mydpdigital.in');
+    return (
+      <a key={index} href={href} className="text-[#FF2E9A] underline underline-offset-2 hover:text-[#B026FF]" {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
+        {match[1]}
+      </a>
+    );
+  });
+};
+
 export const BlogPage: React.FC = () => {
   // Real, static post content — committed to the repo so every visitor and
   // every search engine sees the exact same thing (see src/data/blogPosts.ts).
@@ -544,7 +560,7 @@ export const BlogPage: React.FC = () => {
                               <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-white/90">
                                 <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
                                 <div>
-                                  <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                                  <span>{renderInlineLinks(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                                 </div>
                               </div>
                             ))}
@@ -1318,13 +1334,13 @@ export const BlogPage: React.FC = () => {
                           {items.map((it, i) => (
                             <div key={i} className="flex items-start gap-2 text-xs sm:text-sm text-white/90">
                               <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
-                              <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                              <span>{renderInlineLinks(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                             </div>
                           ))}
                         </div>
                       );
                     }
-                    return <p key={pIdx}>{paragraph}</p>;
+                    return <p key={pIdx}>{renderInlineLinks(paragraph)}</p>;
                   })}
                 </div>
 
