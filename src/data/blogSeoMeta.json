@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "google-ads-ad-assets-guide": {
+    "title": "Google Ads Assets: A Practical Small Business Guide",
+    "description": "Learn what Google Ads assets do, which types to use and how to build a clear, relevant asset checklist for a small business campaign."
+  },
+  "facebook-ads-creative-testing-guide": {
+    "title": "How to Test Facebook Ads Creatives",
+    "description": "Test Facebook ad creatives methodically: isolate variables, measure qualified leads and avoid changing too many campaign elements at once."
+  },
+  "internal-linking-seo-guide": {
+    "title": "Internal Linking for SEO: A Practical Site Checklist",
+    "description": "Build useful internal links with clear anchors, a simple page map and a repeatable audit that helps visitors and crawlers find key pages."
+  },
+  "wordpress-image-optimization-guide": {
+    "title": "WordPress Image Optimization Without a Plugin",
+    "description": "Resize, compress, name and describe WordPress images before upload. Use a practical workflow that improves usability without relying on a plugin."
+  },
+  "website-trust-signals-small-business": {
+    "title": "Website Trust Signals for Small Businesses",
+    "description": "Make a business website more credible with clear contact details, real proof, transparent processes, privacy information and useful calls to action."
+  },
+  "how-to-reply-to-google-reviews-business": {
+    "title": "How to Reply to Google Reviews as a Business",
+    "description": "Use calm, useful Google review replies for positive, neutral and negative feedback. Protect privacy and follow Google's review policies."
+  },
+  "how-to-measure-youtube-performance": {
+    "title": "How to Measure YouTube Performance",
+    "description": "Track YouTube impressions, CTR, watch time, retention, traffic sources and audience changes without relying on vanity metrics."
+  },
+  "content-repurposing-small-business-guide": {
+    "title": "How to Repurpose Content for Small Businesses",
+    "description": "Turn one useful article, video or customer question into a planned set of formats without copying or diluting the original message."
+  },
+  "brand-voice-tone-small-business-guide": {
+    "title": "How to Define Your Brand Voice and Tone",
+    "description": "Create a simple brand voice guide with audience, tone traits, word choices, examples and review rules for consistent business content."
+  },
+  "local-seo-checklist-real-estate-agents-chennai": {
+    "title": "Local SEO for Chennai Real Estate Agents",
+    "description": "A practical local SEO checklist for Chennai real estate agents: profiles, area pages, reviews, photos, listings and honest local signals."
   }
 }
