@@ -114,12 +114,12 @@ const ARCHIVE_MONTHS = [
 
 
 const renderInlineLinks = (text: string): React.ReactNode[] => {
-  const parts = text.split(/(\\[[^\\]]+\\]\\([^)]+\\))/g);
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
   return parts.map((part, index) => {
-    const match = part.match(/^\\[([^\\]]+)\\]\\(([^)]+)\\)$/);
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (!match) return part;
     const href = match[2];
-    const external = /^https?:\\/\\//i.test(href) && !href.startsWith('https://www.mydpdigital.in');
+    const external = /^https?:\/\//i.test(href) && !href.startsWith('https://www.mydpdigital.in');
     return (
       <a key={index} href={href} className="text-[#FF2E9A] underline underline-offset-2 hover:text-[#B026FF]" {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
         {match[1]}
@@ -560,7 +560,7 @@ export const BlogPage: React.FC = () => {
                               <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-white/90">
                                 <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
                                 <div>
-                                  <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                                  <span>{renderInlineLinks(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                                 </div>
                               </div>
                             ))}
@@ -1334,7 +1334,7 @@ export const BlogPage: React.FC = () => {
                           {items.map((it, i) => (
                             <div key={i} className="flex items-start gap-2 text-xs sm:text-sm text-white/90">
                               <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
-                              <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                              <span>{renderInlineLinks(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                             </div>
                           ))}
                         </div>
