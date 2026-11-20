@@ -1503,26 +1503,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    "id": "logo-file-formats-for-business",
-    "slug": "logo-file-formats-for-business",
-    "title": "Logo File Formats for Business: SVG, PNG, JPG, PDF and AI Explained",
-    "excerpt": "A practical guide to logo file formats and a checklist for receiving, storing and using logo assets across digital and print work.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "logo-file-formats-for-business",
+    slug: "logo-file-formats-for-business",
+    title: "Logo File Formats for Business: SVG, PNG, JPG, PDF and AI Explained",
+    excerpt: "A practical guide to logo file formats and a checklist for receiving, storing and using logo assets across digital and print work.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Paid Ads & Meta",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Paid Ads & Meta",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "GoogleAds",
       "PPC",
       "CampaignManagement"
     ],
-    "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-    "content": [
+    featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+    content: [
       "A business should keep more than one logo file format because different platforms and suppliers need different types of artwork. SVG or another editable vector master is useful for scalable design work. PNG is practical for digital use when transparency is needed. PDF is often useful for print handoff, while JPG is suitable only when a solid background is acceptable.",
       "### SVG: a scalable vector for websites and design work",
       "SVG stores vector drawing instructions. A vector logo can be resized without the pixel blur associated with enlarging a small raster image. SVG is useful for many websites and design workflows, but not every platform or email client accepts it.",
@@ -1552,26 +1552,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "id": "ga4-landing-page-report-guide",
-    "slug": "ga4-landing-page-report-guide",
-    "title": "GA4 Landing Page Report: How to Read It and Improve Your Website",
-    "excerpt": "Use GA4's Landing page report to understand where sessions begin, compare page performance and identify useful next steps for content or conversion paths.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "ga4-landing-page-report-guide",
+    slug: "ga4-landing-page-report-guide",
+    title: "GA4 Landing Page Report: How to Read It and Improve Your Website",
+    excerpt: "Use GA4's Landing page report to understand where sessions begin, compare page performance and identify useful next steps for content or conversion paths.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Paid Ads & Meta",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Paid Ads & Meta",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "MetaAds",
       "AgencyChecklist",
       "LeadGeneration"
     ],
-    "featuredImgColor": "from-[#FF2E9A] to-[#B026FF]",
-    "content": [
+    featuredImgColor: "from-[#FF2E9A] to-[#B026FF]",
+    content: [
       "The GA4 Landing page report helps you understand which page visitors first arrive on during a session and how those landing pages perform. It can help identify pages that attract traffic, compare engagement and review whether a page is aligned with the visitor's likely intent.",
       "### What is a landing page in GA4?",
       "A landing page is the first page a visitor sees when arriving at your website. It can be your homepage, service page, blog article, product page or campaign page. The Landing page dimension shows the page path and query string of the first page in the session.",
@@ -1598,26 +1598,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "id": "does-ai-content-harm-seo",
-    "slug": "does-ai-content-harm-seo",
-    "title": "Does AI Content Harm SEO? Google's Guidance and a Quality Checklist",
-    "excerpt": "Google does not ban useful AI-assisted content. The risk is publishing inaccurate, unoriginal or scaled content that adds little value.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "does-ai-content-harm-seo",
+    slug: "does-ai-content-harm-seo",
+    title: "Does AI Content Harm SEO? Google's Guidance and a Quality Checklist",
+    excerpt: "Google does not ban useful AI-assisted content. The risk is publishing inaccurate, unoriginal or scaled content that adds little value.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "SEO & Growth",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "SEO & Growth",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "AIContent",
       "GoogleSEO",
       "ContentQuality"
     ],
-    "featuredImgColor": "from-[#06B6D4] to-[#B026FF]",
-    "content": [
+    featuredImgColor: "from-[#06B6D4] to-[#B026FF]",
+    content: [
       "AI-generated content does not automatically harm SEO. Google's guidance focuses on the quality, accuracy, relevance and purpose of content—not on whether a person or AI tool helped produce it. The risk is using automation to create many pages primarily to manipulate rankings, or publishing content that is inaccurate, repetitive, unoriginal or unhelpful.",
       "### What Google's guidance says",
       "Google says generative AI can be useful for research and structuring original content. Its Search policies still apply. Producing many pages with little added value may fall under scaled content abuse, regardless of whether pages were written by AI, humans or a combination.",
@@ -1646,26 +1646,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "id": "youtube-playlist-strategy-small-business",
-    "slug": "youtube-playlist-strategy-small-business",
-    "title": "YouTube Playlist Strategy for Small Businesses: Organise Videos for Viewers",
-    "excerpt": "A practical playlist strategy that groups videos by audience need, series, product or topic instead of publishing a random library.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "youtube-playlist-strategy-small-business",
+    slug: "youtube-playlist-strategy-small-business",
+    title: "YouTube Playlist Strategy for Small Businesses: Organise Videos for Viewers",
+    excerpt: "A practical playlist strategy that groups videos by audience need, series, product or topic instead of publishing a random library.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Paid Ads & Meta",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Paid Ads & Meta",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "MetaAds",
       "CampaignObjectives",
       "LeadGeneration"
     ],
-    "featuredImgColor": "from-[#FF2E9A] to-[#25D366]",
-    "content": [
+    featuredImgColor: "from-[#FF2E9A] to-[#25D366]",
+    content: [
       "A YouTube playlist strategy helps a business group videos into useful collections so viewers can find related information without searching through a channel's entire library. Playlists should be organised around audience needs, a topic, a series or a practical learning path—not simply around the date each video was published.",
       "### Why playlists are useful",
       "A channel may publish product demonstrations, tutorials, FAQs, interviews, customer education and short videos. If everything is presented as one long list, a new visitor may not know where to begin.",
@@ -1696,26 +1696,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "id": "what-does-google-ads-specialist-do",
-    "slug": "what-does-google-ads-specialist-do",
-    "title": "What Does a Google Ads Specialist Do? A Small-Business Guide",
-    "excerpt": "A practical breakdown of a Google Ads specialist’s work and the checks a small business should expect before, during and after a campaign.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "what-does-google-ads-specialist-do",
+    slug: "what-does-google-ads-specialist-do",
+    title: "What Does a Google Ads Specialist Do? A Small-Business Guide",
+    excerpt: "A practical breakdown of a Google Ads specialist’s work and the checks a small business should expect before, during and after a campaign.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Paid Ads & Meta",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Paid Ads & Meta",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "GoogleAds",
       "QualityScore",
       "PPC"
     ],
-    "featuredImgColor": "from-[#B026FF] to-[#FFB700]",
-    "content": [
+    featuredImgColor: "from-[#B026FF] to-[#FFB700]",
+    content: [
       "A Google Ads specialist plans, launches, monitors and improves paid campaigns so a business can reach relevant searchers or audiences and measure what happens after an ad click. The work is more than choosing keywords and increasing a budget: it includes understanding the offer, setting up the account, checking tracking, reviewing search terms, testing ads and reporting honestly.",
       "### Understand the business before building campaigns",
       "The specialist should clarify the service or product, ideal customer, geographic coverage, business capacity, offer, website and conversion goal. A campaign for a Chennai home-service provider may need phone enquiries, while an online course may need completed registrations or purchases. Those goals should not be treated as interchangeable.",
@@ -1745,26 +1745,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "id": "google-ads-quality-score-guide",
-    "slug": "google-ads-quality-score-guide",
-    "title": "Google Ads Quality Score: What It Means and How to Improve Relevance",
-    "excerpt": "Quality Score is a diagnostic—not a performance guarantee. Learn what its components mean and how to use them to review ads and landing pages.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "google-ads-quality-score-guide",
+    slug: "google-ads-quality-score-guide",
+    title: "Google Ads Quality Score: What It Means and How to Improve Relevance",
+    excerpt: "Quality Score is a diagnostic—not a performance guarantee. Learn what its components mean and how to use them to review ads and landing pages.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Strategy & Architecture",
-    "readingTime": "3 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Strategy & Architecture",
+    readingTime: "3 min read",
+    commentsCount: 0,
+    tags: [
       "GA4",
       "Analytics",
       "LandingPages"
     ],
-    "featuredImgColor": "from-[#06B6D4] to-[#FF2E9A]",
-    "content": [
+    featuredImgColor: "from-[#06B6D4] to-[#FF2E9A]",
+    content: [
       "Google Ads Quality Score is a diagnostic score that helps advertisers review the quality and relevance of their Search ads. Google describes three components: expected click-through rate, ad relevance and landing-page experience. Use the score to identify areas that may need attention; do not treat a high score as a guarantee of conversions, lower costs or a particular ad position.",
       "### The three Quality Score components",
       "### Expected click-through rate",
@@ -1791,26 +1791,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "id": "facebook-ads-campaign-objectives-for-small-business",
-    "slug": "facebook-ads-campaign-objectives-for-small-business",
-    "title": "Facebook Ads Campaign Objectives for Small Businesses: How to Choose",
-    "excerpt": "A practical way to select a Meta Ads campaign objective for awareness, visits, engagement, enquiries or sales without confusing metrics.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "facebook-ads-campaign-objectives-for-small-business",
+    slug: "facebook-ads-campaign-objectives-for-small-business",
+    title: "Facebook Ads Campaign Objectives for Small Businesses: How to Choose",
+    excerpt: "A practical way to select a Meta Ads campaign objective for awareness, visits, engagement, enquiries or sales without confusing metrics.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Paid Ads & Meta",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Paid Ads & Meta",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "Instagram",
       "SocialMedia",
       "ProfileOptimization"
     ],
-    "featuredImgColor": "from-[#25D366] to-[#B026FF]",
-    "content": [
+    featuredImgColor: "from-[#25D366] to-[#B026FF]",
+    content: [
       "Choose a Facebook or Instagram Ads objective by deciding what you want people to do after seeing the ad. A business that needs to introduce a new offer, send visitors to a website, encourage engagement, collect enquiries or sell a product may need different campaign setups and measurements.",
       "### Start with the business outcome",
       "Before opening Ads Manager, write down one primary outcome. Examples include introducing a service, sending people to a page where they can learn about an offer, encouraging a useful interaction, collecting enquiries or selling through an online checkout.",
@@ -1839,26 +1839,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "id": "instagram-profile-optimization-small-business",
-    "slug": "instagram-profile-optimization-small-business",
-    "title": "Instagram Profile Optimization for Small Businesses: A Practical Checklist",
-    "excerpt": "A checklist for improving the clarity of a small-business Instagram profile so visitors quickly understand the offer and next step.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "instagram-profile-optimization-small-business",
+    slug: "instagram-profile-optimization-small-business",
+    title: "Instagram Profile Optimization for Small Businesses: A Practical Checklist",
+    excerpt: "A checklist for improving the clarity of a small-business Instagram profile so visitors quickly understand the offer and next step.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Strategy & Architecture",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Strategy & Architecture",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "YouTube",
       "Playlists",
       "ChannelManagement"
     ],
-    "featuredImgColor": "from-[#FFB700] to-[#06B6D4]",
-    "content": [
+    featuredImgColor: "from-[#FFB700] to-[#06B6D4]",
+    content: [
       "An Instagram business profile should help a visitor understand what the business offers, who it serves and what to do next. Profile optimisation is not about stuffing keywords into a bio or promising more followers. It is about making the information clear, accurate and easy to act on.",
       "### 1. Choose a recognisable profile photo",
       "Use a logo or brand mark that remains readable in a small circular crop. Avoid placing important text near the edges. If the logo has a detailed full version, consider a simpler mark for the profile photo.",
@@ -1888,26 +1888,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "id": "elementor-vs-gutenberg-small-business",
-    "slug": "elementor-vs-gutenberg-small-business",
-    "title": "Elementor vs Gutenberg: Which WordPress Editor Should a Small Business Choose?",
-    "excerpt": "A practical comparison of Elementor and the WordPress block editor for small businesses choosing a website-building workflow.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "elementor-vs-gutenberg-small-business",
+    slug: "elementor-vs-gutenberg-small-business",
+    title: "Elementor vs Gutenberg: Which WordPress Editor Should a Small Business Choose?",
+    excerpt: "A practical comparison of Elementor and the WordPress block editor for small businesses choosing a website-building workflow.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Web Design & Funnels",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Web Design & Funnels",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "WordPress",
       "Elementor",
       "Gutenberg"
     ],
-    "featuredImgColor": "from-[#06B6D4] to-[#B026FF]",
-    "content": [
+    featuredImgColor: "from-[#06B6D4] to-[#B026FF]",
+    content: [
       "Elementor and Gutenberg can both be used to build and edit WordPress websites, but they offer different workflows. Gutenberg is the native WordPress block editor. Elementor is a visual page-building tool that adds its own design controls and components. The better choice depends on design needs, the content team, theme, maintenance plan and technical constraints.",
       "### What is Gutenberg?",
       "The WordPress Block Editor lets users create content using blocks such as paragraphs, headings, images, lists and layout elements. With a compatible block theme, the WordPress Site Editor can also edit parts of the site structure, including templates, navigation and styles.",
@@ -1940,26 +1940,26 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    "id": "questions-to-ask-facebook-ads-agency",
-    "slug": "questions-to-ask-facebook-ads-agency",
-    "title": "Questions to Ask a Facebook Ads Agency Before Hiring",
-    "excerpt": "Before hiring a Meta Ads agency, ask how it handles account access, creative testing, conversion tracking, budget, reporting and qualified leads.",
-    "date": "2026-11-20",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "questions-to-ask-facebook-ads-agency",
+    slug: "questions-to-ask-facebook-ads-agency",
+    title: "Questions to Ask a Facebook Ads Agency Before Hiring",
+    excerpt: "Before hiring a Meta Ads agency, ask how it handles account access, creative testing, conversion tracking, budget, reporting and qualified leads.",
+    date: "2026-11-20",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Strategy & Architecture",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Strategy & Architecture",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "Branding",
       "Logo",
       "DesignAssets"
     ],
-    "featuredImgColor": "from-[#FFB700] to-[#B026FF]",
-    "content": [
+    featuredImgColor: "from-[#FFB700] to-[#B026FF]",
+    content: [
       "A good Facebook or Instagram Ads agency should explain its strategy, deliverables, tracking, creative process, account access and reporting in plain language. Before signing a contract, ask questions that reveal how the agency will work with your business—not only how many leads it says it can generate.",
       "### 1. Who owns and controls the ad account?",
       "Ask whether your business will own the Meta Business Portfolio, ad account, Page and connected assets. The agency should receive appropriate access rather than keeping essential assets in an account you cannot control. Ask what happens to access if the engagement ends.",
