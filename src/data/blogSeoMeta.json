@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "logo-file-formats-for-business": {
+    "title": "Logo File Formats: SVG, PNG, PDF & More",
+    "description": "Understand SVG, PNG, JPG, PDF and AI logo files, when to use each and which versions a small business should keep for web, print and social media."
+  },
+  "ga4-landing-page-report-guide": {
+    "title": "GA4 Landing Page Report: How to Use It",
+    "description": "Learn what GA4's Landing page report shows, which metrics to review and how to turn landing-page data into practical website improvements."
+  },
+  "does-ai-content-harm-seo": {
+    "title": "Does AI Content Harm SEO? Google's Guidance",
+    "description": "AI content isn't automatically harmful to SEO. Learn Google's guidance, common quality risks and a practical review checklist before publishing."
+  },
+  "youtube-playlist-strategy-small-business": {
+    "title": "YouTube Playlist Strategy for Small Business",
+    "description": "Organise YouTube videos into useful playlists, build clear series, choose titles and descriptions, and make a channel easier for viewers to explore."
+  },
+  "what-does-google-ads-specialist-do": {
+    "title": "What Does a Google Ads Specialist Do?",
+    "description": "Learn what a Google Ads specialist plans, manages and measures—from campaign setup and search terms to tracking, reporting and testing."
+  },
+  "google-ads-quality-score-guide": {
+    "title": "Google Ads Quality Score: A Practical Guide",
+    "description": "Understand Google Ads Quality Score, its three diagnostic components and practical ways to improve relevance without treating the score as a goal."
+  },
+  "facebook-ads-campaign-objectives-for-small-business": {
+    "title": "Facebook Ads Objectives: How to Choose",
+    "description": "Choose a Facebook Ads objective by matching it to your business goal, conversion path, landing page and tracking—not by chasing a single metric."
+  },
+  "instagram-profile-optimization-small-business": {
+    "title": "Instagram Profile Optimization Checklist",
+    "description": "Make your Instagram business profile easier to understand with a clear name, bio, category, contact options, link, highlights and useful content."
+  },
+  "elementor-vs-gutenberg-small-business": {
+    "title": "Elementor vs Gutenberg: Which Fits Your Site?",
+    "description": "Compare Elementor and Gutenberg for WordPress business websites, including design flexibility, editing, maintenance, performance and workflow."
+  },
+  "questions-to-ask-facebook-ads-agency": {
+    "title": "Questions to Ask a Facebook Ads Agency",
+    "description": "Compare Facebook Ads agencies using practical questions about account ownership, targeting, creative, tracking, fees, reporting and lead quality."
   }
 }
