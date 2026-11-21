@@ -1504,11 +1504,11 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 ,
 {
-  "id": "email-segmentation-small-business-guide",
-  "slug": "email-segmentation-small-business-guide",
-  "title": "Email Segmentation for Small Businesses: 6 Practical Starting Groups",
-  "excerpt": "Segmentation helps send a more relevant message to the right subscribers. Start with useful data you already have and respect consent and preferences.",
-  "content": [
+  id: "email-segmentation-small-business-guide",
+  slug: "email-segmentation-small-business-guide",
+  title: "Email Segmentation for Small Businesses: 6 Practical Starting Groups",
+  excerpt: "Segmentation helps send a more relevant message to the right subscribers. Start with useful data you already have and respect consent and preferences.",
+  content: [
     "Email segmentation means dividing a permission-based audience into groups that share a useful characteristic so the message can be more relevant. A small business does not need dozens of complicated segments to begin. Start with a few groups based on data you collect responsibly and can use consistently.",
     "### 1. New subscribers",
     "People who recently subscribed may need a welcome message, an explanation of what they signed up for and a clear way to manage preferences. Avoid sending a welcome sequence that assumes a purchase or relationship that has not happened. Keep the promise made on the signup form.",
@@ -1533,28 +1533,28 @@ export const BLOG_POSTS: BlogPost[] = [
     "Segmentation is most useful when it improves the subscriber's experience, not when it creates a complicated database. If you need help planning content and follow-up for a small business, see https://www.mydpdigital.in/services/content-marketing-branding or contact https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Getting started with an email audience](https://mailchimp.com/help/getting-started-audience/)\n- [Save and manage segments](https://mailchimp.com/help/save-and-manage-segments/)\n- [Common segmentation combinations](https://mailchimp.com/help/common-segmentation-combinations/)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Content Marketing",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "Content Marketing",
+  readingTime: "3 min",
+  commentsCount: 0,
+  tags: [
     "EmailMarketing",
     "Segmentation",
     "SmallBusiness"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#06B6D4]"
+  featuredImgColor: "from-[#FFB700] to-[#06B6D4]"
 },
 {
-  "id": "wordpress-plugin-audit-checklist",
-  "slug": "wordpress-plugin-audit-checklist",
-  "title": "WordPress Plugin Audit Checklist: Remove Redundancy Safely",
-  "excerpt": "A plugin audit is a documented review—not a rush to delete. Check purpose, overlap, update history, dependencies, backups and safe removal steps.",
-  "content": [
+  id: "wordpress-plugin-audit-checklist",
+  slug: "wordpress-plugin-audit-checklist",
+  title: "WordPress Plugin Audit Checklist: Remove Redundancy Safely",
+  excerpt: "A plugin audit is a documented review—not a rush to delete. Check purpose, overlap, update history, dependencies, backups and safe removal steps.",
+  content: [
     "A WordPress plugin audit helps you understand what each installed plugin does, whether the site still needs it and how safely you can remove or replace it. The aim is not to reach an arbitrary plugin count. A site with a few well-maintained plugins can be more dependable than one with many unnecessary plugins—or a site with too few plugins but missing essential functionality.",
     "Make the audit a controlled process. A plugin may contain settings, data, integrations or code that other parts of the site depend on.",
     "### 1. Create an inventory",
@@ -1582,28 +1582,28 @@ export const BLOG_POSTS: BlogPost[] = [
     "A disciplined audit reduces unnecessary complexity without risking valuable website functionality. For WordPress development, maintenance or troubleshooting, see https://www.mydpdigital.in/services/wordpress-development or contact https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Manage WordPress plugins](https://wordpress.org/documentation/article/manage-plugins/)\n- [WordPress Site Health](https://wordpress.org/documentation/site-health/)\n- [WordPress site maintenance](https://wordpress.org/documentation/article/wordpress-site-maintenance/)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "WordPress",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "WordPress",
+  readingTime: "4 min",
+  commentsCount: 0,
+  tags: [
     "WordPress",
     "Maintenance",
     "Plugins"
   ],
-  "featuredImgColor": "from-[#06B6D4] to-[#B026FF]"
+  featuredImgColor: "from-[#06B6D4] to-[#B026FF]"
 },
 {
-  "id": "ecommerce-checkout-checklist-small-business",
-  "slug": "ecommerce-checkout-checklist-small-business",
-  "title": "E-commerce Checkout Checklist: 9 Ways to Make Buying Easier",
-  "excerpt": "Checkout is where product interest becomes an order. Review nine practical areas that can remove unnecessary friction without relying on discounts.",
-  "content": [
+  id: "ecommerce-checkout-checklist-small-business",
+  slug: "ecommerce-checkout-checklist-small-business",
+  title: "E-commerce Checkout Checklist: 9 Ways to Make Buying Easier",
+  excerpt: "Checkout is where product interest becomes an order. Review nine practical areas that can remove unnecessary friction without relying on discounts.",
+  content: [
     "A checkout should help a customer finish an order—not make them solve a puzzle. An e-commerce checkout checklist is useful before launch, after a redesign, or when visitors add products to the cart but struggle to complete payment. Review the steps, the information you request, the way costs are disclosed, and what happens when something goes wrong.",
     "There is no single checkout layout that fits every store. The goal is to make the process understandable, trustworthy and easy to use on the devices your customers actually use.",
     "### 1. Keep the order summary visible and accurate",
@@ -1632,28 +1632,28 @@ export const BLOG_POSTS: BlogPost[] = [
     "Checkout improvements are usually a series of small, evidence-based changes. If your store needs a technical or usability review, see My DP Digital's WordPress and e-commerce development service at https://www.mydpdigital.in/services/wordpress-development or send an enquiry at https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Google Merchant Center landing page requirements](https://support.google.com/merchants/answer/4752265?hl=en-gb)\n- [Share ecommerce product data with Google](https://developers.google.com/search/docs/specialty/ecommerce/share-your-product-data)\n- [Product snippet structured data](https://developers.google.com/search/docs/appearance/structured-data/product-snippet)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "E-commerce",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "E-commerce",
+  readingTime: "5 min",
+  commentsCount: 0,
+  tags: [
     "Ecommerce",
     "Checkout",
     "SmallBusiness"
   ],
-  "featuredImgColor": "from-[#B026FF] to-[#FF2E9A]"
+  featuredImgColor: "from-[#B026FF] to-[#FF2E9A]"
 },
 {
-  "id": "seo-title-meta-description-guide",
-  "slug": "seo-title-meta-description-guide",
-  "title": "How to Write SEO Titles and Meta Descriptions: A Practical Guide",
-  "excerpt": "A title and meta description should accurately describe the page and the value it offers. Use this checklist to write, review and test them.",
-  "content": [
+  id: "seo-title-meta-description-guide",
+  slug: "seo-title-meta-description-guide",
+  title: "How to Write SEO Titles and Meta Descriptions: A Practical Guide",
+  excerpt: "A title and meta description should accurately describe the page and the value it offers. Use this checklist to write, review and test them.",
+  content: [
     "An SEO title and meta description help describe a page to searchers. The title is one of the signals Google may use when generating a title link, while the snippet can come from page content or a meta description. Google may rewrite either element when it believes another representation better fits the query. Writing them well is still useful because they can help visitors understand what a page offers.",
     "### 1. Write a title that describes the page",
     "Use a concise, descriptive title. Include the main topic naturally and avoid vague labels such as Home or Services when a more specific title would explain the page. Do not cram every keyword, city and service into the title. A title should represent the page, not a list of phrases.",
@@ -1678,28 +1678,28 @@ export const BLOG_POSTS: BlogPost[] = [
     "Titles and descriptions are part of the page's presentation, not a guarantee of rankings or clicks. If your website needs on-page SEO improvements, see https://www.mydpdigital.in/services/seo or contact https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Google title link guidance](https://developers.google.com/search/docs/appearance/title-link)\n- [Google snippets guidance](https://developers.google.com/search/docs/appearance/snippet)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "SEO",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "SEO",
+  readingTime: "4 min",
+  commentsCount: 0,
+  tags: [
     "SEO",
     "OnPageSEO",
     "MetaDescription"
   ],
-  "featuredImgColor": "from-[#22C55E] to-[#06B6D4]"
+  featuredImgColor: "from-[#22C55E] to-[#06B6D4]"
 },
 {
-  "id": "google-ads-ad-group-structure-small-business",
-  "slug": "google-ads-ad-group-structure-small-business",
-  "title": "Google Ads Ad Group Structure: A Simple Framework for Small Businesses",
-  "excerpt": "Ad groups work best when the keywords, ad message and destination page share a clear theme. Use this framework to organise a small account.",
-  "content": [
+  id: "google-ads-ad-group-structure-small-business",
+  slug: "google-ads-ad-group-structure-small-business",
+  title: "Google Ads Ad Group Structure: A Simple Framework for Small Businesses",
+  excerpt: "Ad groups work best when the keywords, ad message and destination page share a clear theme. Use this framework to organise a small account.",
+  content: [
     "A useful Google Ads ad group structure starts with a clear theme. Keywords, ads and landing pages should be related closely enough that the message a person sees in the ad matches what they find after clicking. Small accounts do not need dozens of ad groups; they need a structure that makes decisions, reporting and optimisation understandable.",
     "### Start with the campaign objective",
     "Choose what the campaign is meant to accomplish and what the business can measure. A campaign for one service may have a different budget, geography, conversion action or landing page from a campaign for another service. Keep those differences at the campaign level when they affect the way you manage the account.",
@@ -1724,28 +1724,28 @@ export const BLOG_POSTS: BlogPost[] = [
     "A simpler, well-aligned structure is easier to maintain than a maze of tiny groups. If you need help planning or managing Google Ads campaigns, see https://www.mydpdigital.in/services/paid-social-ads or contact https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Optimize ads and landing pages](https://support.google.com/google-ads/answer/6238826)\n- [Google Ads search terms report](https://support.google.com/google-ads/answer/2472708)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Paid Ads",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "Paid Ads",
+  readingTime: "4 min",
+  commentsCount: 0,
+  tags: [
     "GoogleAds",
     "AdGroups",
     "SmallBusiness"
   ],
-  "featuredImgColor": "from-[#FF2E9A] to-[#FFB700]"
+  featuredImgColor: "from-[#FF2E9A] to-[#FFB700]"
 },
 {
-  "id": "facebook-ads-creative-ideas-retail-stores",
-  "slug": "facebook-ads-creative-ideas-retail-stores",
-  "title": "Facebook Ads Creative Ideas for Retail Stores: 8 Formats to Test",
-  "excerpt": "Retail ads need a clear product, a reason to act and a creative format that fits the buying moment. Use these eight ideas as a starting point.",
-  "content": [
+  id: "facebook-ads-creative-ideas-retail-stores",
+  slug: "facebook-ads-creative-ideas-retail-stores",
+  title: "Facebook Ads Creative Ideas for Retail Stores: 8 Formats to Test",
+  excerpt: "Retail ads need a clear product, a reason to act and a creative format that fits the buying moment. Use these eight ideas as a starting point.",
+  content: [
     "Retail advertising is easier to plan when each creative has one job. A Facebook or Instagram ad should quickly show what the store sells, why the product or offer matters, and what the viewer can do next. The same image or video does not have to serve every audience or buying moment.",
     "Use the formats below as a creative library—not a promise that any format will produce a particular cost, reach or sale. Test them with a clear campaign objective and track the result you actually want.",
     "### 1. A short product demonstration",
@@ -1774,28 +1774,28 @@ export const BLOG_POSTS: BlogPost[] = [
     "Use these ideas to build a reusable creative library. If your retail business needs campaign planning, creative production or Meta Ads management, see https://www.mydpdigital.in/services/facebook-ads or contact https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Meta for Business creative tips](https://www.youtube.com/watch?v=MoxkcxjOpOc)\n- [Meta Marketing API creative reference](https://developers.facebook.com/docs/marketing-api/reference/v27.0/)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Paid Ads",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "Paid Ads",
+  readingTime: "4 min",
+  commentsCount: 0,
+  tags: [
     "FacebookAds",
     "Retail",
     "Creative"
   ],
-  "featuredImgColor": "from-[#B026FF] to-[#06B6D4]"
+  featuredImgColor: "from-[#B026FF] to-[#06B6D4]"
 },
 {
-  "id": "youtube-end-screens-cards-guide",
-  "slug": "youtube-end-screens-cards-guide",
-  "title": "YouTube End Screens and Cards: Connect Viewers to the Next Step",
-  "excerpt": "Cards and end screens help connect a video to a relevant next step. Use them intentionally and check whether viewers follow the path you set.",
-  "content": [
+  id: "youtube-end-screens-cards-guide",
+  slug: "youtube-end-screens-cards-guide",
+  title: "YouTube End Screens and Cards: Connect Viewers to the Next Step",
+  excerpt: "Cards and end screens help connect a video to a relevant next step. Use them intentionally and check whether viewers follow the path you set.",
+  content: [
     "A YouTube video can be part of a viewing journey rather than a dead end. Cards and end screens give viewers a way to move to another video, playlist or eligible destination when the next step is relevant. They are useful only when they match the moment and the viewer's interest.",
     "### Cards and end screens serve different moments",
     "Cards are interactive prompts that can appear during a video. They can direct viewers to eligible content such as another video, playlist or channel, and to external destinations where YouTube permits. End screens appear in the closing portion of a video and can promote another video, playlist, subscription or eligible channel/link element.",
@@ -1819,28 +1819,28 @@ export const BLOG_POSTS: BlogPost[] = [
     "Cards and end screens are small parts of a channel workflow, but they can help organise content and make the next step easier. For YouTube editing and channel management, see https://www.mydpdigital.in/youtube-management or contact https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Add end screens to videos](https://support.google.com/youtube/answer/6388789)\n- [YouTube cards help](https://support.google.com/youtube/answer/6140493)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "YouTube",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "YouTube",
+  readingTime: "4 min",
+  commentsCount: 0,
+  tags: [
     "YouTube",
     "EndScreens",
     "Cards"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#B026FF]"
+  featuredImgColor: "from-[#FFB700] to-[#B026FF]"
 },
 {
-  "id": "content-calendar-small-business-guide",
-  "slug": "content-calendar-small-business-guide",
-  "title": "Small Business Content Calendar: A Practical Monthly Planning System",
-  "excerpt": "A content calendar is a publishing plan, not a list of random posts. Use this system to plan themes, formats, owners and review dates for a manageable month.",
-  "content": [
+  id: "content-calendar-small-business-guide",
+  slug: "content-calendar-small-business-guide",
+  title: "Small Business Content Calendar: A Practical Monthly Planning System",
+  excerpt: "A content calendar is a publishing plan, not a list of random posts. Use this system to plan themes, formats, owners and review dates for a manageable month.",
+  content: [
     "A content calendar helps a small business decide what to publish, why it matters, who will create it and when it will be reviewed. It is more useful than a list of random post ideas because it connects content to a goal and a repeatable workflow.",
     "You do not need to publish every day on every channel. Start with a cadence the business can maintain. A calendar that is realistic and consistently reviewed is more useful than a large plan that never gets completed.",
     "### Step 1: Choose one monthly goal",
@@ -1866,28 +1866,28 @@ export const BLOG_POSTS: BlogPost[] = [
     "A calendar is a planning tool, not a promise that every idea will perform. Keep it flexible and focus on useful content that the business can produce reliably. For content marketing and branding support, see https://www.mydpdigital.in/services/content-marketing-branding or contact https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Google helpful content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)\n- [Getting started with an email audience](https://mailchimp.com/help/getting-started-audience/)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Content Marketing",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "Content Marketing",
+  readingTime: "4 min",
+  commentsCount: 0,
+  tags: [
     "ContentMarketing",
     "Planning",
     "SmallBusiness"
   ],
-  "featuredImgColor": "from-[#06B6D4] to-[#FF2E9A]"
+  featuredImgColor: "from-[#06B6D4] to-[#FF2E9A]"
 },
 {
-  "id": "website-navigation-checklist-small-business",
-  "slug": "website-navigation-checklist-small-business",
-  "title": "Website Navigation Checklist for Small Businesses",
-  "excerpt": "Good navigation helps visitors find the information they need without learning your menu. Review labels, hierarchy, mobile behaviour and next steps.",
-  "content": [
+  id: "website-navigation-checklist-small-business",
+  slug: "website-navigation-checklist-small-business",
+  title: "Website Navigation Checklist for Small Businesses",
+  excerpt: "Good navigation helps visitors find the information they need without learning your menu. Review labels, hierarchy, mobile behaviour and next steps.",
+  content: [
     "Website navigation is the system that helps visitors move from the page they land on to the information or action they need. A useful menu is not necessarily large or clever. It is understandable, predictable and organised around the visitor's tasks.",
     "Before changing your menu, list the main questions people come to your website to answer. A business website might need to explain services, show examples, provide pricing or process information, introduce the team and make contact simple. Navigation should make those destinations easy to find.",
     "### 1. Start with the visitor's tasks",
@@ -1915,28 +1915,28 @@ export const BLOG_POSTS: BlogPost[] = [
     "Navigation is a small part of a website's design, but it shapes the entire experience. If your website needs a clearer structure, explore My DP Digital's website design and development service at https://www.mydpdigital.in/services/web-design-development or send an enquiry at https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Google Search technical SEO guidance](https://developers.google.com/search/docs/fundamentals/get-started)\n- [W3C accessibility guidance](https://www.w3.org/WAI/WCAG22/Understanding/)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Web Design",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "Web Design",
+  readingTime: "4 min",
+  commentsCount: 0,
+  tags: [
     "WebsiteDesign",
     "Navigation",
     "UX"
   ],
-  "featuredImgColor": "from-[#22C55E] to-[#FFB700]"
+  featuredImgColor: "from-[#22C55E] to-[#FFB700]"
 },
 {
-  "id": "optimize-content-generative-ai-search",
-  "slug": "optimize-content-generative-ai-search",
-  "title": "How to Optimize Content for Generative AI Search: An Evidence-Based Workflow",
-  "excerpt": "Google's guidance keeps traditional helpful-content and technical SEO foundations central. Use this workflow to improve the information people—and search systems—can understand.",
-  "content": [
+  id: "optimize-content-generative-ai-search",
+  slug: "optimize-content-generative-ai-search",
+  title: "How to Optimize Content for Generative AI Search: An Evidence-Based Workflow",
+  excerpt: "Google's guidance keeps traditional helpful-content and technical SEO foundations central. Use this workflow to improve the information people—and search systems—can understand.",
+  content: [
     "Optimizing content for generative AI search is not about adding a special file, breaking every paragraph into tiny chunks or repeating a phrase until a page is cited. A useful starting point is the same work that helps readers: provide original information, answer the question accurately, explain the context and make the page accessible to people and search systems.",
     "Google's published guidance on generative AI features in Search emphasises valuable, unique content and continues to rely on established SEO foundations. It also debunks several popular myths about special markup and forced content chunking. Because search experiences change, use official guidance as your reference and avoid promises about inclusion in AI answers.",
     "### Step 1: Define the reader's question",
@@ -1964,20 +1964,20 @@ export const BLOG_POSTS: BlogPost[] = [
     "Generative AI search is evolving, but good editorial discipline remains useful. If your website needs an SEO content review, explore https://www.mydpdigital.in/services/seo or contact https://www.mydpdigital.in/contact.",
     "### Further reading\n\n- [Google generative AI search optimization guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)\n- [Google guidance on generative AI content](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content)\n- [Google technical SEO guidance](https://developers.google.com/search/docs/fundamentals/get-started)"
   ],
-  "date": "November 21, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  date: "November 21, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "SEO",
-  "readingTime": "NaN",
-  "commentsCount": 0,
-  "tags": [
+  category: "SEO",
+  readingTime: "4 min",
+  commentsCount: 0,
+  tags: [
     "SEO",
     "AEO",
     "GenerativeAI"
   ],
-  "featuredImgColor": "from-[#FF2E9A] to-[#22C55E]"
+  featuredImgColor: "from-[#FF2E9A] to-[#22C55E]"
 }
 ];
