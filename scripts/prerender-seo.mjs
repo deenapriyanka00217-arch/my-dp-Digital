@@ -258,7 +258,13 @@ async function main() {
   };
 
   for (const meta of uniqueRoutes) {
-    const markup = await render(meta.route);
+    let markup;
+    try {
+      markup = await render(meta.route);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      throw new Error(`[prerender-seo] Rendering failed for ${meta.route}: ${message}`, { cause: error });
+    }
     if (!markup || markup.trim().length < 100) {
       throw new Error(`[prerender-seo] Rendering returned too little page content for ${meta.route}.`);
     }
