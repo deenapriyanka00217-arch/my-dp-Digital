@@ -1502,7 +1502,6 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you're currently paying for social media management and aren't sure what you're actually getting for it, reach us at +91 81483 20217 or deenapriyanka00217@gmail.com for an honest comparison.",
     ],
   },
-,
 {
   id: "email-segmentation-small-business-guide",
   slug: "email-segmentation-small-business-guide",
