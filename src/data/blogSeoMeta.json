@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "email-segmentation-small-business-guide": {
+    "title": "Email Segmentation for Small Businesses",
+    "description": "Learn six practical ways to segment a small-business email list by interest, lifecycle, activity and customer needs without overcomplicating it."
+  },
+  "wordpress-plugin-audit-checklist": {
+    "title": "WordPress Plugin Audit Checklist",
+    "description": "Audit your WordPress plugins for purpose, ownership, updates, overlap, dependencies and risk. Use this checklist before deactivating or deleting anything."
+  },
+  "ecommerce-checkout-checklist-small-business": {
+    "title": "E-commerce Checkout Checklist for Small Businesses",
+    "description": "Review mobile checkout, payments, shipping, trust, error handling and confirmation with this practical e-commerce checklist."
+  },
+  "seo-title-meta-description-guide": {
+    "title": "SEO Title & Meta Description: A Practical Guide",
+    "description": "Learn to write clear, unique SEO titles and meta descriptions that describe the page, help searchers decide and avoid misleading snippet promises."
+  },
+  "google-ads-ad-group-structure-small-business": {
+    "title": "Google Ads Ad Group Structure Guide",
+    "description": "Learn how to organise Google Ads ad groups by keyword theme, ad message and landing page without creating unnecessary campaign complexity."
+  },
+  "facebook-ads-creative-ideas-retail-stores": {
+    "title": "Facebook Ads Creative Ideas for Retail Stores",
+    "description": "Explore eight practical Facebook and Instagram ad formats for retail stores, from product demos and carousels to store visits and seasonal offers."
+  },
+  "youtube-end-screens-cards-guide": {
+    "title": "YouTube End Screens and Cards Guide",
+    "description": "Learn when to use YouTube cards and end screens, which destinations to choose and how to review the clicks and viewer journey in YouTube Analytics."
+  },
+  "content-calendar-small-business-guide": {
+    "title": "Small Business Content Calendar: A Practical Plan",
+    "description": "Plan a realistic monthly content calendar for a small business using goals, topics, formats, deadlines, reuse and simple performance reviews."
+  },
+  "website-navigation-checklist-small-business": {
+    "title": "Website Navigation Checklist for Small Businesses",
+    "description": "Review your website menu, labels, page hierarchy, mobile navigation and contact paths with this practical checklist for small businesses."
+  },
+  "optimize-content-generative-ai-search": {
+    "title": "Optimize Content for AI Search: Practical Guide",
+    "description": "Use an evidence-based workflow to improve content clarity, accuracy and usefulness for generative AI search without relying on unsupported SEO hacks."
   }
 }
