@@ -112,6 +112,11 @@ const ARCHIVE_MONTHS = [
   { month: 'April 2026', count: 15 },
 ];
 
+const toSchemaDate = (value: string): string => {
+  const parsed = Date.parse(value);
+  return Number.isNaN(parsed) ? value : new Date(parsed).toISOString();
+};
+
 const renderInlineLinks = (text: string): React.ReactNode => {
   const pattern = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
   const parts: React.ReactNode[] = [];
@@ -266,8 +271,8 @@ export const BlogPage: React.FC = () => {
               name: 'My DP Digital',
               url: 'https://www.mydpdigital.in',
             },
-            datePublished: singlePostView.date,
-            dateModified: singlePostView.date,
+            datePublished: toSchemaDate(singlePostView.date),
+            dateModified: toSchemaDate(singlePostView.date),
             mainEntityOfPage: `https://www.mydpdigital.in/blog/${singlePostView.slug}`,
           },
           {
