@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "email-deliverability-checklist-small-business": {
+    "title": "Email Deliverability Checklist for Small Businesses",
+    "description": "Check SPF, DKIM, DMARC, list hygiene, unsubscribe, TLS and sending practices before your small business email campaign."
+  },
+  "broken-links-404-errors-seo-guide": {
+    "title": "How to Fix Broken Links on a Website",
+    "description": "Find broken internal and external links, prioritize important pages and choose when to update, redirect or leave a genuine 404."
+  },
+  "google-ads-search-vs-performance-max-small-business": {
+    "title": "Google Ads Search vs Performance Max",
+    "description": "Compare Search and Performance Max campaigns, their controls, placements, asset needs and when a small business should test each."
+  },
+  "youtube-video-title-description-seo-checklist": {
+    "title": "YouTube Video Title and Description SEO",
+    "description": "Write clear YouTube titles and descriptions with a viewer-focused promise, relevant terms, useful links and a practical publishing checklist."
+  },
+  "lead-magnet-ideas-small-business": {
+    "title": "Lead Magnet Ideas for Small Businesses",
+    "description": "Choose a useful lead magnet for your small business. Learn resource formats, landing-page essentials, delivery and follow-up."
+  },
+  "meta-ads-retargeting-small-business-guide": {
+    "title": "Meta Ads Retargeting for Small Businesses",
+    "description": "Plan Meta retargeting audiences for website visitors and engagers. Learn exclusions, creative, privacy and measurement basics."
+  },
+  "google-ads-budget-planning-small-business": {
+    "title": "Google Ads Budget Planning for Small Businesses",
+    "description": "Plan a Google Ads test budget, daily spend, tracking and review period without relying on unrealistic click or lead forecasts."
+  },
+  "website-sitemap-planning-small-business": {
+    "title": "How to Plan a Website Sitemap for a Small Business",
+    "description": "Plan your website sitemap with a clear page hierarchy, service pages, supporting content and URL structure before design or development."
+  },
+  "google-search-console-performance-report-guide": {
+    "title": "Google Search Console Performance Report Guide",
+    "description": "Learn to read Search Console queries, pages, clicks, impressions, CTR and average position to find useful SEO improvements."
+  },
+  "website-enquiry-tracking-small-business": {
+    "title": "Website Enquiry Tracking for Small Businesses",
+    "description": "Plan website lead tracking for forms, phone calls and WhatsApp clicks. Learn event names, testing and how to avoid counting clicks as leads."
   }
 }
