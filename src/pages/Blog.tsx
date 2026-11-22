@@ -112,6 +112,30 @@ const ARCHIVE_MONTHS = [
   { month: 'April 2026', count: 15 },
 ];
 
+const toSchemaDate = (value: string): string => {
+  const parsed = Date.parse(value);
+  return Number.isNaN(parsed) ? value : new Date(parsed).toISOString();
+};
+
+const renderInlineLinks = (text: string): React.ReactNode => {
+  const pattern = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index));
+    const isInternal = match[2].startsWith('https://www.mydpdigital.in/');
+    parts.push(
+      <a key={"inline-link-" + match.index} href={match[2]} target={isInternal ? undefined : '_blank'} rel={isInternal ? undefined : 'noopener noreferrer'} className="text-[#FF2E9A] underline underline-offset-4 hover:text-[#B026FF]">
+        {match[1]}
+      </a>
+    );
+    lastIndex = pattern.lastIndex;
+  }
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+  return parts.length ? parts : text;
+};
+
 export const BlogPage: React.FC = () => {
   // Real, static post content — committed to the repo so every visitor and
   // every search engine sees the exact same thing (see src/data/blogPosts.ts).
@@ -247,8 +271,8 @@ export const BlogPage: React.FC = () => {
               name: 'My DP Digital',
               url: 'https://www.mydpdigital.in',
             },
-            datePublished: singlePostView.date,
-            dateModified: singlePostView.date,
+            datePublished: toSchemaDate(singlePostView.date),
+            dateModified: toSchemaDate(singlePostView.date),
             mainEntityOfPage: `https://www.mydpdigital.in/blog/${singlePostView.slug}`,
           },
           {
@@ -551,7 +575,7 @@ export const BlogPage: React.FC = () => {
                           </div>
                         );
                       }
-                      return <p key={pIdx} className="leading-relaxed">{paragraph}</p>;
+                      return <p key={pIdx} className="leading-relaxed">{renderInlineLinks(paragraph)}</p>;
                     })}
                   </div>
 
@@ -1324,7 +1348,7 @@ export const BlogPage: React.FC = () => {
                         </div>
                       );
                     }
-                    return <p key={pIdx}>{paragraph}</p>;
+                    return <p key={pIdx}>{renderInlineLinks(paragraph)}</p>;
                   })}
                 </div>
 
