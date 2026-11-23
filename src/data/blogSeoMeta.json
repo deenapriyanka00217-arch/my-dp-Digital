@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "meta-ads-campaign-budget-vs-ad-set-budget": {
+    "title": "Meta Ads Campaign vs Ad Set Budget",
+    "description": "Compare Meta Ads campaign and ad set budgets, when each offers useful control and how to structure tests before scaling a campaign."
+  },
+  "content-distribution-strategy-small-business": {
+    "title": "Content Distribution Strategy for Small Business",
+    "description": "Plan how to distribute small-business content through owned, earned and paid channels. Learn a simple repurposing workflow and measurement checklist."
+  },
+  "google-ads-keyword-match-types-explained": {
+    "title": "Google Ads Match Types: Broad, Phrase & Exact",
+    "description": "Learn how broad, phrase and exact match work in Google Ads, when to use each and how to monitor search terms without over-restricting reach."
+  },
+  "google-ads-bidding-strategies-small-business": {
+    "title": "Google Ads Bidding Strategies: How to Choose",
+    "description": "Compare Google Ads bidding strategies by goal, conversion data and budget. Learn when to use conversion, value or click-focused bidding."
+  },
+  "how-to-write-image-alt-text-website": {
+    "title": "How to Write Image Alt Text for a Website",
+    "description": "Write useful image alt text with examples for informative, decorative, functional and complex images. Learn accessibility-first image SEO practices."
+  },
+  "google-business-profile-photo-checklist": {
+    "title": "Google Business Profile Photo Checklist",
+    "description": "Use this Google Business Profile photo checklist for genuine exterior, interior, service, product and team images that help customers understand your business."
+  },
+  "how-to-add-services-google-business-profile": {
+    "title": "Add Services to Google Business Profile",
+    "description": "Learn how to update services on Google Business Profile, choose accurate categories, add descriptions and avoid keyword-stuffed service lists."
+  },
+  "ai-search-content-audit-guide": {
+    "title": "AI Search Content Audit: Practical Checklist",
+    "description": "Audit a business website for AI-enabled search using crawlability, facts, content usefulness, entity consistency, internal links and accurate schema checks."
+  },
+  "youtube-video-script-for-business-template": {
+    "title": "YouTube Video Script for Business: Template",
+    "description": "Write a useful YouTube script with a clear hook, promise, sections, visuals and CTA. Use this template to plan a business video before filming."
+  },
+  "small-business-website-homepage-structure": {
+    "title": "Small Business Website Homepage Structure",
+    "description": "Plan a small-business homepage with a clear hero, services, proof, process, FAQs and contact path. Use this practical section-by-section checklist."
   }
 }
