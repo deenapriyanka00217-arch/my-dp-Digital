@@ -113,7 +113,7 @@ const ARCHIVE_MONTHS = [
 ];
 
 const renderInlineLinks = (text: string): React.ReactNode => {
-  const pattern = /\\[([^\\]]+)\\]\\((https?:\\/\\/[^)]+)\\)/g;
+  const pattern = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
   const segments: React.ReactNode[] = [];
   let last = 0;
   let match: RegExpExecArray | null;
