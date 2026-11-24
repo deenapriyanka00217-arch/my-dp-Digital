@@ -174,5 +174,25 @@
   "wordpress-contact-form-spam-prevention": {
     "title": "WordPress Contact Form Spam Prevention Guide",
     "description": "Reduce WordPress contact-form spam with layered protection, careful plugin choices, rate limits, form validation and testing that preserves real enquiries."
+  },
+  "tamil-seo-business-website-content": {
+    "title": "Tamil SEO for Business Websites | My DP Digital",
+    "description": "Choose Tamil, English or Tanglish website content based on your customers, page purpose, language structure and search intent—not keyword stuffing."
+  },
+  "ga4-cross-domain-checkout-tracking": {
+    "title": "GA4 Cross-Domain Checkout Tracking Guide",
+    "description": "Understand GA4 cross-domain measurement for checkout or booking domains, configuration, test steps and common attribution issues."
+  },
+  "welcome-email-automation-small-business": {
+    "title": "Welcome Email Automation for Small Businesses",
+    "description": "Plan a permission-based welcome email sequence with five useful messages, clear timing, measurement and an unsubscribe path."
+  },
+  "youtube-shorts-vs-long-form-business-strategy": {
+    "title": "YouTube Shorts vs Long-Form for Businesses",
+    "description": "Compare Shorts and long-form YouTube videos by purpose, production, audience intent, measurement and how to connect formats."
+  },
+  "whatsapp-click-tracking-website": {
+    "title": "Track WhatsApp Clicks on Your Website | My DP Digital",
+    "description": "Measure website WhatsApp button clicks with a GA4 event, test the tag and keep click counts separate from confirmed conversations or sales."
   }
 }
