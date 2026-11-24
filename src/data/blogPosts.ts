@@ -1672,10 +1672,10 @@ export const BLOG_POSTS: BlogPost[] = [
     "WordPress plugin documentation and the WordPress.org plugin repository offer examples of layered protections such as honeypots, rate limits, validation and spam filters. Choose a maintained option that fits your forms and privacy requirements rather than installing a plugin based only on a claimed spam-reduction percentage.",
     "For help maintaining or developing WordPress forms, see [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
   ]
-}
+  },
 
-{
-  "id": "tamil-seo-business-website-content",
+  {
+    "id": "tamil-seo-business-website-content",
   "slug": "tamil-seo-business-website-content",
   "title": "Tamil SEO for Business Websites: Tamil, English or Tanglish?",
   "excerpt": "A Tamil-speaking audience does not mean every page must mix languages. Choose a language strategy that helps customers understand and find your business.",
