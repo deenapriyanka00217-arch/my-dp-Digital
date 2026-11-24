@@ -154,5 +154,25 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "google-ads-landing-page-checklist": {
+    "title": "Google Ads Landing Page Checklist | My DP Digital",
+    "description": "Use this 12-point checklist to align Google Ads, keywords, mobile landing pages, forms, trust signals and conversion tracking before launch."
+  },
+  "google-ads-call-conversion-tracking-guide": {
+    "title": "Google Ads Call Conversion Tracking Guide",
+    "description": "Separate phone clicks from real calls, set up call conversion measurement and review call quality for Google Ads campaigns."
+  },
+  "meta-ads-audience-testing-small-business": {
+    "title": "Meta Ads Audience Testing for Small Businesses",
+    "description": "Plan Meta Ads audience tests with clear hypotheses, comparable budgets, overlap checks and lead-quality reviews instead of changing everything at once."
+  },
+  "google-business-profile-performance-report": {
+    "title": "Google Business Profile Performance Report Guide",
+    "description": "Learn how to review Business Profile views, calls, website clicks and directions, and turn the metrics into a practical monthly action plan."
+  },
+  "wordpress-contact-form-spam-prevention": {
+    "title": "WordPress Contact Form Spam Prevention Guide",
+    "description": "Reduce WordPress contact-form spam with layered protection, careful plugin choices, rate limits, form validation and testing that preserves real enquiries."
   }
 }
