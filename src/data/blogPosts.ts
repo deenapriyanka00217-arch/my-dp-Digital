@@ -1673,4 +1673,173 @@ export const BLOG_POSTS: BlogPost[] = [
     "For help maintaining or developing WordPress forms, see [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
   ]
 }
+
+{
+  "id": "tamil-seo-business-website-content",
+  "slug": "tamil-seo-business-website-content",
+  "title": "Tamil SEO for Business Websites: Tamil, English or Tanglish?",
+  "excerpt": "A Tamil-speaking audience does not mean every page must mix languages. Choose a language strategy that helps customers understand and find your business.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "SEO",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### Start with your customer, not a language trend\nIf your business serves Tamil-speaking customers, decide what language helps them understand the service, compare options and enquire. A customer may search in Tamil, English or a mixed phrase such as Tanglish. That does not mean every paragraph, heading or URL should combine all three. The content should reflect the way your audience actually communicates and the page's purpose.",
+    "### Choose one primary language for each page\nA page should have a clear language and a consistent experience. Mixing Tamil and English can be natural in certain contexts, especially for technical terms or familiar business phrases, but excessive switching can make the content difficult to read. Decide whether a page is primarily Tamil, English or a deliberate bilingual resource before writing it.",
+    "### Use Tamil when it helps explain the service\nTamil content may be useful for local services, tuition, healthcare, retail and other businesses whose customers prefer to read or ask questions in Tamil. Translate the meaning, not just the words. Use familiar terms, examples and calls to action. Ask a native reader to check the copy if the writer is not confident in the language.",
+    "### Keep English where customers use it naturally\nSome product names, technical terms, software interfaces and search phrases are commonly used in English. It may be clearer to keep those terms and explain them in Tamil. Do not create awkward translations just to include a Tamil keyword. The goal is a helpful page, not a literal translation of every term.",
+    "### Avoid a side-by-side language wall\nA page with every paragraph duplicated in Tamil and English may be difficult to scan and can create an unnecessarily long experience. If the business maintains separate language versions, structure them intentionally, link between them and ensure each version contains useful, complete content. Google provides guidance for multilingual sites and alternate language versions; use that guidance when separate language pages are planned.",
+    "### Consider separate URLs for complete language versions\nIf the site has a genuinely separate Tamil page and English page, make the language choice easy to discover. Use a clear URL structure, visible language-switch links and a consistent approach to page titles, navigation and content. Where appropriate, implement language-alternate signals according to Google's documentation. Do not automatically redirect visitors based on a guess about their language.",
+    "### Write titles and headings for the page's language\nThe title, main heading, introduction, navigation and call to action should match the language of the content. If a page is in Tamil, avoid a title that is entirely English unless that is the intended phrase and audience. Use natural wording. Keyword placement is not a reason to make a heading confusing.",
+    "### Research how customers phrase questions\nReview genuine enquiries, search suggestions, customer conversations and available analytics. Note the terms people use for the service, but do not treat autocomplete as proof of search volume. If a phrase is popular in conversation, it can help inform copy even when the exact search-demand metric is unavailable.",
+    "### Create a useful content structure\n- Explain the service in plain language.\n- Use headings that answer specific customer questions.\n- Include examples that reflect the business's real service scope.\n- Make the phone, form or WhatsApp next step easy to understand.\n- Keep translated or bilingual versions accurate and updated.\n- Ask a Tamil-speaking reviewer to check grammar and tone where needed.",
+    "### What to avoid\nDo not publish many near-identical Tamil and English pages that differ only by neighbourhood names or a few words. Do not stuff a page with repeated Tamil, English and Tanglish variations. Do not use machine translation without reviewing the meaning. A language version should help a real audience, not exist as a thin duplicate.",
+    "Google's [multilingual-site guidance](https://developers.google.com/search/docs/specialty/international) explains how to manage different language versions. Google can determine page language algorithmically; explicit language structure and helpful, consistent content support the user experience but do not guarantee ranking.",
+    "For content planning and SEO support, see [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
+  ]
+},
+{
+  "id": "ga4-cross-domain-checkout-tracking",
+  "slug": "ga4-cross-domain-checkout-tracking",
+  "title": "GA4 Cross-Domain Tracking for Checkout: A Practical Guide",
+  "excerpt": "When checkout moves to another domain, GA4 can treat the journey as separate. Learn what cross-domain measurement is for and how to test it.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "Content & Video",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### Why checkout can appear as a separate visit\nA customer may browse your website, click a checkout or booking link, and continue on a different domain. Without a suitable measurement setup, the analytics journey may be split across domains. The reporting can show a new session or referral source where the business expected one continuous journey. This is a measurement problem to investigate—not proof that every payment provider causes the same issue.",
+    "### Confirm whether cross-domain measurement is needed\nCross-domain measurement is generally relevant when a customer journey moves between domains that the business controls or uses as part of one experience. If the checkout remains on the same domain, this setup may not be necessary. If the payment provider uses a separate domain or embedded flow, review the implementation and the provider's constraints before changing settings.",
+    "### Use the same measurement identity where supported\nCross-domain measurement relies on supported Google tag configuration that links domains and transfers measurement information through eligible links. Google's setup guidance explains the process and the linker parameter. Follow the current GA4 or Google tag interface rather than copying an outdated code snippet blindly.",
+    "### Configure the domains\nIn the Google Analytics property, review the cross-domain settings for the relevant domains. Enter the domain list carefully, using the domains that are part of the customer journey. If you use Google Tag Manager, check how the tag and Conversion Linker are configured. Avoid multiple overlapping implementations that decorate the same links differently.",
+    "### Test the journey before relying on reports\n1. Start on the main website using a test session.\n2. Click the actual checkout or booking link.\n3. Confirm the destination domain and the transition.\n4. Check whether the linker parameter is present where expected and whether it is handled correctly on the destination.\n5. Use Tag Assistant and analytics debug tools to verify the tags and events.\n6. Complete a test checkout or booking if the provider offers a safe test mode.\n7. Check Realtime or DebugView for the expected events and session behaviour.",
+    "### Watch for referral and session problems\nIf the checkout domain is not configured correctly, the analytics reports may show a referral from the payment provider, a separate user or session, or a broken funnel. Do not automatically add a provider to unwanted referrals without understanding the journey. Cross-domain measurement and unwanted-referral settings solve different problems and should be reviewed together when necessary.",
+    "### Keep the events consistent\nThe main website and checkout should use a consistent event plan. For ecommerce, confirm the expected events such as begin_checkout, purchase and the required transaction parameters are sent accurately. Do not fire purchase events on a button click that merely opens a payment page. Confirm the final success state and avoid duplicate transaction events.",
+    "### Consider privacy and consent\nCross-domain measurement does not override privacy requirements. Ensure the tags behave according to the consent settings and applicable rules. Do not send personal information in URLs or analytics event parameters. Test the journey with the consent state that real users experience.",
+    "### Common mistakes\n- Testing only a direct visit to the checkout, not the website-to-checkout journey.\n- Using a different measurement ID on the checkout without a plan.\n- Adding every payment-provider domain when only one is involved.\n- Treating a click on the checkout button as a purchase.\n- Forgetting to test the return or success page.\n- Making several tag changes at once without documenting them.",
+    "Google's [cross-domain measurement documentation](https://developers.google.com/tag-platform/devguides/cross-domain) explains how Google tags share first-party measurement information across related domains. Use the current GA4 Admin setup where available and test the complete journey.",
+    "For analytics and website implementation help, explore [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
+  ]
+},
+{
+  "id": "welcome-email-automation-small-business",
+  "slug": "welcome-email-automation-small-business",
+  "title": "Welcome Email Automation for Small Businesses: A 5-Email Flow",
+  "excerpt": "A welcome sequence can orient new subscribers and deliver useful information. Plan five messages around the subscriber's next steps rather than sending constant promotions.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "Content & Video",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### What a welcome sequence is for\nA welcome sequence is a series of emails triggered after a person subscribes or takes an eligible action. It can introduce the business, deliver a promised resource, explain how to use a service, answer common questions and invite the subscriber to a next step. It should not be a disguised series of unrelated promotions.",
+    "### Before building the automation\nUse a signup process that clearly explains what the subscriber will receive. Collect consent where required, keep the promise made on the form and make the unsubscribe path easy to find. Confirm that the automation excludes people who have unsubscribed or otherwise should not receive marketing messages.",
+    "### Email 1: Deliver the promise\nSend the resource, confirmation or information the person expected. Use a clear subject line and a concise message. If the subscriber joined for a guide, link to the guide prominently. Do not make the download difficult to find or add unrelated offers that obscure the main purpose.",
+    "### Email 2: Introduce the business and approach\nExplain what the business does, who it helps and what the subscriber can expect. Keep the message focused on useful information rather than a long founder story. If the business offers several services, introduce the relevant category instead of listing everything.",
+    "### Email 3: Answer a common problem\nUse a question or challenge that is genuinely relevant to the subscriber's interest. Provide a checklist, example, short tutorial or practical tip. Avoid unsupported claims or artificial urgency. A useful email can build trust without forcing a purchase.",
+    "### Email 4: Help the subscriber decide\nExplain the options, process, scope or next steps. If a service is involved, clarify what an enquiry or consultation means and what information the business needs. Link to a relevant page rather than a generic homepage if it helps the reader.",
+    "### Email 5: Invite a next step\nAsk the subscriber to take one action: read a resource, book a discussion, reply with a question or review an offer. The action should match the original signup intent. If the sequence is informational, do not abruptly switch to a high-pressure sales message.",
+    "### Choose the timing deliberately\nThe timing should reflect the subscriber's expectation and the usefulness of each message. A resource-delivery sequence may begin immediately, with later messages spaced so the person has time to use the content. Test timing based on engagement and unsubscribes rather than assuming one schedule works for every audience.",
+    "### Build and test the automation\n- Confirm the signup trigger and audience.\n- Write the five messages before turning the workflow on.\n- Check the subject, preview text, links and mobile layout.\n- Test the workflow using a real test subscription.\n- Confirm exclusions, unsubscribe handling and duplicate-entry rules.\n- Review opens, clicks, replies, unsubscribes and downstream enquiries where available.\n- Document how to pause or update the sequence.",
+    "### Use measurement carefully\nEmail opens can be affected by privacy features and should not be treated as exact evidence of attention. Clicks, replies, conversions and subscriber feedback may provide additional signals. A small sample may not support a firm conclusion. Change one important element at a time where practical.",
+    "### Keep the sequence useful over time\nReview the content when services, links or signup promises change. Remove outdated claims, update resource links and check that the workflow still delivers the promised information. Do not leave an automation running for years without testing it.",
+    "Mailchimp's [welcome automation guidance](https://mailchimp.com/help/create-automated-welcome-emails-mobile/) is one example of a platform-specific workflow; the exact steps vary by email tool. Follow your provider's current setup instructions and applicable consent rules.",
+    "For content and email marketing support, explore [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
+  ]
+},
+{
+  "id": "youtube-shorts-vs-long-form-business-strategy",
+  "slug": "youtube-shorts-vs-long-form-business-strategy",
+  "title": "YouTube Shorts vs Long-Form Videos: Which Should a Business Make?",
+  "excerpt": "Shorts and long videos serve different viewing situations. Choose formats based on the question, production capacity and next step you want viewers to take.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "Content & Video",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### Start with the job the video needs to do\nA video format should be chosen around the content goal. A Short may introduce a topic, demonstrate a quick tip or create a concise discovery moment. A longer video may explain a process, answer several questions or help a viewer evaluate a service. Neither format is automatically better for every business.",
+    "### When Shorts can help\nShorts are useful when the idea can be communicated quickly and visually. A small business might show a quick product detail, explain one common mistake, demonstrate a simple step or introduce a longer tutorial. The format is not a reason to publish repetitive clips or remove context that the viewer needs.",
+    "### When long-form video can help\nLonger videos can support detailed demonstrations, walkthroughs, interviews, tutorials, FAQs and comparisons. They give the creator more room to explain decisions and limitations. They may require more preparation, editing and audience attention, so choose topics that justify the length rather than stretching a short idea.",
+    "### Plan the viewer journey\nA Short and a long video can complement each other if the topic and next step are connected. A Short may introduce a problem and direct viewers to a related video, while the longer video provides the full explanation. YouTube offers a related-video feature for eligible Shorts; confirm the feature access and current rules in YouTube Studio.",
+    "### Keep the content original and useful\nDo not simply repost the same clip without adding meaningful context. Create the video around the audience's question, use accurate captions and keep the message clear. For a local service business, a useful video may explain a process, show an authentic demonstration or answer a common enquiry rather than repeatedly naming the city in every clip.",
+    "### Measure the formats differently\nReview the metrics available in YouTube Analytics, but compare videos with similar purposes and time periods. Shorts and longer videos may have different viewing behaviour and discovery patterns. Views alone do not reveal whether the viewer understood the content or became a customer. Consider watch behaviour, audience retention, clicks to related content, enquiries or other outcomes the business can measure.",
+    "### Choose a realistic production plan\nA business with limited production capacity may start with a few carefully planned videos rather than publish every day. Consider the time required for scripting, recording, editing, captions, thumbnails, publishing and responding to comments. A sustainable schedule is more useful than a plan that cannot be maintained.",
+    "### A format-selection checklist\n- Is the idea a single tip or a detailed explanation?\n- Does the viewer need context or multiple steps?\n- Can the point be demonstrated quickly?\n- Is the longer format justified by the topic?\n- Can a Short lead to a related video naturally?\n- Does the video contain a clear next step?\n- Can the team produce the format consistently?\n- What outcome will be reviewed after publication?",
+    "### A simple mixed-format workflow\nChoose one useful topic, outline the full explanation, then decide whether a Short can introduce a separate point or direct viewers to the longer video. Record the long-form version only if it provides value beyond the Short. Use captions, a clear title and an accurate description. Keep the Short and long-form video linked where the platform's features allow.",
+    "YouTube's [related-video feature for Shorts](https://support.google.com/youtube/answer/14075157?hl=en) can help connect viewers to another video on the channel, subject to eligibility. Feature availability and analytics definitions may change.",
+    "For YouTube channel planning and management support, explore [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
+  ]
+},
+{
+  "id": "whatsapp-click-tracking-website",
+  "slug": "whatsapp-click-tracking-website",
+  "title": "How to Track WhatsApp Clicks on a Website Without Miscounting Leads",
+  "excerpt": "A WhatsApp link click is an intent signal, not a verified message or lead. Learn how to measure clicks and report the limitation clearly.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "Content & Video",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### What a WhatsApp click actually measures\nA website visitor may click a WhatsApp link and open the app or browser handoff. That click does not prove the person sent a message, received a reply or became a customer. Use an event name and report label that describe the interaction accurately, such as whatsapp_click, rather than treating every click as a confirmed lead.",
+    "### Decide where the event should fire\nIf the website has a WhatsApp button, identify the actual link and the event trigger. The event should fire when the visitor clicks the intended link—not on every page view or when the button is merely displayed. Check whether the link opens a new tab, app handoff or embedded component, because those behaviours can affect testing.",
+    "### Define a simple event structure\nA GA4 custom event can record the interaction with useful non-sensitive parameters. For example, you may record the page location or button placement such as header, footer or service page. Avoid sending phone numbers, message text or other personal information in analytics parameters. Use values that help analysis without collecting unnecessary details.",
+    "### Implement using a tag or event setup\nGoogle Tag Manager or a supported Google tag implementation can send an event when the click trigger matches the WhatsApp link. Use a clear trigger condition that identifies the link reliably. If several WhatsApp buttons exist, consider a parameter that distinguishes the placement. Avoid overly broad triggers that fire for unrelated links.",
+    "### Test the event\n1. Open the website in a test browser.\n2. Start Tag Assistant or your analytics debugging tool.\n3. Click the WhatsApp button in the intended placement.\n4. Confirm the event fires once.\n5. Check that the event name and parameters are correct.\n6. Confirm the link opens the expected destination.\n7. Test on mobile, where WhatsApp app behaviour may differ.\n8. Check the event in Realtime or DebugView after processing.",
+    "### Do not count the click as a qualified lead by default\nA click is useful as an intermediate signal, but it can include accidental taps, abandoned handoffs or people who never send a message. If the business can record actual enquiries in a CRM or manual log, compare click events with message outcomes. Use the click event as a Primary conversion only if it matches the campaign's real optimisation goal and the limitations are understood; otherwise, keep it as a supporting event.",
+    "### Avoid duplicate tracking\nIf a button has a built-in event, a GTM click trigger and a custom script, the same interaction may be recorded more than once. Test the event with a single click and review the implementation before enabling multiple tags. Remove duplicate triggers and document the source of the event.",
+    "### Create a small reporting table\nTrack page, placement, WhatsApp clicks, confirmed conversations where available, qualified enquiries and next action. Compare similar periods and avoid attributing every sale to a click without evidence. If the business cannot verify the conversation, label the metric accordingly.",
+    "### Keep privacy in mind\nDo not place personal message content or sensitive information into analytics. Review consent settings and applicable privacy requirements. A tracking implementation should not interfere with the actual WhatsApp handoff or make the visitor's experience harder.",
+    "Google's [event documentation](https://developers.google.com/tag-platform/gtagjs/configure) explains how to send event data, and its [conversion measurement guidance](https://developers.google.com/tag-platform/devguides/conversions) covers event-based conversion setup. Use the current tag interface and verify the event with debugging tools.",
+    "For website measurement and development support, see [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
+  ]
+}
 ];
