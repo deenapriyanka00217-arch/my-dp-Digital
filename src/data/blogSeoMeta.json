@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "google-ads-landing-page-checklist": {
+    "title": "Google Ads Landing Page Checklist | My DP Digital",
+    "description": "Use this 12-point checklist to align Google Ads, keywords, mobile landing pages, forms, trust signals and conversion tracking before launch."
+  },
+  "google-ads-call-conversion-tracking-guide": {
+    "title": "Google Ads Call Conversion Tracking Guide",
+    "description": "Separate phone clicks from real calls, set up call conversion measurement and review call quality for Google Ads campaigns."
+  },
+  "meta-ads-audience-testing-small-business": {
+    "title": "Meta Ads Audience Testing for Small Businesses",
+    "description": "Plan Meta Ads audience tests with clear hypotheses, comparable budgets, overlap checks and lead-quality reviews instead of changing everything at once."
+  },
+  "google-business-profile-performance-report": {
+    "title": "Google Business Profile Performance Report Guide",
+    "description": "Learn how to review Business Profile views, calls, website clicks and directions, and turn the metrics into a practical monthly action plan."
+  },
+  "wordpress-contact-form-spam-prevention": {
+    "title": "WordPress Contact Form Spam Prevention Guide",
+    "description": "Reduce WordPress contact-form spam with layered protection, careful plugin choices, rate limits, form validation and testing that preserves real enquiries."
+  },
+  "tamil-seo-business-website-content": {
+    "title": "Tamil SEO for Business Websites | My DP Digital",
+    "description": "Choose Tamil, English or Tanglish website content based on your customers, page purpose, language structure and search intent—not keyword stuffing."
+  },
+  "ga4-cross-domain-checkout-tracking": {
+    "title": "GA4 Cross-Domain Checkout Tracking Guide",
+    "description": "Understand GA4 cross-domain measurement for checkout or booking domains, configuration, test steps and common attribution issues."
+  },
+  "welcome-email-automation-small-business": {
+    "title": "Welcome Email Automation for Small Businesses",
+    "description": "Plan a permission-based welcome email sequence with five useful messages, clear timing, measurement and an unsubscribe path."
+  },
+  "youtube-shorts-vs-long-form-business-strategy": {
+    "title": "YouTube Shorts vs Long-Form for Businesses",
+    "description": "Compare Shorts and long-form YouTube videos by purpose, production, audience intent, measurement and how to connect formats."
+  },
+  "whatsapp-click-tracking-website": {
+    "title": "Track WhatsApp Clicks on Your Website | My DP Digital",
+    "description": "Measure website WhatsApp button clicks with a GA4 event, test the tag and keep click counts separate from confirmed conversations or sales."
   }
 }
