@@ -1504,25 +1504,25 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 
 {
-  "id": "google-ads-landing-page-checklist",
-  "slug": "google-ads-landing-page-checklist",
-  "title": "Google Ads Landing Page Checklist: 12 Checks Before You Launch",
-  "excerpt": "Before spending on Google Ads, check that the landing page matches the search, works on mobile, answers objections and measures the action you want.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  id: "google-ads-landing-page-checklist",
+  slug: "google-ads-landing-page-checklist",
+  title: "Google Ads Landing Page Checklist: 12 Checks Before You Launch",
+  excerpt: "Before spending on Google Ads, check that the landing page matches the search, works on mobile, answers objections and measures the action you want.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Paid Ads",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "Paid Ads",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### 1. Match the page to the search intent\nA person searching for a specific service should land on a page that immediately explains that service—not a generic homepage with a long navigation menu. Keep the promise made in the ad, keyword theme and page heading aligned. If the ad promotes a consultation, the page should make that consultation the obvious next step.",
     "### 2. Put the main answer above the fold\nThe first screen should tell a visitor what you offer, who it is for and what to do next. A clear heading, short explanation and primary CTA are usually more useful than a large animated banner. Visitors should not need to scroll to discover the service or the enquiry method.",
     "### 3. Use one primary conversion action\nChoose the action that matters for the campaign: submit an enquiry, book a meeting, call, purchase or request a quote. Supporting links can remain, but avoid several competing buttons that all lead to different destinations. Make the main action visible and repeat it where the page naturally supports it.",
@@ -1541,25 +1541,25 @@ export const BLOG_POSTS: BlogPost[] = [
   ]
 },
 {
-  "id": "google-ads-call-conversion-tracking-guide",
-  "slug": "google-ads-call-conversion-tracking-guide",
-  "title": "Google Ads Call Conversion Tracking: Calls, Clicks and Qualified Leads",
-  "excerpt": "A click on a phone number is not the same as a completed conversation. Learn the different call measurement options and how to test them.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  id: "google-ads-call-conversion-tracking-guide",
+  slug: "google-ads-call-conversion-tracking-guide",
+  title: "Google Ads Call Conversion Tracking: Calls, Clicks and Qualified Leads",
+  excerpt: "A click on a phone number is not the same as a completed conversation. Learn the different call measurement options and how to test them.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Paid Ads",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "Paid Ads",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### First, separate the three actions\nA visitor can tap a phone link, start a call, or complete a conversation that becomes a qualified enquiry. These are different events. A website click on a tel: link can be measured as an interaction, but it does not prove the call connected or lasted long enough to be useful. Keep this distinction clear when reporting results.",
     "### Calls from ads\nGoogle Ads can report calls associated with eligible ad formats and call assets when call reporting is available and configured. The account may use a minimum call duration to count a call as a conversion. Review the current campaign and conversion-action settings before assuming that every call is included.",
     "### Calls from a website\nWebsite call measurement is a separate setup. Depending on eligibility, country availability, tag implementation and the supported phone-number placement, Google may use forwarding-number functionality to attribute calls that originate after an ad click. Confirm the current requirements in the account and Google's documentation before relying on it. Do not assume an image, custom button or untagged number will be tracked.",
@@ -1574,25 +1574,25 @@ export const BLOG_POSTS: BlogPost[] = [
   ]
 },
 {
-  "id": "meta-ads-audience-testing-small-business",
-  "slug": "meta-ads-audience-testing-small-business",
-  "title": "Meta Ads Audience Testing: A Practical Framework for Small Businesses",
-  "excerpt": "Test audience ideas in a structured way: define the hypothesis, keep the offer and creative comparable, review overlap and measure lead quality.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  id: "meta-ads-audience-testing-small-business",
+  slug: "meta-ads-audience-testing-small-business",
+  title: "Meta Ads Audience Testing: A Practical Framework for Small Businesses",
+  excerpt: "Test audience ideas in a structured way: define the hypothesis, keep the offer and creative comparable, review overlap and measure lead quality.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Paid Ads",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "Paid Ads",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### Start with a hypothesis\nAudience testing should answer a business question. For example, will a broad local audience respond to a service offer, or is a more defined interest or customer segment worth testing? Write the hypothesis before creating ad sets. If the test has no decision to make, it can turn into a collection of audiences that consume budget without learning.",
     "### Choose audience groups that are meaningfully different\nUse a small number of distinct audience ideas rather than many tiny variations. Depending on the business and account settings, the test may compare broad targeting, a relevant interest hypothesis, a customer or engagement audience, or a geography-based segment. Available targeting options change, and some categories have restrictions. Do not assume an interest or demographic option will be available.",
     "### Keep the test comparable\nIf the audience is the variable, keep the offer, creative, destination and conversion goal as consistent as practical. Otherwise, it becomes difficult to know whether a difference was caused by the audience or by another change. When budget is limited, too many ad sets can make each test slow and noisy.",
@@ -1607,25 +1607,25 @@ export const BLOG_POSTS: BlogPost[] = [
   ]
 },
 {
-  "id": "google-business-profile-performance-report",
-  "slug": "google-business-profile-performance-report",
-  "title": "Google Business Profile Performance: What to Review in a Monthly Report",
-  "excerpt": "Use Google Business Profile performance data to understand how customers interact with your listing. Separate clicks and views from actual rankings or sales.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  id: "google-business-profile-performance-report",
+  slug: "google-business-profile-performance-report",
+  title: "Google Business Profile Performance: What to Review in a Monthly Report",
+  excerpt: "Use Google Business Profile performance data to understand how customers interact with your listing. Separate clicks and views from actual rankings or sales.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "SEO",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "SEO",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### Find the Performance report\nBusiness Profile owners can review Performance in the profile experience on Google Search or in the Google Maps app, depending on the current interface. Choose a consistent reporting period and save the date range so month-to-month comparisons are meaningful. The layout and available metrics can change.",
     "### Understand what each metric means\nProfile views indicate views of the profile under Google's counting rules; they are not the same as impressions across all Google surfaces. Calls generally reflect clicks on the call button, not a verified completed conversation. Website clicks count clicks on the website link. Direction requests represent requests for directions, not confirmed visits. Interpret each metric according to its definition.",
     "### Use a consistent monthly comparison\nCompare a similar period rather than mixing partial weeks with full months. Note seasonal events, holidays, opening hours, promotions or other changes that may affect activity. A month with fewer calls may have fewer business days or a different customer mix. Do not conclude that a listing has lost ranking from a change in a single metric.",
@@ -1640,25 +1640,25 @@ export const BLOG_POSTS: BlogPost[] = [
   ]
 },
 {
-  "id": "wordpress-contact-form-spam-prevention",
-  "slug": "wordpress-contact-form-spam-prevention",
-  "title": "WordPress Contact Form Spam Prevention: 8 Practical Layers",
-  "excerpt": "Use layered spam controls for WordPress forms and test them carefully so protection does not block genuine customer enquiries.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  id: "wordpress-contact-form-spam-prevention",
+  slug: "wordpress-contact-form-spam-prevention",
+  title: "WordPress Contact Form Spam Prevention: 8 Practical Layers",
+  excerpt: "Use layered spam controls for WordPress forms and test them carefully so protection does not block genuine customer enquiries.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Web Design",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "Web Design",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### 1. Keep the form simple and purposeful\nA form with unnecessary fields can create more friction and provide more opportunities for automated submissions. Keep required fields limited to what the business needs to respond. Remove unused forms and check that each form has a clear purpose and destination.",
     "### 2. Use a honeypot carefully\nA honeypot is a hidden field that ordinary visitors should not fill in but some automated bots may complete. It can help catch basic automated submissions. Test it on the actual form and do not rely on it as the only protection, because more sophisticated bots may behave differently.",
     "### 3. Add a submission-time or rate-limit check\nVery rapid submissions or repeated requests can be suspicious. A form plugin, server-side rule or security layer may offer rate limiting or timing checks. Use sensible limits that do not punish real users on slower connections, and verify that the implementation works with the form's AJAX or multi-step behaviour.",
@@ -1675,25 +1675,25 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 
   {
-    "id": "tamil-seo-business-website-content",
-  "slug": "tamil-seo-business-website-content",
-  "title": "Tamil SEO for Business Websites: Tamil, English or Tanglish?",
-  "excerpt": "A Tamil-speaking audience does not mean every page must mix languages. Choose a language strategy that helps customers understand and find your business.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    id: "tamil-seo-business-website-content",
+  slug: "tamil-seo-business-website-content",
+  title: "Tamil SEO for Business Websites: Tamil, English or Tanglish?",
+  excerpt: "A Tamil-speaking audience does not mean every page must mix languages. Choose a language strategy that helps customers understand and find your business.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "SEO",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "SEO",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### Start with your customer, not a language trend\nIf your business serves Tamil-speaking customers, decide what language helps them understand the service, compare options and enquire. A customer may search in Tamil, English or a mixed phrase such as Tanglish. That does not mean every paragraph, heading or URL should combine all three. The content should reflect the way your audience actually communicates and the page's purpose.",
     "### Choose one primary language for each page\nA page should have a clear language and a consistent experience. Mixing Tamil and English can be natural in certain contexts, especially for technical terms or familiar business phrases, but excessive switching can make the content difficult to read. Decide whether a page is primarily Tamil, English or a deliberate bilingual resource before writing it.",
     "### Use Tamil when it helps explain the service\nTamil content may be useful for local services, tuition, healthcare, retail and other businesses whose customers prefer to read or ask questions in Tamil. Translate the meaning, not just the words. Use familiar terms, examples and calls to action. Ask a native reader to check the copy if the writer is not confident in the language.",
@@ -1709,25 +1709,25 @@ export const BLOG_POSTS: BlogPost[] = [
   ]
 },
 {
-  "id": "ga4-cross-domain-checkout-tracking",
-  "slug": "ga4-cross-domain-checkout-tracking",
-  "title": "GA4 Cross-Domain Tracking for Checkout: A Practical Guide",
-  "excerpt": "When checkout moves to another domain, GA4 can treat the journey as separate. Learn what cross-domain measurement is for and how to test it.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  id: "ga4-cross-domain-checkout-tracking",
+  slug: "ga4-cross-domain-checkout-tracking",
+  title: "GA4 Cross-Domain Tracking for Checkout: A Practical Guide",
+  excerpt: "When checkout moves to another domain, GA4 can treat the journey as separate. Learn what cross-domain measurement is for and how to test it.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Content & Video",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "Content & Video",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### Why checkout can appear as a separate visit\nA customer may browse your website, click a checkout or booking link, and continue on a different domain. Without a suitable measurement setup, the analytics journey may be split across domains. The reporting can show a new session or referral source where the business expected one continuous journey. This is a measurement problem to investigate—not proof that every payment provider causes the same issue.",
     "### Confirm whether cross-domain measurement is needed\nCross-domain measurement is generally relevant when a customer journey moves between domains that the business controls or uses as part of one experience. If the checkout remains on the same domain, this setup may not be necessary. If the payment provider uses a separate domain or embedded flow, review the implementation and the provider's constraints before changing settings.",
     "### Use the same measurement identity where supported\nCross-domain measurement relies on supported Google tag configuration that links domains and transfers measurement information through eligible links. Google's setup guidance explains the process and the linker parameter. Follow the current GA4 or Google tag interface rather than copying an outdated code snippet blindly.",
@@ -1742,25 +1742,25 @@ export const BLOG_POSTS: BlogPost[] = [
   ]
 },
 {
-  "id": "welcome-email-automation-small-business",
-  "slug": "welcome-email-automation-small-business",
-  "title": "Welcome Email Automation for Small Businesses: A 5-Email Flow",
-  "excerpt": "A welcome sequence can orient new subscribers and deliver useful information. Plan five messages around the subscriber's next steps rather than sending constant promotions.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  id: "welcome-email-automation-small-business",
+  slug: "welcome-email-automation-small-business",
+  title: "Welcome Email Automation for Small Businesses: A 5-Email Flow",
+  excerpt: "A welcome sequence can orient new subscribers and deliver useful information. Plan five messages around the subscriber's next steps rather than sending constant promotions.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Content & Video",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "Content & Video",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### What a welcome sequence is for\nA welcome sequence is a series of emails triggered after a person subscribes or takes an eligible action. It can introduce the business, deliver a promised resource, explain how to use a service, answer common questions and invite the subscriber to a next step. It should not be a disguised series of unrelated promotions.",
     "### Before building the automation\nUse a signup process that clearly explains what the subscriber will receive. Collect consent where required, keep the promise made on the form and make the unsubscribe path easy to find. Confirm that the automation excludes people who have unsubscribed or otherwise should not receive marketing messages.",
     "### Email 1: Deliver the promise\nSend the resource, confirmation or information the person expected. Use a clear subject line and a concise message. If the subscriber joined for a guide, link to the guide prominently. Do not make the download difficult to find or add unrelated offers that obscure the main purpose.",
@@ -1777,25 +1777,25 @@ export const BLOG_POSTS: BlogPost[] = [
   ]
 },
 {
-  "id": "youtube-shorts-vs-long-form-business-strategy",
-  "slug": "youtube-shorts-vs-long-form-business-strategy",
-  "title": "YouTube Shorts vs Long-Form Videos: Which Should a Business Make?",
-  "excerpt": "Shorts and long videos serve different viewing situations. Choose formats based on the question, production capacity and next step you want viewers to take.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  id: "youtube-shorts-vs-long-form-business-strategy",
+  slug: "youtube-shorts-vs-long-form-business-strategy",
+  title: "YouTube Shorts vs Long-Form Videos: Which Should a Business Make?",
+  excerpt: "Shorts and long videos serve different viewing situations. Choose formats based on the question, production capacity and next step you want viewers to take.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Content & Video",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "Content & Video",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### Start with the job the video needs to do\nA video format should be chosen around the content goal. A Short may introduce a topic, demonstrate a quick tip or create a concise discovery moment. A longer video may explain a process, answer several questions or help a viewer evaluate a service. Neither format is automatically better for every business.",
     "### When Shorts can help\nShorts are useful when the idea can be communicated quickly and visually. A small business might show a quick product detail, explain one common mistake, demonstrate a simple step or introduce a longer tutorial. The format is not a reason to publish repetitive clips or remove context that the viewer needs.",
     "### When long-form video can help\nLonger videos can support detailed demonstrations, walkthroughs, interviews, tutorials, FAQs and comparisons. They give the creator more room to explain decisions and limitations. They may require more preparation, editing and audience attention, so choose topics that justify the length rather than stretching a short idea.",
@@ -1810,25 +1810,25 @@ export const BLOG_POSTS: BlogPost[] = [
   ]
 },
 {
-  "id": "whatsapp-click-tracking-website",
-  "slug": "whatsapp-click-tracking-website",
-  "title": "How to Track WhatsApp Clicks on a Website Without Miscounting Leads",
-  "excerpt": "A WhatsApp link click is an intent signal, not a verified message or lead. Learn how to measure clicks and report the limitation clearly.",
-  "date": "November 24, 2026",
-  "author": {
-    "name": "Priyanka D.",
-    "role": "Founder, My DP Digital",
-    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  id: "whatsapp-click-tracking-website",
+  slug: "whatsapp-click-tracking-website",
+  title: "How to Track WhatsApp Clicks on a Website Without Miscounting Leads",
+  excerpt: "A WhatsApp link click is an intent signal, not a verified message or lead. Learn how to measure clicks and report the limitation clearly.",
+  date: "November 24, 2026",
+  author: {
+    name: "Priyanka D.",
+    role: "Founder, My DP Digital",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
   },
-  "category": "Content & Video",
-  "readingTime": "4 min read",
-  "commentsCount": 0,
-  "tags": [
+  category: "Content & Video",
+  readingTime: "4 min read",
+  commentsCount: 0,
+  tags: [
     "SmallBusiness",
     "DigitalMarketing"
   ],
-  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
-  "content": [
+  featuredImgColor: "from-[#FFB700] to-[#FF2E9A]",
+  content: [
     "### What a WhatsApp click actually measures\nA website visitor may click a WhatsApp link and open the app or browser handoff. That click does not prove the person sent a message, received a reply or became a customer. Use an event name and report label that describe the interaction accurately, such as whatsapp_click, rather than treating every click as a confirmed lead.",
     "### Decide where the event should fire\nIf the website has a WhatsApp button, identify the actual link and the event trigger. The event should fire when the visitor clicks the intended link—not on every page view or when the button is merely displayed. Check whether the link opens a new tab, app handoff or embedded component, because those behaviours can affect testing.",
     "### Define a simple event structure\nA GA4 custom event can record the interaction with useful non-sensitive parameters. For example, you may record the page location or button placement such as header, footer or service page. Avoid sending phone numbers, message text or other personal information in analytics parameters. Use values that help analysis without collecting unnecessary details.",
