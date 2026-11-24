@@ -1502,4 +1502,175 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you're currently paying for social media management and aren't sure what you're actually getting for it, reach us at +91 81483 20217 or deenapriyanka00217@gmail.com for an honest comparison.",
     ],
   },
+
+{
+  "id": "google-ads-landing-page-checklist",
+  "slug": "google-ads-landing-page-checklist",
+  "title": "Google Ads Landing Page Checklist: 12 Checks Before You Launch",
+  "excerpt": "Before spending on Google Ads, check that the landing page matches the search, works on mobile, answers objections and measures the action you want.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "Paid Ads",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### 1. Match the page to the search intent\nA person searching for a specific service should land on a page that immediately explains that service—not a generic homepage with a long navigation menu. Keep the promise made in the ad, keyword theme and page heading aligned. If the ad promotes a consultation, the page should make that consultation the obvious next step.",
+    "### 2. Put the main answer above the fold\nThe first screen should tell a visitor what you offer, who it is for and what to do next. A clear heading, short explanation and primary CTA are usually more useful than a large animated banner. Visitors should not need to scroll to discover the service or the enquiry method.",
+    "### 3. Use one primary conversion action\nChoose the action that matters for the campaign: submit an enquiry, book a meeting, call, purchase or request a quote. Supporting links can remain, but avoid several competing buttons that all lead to different destinations. Make the main action visible and repeat it where the page naturally supports it.",
+    "### 4. Check the mobile experience\nPreview the page on a real phone as well as a desktop browser. Check text size, button spacing, sticky elements, image cropping, form usability and whether a visitor can reach the CTA without awkward zooming. A page that is technically responsive can still be difficult to use.",
+    "### 5. Make the form proportionate\nAsk only for information that helps the next step. A first enquiry might need a name, phone or email, and a brief requirement—not a long questionnaire. Explain what happens after submission. If the form has multiple steps, test every step and the success message.",
+    "### 6. Remove distractions and broken paths\nReview menu links, pop-ups, social links, footer links and exit prompts. Keep the page focused, but do not hide essential business information. A broken CTA, form error or confusing navigation can waste a paid visit even if the ad is relevant.",
+    "### 7. Show genuine trust information\nInclude real business contact details, service scope, relevant process information and authentic evidence that can be substantiated. Use approved testimonials or project examples only. Do not invent client logos, review ratings, certifications, statistics or guarantees.",
+    "### 8. Explain the offer clearly\nDescribe what is included, what is not included and any conditions that affect the service. If pricing is variable, explain the factors that influence a quote. Clear scope reduces enquiries that are mismatched with the actual offer.",
+    "### 9. Check page speed and stability\nCompress images, avoid unnecessary scripts and test the page on a slower connection. Do not assume a single laboratory score guarantees a good experience. Look for obvious delays, layout shifts, broken images and interactions that do not respond.",
+    "### 10. Verify conversion measurement\nTest the real form submission, call button, booking or checkout. Confirm the event fires once for the intended action—not on every page view or button click that never completes. Use Tag Assistant or the relevant analytics debug tools to check the implementation.",
+    "### 11. Confirm privacy and contact details\nReview the privacy notice, consent requirements where applicable, and the handling of information submitted through the form. Check that the business name, phone number and email are consistent and correct.",
+    "### 12. Revisit the page after launch\nUse actual campaign data to identify friction. Search terms, device breakdowns, conversion quality and page analytics can reveal different problems. Change one meaningful element at a time where practical, record the hypothesis and avoid judging a test from a tiny sample.",
+    "### A final pre-launch test\n- Open the page from the actual ad destination URL.\n- Test the page on mobile and desktop.\n- Submit a test enquiry and confirm the thank-you state.\n- Click phone and WhatsApp links, if present.\n- Check the page promise against the ad and keyword.\n- Confirm tracking, privacy information and contact details.\n- Ask another person to complete the intended action without guidance.",
+    "Google's [guidance on optimising ads and landing pages](https://support.google.com/google-ads/answer/6238826?hl=en) also emphasises relevance, mobile usability, useful content and making the desired action easy to complete. The checklist is a quality-control tool, not a promise of a particular conversion rate.",
+    "For help creating a focused campaign page, explore [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
+  ]
+},
+{
+  "id": "google-ads-call-conversion-tracking-guide",
+  "slug": "google-ads-call-conversion-tracking-guide",
+  "title": "Google Ads Call Conversion Tracking: Calls, Clicks and Qualified Leads",
+  "excerpt": "A click on a phone number is not the same as a completed conversation. Learn the different call measurement options and how to test them.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "Paid Ads",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### First, separate the three actions\nA visitor can tap a phone link, start a call, or complete a conversation that becomes a qualified enquiry. These are different events. A website click on a tel: link can be measured as an interaction, but it does not prove the call connected or lasted long enough to be useful. Keep this distinction clear when reporting results.",
+    "### Calls from ads\nGoogle Ads can report calls associated with eligible ad formats and call assets when call reporting is available and configured. The account may use a minimum call duration to count a call as a conversion. Review the current campaign and conversion-action settings before assuming that every call is included.",
+    "### Calls from a website\nWebsite call measurement is a separate setup. Depending on eligibility, country availability, tag implementation and the supported phone-number placement, Google may use forwarding-number functionality to attribute calls that originate after an ad click. Confirm the current requirements in the account and Google's documentation before relying on it. Do not assume an image, custom button or untagged number will be tracked.",
+    "### Click-to-call events\nIf the site simply records a tap on a phone link, label it accurately as a phone-number click. This is useful as an intermediate signal, especially when real-call measurement is unavailable, but it should not be presented as a completed call. A click event can include visitors who cancel immediately or who never reach the business.",
+    "### Choose the action you want to optimise\nFor a service business, a qualified call may be more valuable than a phone click. If the available setup measures only clicks, use that limitation in your reporting and avoid treating it as a sales outcome. Where actual call duration or call quality can be measured reliably, define the criteria and review them consistently.",
+    "### Set up a measurement plan\n1. List the phone actions on the website and in ads.\n2. Decide which are click events and which represent actual calls.\n3. Identify the Google Ads conversion actions that should be Primary for bidding and which should be Secondary for observation.\n4. Check whether call reporting and website call measurement are available for your account and country.\n5. Configure the tag or conversion action using Google's current instructions.\n6. Test the number, link and event on a mobile device.\n7. Confirm the conversion appears in the correct reporting column after processing.\n8. Record the minimum duration or other qualification rules that apply.",
+    "### Avoid double counting\nA single visitor may tap a number and then complete a call. If both events are treated as Primary conversions, bidding and reporting can count two actions for one lead journey. Decide whether the click is a supporting event or a conversion, and use a consistent event structure. If you import calls from a CRM, review how the imported event interacts with existing call actions.",
+    "### Review quality, not only volume\nTrack the source, campaign, date, call outcome and qualification where your privacy and consent practices permit. A small number of genuine quote requests may be more useful than a larger number of accidental or irrelevant calls. Use a simple outcome label such as qualified, unqualified, existing customer or missed call if your team can record it consistently.",
+    "### Troubleshooting checklist\n- Is the phone number a clickable tel: link where expected?\n- Does the tag or call action fire only on the intended event?\n- Is the conversion action included in the correct reporting column?\n- Are duplicate click and call actions being counted?\n- Does the campaign use the correct primary goal?\n- Is the conversion window and duration threshold appropriate?\n- Has the event been tested on mobile?\n- Does the account have access to the call-measurement feature you intend to use?",
+    "Google's [phone-call conversion documentation](https://support.google.com/google-ads/answer/6275629?hl=en) explains supported call-conversion paths and their requirements. Availability and functionality can vary; use the current account interface rather than assuming every option is supported.",
+    "For campaign tracking help, review [My DP Digital's services](https://www.mydpdigital.in/services) or [send an enquiry](https://www.mydpdigital.in/contact)."
+  ]
+},
+{
+  "id": "meta-ads-audience-testing-small-business",
+  "slug": "meta-ads-audience-testing-small-business",
+  "title": "Meta Ads Audience Testing: A Practical Framework for Small Businesses",
+  "excerpt": "Test audience ideas in a structured way: define the hypothesis, keep the offer and creative comparable, review overlap and measure lead quality.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "Paid Ads",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### Start with a hypothesis\nAudience testing should answer a business question. For example, will a broad local audience respond to a service offer, or is a more defined interest or customer segment worth testing? Write the hypothesis before creating ad sets. If the test has no decision to make, it can turn into a collection of audiences that consume budget without learning.",
+    "### Choose audience groups that are meaningfully different\nUse a small number of distinct audience ideas rather than many tiny variations. Depending on the business and account settings, the test may compare broad targeting, a relevant interest hypothesis, a customer or engagement audience, or a geography-based segment. Available targeting options change, and some categories have restrictions. Do not assume an interest or demographic option will be available.",
+    "### Keep the test comparable\nIf the audience is the variable, keep the offer, creative, destination and conversion goal as consistent as practical. Otherwise, it becomes difficult to know whether a difference was caused by the audience or by another change. When budget is limited, too many ad sets can make each test slow and noisy.",
+    "### Check overlap and eligibility\nTwo audience groups may contain many of the same people. Overlap can make a comparison less independent, especially when the audience definitions are broad. Review the structure, exclusions and eligibility rules before launch. If the groups cannot be separated reliably, treat the result as a directional comparison rather than a controlled experiment.",
+    "### Decide how much budget and time the test needs\nThe budget should be realistic for the conversion action and the expected volume. A test that receives only a few impressions or leads may not support a confident decision. Do not invent a universal number of days or leads that guarantees a winner. Set a review date, but also define what would make the evidence sufficient to continue, pause or refine.",
+    "### Use the same conversion definition\nIf one audience is optimised for form submissions and another for a different action, the results cannot be compared fairly. Use the same goal and ensure tracking is working. If you are using lead forms, compare the fields and follow-up process. If leads arrive through a landing page, check the form and confirmation path.",
+    "### Measure lead quality alongside cost\nA low-cost lead is not necessarily a good lead. Review how many enquiries are relevant, contactable, within the service area and able to buy. If your team can, record the qualification outcome. Use a simple table with spend, leads, cost per lead, qualified leads, qualified-lead rate and cost per qualified lead. The last two columns may be more useful than cost per lead alone.",
+    "### Avoid declaring a winner too early\nResults can fluctuate with delivery, auction conditions, timing and the size of the sample. If the difference is small or the volume is low, keep the decision provisional. A test is useful when it informs the next action, not when it produces a winner label from a handful of events.",
+    "### A simple testing workflow\n1. Write the business question and hypothesis.\n2. Choose two or three audience concepts that are meaningfully different.\n3. Use one offer, one conversion goal and comparable creative.\n4. Check targeting restrictions, overlap and exclusions.\n5. Set the budget, duration and decision criteria.\n6. Launch without making unrelated changes.\n7. Review delivery, conversion volume and lead quality.\n8. Record what you learned and the next test.",
+    "Meta's advertising tools and policies evolve, so confirm current options in Ads Manager. The principle of testing one meaningful variable and keeping other conditions comparable is more important than using a particular audience label.",
+    "For help planning or reviewing Meta Ads campaigns, see [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
+  ]
+},
+{
+  "id": "google-business-profile-performance-report",
+  "slug": "google-business-profile-performance-report",
+  "title": "Google Business Profile Performance: What to Review in a Monthly Report",
+  "excerpt": "Use Google Business Profile performance data to understand how customers interact with your listing. Separate clicks and views from actual rankings or sales.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "SEO",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### Find the Performance report\nBusiness Profile owners can review Performance in the profile experience on Google Search or in the Google Maps app, depending on the current interface. Choose a consistent reporting period and save the date range so month-to-month comparisons are meaningful. The layout and available metrics can change.",
+    "### Understand what each metric means\nProfile views indicate views of the profile under Google's counting rules; they are not the same as impressions across all Google surfaces. Calls generally reflect clicks on the call button, not a verified completed conversation. Website clicks count clicks on the website link. Direction requests represent requests for directions, not confirmed visits. Interpret each metric according to its definition.",
+    "### Use a consistent monthly comparison\nCompare a similar period rather than mixing partial weeks with full months. Note seasonal events, holidays, opening hours, promotions or other changes that may affect activity. A month with fewer calls may have fewer business days or a different customer mix. Do not conclude that a listing has lost ranking from a change in a single metric.",
+    "### Review website clicks separately\nUse tagged links where appropriate and privacy-safe analytics to understand what visitors do after they reach your website. Business Profile website clicks and GA4 sessions may not match exactly because of timing, consent, measurement differences and how the tools count activity. The two reports answer different questions.",
+    "### Examine calls and direction requests\nIf the profile reports call-button clicks, review whether the business actually received the calls where your phone system can confirm it. For directions, consider whether the business is a destination customers visit in person. A service-area business may have a different lead journey and should not treat directions as the main success metric.",
+    "### Compare profile activity with business outcomes\nA monthly report should include the profile metrics alongside enquiries, bookings, sales or visits that the business can reliably record. Avoid claiming that every profile interaction caused a sale. If attribution is imperfect, state that clearly and use the report as a directional signal.",
+    "### Create a practical action list\n- Check whether the profile's business information is accurate.\n- Confirm the phone, website and opening hours.\n- Review new customer questions and genuine feedback.\n- Check whether the website destination matches the business's current offer.\n- Add useful photos or updates when they reflect real activity.\n- Compare profile activity with enquiry and sales records.\n- Note any measurement gaps that need to be fixed.",
+    "### Keep rankings separate from performance\nProfile activity is not a local ranking position. Google Business Profile performance does not show an exact ranking for every searcher, location or device. If the business wants to track Maps or local-pack visibility across neighbourhoods, use a dedicated location-grid measurement source and label it separately from profile interactions.",
+    "### Build a one-page monthly report\nUse a table with the reporting period, views, call-button clicks, website clicks, direction requests, bookings or other available metrics, confirmed enquiries and actions for next month. Include notes about data gaps and changes made. The report should help the owner make decisions rather than merely present a list of numbers.",
+    "Google's [Business Profile performance help](https://support.google.com/business/answer/9918094?hl=en) explains the available metrics and how to access the report. The definitions and availability may differ by profile and interface.",
+    "For local SEO support, see [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
+  ]
+},
+{
+  "id": "wordpress-contact-form-spam-prevention",
+  "slug": "wordpress-contact-form-spam-prevention",
+  "title": "WordPress Contact Form Spam Prevention: 8 Practical Layers",
+  "excerpt": "Use layered spam controls for WordPress forms and test them carefully so protection does not block genuine customer enquiries.",
+  "date": "November 24, 2026",
+  "author": {
+    "name": "Priyanka D.",
+    "role": "Founder, My DP Digital",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+  },
+  "category": "Web Design",
+  "readingTime": "4 min read",
+  "commentsCount": 0,
+  "tags": [
+    "SmallBusiness",
+    "DigitalMarketing"
+  ],
+  "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]",
+  "content": [
+    "### 1. Keep the form simple and purposeful\nA form with unnecessary fields can create more friction and provide more opportunities for automated submissions. Keep required fields limited to what the business needs to respond. Remove unused forms and check that each form has a clear purpose and destination.",
+    "### 2. Use a honeypot carefully\nA honeypot is a hidden field that ordinary visitors should not fill in but some automated bots may complete. It can help catch basic automated submissions. Test it on the actual form and do not rely on it as the only protection, because more sophisticated bots may behave differently.",
+    "### 3. Add a submission-time or rate-limit check\nVery rapid submissions or repeated requests can be suspicious. A form plugin, server-side rule or security layer may offer rate limiting or timing checks. Use sensible limits that do not punish real users on slower connections, and verify that the implementation works with the form's AJAX or multi-step behaviour.",
+    "### 4. Use CAPTCHA or another challenge only when appropriate\nA challenge can reduce some automated submissions, but it can add friction, accessibility concerns or external data-sharing considerations. Review the provider's privacy information and test the challenge on mobile. If it blocks legitimate users, consider a different layer or configuration.",
+    "### 5. Validate data on the server\nBrowser-side validation improves the user experience but can be bypassed. Server-side validation should check required fields, expected formats and safe handling of the submitted data. Avoid trusting arbitrary form input or placing unvalidated content directly into emails or database queries.",
+    "### 6. Review the form plugin and integrations\nUse a form plugin that is maintained and compatible with the current WordPress version. Remove unused form plugins and add-ons. If you use an antispam plugin, check its compatibility with the form, email notification and CRM integrations before enabling it on every form.",
+    "### 7. Monitor and protect the inbox\nFilter repeated messages, suspicious links and disposable or malformed addresses where appropriate. Do not automatically reject every submission that contains a link or uses a certain country or language; legitimate enquiries can be affected. Keep a review path for uncertain messages and avoid storing unnecessary personal information.",
+    "### 8. Test the complete enquiry path\nSubmit a normal enquiry, a deliberately invalid submission and a test that triggers the protection. Confirm that the visitor sees a useful message, the form remains usable and legitimate submissions reach the correct inbox or CRM. Review logs and false positives after deployment.",
+    "### Common mistakes to avoid\n- Installing several overlapping antispam plugins without understanding their rules.\n- Blocking an entire country when genuine customers may be located there.\n- Using a CAPTCHA that is inaccessible or difficult on mobile.\n- Relying only on client-side checks.\n- Leaving form submissions and logs to retain personal data indefinitely.\n- Making a protection change without testing the notification and confirmation path.",
+    "### A safe rollout sequence\nMake a backup or use a staging environment when the change affects a live form. Add one protection layer, test normal and suspicious submissions, monitor the results, then decide whether another layer is needed. If spam increases, review the form and server logs before adding increasingly strict rules.",
+    "WordPress plugin documentation and the WordPress.org plugin repository offer examples of layered protections such as honeypots, rate limits, validation and spam filters. Choose a maintained option that fits your forms and privacy requirements rather than installing a plugin based only on a claimed spam-reduction percentage.",
+    "For help maintaining or developing WordPress forms, see [My DP Digital's services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
+  ]
+}
 ];
