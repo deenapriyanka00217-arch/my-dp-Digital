@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "google-ads-ad-scheduling-small-business": {
+    "title": "Google Ads Ad Scheduling: A Practical Guide",
+    "description": "Choose Google Ads days and hours using conversion data, business availability and a careful test—not guesswork."
+  },
+  "meta-ads-frequency-creative-fatigue": {
+    "title": "Meta Ads Frequency and Creative Fatigue Guide",
+    "description": "Read Meta Ads frequency alongside reach, CTR and cost per result to decide whether creative fatigue is likely."
+  },
+  "local-seo-competitor-analysis-chennai": {
+    "title": "Local SEO Competitor Analysis in Chennai",
+    "description": "Compare local competitors by service pages, profiles, reviews, content and customer experience—without copying or promising rankings."
+  },
+  "wordpress-500-internal-server-error-guide": {
+    "title": "Fix WordPress HTTP 500 Error Safely",
+    "description": "Troubleshoot WordPress HTTP 500 errors with backups, logs, recovery mode, plugin and theme checks, and reversible steps."
+  },
+  "service-business-website-case-study-template": {
+    "title": "Website Case Study Template for Service Businesses",
+    "description": "Build a credible website case study with project context, scope, process, evidence, lessons and a clear next step."
+  },
+  "seo-content-refresh-checklist": {
+    "title": "SEO Content Refresh Checklist",
+    "description": "Decide whether to update, rewrite, consolidate or leave an SEO page alone using intent, evidence, content quality and technical checks."
+  },
+  "youtube-channel-branding-about-banner-guide": {
+    "title": "YouTube Channel Branding Checklist",
+    "description": "Organize a YouTube channel's banner, About section, links and Home tab so visitors understand the content and next step."
+  },
+  "ga4-generate-lead-form-tracking": {
+    "title": "GA4 Form Tracking with generate_lead",
+    "description": "Measure successful form submissions in GA4 with generate_lead, test the event and avoid duplicate or personal-data tracking."
+  },
+  "ecommerce-product-page-seo-checklist": {
+    "title": "E-Commerce Product Page SEO Checklist",
+    "description": "Improve product-page clarity with unique descriptions, specifications, images, navigation, accurate data and structured markup."
+  },
+  "google-ads-responsive-search-ad-copy-guide": {
+    "title": "Responsive Search Ads Copywriting Guide",
+    "description": "Write useful RSA headlines and descriptions with message variety, relevance, proof, CTA and careful testing."
   }
 }
