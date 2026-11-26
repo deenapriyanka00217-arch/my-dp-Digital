@@ -82,9 +82,9 @@ interface BlogPost {
 }
 
 const renderInlineLinks = (text: string): React.ReactNode => {
-  const parts = text.split(/(\\[[^\\]]+\\]\\([^)]+\\))/g);
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
   return parts.map((part, index) => {
-    const match = part.match(/^\\[([^\\]]+)\\]\\(([^)]+)\\)$/);
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (!match) return part;
     const href = match[2];
     const external = href.startsWith('http') && !href.startsWith('https://www.mydpdigital.in/');
