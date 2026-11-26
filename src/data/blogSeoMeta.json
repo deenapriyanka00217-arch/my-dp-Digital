@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "ga4-internal-traffic-filter-guide": {
+    "title": "GA4 Internal Traffic Filters",
+    "description": "Learn how GA4 identifies internal traffic, tests exclusion filters and avoids removing real customer visits from analytics reports."
+  },
+  "ga4-events-vs-key-events-guide": {
+    "title": "GA4 Events vs Key Events",
+    "description": "Understand GA4 events and key events, how to mark important actions and avoid treating every page view as a business outcome."
+  },
+  "google-ads-primary-secondary-conversion-actions": {
+    "title": "Primary vs Secondary Google Ads Conversions",
+    "description": "Learn when Google Ads conversions should be Primary or Secondary, how goals affect bidding and what to review before you change settings."
+  },
+  "google-search-console-url-inspection-vs-request-indexing": {
+    "title": "URL Inspection vs Request Indexing",
+    "description": "Learn what URL Inspection reveals, how live tests differ from indexed data and when to request indexing in Search Console."
+  },
+  "meta-ads-placement-performance-report": {
+    "title": "Meta Ads Placement Reporting",
+    "description": "Review Meta Ads results by placement, compare qualified outcomes and decide when creative or placement changes are justified."
+  },
+  "website-handover-checklist-client": {
+    "title": "Website Handover Checklist",
+    "description": "Check domain ownership, admin access, backups, analytics, forms, licenses and support before a website project is handed over."
+  },
+  "wordpress-user-roles-permissions-guide": {
+    "title": "WordPress User Roles Guide",
+    "description": "Learn WordPress user roles and how to give staff or contractors the access they need without sharing an Administrator login."
+  },
+  "indexnow-vs-google-search-console-url-submission": {
+    "title": "IndexNow vs Google Search Console",
+    "description": "Compare IndexNow, XML sitemaps and Search Console URL Inspection. Learn what each notifies and why submission cannot guarantee indexing."
+  },
+  "youtube-captions-subtitles-business-guide": {
+    "title": "YouTube Captions for Business Videos",
+    "description": "Learn how to add YouTube captions, review automatic subtitles and plan language tracks for clearer business videos."
+  },
+  "google-ads-conversion-window-guide": {
+    "title": "Google Ads Conversion Windows",
+    "description": "Understand Google Ads conversion windows, attribution timing and how to choose a period that reflects your customer decision cycle."
   }
 }
