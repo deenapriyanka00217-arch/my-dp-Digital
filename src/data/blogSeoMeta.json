@@ -156,43 +156,43 @@
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
   },
   "ga4-internal-traffic-filter-guide": {
-    "title": "GA4 Internal Traffic Filter Setup Guide",
-    "description": "Learn how GA4 identifies internal traffic, how to test an exclusion filter and why an incorrect active filter can distort future reporting."
+    "title": "GA4 Internal Traffic Filters",
+    "description": "Learn how GA4 identifies internal traffic, tests exclusion filters and avoids removing real customer visits from analytics reports."
   },
   "ga4-events-vs-key-events-guide": {
-    "title": "GA4 Events vs Key Events Explained",
-    "description": "Understand the difference between GA4 events and key events, how to mark important actions and how to avoid treating every page view as a business outcome."
+    "title": "GA4 Events vs Key Events",
+    "description": "Understand GA4 events and key events, how to mark important actions and avoid treating every page view as a business outcome."
   },
   "google-ads-primary-secondary-conversion-actions": {
-    "title": "Google Ads Primary vs Secondary Conversions",
-    "description": "Learn when to set a Google Ads conversion action as Primary or Secondary, how the settings affect bidding and reporting, and what to check before changing them."
+    "title": "Primary vs Secondary Google Ads Conversions",
+    "description": "Learn when Google Ads conversions should be Primary or Secondary, how goals affect bidding and what to review before you change settings."
   },
   "google-search-console-url-inspection-vs-request-indexing": {
-    "title": "URL Inspection vs Request Indexing in Search Console",
-    "description": "Learn what Google Search Console URL Inspection reveals, how live tests differ from indexed data and when to use Request Indexing for a page."
+    "title": "URL Inspection vs Request Indexing",
+    "description": "Learn what URL Inspection reveals, how live tests differ from indexed data and when to request indexing in Search Console."
   },
   "meta-ads-placement-performance-report": {
-    "title": "Meta Ads Placement Performance Guide",
-    "description": "Learn how to review Meta Ads results by platform and placement, compare cost with qualified outcomes and decide when creative or placement changes are justified."
+    "title": "Meta Ads Placement Reporting",
+    "description": "Review Meta Ads results by placement, compare qualified outcomes and decide when creative or placement changes are justified."
   },
   "website-handover-checklist-client": {
-    "title": "Website Handover Checklist for Clients",
-    "description": "Use this website handover checklist to confirm domain ownership, admin access, backups, analytics, forms, licenses, documentation and post-launch support."
+    "title": "Website Handover Checklist",
+    "description": "Check domain ownership, admin access, backups, analytics, forms, licenses and support before a website project is handed over."
   },
   "wordpress-user-roles-permissions-guide": {
-    "title": "WordPress User Roles and Permissions Guide",
-    "description": "Understand WordPress user roles, what each can do and how to give staff or contractors the access needed without sharing an Administrator account."
+    "title": "WordPress User Roles Guide",
+    "description": "Learn WordPress user roles and how to give staff or contractors the access they need without sharing an Administrator login."
   },
   "indexnow-vs-google-search-console-url-submission": {
-    "title": "IndexNow vs Google Search Console Explained",
-    "description": "Compare IndexNow, XML sitemaps and Google Search Console URL Inspection. Learn which engines they notify and why submission never guarantees indexing."
+    "title": "IndexNow vs Google Search Console",
+    "description": "Compare IndexNow, XML sitemaps and Search Console URL Inspection. Learn what each notifies and why submission cannot guarantee indexing."
   },
   "youtube-captions-subtitles-business-guide": {
     "title": "YouTube Captions for Business Videos",
-    "description": "Learn how to add YouTube captions, review automatic subtitles, upload caption files and plan language versions for clearer business videos."
+    "description": "Learn how to add YouTube captions, review automatic subtitles and plan language tracks for clearer business videos."
   },
   "google-ads-conversion-window-guide": {
-    "title": "Google Ads Conversion Window Explained",
-    "description": "Understand Google Ads click-through, engaged-view and view-through conversion windows, how changes affect reporting and how to use sales-cycle evidence."
+    "title": "Google Ads Conversion Windows",
+    "description": "Understand Google Ads conversion windows, attribution timing and how to choose a period that reflects your customer decision cycle."
   }
 }
