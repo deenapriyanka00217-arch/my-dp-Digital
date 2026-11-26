@@ -81,6 +81,22 @@ interface BlogPost {
   imageUrl?: string;
 }
 
+const renderInlineLinks = (text: string): React.ReactNode => {
+  const parts = text.split(/(\\[[^\\]]+\\]\\([^)]+\\))/g);
+  return parts.map((part, index) => {
+    const match = part.match(/^\\[([^\\]]+)\\]\\(([^)]+)\\)$/);
+    if (!match) return part;
+    const href = match[2];
+    const external = href.startsWith('http') && !href.startsWith('https://www.mydpdigital.in/');
+    return <a key={index} href={href} className="underline text-[#FF7AC6] hover:text-[#25D366]" {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{match[1]}</a>;
+  });
+};
+
+const formatBlogSchemaDate = (date: string): string => {
+  const parsed = new Date(date);
+  return Number.isNaN(parsed.getTime()) ? date : parsed.toISOString();
+};
+
 const CATEGORIES = [
   'All Categories',
   'Web Design & Funnels',
@@ -247,8 +263,8 @@ export const BlogPage: React.FC = () => {
               name: 'My DP Digital',
               url: 'https://www.mydpdigital.in',
             },
-            datePublished: singlePostView.date,
-            dateModified: singlePostView.date,
+            datePublished: formatBlogSchemaDate(singlePostView.date),
+            dateModified: formatBlogSchemaDate(singlePostView.date),
             mainEntityOfPage: `https://www.mydpdigital.in/blog/${singlePostView.slug}`,
           },
           {
@@ -544,14 +560,14 @@ export const BlogPage: React.FC = () => {
                               <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-white/90">
                                 <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
                                 <div>
-                                  <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                                  <span>{renderInlineLinks(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                                 </div>
                               </div>
                             ))}
                           </div>
                         );
                       }
-                      return <p key={pIdx} className="leading-relaxed">{paragraph}</p>;
+                      return <p key={pIdx} className="leading-relaxed">{renderInlineLinks(paragraph)}</p>;
                     })}
                   </div>
 
@@ -1324,7 +1340,7 @@ export const BlogPage: React.FC = () => {
                         </div>
                       );
                     }
-                    return <p key={pIdx}>{paragraph}</p>;
+                    return <p key={pIdx}>{renderInlineLinks(paragraph)}</p>;
                   })}
                 </div>
 
