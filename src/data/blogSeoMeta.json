@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "ga4-internal-traffic-filter-guide": {
+    "title": "GA4 Internal Traffic Filter Setup Guide",
+    "description": "Learn how GA4 identifies internal traffic, how to test an exclusion filter and why an incorrect active filter can distort future reporting."
+  },
+  "ga4-events-vs-key-events-guide": {
+    "title": "GA4 Events vs Key Events Explained",
+    "description": "Understand the difference between GA4 events and key events, how to mark important actions and how to avoid treating every page view as a business outcome."
+  },
+  "google-ads-primary-secondary-conversion-actions": {
+    "title": "Google Ads Primary vs Secondary Conversions",
+    "description": "Learn when to set a Google Ads conversion action as Primary or Secondary, how the settings affect bidding and reporting, and what to check before changing them."
+  },
+  "google-search-console-url-inspection-vs-request-indexing": {
+    "title": "URL Inspection vs Request Indexing in Search Console",
+    "description": "Learn what Google Search Console URL Inspection reveals, how live tests differ from indexed data and when to use Request Indexing for a page."
+  },
+  "meta-ads-placement-performance-report": {
+    "title": "Meta Ads Placement Performance Guide",
+    "description": "Learn how to review Meta Ads results by platform and placement, compare cost with qualified outcomes and decide when creative or placement changes are justified."
+  },
+  "website-handover-checklist-client": {
+    "title": "Website Handover Checklist for Clients",
+    "description": "Use this website handover checklist to confirm domain ownership, admin access, backups, analytics, forms, licenses, documentation and post-launch support."
+  },
+  "wordpress-user-roles-permissions-guide": {
+    "title": "WordPress User Roles and Permissions Guide",
+    "description": "Understand WordPress user roles, what each can do and how to give staff or contractors the access needed without sharing an Administrator account."
+  },
+  "indexnow-vs-google-search-console-url-submission": {
+    "title": "IndexNow vs Google Search Console Explained",
+    "description": "Compare IndexNow, XML sitemaps and Google Search Console URL Inspection. Learn which engines they notify and why submission never guarantees indexing."
+  },
+  "youtube-captions-subtitles-business-guide": {
+    "title": "YouTube Captions for Business Videos",
+    "description": "Learn how to add YouTube captions, review automatic subtitles, upload caption files and plan language versions for clearer business videos."
+  },
+  "google-ads-conversion-window-guide": {
+    "title": "Google Ads Conversion Window Explained",
+    "description": "Understand Google Ads click-through, engaged-view and view-through conversion windows, how changes affect reporting and how to use sales-cycle evidence."
   }
 }
