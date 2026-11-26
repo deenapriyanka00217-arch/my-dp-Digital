@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "measure-facebook-ads-lead-quality": {
+    "title": "Measure Facebook Ads Lead Quality",
+    "description": "Measure Meta Ads lead quality beyond CPL: ask clear questions, follow up, classify outcomes and feed qualified lead signals into reporting."
+  },
+  "google-ads-negative-keywords-guide": {
+    "title": "Google Ads Negative Keywords: Practical Guide",
+    "description": "Use Google Ads negative keywords to filter irrelevant searches. Learn how to build lists, check search terms and avoid blocking useful traffic."
+  },
+  "how-to-get-quality-leads-from-google-ads": {
+    "title": "How to Get Quality Leads from Google Ads",
+    "description": "Improve Google Ads lead quality by checking conversion tracking, search intent, forms, follow-up and feedback from qualified leads."
+  },
+  "google-ads-agency-contract-checklist": {
+    "title": "Google Ads Agency Contract: What to Check",
+    "description": "Review scope, fees, account ownership, media budget, tracking, reporting, approvals, data and exit terms before signing a Google Ads agency contract."
+  },
+  "local-business-schema-guide": {
+    "title": "Local Business Schema: A Practical Guide",
+    "description": "Add accurate LocalBusiness structured data only where it fits. Learn the right type, visible details, validation and common mistakes."
+  },
+  "internal-linking-seo-guide": {
+    "title": "SEO Internal Linking: A Small Business Guide",
+    "description": "Plan crawlable internal links that help people and search engines find relevant pages, understand context and navigate a small business website."
+  },
+  "reduce-website-form-abandonment": {
+    "title": "Reduce Website Form Abandonment: 10 Practical Fixes",
+    "description": "Reduce form abandonment with fewer fields, clear labels, mobile-friendly layout, honest privacy notes, useful errors and a better confirmation flow."
+  },
+  "website-trust-signals-small-business": {
+    "title": "Website Trust Signals for Small Businesses",
+    "description": "Build trust with accurate business details, useful proof, secure pages, transparent policies, clear contact paths and authentic reviews."
+  },
+  "mobile-first-website-design-checklist": {
+    "title": "Mobile-First Website Design Checklist",
+    "description": "Use this mobile-first website checklist for readable content, tap-friendly navigation, simple forms, accessible controls and mobile content parity."
+  },
+  "youtube-shorts-content-calendar-for-business": {
+    "title": "YouTube Shorts Content Calendar for Business",
+    "description": "Plan YouTube Shorts with content pillars, series, weekly slots, hooks, production batching and simple analytics instead of random uploads."
   }
 }
