@@ -112,6 +112,33 @@ const ARCHIVE_MONTHS = [
   { month: 'April 2026', count: 15 },
 ];
 
+const renderBlogText = (text: string): React.ReactNode[] => {
+  const linkifyPlain = (value: string, prefix: string): React.ReactNode[] => {
+    const parts = value.split(/(https?:\/\/[^\s]+)/g);
+    return parts.map((part, index) => {
+      if (!/^https?:\/\//.test(part)) return <React.Fragment key={prefix + index}>{part}</React.Fragment>;
+      const clean = part.replace(/[.,;:!)]*$/, '');
+      const trailing = part.slice(clean.length);
+      const internal = clean.startsWith('https://www.mydpdigital.in');
+      return <React.Fragment key={prefix + index}><a href={clean} className="text-[#FF7AC6] underline underline-offset-2 hover:text-white" {...(!internal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{clean}</a>{trailing}</React.Fragment>;
+    });
+  };
+  const markdownLink = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+  const nodes: React.ReactNode[] = [];
+  let last = 0;
+  let match: RegExpExecArray | null;
+  let index = 0;
+  while ((match = markdownLink.exec(text)) !== null) {
+    nodes.push(...linkifyPlain(text.slice(last, match.index), 'plain-' + index + '-'));
+    const internal = match[2].startsWith('https://www.mydpdigital.in');
+    nodes.push(<a key={'md-' + index} href={match[2]} className="text-[#FF7AC6] underline underline-offset-2 hover:text-white" {...(!internal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{match[1]}</a>);
+    last = match.index + match[0].length;
+    index++;
+  }
+  nodes.push(...linkifyPlain(text.slice(last), 'plain-tail-'));
+  return nodes;
+};
+
 export const BlogPage: React.FC = () => {
   // Real, static post content — committed to the repo so every visitor and
   // every search engine sees the exact same thing (see src/data/blogPosts.ts).
@@ -544,14 +571,14 @@ export const BlogPage: React.FC = () => {
                               <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-white/90">
                                 <CheckCircle2 size={16} className="text-[#25D366] shrink-0 mt-0.5" />
                                 <div>
-                                  <span>{it.replace(/^[0-9]+\.\s+|\-\s+/, '')}</span>
+                                  <span>{renderBlogText(it.replace(/^[0-9]+\.\s+|\-\s+/, ''))}</span>
                                 </div>
                               </div>
                             ))}
                           </div>
                         );
                       }
-                      return <p key={pIdx} className="leading-relaxed">{paragraph}</p>;
+                      return <p key={pIdx} className="leading-relaxed">{renderBlogText(paragraph)}</p>;
                     })}
                   </div>
 
