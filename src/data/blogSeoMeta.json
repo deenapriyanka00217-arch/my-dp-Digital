@@ -154,5 +154,45 @@
   "social-media-management-pricing-chennai": {
     "title": "Social Media Management Pricing in Chennai",
     "description": "Understand what social media management packages may include, from content planning and design to publishing, engagement and performance reporting."
+  },
+  "seo-keyword-mapping-to-urls": {
+    "title": "SEO Keyword Mapping: Match Keywords to Pages",
+    "description": "Learn how to map SEO keywords to the right website pages, group search intent, avoid cannibalization and build a practical keyword-to-URL plan."
+  },
+  "meta-ads-ctr-vs-conversion-rate": {
+    "title": "Meta Ads CTR vs Conversion Rate: Funnel Guide",
+    "description": "Understand Meta Ads CTR and conversion rate, compare link clicks with landing page views, diagnose funnel gaps and measure qualified outcomes."
+  },
+  "service-page-vs-blog-post-seo": {
+    "title": "Service Page vs Blog Post: SEO Intent Guide",
+    "description": "Learn when a keyword needs a service page or blog post. Match search intent, avoid competing URLs and connect helpful articles to commercial pages."
+  },
+  "website-url-slugs-seo-checklist": {
+    "title": "SEO-Friendly URL Slugs: A Practical Checklist",
+    "description": "Learn how to create clear SEO-friendly URL slugs, avoid unnecessary changes, use consistent paths and handle URL changes safely."
+  },
+  "webp-vs-avif-website-images": {
+    "title": "WebP vs AVIF: Choosing Website Image Formats",
+    "description": "Compare WebP and AVIF for website images. Learn about compression, transparency, browser support, fallbacks and testing image quality."
+  },
+  "google-ads-branded-vs-nonbranded-campaigns": {
+    "title": "Branded vs Non-Branded Google Ads Campaigns",
+    "description": "Learn when to separate branded and non-branded Google Ads campaigns, how to report performance and avoid budget and query overlap."
+  },
+  "google-ads-search-impression-share-guide": {
+    "title": "Google Ads Search Impression Share Explained",
+    "description": "Understand Google Ads Search impression share, lost share due to budget or rank, eligibility and practical steps to diagnose campaign visibility."
+  },
+  "ga4-attribution-models-explained": {
+    "title": "GA4 Attribution Models: How Conversion Credit Works",
+    "description": "Understand GA4 attribution models, data-driven attribution, last-click options, attribution paths and why reports can differ across platforms."
+  },
+  "google-ads-conversion-value-tracking": {
+    "title": "Google Ads Conversion Value Tracking Guide",
+    "description": "Learn how to assign meaningful conversion values in Google Ads, track leads and sales, use proxy values carefully and understand value-based bidding."
+  },
+  "website-call-to-action-button-design": {
+    "title": "Website CTA Button Design: Wording and Placement",
+    "description": "Improve website CTA buttons with clear wording, placement, hierarchy and accessibility. Learn what to test and how to measure clicks and enquiries."
   }
 }
