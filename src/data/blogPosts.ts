@@ -1503,11 +1503,11 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    "id": "seo-keyword-mapping-to-urls",
-    "slug": "seo-keyword-mapping-to-urls",
-    "title": "How to Map SEO Keywords to the Right Website URLs",
-    "excerpt": "A practical keyword map assigns each search-intent cluster to a preferred URL. Use this workflow to plan pages, avoid duplication and strengthen internal links.",
-    "content": [
+    id: "seo-keyword-mapping-to-urls",
+    slug: "seo-keyword-mapping-to-urls",
+    title: "How to Map SEO Keywords to the Right Website URLs",
+    excerpt: "A practical keyword map assigns each search-intent cluster to a preferred URL. Use this workflow to plan pages, avoid duplication and strengthen internal links.",
+    content: [
       "A keyword map connects each meaningful search-intent cluster to the website page that best answers it. It helps a business decide which page should target a query, what content needs to be created and where overlapping pages should be consolidated. A keyword list by itself cannot make those decisions.",
       "The goal is not to assign every spelling or variation to a separate page. Instead, identify the searcher's problem, choose the most useful page type and give that page a clear primary topic.",
       "### 1. Start with the pages you already have",
@@ -1540,29 +1540,29 @@ export const BLOG_POSTS: BlogPost[] = [
       "If you want help reviewing a website's page-to-keyword structure, explore My DP Digital's [SEO services](https://www.mydpdigital.in/services/seo) or [contact the team](https://www.mydpdigital.in/contact).",
       "### Further reading\n- Google's people-first content guidance: https://developers.google.com/search/docs/fundamentals/creating-helpful-content\n- Google's SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide\n- Internal-link best practices: https://developers.google.com/search/docs/crawling-indexing/links-crawlable"
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "SEO",
-    "readingTime": "5 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "SEO",
+    readingTime: "5 min read",
+    commentsCount: 0,
+    tags: [
       "SEO",
       "GoogleSEO",
       "KeywordMapping",
       "ContentStrategy"
     ],
-    "featuredImgColor": "from-[#FFB700] to-[#FF2E9A]"
+    featuredImgColor: "from-[#FFB700] to-[#FF2E9A]"
   },
   {
-    "id": "meta-ads-ctr-vs-conversion-rate",
-    "slug": "meta-ads-ctr-vs-conversion-rate",
-    "title": "Meta Ads CTR vs Conversion Rate: How to Diagnose the Funnel",
-    "excerpt": "CTR measures clicks relative to impressions; conversion rate measures completed actions against a chosen denominator. Use both to diagnose different parts of the ad funnel.",
-    "content": [
+    id: "meta-ads-ctr-vs-conversion-rate",
+    slug: "meta-ads-ctr-vs-conversion-rate",
+    title: "Meta Ads CTR vs Conversion Rate: How to Diagnose the Funnel",
+    excerpt: "CTR measures clicks relative to impressions; conversion rate measures completed actions against a chosen denominator. Use both to diagnose different parts of the ad funnel.",
+    content: [
       "Click-through rate (CTR) and conversion rate describe different stages of a Meta Ads campaign. CTR measures how often an impression results in a click under the metric's definition. Conversion rate measures how often a chosen denominator results in a completed action, such as a lead or purchase.",
       "A campaign can have a high CTR and a low conversion rate, or a lower CTR and a strong conversion rate. Neither metric alone tells you whether the campaign is profitable or producing qualified leads.",
       "### What does CTR measure?",
@@ -1597,28 +1597,28 @@ export const BLOG_POSTS: BlogPost[] = [
       "For Meta Ads campaign planning and reporting, explore My DP Digital's [Facebook and Instagram Ads services](https://www.mydpdigital.in/services/facebook-ads) or [contact the team](https://www.mydpdigital.in/contact).",
       "### Further reading\n- Meta: Social media lead generation: https://business.facebook.com/business/resources/social-media-lead-generation\n- Meta: Lead ads with forms: https://www.facebook.com/business/ads/ad-objectives/lead-generation/lead-ads-with-forms\n- W3C accessible-name guidance: https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/"
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Paid Ads",
-    "readingTime": "5 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Paid Ads",
+    readingTime: "5 min read",
+    commentsCount: 0,
+    tags: [
       "MetaAds",
       "PaidAds",
       "Analytics"
     ],
-    "featuredImgColor": "from-[#25D366] to-[#B026FF]"
+    featuredImgColor: "from-[#25D366] to-[#B026FF]"
   },
   {
-    "id": "service-page-vs-blog-post-seo",
-    "slug": "service-page-vs-blog-post-seo",
-    "title": "Service Page vs Blog Post SEO: Which Page Should Target the Keyword?",
-    "excerpt": "A service page and a blog article serve different jobs. Use search intent, page purpose and reader expectations to choose the right format.",
-    "content": [
+    id: "service-page-vs-blog-post-seo",
+    slug: "service-page-vs-blog-post-seo",
+    title: "Service Page vs Blog Post SEO: Which Page Should Target the Keyword?",
+    excerpt: "A service page and a blog article serve different jobs. Use search intent, page purpose and reader expectations to choose the right format.",
+    content: [
       "A service page explains what a business offers and helps a potential customer decide whether to enquire or buy. A blog post answers a question, teaches a process, compares options or helps a reader solve a problem. Both can appear in search, but they serve different purposes.",
       "When planning SEO content, choose the page format that most completely satisfies the query. A blog article is not automatically better for informational keywords, and a service page is not automatically better for every commercial query. Search intent and the actual needs of the visitor should guide the decision.",
       "### What a service page should do",
@@ -1654,28 +1654,28 @@ export const BLOG_POSTS: BlogPost[] = [
       "Explore My DP Digital's [SEO services](https://www.mydpdigital.in/services/seo), [full service overview](https://www.mydpdigital.in/services), or [contact the team](https://www.mydpdigital.in/contact) if you want help planning the content structure.",
       "### Further reading\n- Google's people-first content guidance: https://developers.google.com/search/docs/fundamentals/creating-helpful-content\n- Google's SEO Starter Guide: https://developers.google.com/search/docs/fundamentals/seo-starter-guide\n- Google's internal-link guidance: https://developers.google.com/search/docs/crawling-indexing/links-crawlable"
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "SEO",
-    "readingTime": "5 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "SEO",
+    readingTime: "5 min read",
+    commentsCount: 0,
+    tags: [
       "SEO",
       "GoogleSEO",
       "ContentStrategy"
     ],
-    "featuredImgColor": "from-[#B026FF] to-[#FF2E9A]"
+    featuredImgColor: "from-[#B026FF] to-[#FF2E9A]"
   },
   {
-    "id": "website-url-slugs-seo-checklist",
-    "slug": "website-url-slugs-seo-checklist",
-    "title": "Website URL Slugs for SEO: A Practical Naming Checklist",
-    "excerpt": "A clear URL slug makes a page easier to recognize and manage. Use this checklist to choose descriptive paths and avoid unnecessary URL changes.",
-    "content": [
+    id: "website-url-slugs-seo-checklist",
+    slug: "website-url-slugs-seo-checklist",
+    title: "Website URL Slugs for SEO: A Practical Naming Checklist",
+    excerpt: "A clear URL slug makes a page easier to recognize and manage. Use this checklist to choose descriptive paths and avoid unnecessary URL changes.",
+    content: [
       "A URL slug is the part of a website address that identifies a page within its path. A clear slug can help people recognize what a page is about when they see the link, and it makes a website easier to manage. It is not a magic ranking factor that should be manipulated by stuffing keywords into every URL.",
       "A good slug is descriptive, concise, consistent with the site's structure and stable over time. The best URL is usually the one that clearly identifies the page without unnecessary words or parameters.",
       "### 1. Use words that describe the page",
@@ -1707,28 +1707,28 @@ export const BLOG_POSTS: BlogPost[] = [
       "For help with SEO, website development or a URL review, explore My DP Digital's [SEO services](https://www.mydpdigital.in/services/seo), [website development](https://www.mydpdigital.in/services/web-design-development), or [contact the team](https://www.mydpdigital.in/contact).",
       "### Further reading\n- Google's URL structure guidance: https://developers.google.com/search/docs/crawling-indexing/url-structure\n- Google's e-commerce URL structure guide: https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites\n- Google's crawlable-link guidance: https://developers.google.com/search/docs/crawling-indexing/links-crawlable"
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "SEO",
-    "readingTime": "5 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "SEO",
+    readingTime: "5 min read",
+    commentsCount: 0,
+    tags: [
       "SEO",
       "TechnicalSEO",
       "URLStructure"
     ],
-    "featuredImgColor": "from-[#FF2E9A] to-[#FFB700]"
+    featuredImgColor: "from-[#FF2E9A] to-[#FFB700]"
   },
   {
-    "id": "webp-vs-avif-website-images",
-    "slug": "webp-vs-avif-website-images",
-    "title": "WebP vs AVIF for Website Images: Which Format Should You Use?",
-    "excerpt": "WebP and AVIF can reduce image size, but format choice should also consider visual quality, compatibility, fallback handling and the image's role.",
-    "content": [
+    id: "webp-vs-avif-website-images",
+    slug: "webp-vs-avif-website-images",
+    title: "WebP vs AVIF for Website Images: Which Format Should You Use?",
+    excerpt: "WebP and AVIF can reduce image size, but format choice should also consider visual quality, compatibility, fallback handling and the image's role.",
+    content: [
       "WebP and AVIF are modern image formats that can reduce the size of images delivered to a website. Both support features such as transparency, and both can be used for photographs, illustrations and other visual assets. The better choice depends on the image, quality settings, browser support, delivery workflow and how the site is built.",
       "There is no single format that wins for every image. Test the file size and visual quality of the actual assets you intend to use.",
       "### What is WebP?",
@@ -1760,28 +1760,28 @@ export const BLOG_POSTS: BlogPost[] = [
       "### Further reading\n- web.dev: Choose the right image format: https://web.dev/articles/choose-the-right-image-format\n- web.dev: Image performance: https://web.dev/learn/performance/image-performance\n- Chrome: Serve images in modern formats: https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images",
       "For help improving a website's image delivery and performance, explore My DP Digital's [website design and development](https://www.mydpdigital.in/services/web-design-development), [WordPress development](https://www.mydpdigital.in/wordpress-development), or [contact the team](https://www.mydpdigital.in/contact)."
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Web Design",
-    "readingTime": "5 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Web Design",
+    readingTime: "5 min read",
+    commentsCount: 0,
+    tags: [
       "WebDesign",
       "CoreWebVitals",
       "ImageOptimization"
     ],
-    "featuredImgColor": "from-[#00C2FF] to-[#B026FF]"
+    featuredImgColor: "from-[#00C2FF] to-[#B026FF]"
   },
   {
-    "id": "google-ads-branded-vs-nonbranded-campaigns",
-    "slug": "google-ads-branded-vs-nonbranded-campaigns",
-    "title": "Google Ads Branded vs Non-Branded Campaigns: When to Separate Them",
-    "excerpt": "Branded and non-branded searches have different intent. Learn when separate campaigns improve reporting and control—and when a split adds unnecessary complexity.",
-    "content": [
+    id: "google-ads-branded-vs-nonbranded-campaigns",
+    slug: "google-ads-branded-vs-nonbranded-campaigns",
+    title: "Google Ads Branded vs Non-Branded Campaigns: When to Separate Them",
+    excerpt: "Branded and non-branded searches have different intent. Learn when separate campaigns improve reporting and control—and when a split adds unnecessary complexity.",
+    content: [
       "Branded search queries include a business's own name or brand-related terms. Non-branded queries usually describe a product, service, category, problem or location without naming that business. The intent and competition can differ, so advertisers often review them separately.",
       "Separate campaigns can improve budget control and reporting when the distinction matters to the business. However, splitting a campaign is not automatically necessary. The decision should be based on volume, goals, account complexity and the ability to manage the campaigns without fragmenting data.",
       "### What counts as branded search?",
@@ -1815,28 +1815,28 @@ export const BLOG_POSTS: BlogPost[] = [
       "For help with Google Ads planning and management, explore My DP Digital's [paid advertising services](https://www.mydpdigital.in/services/paid-social-ads) or [contact the team](https://www.mydpdigital.in/contact).",
       "### Further reading\n- Google Ads brand settings: https://support.google.com/google-ads/answer/13721847\n- Google Ads impression share: https://support.google.com/google-ads/answer/7103314\n- Google Ads location targeting: https://support.google.com/google-ads/answer/10835274"
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Paid Ads",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Paid Ads",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "GoogleAds",
       "PaidAds",
       "CampaignStructure"
     ],
-    "featuredImgColor": "from-[#FFB700] to-[#25D366]"
+    featuredImgColor: "from-[#FFB700] to-[#25D366]"
   },
   {
-    "id": "google-ads-search-impression-share-guide",
-    "slug": "google-ads-search-impression-share-guide",
-    "title": "Google Ads Search Impression Share: What It Means and How to Improve It",
-    "excerpt": "Search impression share measures received impressions against estimated eligible impressions. Learn how to interpret lost share without chasing a number blindly.",
-    "content": [
+    id: "google-ads-search-impression-share-guide",
+    slug: "google-ads-search-impression-share-guide",
+    title: "Google Ads Search Impression Share: What It Means and How to Improve It",
+    excerpt: "Search impression share measures received impressions against estimated eligible impressions. Learn how to interpret lost share without chasing a number blindly.",
+    content: [
       "Google Ads Search impression share estimates how often your ads appeared on the Search Network compared with the impressions you were eligible to receive. It helps advertisers understand visibility, but it is not a measure of total market demand, all competitor activity or the number of customers available.",
       "A low impression-share figure is a diagnostic signal. The next step is to identify whether the campaign is limited by budget, Ad Rank, targeting, eligibility or another factor—not to increase bids automatically.",
       "### What is Search impression share?",
@@ -1867,28 +1867,28 @@ export const BLOG_POSTS: BlogPost[] = [
       "### Further reading\n- Google Ads: Get impression share data: https://support.google.com/google-ads/answer/7103314\n- Google Ads location targeting: https://support.google.com/google-ads/answer/10835274\n- Google Ads brand settings: https://support.google.com/google-ads/answer/13721847",
       "For a campaign review, explore My DP Digital's [paid advertising services](https://www.mydpdigital.in/services/paid-social-ads) or [contact the team](https://www.mydpdigital.in/contact)."
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Paid Ads",
-    "readingTime": "4 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Paid Ads",
+    readingTime: "4 min read",
+    commentsCount: 0,
+    tags: [
       "GoogleAds",
       "PaidAds",
       "CampaignMetrics"
     ],
-    "featuredImgColor": "from-[#B026FF] to-[#25D366]"
+    featuredImgColor: "from-[#B026FF] to-[#25D366]"
   },
   {
-    "id": "ga4-attribution-models-explained",
-    "slug": "ga4-attribution-models-explained",
-    "title": "GA4 Attribution Models: How Conversion Credit Is Assigned",
-    "excerpt": "GA4 attribution assigns credit to marketing touchpoints. Learn what the models do, which reports they affect and how to compare data consistently.",
-    "content": [
+    id: "ga4-attribution-models-explained",
+    slug: "ga4-attribution-models-explained",
+    title: "GA4 Attribution Models: How Conversion Credit Is Assigned",
+    excerpt: "GA4 attribution assigns credit to marketing touchpoints. Learn what the models do, which reports they affect and how to compare data consistently.",
+    content: [
       "Attribution in Google Analytics 4 (GA4) is a method for assigning credit to marketing touchpoints that appear in a customer's path to a key event. It helps marketers interpret how channels and campaigns contribute to reported conversions. Attribution is not a complete record of every influence on a purchase, and the model you choose can change the way credit appears in reports.",
       "The practical goal is to compare marketing activity consistently and understand the path to an outcome—not to treat one attribution model as the absolute truth.",
       "### What is an attribution model?",
@@ -1918,28 +1918,28 @@ export const BLOG_POSTS: BlogPost[] = [
       "### Further reading\n- GA4: How to attribute credit for key events: https://support.google.com/analytics/answer/12958241\n- Get started with attribution: https://support.google.com/analytics/answer/10596866\n- Select attribution settings: https://support.google.com/analytics/answer/10597962",
       "For help with conversion measurement and campaign reporting, explore My DP Digital's [digital marketing services](https://www.mydpdigital.in/services) or [contact the team](https://www.mydpdigital.in/contact)."
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Digital Marketing",
-    "readingTime": "5 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Digital Marketing",
+    readingTime: "5 min read",
+    commentsCount: 0,
+    tags: [
       "GA4",
       "Analytics",
       "Attribution"
     ],
-    "featuredImgColor": "from-[#00C2FF] to-[#FF2E9A]"
+    featuredImgColor: "from-[#00C2FF] to-[#FF2E9A]"
   },
   {
-    "id": "google-ads-conversion-value-tracking",
-    "slug": "google-ads-conversion-value-tracking",
-    "title": "Google Ads Conversion Value Tracking: A Practical Guide for Leads and Sales",
-    "excerpt": "Conversion values help advertisers distinguish outcomes by business value. Learn how to track revenue or carefully estimated lead values and use them responsibly.",
-    "content": [
+    id: "google-ads-conversion-value-tracking",
+    slug: "google-ads-conversion-value-tracking",
+    title: "Google Ads Conversion Value Tracking: A Practical Guide for Leads and Sales",
+    excerpt: "Conversion values help advertisers distinguish outcomes by business value. Learn how to track revenue or carefully estimated lead values and use them responsibly.",
+    content: [
       "Conversion value tracking helps advertisers tell Google Ads that different outcomes may have different importance to a business. For an e-commerce store, the value may be revenue from a purchase. For a service business, the value may be an estimated amount associated with a qualified enquiry, booked appointment or other meaningful action.",
       "The value should represent a business decision—not an arbitrary number chosen to make campaign reports look better.",
       "### What is a conversion value?",
@@ -1977,28 +1977,28 @@ export const BLOG_POSTS: BlogPost[] = [
       "For a Google Ads measurement or campaign review, explore My DP Digital's [paid advertising services](https://www.mydpdigital.in/services/paid-social-ads) or [contact the team](https://www.mydpdigital.in/contact).",
       "### Further reading\n- Google Ads: Set up conversion values: https://support.google.com/google-ads/answer/13064107\n- Google Ads: Value-based bidding for Search and Shopping: https://support.google.com/google-ads/answer/15099424\n- Google Ads: Value-based bidding best practices: https://support.google.com/google-ads/answer/14792795"
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Paid Ads",
-    "readingTime": "5 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Paid Ads",
+    readingTime: "5 min read",
+    commentsCount: 0,
+    tags: [
       "GoogleAds",
       "ConversionTracking",
       "Analytics"
     ],
-    "featuredImgColor": "from-[#25D366] to-[#FFB700]"
+    featuredImgColor: "from-[#25D366] to-[#FFB700]"
   },
   {
-    "id": "website-call-to-action-button-design",
-    "slug": "website-call-to-action-button-design",
-    "title": "Website Call-to-Action Buttons: Placement, Wording and Testing",
-    "excerpt": "A call-to-action button should tell visitors what happens next. Plan its wording, placement, visual hierarchy and measurement around the page's purpose.",
-    "content": [
+    id: "website-call-to-action-button-design",
+    slug: "website-call-to-action-button-design",
+    title: "Website Call-to-Action Buttons: Placement, Wording and Testing",
+    excerpt: "A call-to-action button should tell visitors what happens next. Plan its wording, placement, visual hierarchy and measurement around the page's purpose.",
+    content: [
       "A call-to-action (CTA) button should make the next step clear. On a business website, that might mean requesting a quote, booking a consultation, calling the business, viewing a service or sending an enquiry. The button is useful when its label, placement and destination match the visitor's needs.",
       "A brightly colored button cannot compensate for an unclear offer, confusing page or slow experience. Start by deciding what the visitor should do and why that action makes sense at this point in the journey.",
       "### 1. Choose one primary action for the page",
@@ -2039,21 +2039,21 @@ export const BLOG_POSTS: BlogPost[] = [
       "For a website review or design improvement, explore My DP Digital's [website design and development](https://www.mydpdigital.in/services/web-design-development) or [contact the team](https://www.mydpdigital.in/contact).",
       "### Further reading\n- University of Maryland Design System: Call to Action: https://designsystem.umd.edu/components/call-to-action-2\n- W3C accessible-name guidance: https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/\n- Google's crawlable-link guidance: https://developers.google.com/search/docs/crawling-indexing/links-crawlable"
     ],
-    "date": "November 28, 2026",
-    "author": {
-      "name": "Priyanka D.",
-      "role": "Founder, My DP Digital",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
+    date: "November 28, 2026",
+    author: {
+      name: "Priyanka D.",
+      role: "Founder, My DP Digital",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80"
     },
-    "category": "Web Design",
-    "readingTime": "5 min read",
-    "commentsCount": 0,
-    "tags": [
+    category: "Web Design",
+    readingTime: "5 min read",
+    commentsCount: 0,
+    tags: [
       "WebDesign",
       "UX",
       "Accessibility"
     ],
-    "featuredImgColor": "from-[#FF2E9A] to-[#00C2FF]"
+    featuredImgColor: "from-[#FF2E9A] to-[#00C2FF]"
   }
 
 ];
